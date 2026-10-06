@@ -1,0 +1,2782 @@
+{
+  "corpus": {
+    "path": "./hindi_corpus_20261006_0222.json",
+    "num_pairs": 50
+  },
+  "evaluation": {
+    "device": "cuda",
+    "max_length": 512,
+    "models": {
+      "BLOOM": {
+        "model_id": "bigscience/bloom-560m",
+        "swapped": {
+          "corpus_perplexity": 124.88101675265067,
+          "corpus_mean_loss": 4.827361418011401,
+          "total_predicted_tokens": 918,
+          "mean_sentence_perplexity": 151.54506561227598,
+          "std_sentence_perplexity": 86.06025501052238,
+          "individual": [
+            {
+              "sentence_index": 1,
+              "perplexity": 107.7811546166194,
+              "loss": 4.680102825164795,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 2,
+              "perplexity": 297.20290651866054,
+              "loss": 5.694415092468262,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 3,
+              "perplexity": 284.27942828553796,
+              "loss": 5.649957656860352,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 4,
+              "perplexity": 100.67696440515431,
+              "loss": 4.611917018890381,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 5,
+              "perplexity": 113.37965632255384,
+              "loss": 4.73074197769165,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 6,
+              "perplexity": 65.89770898242358,
+              "loss": 4.188103675842285,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 7,
+              "perplexity": 282.4757862356101,
+              "loss": 5.643592834472656,
+              "predicted_tokens": 14
+            },
+            {
+              "sentence_index": 8,
+              "perplexity": 125.23041652114371,
+              "loss": 4.830155372619629,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 9,
+              "perplexity": 117.47172677367053,
+              "loss": 4.766197681427002,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 10,
+              "perplexity": 146.31936776938656,
+              "loss": 4.9857916831970215,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 11,
+              "perplexity": 151.65965072233678,
+              "loss": 5.021638870239258,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 12,
+              "perplexity": 148.3282607036881,
+              "loss": 4.999427795410156,
+              "predicted_tokens": 14
+            },
+            {
+              "sentence_index": 13,
+              "perplexity": 105.29309242582043,
+              "loss": 4.656747817993164,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 14,
+              "perplexity": 189.52648370310584,
+              "loss": 5.244528770446777,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 15,
+              "perplexity": 189.43233814659786,
+              "loss": 5.24403190612793,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 16,
+              "perplexity": 32.90368418712744,
+              "loss": 3.493584632873535,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 17,
+              "perplexity": 63.227660216820134,
+              "loss": 4.14674186706543,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 18,
+              "perplexity": 129.21360460600212,
+              "loss": 4.861466884613037,
+              "predicted_tokens": 23
+            },
+            {
+              "sentence_index": 19,
+              "perplexity": 100.8460411554739,
+              "loss": 4.613595008850098,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 20,
+              "perplexity": 310.6445611179607,
+              "loss": 5.738649368286133,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 21,
+              "perplexity": 200.20735401504282,
+              "loss": 5.29935359954834,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 22,
+              "perplexity": 122.05258084836214,
+              "loss": 4.804451942443848,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 23,
+              "perplexity": 169.367679814616,
+              "loss": 5.1320719718933105,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 24,
+              "perplexity": 92.62677821202827,
+              "loss": 4.528578281402588,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 25,
+              "perplexity": 61.18605218791556,
+              "loss": 4.113919258117676,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 26,
+              "perplexity": 57.5770717060266,
+              "loss": 4.05312442779541,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 27,
+              "perplexity": 77.0445415720136,
+              "loss": 4.344383716583252,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 28,
+              "perplexity": 89.28293050114546,
+              "loss": 4.491810321807861,
+              "predicted_tokens": 23
+            },
+            {
+              "sentence_index": 29,
+              "perplexity": 159.6599446315702,
+              "loss": 5.0730462074279785,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 30,
+              "perplexity": 77.29970238358031,
+              "loss": 4.347690105438232,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 31,
+              "perplexity": 142.4192995475096,
+              "loss": 4.958775520324707,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 32,
+              "perplexity": 148.3752318143625,
+              "loss": 4.999744415283203,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 33,
+              "perplexity": 138.43591681972723,
+              "loss": 4.930407524108887,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 34,
+              "perplexity": 240.32398564658905,
+              "loss": 5.481987953186035,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 35,
+              "perplexity": 185.34606742908124,
+              "loss": 5.222224712371826,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 36,
+              "perplexity": 308.7777213835368,
+              "loss": 5.732621669769287,
+              "predicted_tokens": 14
+            },
+            {
+              "sentence_index": 37,
+              "perplexity": 67.99416302035799,
+              "loss": 4.219421863555908,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 38,
+              "perplexity": 242.65138552973193,
+              "loss": 5.491625785827637,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 39,
+              "perplexity": 98.35064701728193,
+              "loss": 4.588539123535156,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 40,
+              "perplexity": 112.36373010575186,
+              "loss": 4.721741199493408,
+              "predicted_tokens": 23
+            },
+            {
+              "sentence_index": 41,
+              "perplexity": 196.0212433350245,
+              "loss": 5.278223037719727,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 42,
+              "perplexity": 94.16905543315008,
+              "loss": 4.54509162902832,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 43,
+              "perplexity": 448.58906006630787,
+              "loss": 6.106107234954834,
+              "predicted_tokens": 14
+            },
+            {
+              "sentence_index": 44,
+              "perplexity": 56.430646587428804,
+              "loss": 4.033012390136719,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 45,
+              "perplexity": 183.77001102587568,
+              "loss": 5.213685035705566,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 46,
+              "perplexity": 66.57086258101212,
+              "loss": 4.198266983032227,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 47,
+              "perplexity": 90.90415223756362,
+              "loss": 4.509805679321289,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 48,
+              "perplexity": 95.72473293672961,
+              "loss": 4.561476707458496,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 49,
+              "perplexity": 334.73805256163666,
+              "loss": 5.813348293304443,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 50,
+              "perplexity": 157.20218624714698,
+              "loss": 5.057532787322998,
+              "predicted_tokens": 15
+            }
+          ]
+        },
+        "canonical": {
+          "corpus_perplexity": 98.62225179457747,
+          "corpus_mean_loss": 4.591296913577061,
+          "total_predicted_tokens": 918,
+          "mean_sentence_perplexity": 116.05338501671815,
+          "std_sentence_perplexity": 58.93350868463757,
+          "individual": [
+            {
+              "sentence_index": 1,
+              "perplexity": 91.9654834043185,
+              "loss": 4.521413326263428,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 2,
+              "perplexity": 178.62555925258815,
+              "loss": 5.185291767120361,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 3,
+              "perplexity": 170.13397063826466,
+              "loss": 5.1365861892700195,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 4,
+              "perplexity": 74.90418721935379,
+              "loss": 4.31620979309082,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 5,
+              "perplexity": 92.6967223761856,
+              "loss": 4.529333114624023,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 6,
+              "perplexity": 50.45202536592714,
+              "loss": 3.921022891998291,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 7,
+              "perplexity": 194.51925926636503,
+              "loss": 5.270531177520752,
+              "predicted_tokens": 14
+            },
+            {
+              "sentence_index": 8,
+              "perplexity": 92.52290944873346,
+              "loss": 4.527456283569336,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 9,
+              "perplexity": 102.48499486813505,
+              "loss": 4.629716396331787,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 10,
+              "perplexity": 95.14230029100032,
+              "loss": 4.555373668670654,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 11,
+              "perplexity": 195.51314461892673,
+              "loss": 5.275627613067627,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 12,
+              "perplexity": 130.9848331678856,
+              "loss": 4.875081539154053,
+              "predicted_tokens": 14
+            },
+            {
+              "sentence_index": 13,
+              "perplexity": 70.97892373437578,
+              "loss": 4.262382984161377,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 14,
+              "perplexity": 164.79149613388498,
+              "loss": 5.104681015014648,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 15,
+              "perplexity": 204.55044288235794,
+              "loss": 5.320814609527588,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 16,
+              "perplexity": 32.90368418712744,
+              "loss": 3.493584632873535,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 17,
+              "perplexity": 63.227660216820134,
+              "loss": 4.14674186706543,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 18,
+              "perplexity": 92.60275399610205,
+              "loss": 4.528318881988525,
+              "predicted_tokens": 23
+            },
+            {
+              "sentence_index": 19,
+              "perplexity": 95.81190912244311,
+              "loss": 4.562386989593506,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 20,
+              "perplexity": 195.22258282148758,
+              "loss": 5.274140357971191,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 21,
+              "perplexity": 120.59191967794797,
+              "loss": 4.792412281036377,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 22,
+              "perplexity": 77.46017011417119,
+              "loss": 4.349763870239258,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 23,
+              "perplexity": 117.69942360806085,
+              "loss": 4.768134117126465,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 24,
+              "perplexity": 87.14028430389675,
+              "loss": 4.467519283294678,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 25,
+              "perplexity": 44.197749774834115,
+              "loss": 3.7886738777160645,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 26,
+              "perplexity": 45.6116103155451,
+              "loss": 3.820162296295166,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 27,
+              "perplexity": 60.176243085559385,
+              "loss": 4.097277641296387,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 28,
+              "perplexity": 85.12062647999221,
+              "loss": 4.4440693855285645,
+              "predicted_tokens": 23
+            },
+            {
+              "sentence_index": 29,
+              "perplexity": 170.15181933824593,
+              "loss": 5.136691093444824,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 30,
+              "perplexity": 65.35608686730075,
+              "loss": 4.1798505783081055,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 31,
+              "perplexity": 96.07350201154688,
+              "loss": 4.565113544464111,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 32,
+              "perplexity": 110.88247109245398,
+              "loss": 4.708470821380615,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 33,
+              "perplexity": 130.64350610616745,
+              "loss": 4.872472286224365,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 34,
+              "perplexity": 148.77012146091718,
+              "loss": 5.002402305603027,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 35,
+              "perplexity": 116.56683660131425,
+              "loss": 4.758464813232422,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 36,
+              "perplexity": 207.5071874694878,
+              "loss": 5.335165977478027,
+              "predicted_tokens": 14
+            },
+            {
+              "sentence_index": 37,
+              "perplexity": 54.39666479646244,
+              "loss": 3.996302843093872,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 38,
+              "perplexity": 162.0680053361677,
+              "loss": 5.088016033172607,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 39,
+              "perplexity": 70.74793333952209,
+              "loss": 4.2591233253479,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 40,
+              "perplexity": 87.69242032133113,
+              "loss": 4.473835468292236,
+              "predicted_tokens": 23
+            },
+            {
+              "sentence_index": 41,
+              "perplexity": 177.58156205922077,
+              "loss": 5.17943000793457,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 42,
+              "perplexity": 62.469286873691274,
+              "loss": 4.134675025939941,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 43,
+              "perplexity": 298.8097750417031,
+              "loss": 5.699807167053223,
+              "predicted_tokens": 14
+            },
+            {
+              "sentence_index": 44,
+              "perplexity": 38.77784480692409,
+              "loss": 3.657849073410034,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 45,
+              "perplexity": 160.987768818765,
+              "loss": 5.081328392028809,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 46,
+              "perplexity": 55.15437807851606,
+              "loss": 4.010136127471924,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 47,
+              "perplexity": 78.39855052589678,
+              "loss": 4.361805438995361,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 48,
+              "perplexity": 118.22523672823223,
+              "loss": 4.772591590881348,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 49,
+              "perplexity": 265.24138973096933,
+              "loss": 5.5806403160095215,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 50,
+              "perplexity": 98.13403305878182,
+              "loss": 4.586334228515625,
+              "predicted_tokens": 15
+            }
+          ]
+        },
+        "corpus_ppl_delta_swapped_minus_canonical": 26.2587649580732,
+        "corpus_ppl_ratio_swapped_over_canonical": 1.266255986658753,
+        "pairwise_analysis": {
+          "mean_pairwise_ppl_delta": 35.49168059555784,
+          "std_pairwise_ppl_delta": 39.251336776054735,
+          "mean_pairwise_ppl_ratio": 1.2990664019095346,
+          "mean_pairwise_loss_delta": 0.24496487617492677,
+          "swapped_higher_ppl_count": 44,
+          "canonical_higher_ppl_count": 4,
+          "ties": 2,
+          "swapped_higher_ppl_fraction": 0.88,
+          "pair_results": [
+            {
+              "id": 1,
+              "template_id": 10,
+              "A": "राहुल",
+              "B": "कृष्ण",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 107.7811546166194,
+              "canonical_perplexity": 91.9654834043185,
+              "ppl_delta_swapped_minus_canonical": 15.815671212300899,
+              "ppl_ratio_swapped_over_canonical": 1.1719739909675528,
+              "loss_delta_swapped_minus_canonical": 0.1586894989013672,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 2,
+              "template_id": 11,
+              "A": "तारा",
+              "B": "किशोर",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 297.20290651866054,
+              "canonical_perplexity": 178.62555925258815,
+              "ppl_delta_swapped_minus_canonical": 118.5773472660724,
+              "ppl_ratio_swapped_over_canonical": 1.663831916116754,
+              "loss_delta_swapped_minus_canonical": 0.5091233253479004,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 3,
+              "template_id": 0,
+              "A": "ललित",
+              "B": "कमल",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 284.27942828553796,
+              "canonical_perplexity": 170.13397063826466,
+              "ppl_delta_swapped_minus_canonical": 114.1454576472733,
+              "ppl_ratio_swapped_over_canonical": 1.6709151453942555,
+              "loss_delta_swapped_minus_canonical": 0.513371467590332,
+              "swapped_tokens": 15,
+              "canonical_tokens": 15
+            },
+            {
+              "id": 4,
+              "template_id": 8,
+              "A": "लक्ष्मी",
+              "B": "यश",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 100.67696440515431,
+              "canonical_perplexity": 74.90418721935379,
+              "ppl_delta_swapped_minus_canonical": 25.77277718580052,
+              "ppl_ratio_swapped_over_canonical": 1.344076588273043,
+              "loss_delta_swapped_minus_canonical": 0.29570722579956055,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 5,
+              "template_id": 9,
+              "A": "अमित",
+              "B": "शिव",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 113.37965632255384,
+              "canonical_perplexity": 92.6967223761856,
+              "ppl_delta_swapped_minus_canonical": 20.682933946368237,
+              "ppl_ratio_swapped_over_canonical": 1.2231247601445057,
+              "loss_delta_swapped_minus_canonical": 0.20140886306762695,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 6,
+              "template_id": 2,
+              "A": "प्रकाश",
+              "B": "राज",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 65.89770898242358,
+              "canonical_perplexity": 50.45202536592714,
+              "ppl_delta_swapped_minus_canonical": 15.445683616496439,
+              "ppl_ratio_swapped_over_canonical": 1.3061459575600647,
+              "loss_delta_swapped_minus_canonical": 0.26708078384399414,
+              "swapped_tokens": 22,
+              "canonical_tokens": 22
+            },
+            {
+              "id": 7,
+              "template_id": 5,
+              "A": "अनु",
+              "B": "प्रकाश",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 282.4757862356101,
+              "canonical_perplexity": 194.51925926636503,
+              "ppl_delta_swapped_minus_canonical": 87.95652696924506,
+              "ppl_ratio_swapped_over_canonical": 1.4521738736872412,
+              "loss_delta_swapped_minus_canonical": 0.3730616569519043,
+              "swapped_tokens": 14,
+              "canonical_tokens": 14
+            },
+            {
+              "id": 8,
+              "template_id": 8,
+              "A": "हरि",
+              "B": "कृष्ण",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 125.23041652114371,
+              "canonical_perplexity": 92.52290944873346,
+              "ppl_delta_swapped_minus_canonical": 32.70750707241025,
+              "ppl_ratio_swapped_over_canonical": 1.3535071180455402,
+              "loss_delta_swapped_minus_canonical": 0.30269908905029297,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 9,
+              "template_id": 10,
+              "A": "राम",
+              "B": "अनु",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 117.47172677367053,
+              "canonical_perplexity": 102.48499486813505,
+              "ppl_delta_swapped_minus_canonical": 14.986731905535478,
+              "ppl_ratio_swapped_over_canonical": 1.1462334259256055,
+              "loss_delta_swapped_minus_canonical": 0.13648128509521484,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 10,
+              "template_id": 0,
+              "A": "ललित",
+              "B": "लक्ष्मी",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 146.31936776938656,
+              "canonical_perplexity": 95.14230029100032,
+              "ppl_delta_swapped_minus_canonical": 51.177067478386235,
+              "ppl_ratio_swapped_over_canonical": 1.5379002538498343,
+              "loss_delta_swapped_minus_canonical": 0.4304180145263672,
+              "swapped_tokens": 15,
+              "canonical_tokens": 15
+            },
+            {
+              "id": 11,
+              "template_id": 13,
+              "A": "हरि",
+              "B": "किशोर",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 151.65965072233678,
+              "canonical_perplexity": 195.51314461892673,
+              "ppl_delta_swapped_minus_canonical": -43.85349389658995,
+              "ppl_ratio_swapped_over_canonical": 0.7757005341913737,
+              "loss_delta_swapped_minus_canonical": -0.25398874282836914,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 12,
+              "template_id": 5,
+              "A": "श्याम",
+              "B": "नवीन",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 148.3282607036881,
+              "canonical_perplexity": 130.9848331678856,
+              "ppl_delta_swapped_minus_canonical": 17.343427535802505,
+              "ppl_ratio_swapped_over_canonical": 1.1324079064449633,
+              "loss_delta_swapped_minus_canonical": 0.12434625625610352,
+              "swapped_tokens": 14,
+              "canonical_tokens": 14
+            },
+            {
+              "id": 13,
+              "template_id": 11,
+              "A": "करण",
+              "B": "रिया",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 105.29309242582043,
+              "canonical_perplexity": 70.97892373437578,
+              "ppl_delta_swapped_minus_canonical": 34.31416869144465,
+              "ppl_ratio_swapped_over_canonical": 1.4834416596658815,
+              "loss_delta_swapped_minus_canonical": 0.3943648338317871,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 14,
+              "template_id": 11,
+              "A": "नवीन",
+              "B": "विक्रम",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 189.52648370310584,
+              "canonical_perplexity": 164.79149613388498,
+              "ppl_delta_swapped_minus_canonical": 24.734987569220863,
+              "ppl_ratio_swapped_over_canonical": 1.1500986892498681,
+              "loss_delta_swapped_minus_canonical": 0.1398477554321289,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 15,
+              "template_id": 14,
+              "A": "तारा",
+              "B": "तुलसी",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 189.43233814659786,
+              "canonical_perplexity": 204.55044288235794,
+              "ppl_delta_swapped_minus_canonical": -15.118104735760085,
+              "ppl_ratio_swapped_over_canonical": 0.9260910681848052,
+              "loss_delta_swapped_minus_canonical": -0.0767827033996582,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 16,
+              "template_id": 12,
+              "A": "विक्रम",
+              "B": "आनंद",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 32.90368418712744,
+              "canonical_perplexity": 32.90368418712744,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 17,
+              "template_id": 12,
+              "A": "कविता",
+              "B": "वेद",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 63.227660216820134,
+              "canonical_perplexity": 63.227660216820134,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 18,
+              "template_id": 3,
+              "A": "वेद",
+              "B": "रचना",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 129.21360460600212,
+              "canonical_perplexity": 92.60275399610205,
+              "ppl_delta_swapped_minus_canonical": 36.61085060990007,
+              "ppl_ratio_swapped_over_canonical": 1.3953537992125065,
+              "loss_delta_swapped_minus_canonical": 0.3331480026245117,
+              "swapped_tokens": 23,
+              "canonical_tokens": 23
+            },
+            {
+              "id": 19,
+              "template_id": 14,
+              "A": "रेखा",
+              "B": "रिया",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 100.8460411554739,
+              "canonical_perplexity": 95.81190912244311,
+              "ppl_delta_swapped_minus_canonical": 5.034132033030787,
+              "ppl_ratio_swapped_over_canonical": 1.0525418194788019,
+              "loss_delta_swapped_minus_canonical": 0.0512080192565918,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 20,
+              "template_id": 11,
+              "A": "गीता",
+              "B": "तारा",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 310.6445611179607,
+              "canonical_perplexity": 195.22258282148758,
+              "ppl_delta_swapped_minus_canonical": 115.4219782964731,
+              "ppl_ratio_swapped_over_canonical": 1.591232718204612,
+              "loss_delta_swapped_minus_canonical": 0.4645090103149414,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 21,
+              "template_id": 9,
+              "A": "राम",
+              "B": "हरि",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 200.20735401504282,
+              "canonical_perplexity": 120.59191967794797,
+              "ppl_delta_swapped_minus_canonical": 79.61543433709485,
+              "ppl_ratio_swapped_over_canonical": 1.66020538150247,
+              "loss_delta_swapped_minus_canonical": 0.5069413185119629,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 22,
+              "template_id": 1,
+              "A": "गोपाल",
+              "B": "आनंद",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 122.05258084836214,
+              "canonical_perplexity": 77.46017011417119,
+              "ppl_delta_swapped_minus_canonical": 44.59241073419095,
+              "ppl_ratio_swapped_over_canonical": 1.5756818074174723,
+              "loss_delta_swapped_minus_canonical": 0.45468807220458984,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 23,
+              "template_id": 10,
+              "A": "अनु",
+              "B": "सीमा",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 169.367679814616,
+              "canonical_perplexity": 117.69942360806085,
+              "ppl_delta_swapped_minus_canonical": 51.66825620655514,
+              "ppl_ratio_swapped_over_canonical": 1.4389847853342974,
+              "loss_delta_swapped_minus_canonical": 0.3639378547668457,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 24,
+              "template_id": 7,
+              "A": "विजय",
+              "B": "कृति",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 92.62677821202827,
+              "canonical_perplexity": 87.14028430389675,
+              "ppl_delta_swapped_minus_canonical": 5.486493908131521,
+              "ppl_ratio_swapped_over_canonical": 1.0629616250619254,
+              "loss_delta_swapped_minus_canonical": 0.061058998107910156,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 25,
+              "template_id": 1,
+              "A": "शिव",
+              "B": "गीता",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 61.18605218791556,
+              "canonical_perplexity": 44.197749774834115,
+              "ppl_delta_swapped_minus_canonical": 16.988302413081442,
+              "ppl_ratio_swapped_over_canonical": 1.3843703016472224,
+              "loss_delta_swapped_minus_canonical": 0.32524538040161133,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 26,
+              "template_id": 2,
+              "A": "अमित",
+              "B": "रेखा",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 57.5770717060266,
+              "canonical_perplexity": 45.6116103155451,
+              "ppl_delta_swapped_minus_canonical": 11.9654613904815,
+              "ppl_ratio_swapped_over_canonical": 1.2623336757396504,
+              "loss_delta_swapped_minus_canonical": 0.23296213150024414,
+              "swapped_tokens": 22,
+              "canonical_tokens": 22
+            },
+            {
+              "id": 27,
+              "template_id": 8,
+              "A": "रिया",
+              "B": "किशोर",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 77.0445415720136,
+              "canonical_perplexity": 60.176243085559385,
+              "ppl_delta_swapped_minus_canonical": 16.868298486454215,
+              "ppl_ratio_swapped_over_canonical": 1.2803149153474178,
+              "loss_delta_swapped_minus_canonical": 0.24710607528686523,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 28,
+              "template_id": 3,
+              "A": "श्याम",
+              "B": "जय",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 89.28293050114546,
+              "canonical_perplexity": 85.12062647999221,
+              "ppl_delta_swapped_minus_canonical": 4.162304021153247,
+              "ppl_ratio_swapped_over_canonical": 1.0488988884748351,
+              "loss_delta_swapped_minus_canonical": 0.047740936279296875,
+              "swapped_tokens": 23,
+              "canonical_tokens": 23
+            },
+            {
+              "id": 29,
+              "template_id": 14,
+              "A": "अमित",
+              "B": "कृति",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 159.6599446315702,
+              "canonical_perplexity": 170.15181933824593,
+              "ppl_delta_swapped_minus_canonical": -10.49187470667573,
+              "ppl_ratio_swapped_over_canonical": 0.9383381573733346,
+              "loss_delta_swapped_minus_canonical": -0.0636448860168457,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 30,
+              "template_id": 1,
+              "A": "शेखर",
+              "B": "राम",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 77.29970238358031,
+              "canonical_perplexity": 65.35608686730075,
+              "ppl_delta_swapped_minus_canonical": 11.943615516279564,
+              "ppl_ratio_swapped_over_canonical": 1.1827467966454284,
+              "loss_delta_swapped_minus_canonical": 0.16783952713012695,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 31,
+              "template_id": 9,
+              "A": "किशोर",
+              "B": "कमल",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 142.4192995475096,
+              "canonical_perplexity": 96.07350201154688,
+              "ppl_delta_swapped_minus_canonical": 46.34579753596273,
+              "ppl_ratio_swapped_over_canonical": 1.482399377201765,
+              "loss_delta_swapped_minus_canonical": 0.3936619758605957,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 32,
+              "template_id": 8,
+              "A": "जय",
+              "B": "गोपाल",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 148.3752318143625,
+              "canonical_perplexity": 110.88247109245398,
+              "ppl_delta_swapped_minus_canonical": 37.492760721908525,
+              "ppl_ratio_swapped_over_canonical": 1.3381306382561315,
+              "loss_delta_swapped_minus_canonical": 0.2912735939025879,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 33,
+              "template_id": 8,
+              "A": "सीमा",
+              "B": "लता",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 138.43591681972723,
+              "canonical_perplexity": 130.64350610616745,
+              "ppl_delta_swapped_minus_canonical": 7.792410713559775,
+              "ppl_ratio_swapped_over_canonical": 1.0596463685476052,
+              "loss_delta_swapped_minus_canonical": 0.057935237884521484,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 34,
+              "template_id": 11,
+              "A": "वेद",
+              "B": "यश",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 240.32398564658905,
+              "canonical_perplexity": 148.77012146091718,
+              "ppl_delta_swapped_minus_canonical": 91.55386418567187,
+              "ppl_ratio_swapped_over_canonical": 1.6154049165693773,
+              "loss_delta_swapped_minus_canonical": 0.4795856475830078,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 35,
+              "template_id": 7,
+              "A": "रमा",
+              "B": "कृति",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 185.34606742908124,
+              "canonical_perplexity": 116.56683660131425,
+              "ppl_delta_swapped_minus_canonical": 68.779230827767,
+              "ppl_ratio_swapped_over_canonical": 1.5900411543551447,
+              "loss_delta_swapped_minus_canonical": 0.4637598991394043,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 36,
+              "template_id": 5,
+              "A": "लता",
+              "B": "राहुल",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 308.7777213835368,
+              "canonical_perplexity": 207.5071874694878,
+              "ppl_delta_swapped_minus_canonical": 101.270533914049,
+              "ppl_ratio_swapped_over_canonical": 1.4880338611352437,
+              "loss_delta_swapped_minus_canonical": 0.39745569229125977,
+              "swapped_tokens": 14,
+              "canonical_tokens": 14
+            },
+            {
+              "id": 37,
+              "template_id": 0,
+              "A": "रिया",
+              "B": "करण",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 67.99416302035799,
+              "canonical_perplexity": 54.39666479646244,
+              "ppl_delta_swapped_minus_canonical": 13.597498223895549,
+              "ppl_ratio_swapped_over_canonical": 1.2499693368108817,
+              "loss_delta_swapped_minus_canonical": 0.22311902046203613,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 38,
+              "template_id": 0,
+              "A": "करण",
+              "B": "शंकर",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 242.65138552973193,
+              "canonical_perplexity": 162.0680053361677,
+              "ppl_delta_swapped_minus_canonical": 80.58338019356424,
+              "ppl_ratio_swapped_over_canonical": 1.497219546982238,
+              "loss_delta_swapped_minus_canonical": 0.4036097526550293,
+              "swapped_tokens": 15,
+              "canonical_tokens": 15
+            },
+            {
+              "id": 39,
+              "template_id": 7,
+              "A": "तारा",
+              "B": "राज",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 98.35064701728193,
+              "canonical_perplexity": 70.74793333952209,
+              "ppl_delta_swapped_minus_canonical": 27.602713677759837,
+              "ppl_ratio_swapped_over_canonical": 1.3901557596784253,
+              "loss_delta_swapped_minus_canonical": 0.32941579818725586,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 40,
+              "template_id": 3,
+              "A": "कविता",
+              "B": "रूप",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 112.36373010575186,
+              "canonical_perplexity": 87.69242032133113,
+              "ppl_delta_swapped_minus_canonical": 24.67130978442073,
+              "ppl_ratio_swapped_over_canonical": 1.281339136199203,
+              "loss_delta_swapped_minus_canonical": 0.24790573120117188,
+              "swapped_tokens": 23,
+              "canonical_tokens": 23
+            },
+            {
+              "id": 41,
+              "template_id": 6,
+              "A": "रमा",
+              "B": "प्रकाश",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 196.0212433350245,
+              "canonical_perplexity": 177.58156205922077,
+              "ppl_delta_swapped_minus_canonical": 18.439681275803736,
+              "ppl_ratio_swapped_over_canonical": 1.1038378143652907,
+              "loss_delta_swapped_minus_canonical": 0.09879302978515625,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 42,
+              "template_id": 0,
+              "A": "लक्ष्मी",
+              "B": "रिया",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 94.16905543315008,
+              "canonical_perplexity": 62.469286873691274,
+              "ppl_delta_swapped_minus_canonical": 31.699768559458803,
+              "ppl_ratio_swapped_over_canonical": 1.507445660834157,
+              "loss_delta_swapped_minus_canonical": 0.4104166030883789,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 43,
+              "template_id": 5,
+              "A": "विजय",
+              "B": "किशोर",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 448.58906006630787,
+              "canonical_perplexity": 298.8097750417031,
+              "ppl_delta_swapped_minus_canonical": 149.77928502460475,
+              "ppl_ratio_swapped_over_canonical": 1.5012529627041182,
+              "loss_delta_swapped_minus_canonical": 0.40630006790161133,
+              "swapped_tokens": 14,
+              "canonical_tokens": 14
+            },
+            {
+              "id": 44,
+              "template_id": 2,
+              "A": "मोहन",
+              "B": "सीमा",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 56.430646587428804,
+              "canonical_perplexity": 38.77784480692409,
+              "ppl_delta_swapped_minus_canonical": 17.652801780504717,
+              "ppl_ratio_swapped_over_canonical": 1.45522905845847,
+              "loss_delta_swapped_minus_canonical": 0.37516331672668457,
+              "swapped_tokens": 22,
+              "canonical_tokens": 22
+            },
+            {
+              "id": 45,
+              "template_id": 14,
+              "A": "रेखा",
+              "B": "करण",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 183.77001102587568,
+              "canonical_perplexity": 160.987768818765,
+              "ppl_delta_swapped_minus_canonical": 22.78224220711067,
+              "ppl_ratio_swapped_over_canonical": 1.1415153609138977,
+              "loss_delta_swapped_minus_canonical": 0.1323566436767578,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 46,
+              "template_id": 8,
+              "A": "किशोर",
+              "B": "अमित",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 66.57086258101212,
+              "canonical_perplexity": 55.15437807851606,
+              "ppl_delta_swapped_minus_canonical": 11.416484502496061,
+              "ppl_ratio_swapped_over_canonical": 1.2069914465583114,
+              "loss_delta_swapped_minus_canonical": 0.18813085556030273,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 47,
+              "template_id": 7,
+              "A": "कविता",
+              "B": "राज",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 90.90415223756362,
+              "canonical_perplexity": 78.39855052589678,
+              "ppl_delta_swapped_minus_canonical": 12.505601711666841,
+              "ppl_ratio_swapped_over_canonical": 1.15951317502402,
+              "loss_delta_swapped_minus_canonical": 0.14800024032592773,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 48,
+              "template_id": 6,
+              "A": "रूप",
+              "B": "विजय",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 95.72473293672961,
+              "canonical_perplexity": 118.22523672823223,
+              "ppl_delta_swapped_minus_canonical": -22.500503791502624,
+              "ppl_ratio_swapped_over_canonical": 0.8096810426083123,
+              "loss_delta_swapped_minus_canonical": -0.21111488342285156,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 49,
+              "template_id": 11,
+              "A": "वाणी",
+              "B": "तारा",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 334.73805256163666,
+              "canonical_perplexity": 265.24138973096933,
+              "ppl_delta_swapped_minus_canonical": 69.49666283066733,
+              "ppl_ratio_swapped_over_canonical": 1.2620128890938056,
+              "loss_delta_swapped_minus_canonical": 0.23270797729492188,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 50,
+              "template_id": 0,
+              "A": "गीता",
+              "B": "रानी",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 157.20218624714698,
+              "canonical_perplexity": 98.13403305878182,
+              "ppl_delta_swapped_minus_canonical": 59.06815318836516,
+              "ppl_ratio_swapped_over_canonical": 1.6019130300390652,
+              "loss_delta_swapped_minus_canonical": 0.47119855880737305,
+              "swapped_tokens": 15,
+              "canonical_tokens": 15
+            }
+          ]
+        }
+      },
+      "OLMo": {
+        "model_id": "allenai/OLMo-1B-hf",
+        "swapped": {
+          "corpus_perplexity": 5.2930345678429855,
+          "corpus_mean_loss": 1.6663917237147146,
+          "total_predicted_tokens": 3435,
+          "mean_sentence_perplexity": 5.478447089957311,
+          "std_sentence_perplexity": 1.0134295116734198,
+          "individual": [
+            {
+              "sentence_index": 1,
+              "perplexity": 4.595152772083749,
+              "loss": 1.5250020027160645,
+              "predicted_tokens": 77
+            },
+            {
+              "sentence_index": 2,
+              "perplexity": 5.076703638308862,
+              "loss": 1.624662160873413,
+              "predicted_tokens": 65
+            },
+            {
+              "sentence_index": 3,
+              "perplexity": 8.395245382592975,
+              "loss": 2.1276655197143555,
+              "predicted_tokens": 52
+            },
+            {
+              "sentence_index": 4,
+              "perplexity": 4.30499169801864,
+              "loss": 1.4597752094268799,
+              "predicted_tokens": 75
+            },
+            {
+              "sentence_index": 5,
+              "perplexity": 4.985162770397697,
+              "loss": 1.6064660549163818,
+              "predicted_tokens": 64
+            },
+            {
+              "sentence_index": 6,
+              "perplexity": 4.067387215861242,
+              "loss": 1.403000831604004,
+              "predicted_tokens": 85
+            },
+            {
+              "sentence_index": 7,
+              "perplexity": 5.669940307014632,
+              "loss": 1.7351785898208618,
+              "predicted_tokens": 57
+            },
+            {
+              "sentence_index": 8,
+              "perplexity": 5.316457735505486,
+              "loss": 1.6708072423934937,
+              "predicted_tokens": 67
+            },
+            {
+              "sentence_index": 9,
+              "perplexity": 7.893670677678621,
+              "loss": 2.06606125831604,
+              "predicted_tokens": 64
+            },
+            {
+              "sentence_index": 10,
+              "perplexity": 4.741992472928591,
+              "loss": 1.5564574003219604,
+              "predicted_tokens": 66
+            },
+            {
+              "sentence_index": 11,
+              "perplexity": 6.34194870893903,
+              "loss": 1.8471860885620117,
+              "predicted_tokens": 76
+            },
+            {
+              "sentence_index": 12,
+              "perplexity": 6.353487730487932,
+              "loss": 1.8490039110183716,
+              "predicted_tokens": 53
+            },
+            {
+              "sentence_index": 13,
+              "perplexity": 6.809006827559614,
+              "loss": 1.9182462692260742,
+              "predicted_tokens": 59
+            },
+            {
+              "sentence_index": 14,
+              "perplexity": 5.26771360530568,
+              "loss": 1.661596417427063,
+              "predicted_tokens": 64
+            },
+            {
+              "sentence_index": 15,
+              "perplexity": 4.883153548945863,
+              "loss": 1.5857912302017212,
+              "predicted_tokens": 70
+            },
+            {
+              "sentence_index": 16,
+              "perplexity": 5.077921427096563,
+              "loss": 1.6249020099639893,
+              "predicted_tokens": 71
+            },
+            {
+              "sentence_index": 17,
+              "perplexity": 6.248762188171829,
+              "loss": 1.832383394241333,
+              "predicted_tokens": 65
+            },
+            {
+              "sentence_index": 18,
+              "perplexity": 4.8028715873354795,
+              "loss": 1.5692139863967896,
+              "predicted_tokens": 88
+            },
+            {
+              "sentence_index": 19,
+              "perplexity": 4.781022661257838,
+              "loss": 1.5646544694900513,
+              "predicted_tokens": 70
+            },
+            {
+              "sentence_index": 20,
+              "perplexity": 5.074147958258135,
+              "loss": 1.6241586208343506,
+              "predicted_tokens": 63
+            },
+            {
+              "sentence_index": 21,
+              "perplexity": 7.077635029166552,
+              "loss": 1.9569398164749146,
+              "predicted_tokens": 55
+            },
+            {
+              "sentence_index": 22,
+              "perplexity": 4.246608310639615,
+              "loss": 1.4461206197738647,
+              "predicted_tokens": 82
+            },
+            {
+              "sentence_index": 23,
+              "perplexity": 6.533983466268019,
+              "loss": 1.8770167827606201,
+              "predicted_tokens": 69
+            },
+            {
+              "sentence_index": 24,
+              "perplexity": 4.9946219374549745,
+              "loss": 1.6083617210388184,
+              "predicted_tokens": 82
+            },
+            {
+              "sentence_index": 25,
+              "perplexity": 5.025134017013651,
+              "loss": 1.6144521236419678,
+              "predicted_tokens": 72
+            },
+            {
+              "sentence_index": 26,
+              "perplexity": 4.5410340257774235,
+              "loss": 1.5131547451019287,
+              "predicted_tokens": 81
+            },
+            {
+              "sentence_index": 27,
+              "perplexity": 4.745931349654495,
+              "loss": 1.5572876930236816,
+              "predicted_tokens": 70
+            },
+            {
+              "sentence_index": 28,
+              "perplexity": 5.212510774071209,
+              "loss": 1.6510616540908813,
+              "predicted_tokens": 86
+            },
+            {
+              "sentence_index": 29,
+              "perplexity": 5.70018585930328,
+              "loss": 1.7404987812042236,
+              "predicted_tokens": 67
+            },
+            {
+              "sentence_index": 30,
+              "perplexity": 4.523620862411633,
+              "loss": 1.5093127489089966,
+              "predicted_tokens": 75
+            },
+            {
+              "sentence_index": 31,
+              "perplexity": 6.100523842585316,
+              "loss": 1.8083746433258057,
+              "predicted_tokens": 58
+            },
+            {
+              "sentence_index": 32,
+              "perplexity": 5.532425703511862,
+              "loss": 1.7106263637542725,
+              "predicted_tokens": 61
+            },
+            {
+              "sentence_index": 33,
+              "perplexity": 5.938236737943013,
+              "loss": 1.7814122438430786,
+              "predicted_tokens": 61
+            },
+            {
+              "sentence_index": 34,
+              "perplexity": 5.999838484809789,
+              "loss": 1.7917325496673584,
+              "predicted_tokens": 57
+            },
+            {
+              "sentence_index": 35,
+              "perplexity": 6.238046909400277,
+              "loss": 1.8306671380996704,
+              "predicted_tokens": 73
+            },
+            {
+              "sentence_index": 36,
+              "perplexity": 7.518591403618971,
+              "loss": 2.017378807067871,
+              "predicted_tokens": 54
+            },
+            {
+              "sentence_index": 37,
+              "perplexity": 7.327035128481679,
+              "loss": 1.9915709495544434,
+              "predicted_tokens": 54
+            },
+            {
+              "sentence_index": 38,
+              "perplexity": 7.139994959972846,
+              "loss": 1.965712070465088,
+              "predicted_tokens": 54
+            },
+            {
+              "sentence_index": 39,
+              "perplexity": 4.331050232392649,
+              "loss": 1.4658100605010986,
+              "predicted_tokens": 88
+            },
+            {
+              "sentence_index": 40,
+              "perplexity": 4.772938602393097,
+              "loss": 1.5629621744155884,
+              "predicted_tokens": 87
+            },
+            {
+              "sentence_index": 41,
+              "perplexity": 4.450826436990211,
+              "loss": 1.4930897951126099,
+              "predicted_tokens": 79
+            },
+            {
+              "sentence_index": 42,
+              "perplexity": 4.635560918810584,
+              "loss": 1.533757209777832,
+              "predicted_tokens": 65
+            },
+            {
+              "sentence_index": 43,
+              "perplexity": 5.398632405538922,
+              "loss": 1.6861456632614136,
+              "predicted_tokens": 57
+            },
+            {
+              "sentence_index": 44,
+              "perplexity": 4.609923927333328,
+              "loss": 1.5282113552093506,
+              "predicted_tokens": 78
+            },
+            {
+              "sentence_index": 45,
+              "perplexity": 5.66375438010373,
+              "loss": 1.7340869903564453,
+              "predicted_tokens": 68
+            },
+            {
+              "sentence_index": 46,
+              "perplexity": 4.703648166387183,
+              "loss": 1.5483384132385254,
+              "predicted_tokens": 68
+            },
+            {
+              "sentence_index": 47,
+              "perplexity": 4.835692252299302,
+              "loss": 1.5760242938995361,
+              "predicted_tokens": 80
+            },
+            {
+              "sentence_index": 48,
+              "perplexity": 4.457353636619001,
+              "loss": 1.4945552349090576,
+              "predicted_tokens": 80
+            },
+            {
+              "sentence_index": 49,
+              "perplexity": 5.406038502950291,
+              "loss": 1.6875165700912476,
+              "predicted_tokens": 63
+            },
+            {
+              "sentence_index": 50,
+              "perplexity": 5.57423532021411,
+              "loss": 1.7181551456451416,
+              "predicted_tokens": 60
+            }
+          ]
+        },
+        "canonical": {
+          "corpus_perplexity": 5.108761768733255,
+          "corpus_mean_loss": 1.630957059536125,
+          "total_predicted_tokens": 3428,
+          "mean_sentence_perplexity": 5.279296929519024,
+          "std_sentence_perplexity": 0.9381987591285248,
+          "individual": [
+            {
+              "sentence_index": 1,
+              "perplexity": 4.311216116930039,
+              "loss": 1.4612200260162354,
+              "predicted_tokens": 77
+            },
+            {
+              "sentence_index": 2,
+              "perplexity": 4.854169554086217,
+              "loss": 1.5798380374908447,
+              "predicted_tokens": 65
+            },
+            {
+              "sentence_index": 3,
+              "perplexity": 7.607437641022378,
+              "loss": 2.0291264057159424,
+              "predicted_tokens": 52
+            },
+            {
+              "sentence_index": 4,
+              "perplexity": 4.215379645068037,
+              "loss": 1.4387396574020386,
+              "predicted_tokens": 75
+            },
+            {
+              "sentence_index": 5,
+              "perplexity": 4.953892899192914,
+              "loss": 1.6001737117767334,
+              "predicted_tokens": 64
+            },
+            {
+              "sentence_index": 6,
+              "perplexity": 3.9030999903701837,
+              "loss": 1.3617711067199707,
+              "predicted_tokens": 85
+            },
+            {
+              "sentence_index": 7,
+              "perplexity": 5.695443458698492,
+              "loss": 1.73966646194458,
+              "predicted_tokens": 57
+            },
+            {
+              "sentence_index": 8,
+              "perplexity": 5.014982723602595,
+              "loss": 1.6124299764633179,
+              "predicted_tokens": 67
+            },
+            {
+              "sentence_index": 9,
+              "perplexity": 7.353203161444087,
+              "loss": 1.995136022567749,
+              "predicted_tokens": 64
+            },
+            {
+              "sentence_index": 10,
+              "perplexity": 4.600141416176438,
+              "loss": 1.5260870456695557,
+              "predicted_tokens": 66
+            },
+            {
+              "sentence_index": 11,
+              "perplexity": 6.404497450192193,
+              "loss": 1.857000470161438,
+              "predicted_tokens": 75
+            },
+            {
+              "sentence_index": 12,
+              "perplexity": 5.949418511615481,
+              "loss": 1.7832934856414795,
+              "predicted_tokens": 53
+            },
+            {
+              "sentence_index": 13,
+              "perplexity": 6.628325291013785,
+              "loss": 1.8913521766662598,
+              "predicted_tokens": 59
+            },
+            {
+              "sentence_index": 14,
+              "perplexity": 5.059883069572983,
+              "loss": 1.6213433742523193,
+              "predicted_tokens": 64
+            },
+            {
+              "sentence_index": 15,
+              "perplexity": 4.971539773336112,
+              "loss": 1.6037296056747437,
+              "predicted_tokens": 69
+            },
+            {
+              "sentence_index": 16,
+              "perplexity": 5.077921427096563,
+              "loss": 1.6249020099639893,
+              "predicted_tokens": 71
+            },
+            {
+              "sentence_index": 17,
+              "perplexity": 6.248762188171829,
+              "loss": 1.832383394241333,
+              "predicted_tokens": 65
+            },
+            {
+              "sentence_index": 18,
+              "perplexity": 4.6423092273158435,
+              "loss": 1.5352119207382202,
+              "predicted_tokens": 88
+            },
+            {
+              "sentence_index": 19,
+              "perplexity": 4.897719429883396,
+              "loss": 1.5887696743011475,
+              "predicted_tokens": 69
+            },
+            {
+              "sentence_index": 20,
+              "perplexity": 4.7553934727297476,
+              "loss": 1.559279441833496,
+              "predicted_tokens": 63
+            },
+            {
+              "sentence_index": 21,
+              "perplexity": 6.6559901924908464,
+              "loss": 1.8955172300338745,
+              "predicted_tokens": 55
+            },
+            {
+              "sentence_index": 22,
+              "perplexity": 4.036917267243599,
+              "loss": 1.3954813480377197,
+              "predicted_tokens": 82
+            },
+            {
+              "sentence_index": 23,
+              "perplexity": 6.546478233901012,
+              "loss": 1.878927230834961,
+              "predicted_tokens": 69
+            },
+            {
+              "sentence_index": 24,
+              "perplexity": 4.732802432748598,
+              "loss": 1.5545175075531006,
+              "predicted_tokens": 82
+            },
+            {
+              "sentence_index": 25,
+              "perplexity": 4.860296240954237,
+              "loss": 1.5810993909835815,
+              "predicted_tokens": 72
+            },
+            {
+              "sentence_index": 26,
+              "perplexity": 4.1768657226274275,
+              "loss": 1.4295611381530762,
+              "predicted_tokens": 81
+            },
+            {
+              "sentence_index": 27,
+              "perplexity": 4.4904584172697595,
+              "loss": 1.5019547939300537,
+              "predicted_tokens": 70
+            },
+            {
+              "sentence_index": 28,
+              "perplexity": 4.863325669083392,
+              "loss": 1.5817224979400635,
+              "predicted_tokens": 86
+            },
+            {
+              "sentence_index": 29,
+              "perplexity": 5.748514885796933,
+              "loss": 1.7489415407180786,
+              "predicted_tokens": 66
+            },
+            {
+              "sentence_index": 30,
+              "perplexity": 4.342136481015322,
+              "loss": 1.4683665037155151,
+              "predicted_tokens": 75
+            },
+            {
+              "sentence_index": 31,
+              "perplexity": 5.694628098395763,
+              "loss": 1.7395232915878296,
+              "predicted_tokens": 58
+            },
+            {
+              "sentence_index": 32,
+              "perplexity": 5.238804686215669,
+              "loss": 1.6560933589935303,
+              "predicted_tokens": 61
+            },
+            {
+              "sentence_index": 33,
+              "perplexity": 5.504268314995687,
+              "loss": 1.7055238485336304,
+              "predicted_tokens": 61
+            },
+            {
+              "sentence_index": 34,
+              "perplexity": 5.832966615733798,
+              "loss": 1.7635257244110107,
+              "predicted_tokens": 57
+            },
+            {
+              "sentence_index": 35,
+              "perplexity": 5.996790921171791,
+              "loss": 1.791224479675293,
+              "predicted_tokens": 73
+            },
+            {
+              "sentence_index": 36,
+              "perplexity": 6.861961428050579,
+              "loss": 1.9259933233261108,
+              "predicted_tokens": 54
+            },
+            {
+              "sentence_index": 37,
+              "perplexity": 6.891730194452536,
+              "loss": 1.9303221702575684,
+              "predicted_tokens": 54
+            },
+            {
+              "sentence_index": 38,
+              "perplexity": 7.1530832160126145,
+              "loss": 1.9675434827804565,
+              "predicted_tokens": 54
+            },
+            {
+              "sentence_index": 39,
+              "perplexity": 4.114251180117153,
+              "loss": 1.414456844329834,
+              "predicted_tokens": 88
+            },
+            {
+              "sentence_index": 40,
+              "perplexity": 4.582740873591282,
+              "loss": 1.5222972631454468,
+              "predicted_tokens": 87
+            },
+            {
+              "sentence_index": 41,
+              "perplexity": 4.440761592135132,
+              "loss": 1.490825891494751,
+              "predicted_tokens": 78
+            },
+            {
+              "sentence_index": 42,
+              "perplexity": 4.405007455708006,
+              "loss": 1.4827419519424438,
+              "predicted_tokens": 65
+            },
+            {
+              "sentence_index": 43,
+              "perplexity": 5.112257207734648,
+              "loss": 1.6316410303115845,
+              "predicted_tokens": 57
+            },
+            {
+              "sentence_index": 44,
+              "perplexity": 4.516702629335727,
+              "loss": 1.507782220840454,
+              "predicted_tokens": 78
+            },
+            {
+              "sentence_index": 45,
+              "perplexity": 5.7973614804426274,
+              "loss": 1.7574028968811035,
+              "predicted_tokens": 67
+            },
+            {
+              "sentence_index": 46,
+              "perplexity": 4.636515913292936,
+              "loss": 1.5339632034301758,
+              "predicted_tokens": 68
+            },
+            {
+              "sentence_index": 47,
+              "perplexity": 4.640880551913397,
+              "loss": 1.5349041223526,
+              "predicted_tokens": 80
+            },
+            {
+              "sentence_index": 48,
+              "perplexity": 4.554188497929059,
+              "loss": 1.5160473585128784,
+              "predicted_tokens": 79
+            },
+            {
+              "sentence_index": 49,
+              "perplexity": 5.114181535747837,
+              "loss": 1.6320173740386963,
+              "predicted_tokens": 63
+            },
+            {
+              "sentence_index": 50,
+              "perplexity": 5.277242092324436,
+              "loss": 1.6634036302566528,
+              "predicted_tokens": 60
+            }
+          ]
+        },
+        "corpus_ppl_delta_swapped_minus_canonical": 0.18427279910973038,
+        "corpus_ppl_ratio_swapped_over_canonical": 1.0360699534351985,
+        "pairwise_analysis": {
+          "mean_pairwise_ppl_delta": 0.19915016043828707,
+          "std_pairwise_ppl_delta": 0.1943418750595214,
+          "mean_pairwise_ppl_ratio": 1.0373252753247528,
+          "mean_pairwise_loss_delta": 0.03615540742874145,
+          "swapped_higher_ppl_count": 39,
+          "canonical_higher_ppl_count": 9,
+          "ties": 2,
+          "swapped_higher_ppl_fraction": 0.78,
+          "pair_results": [
+            {
+              "id": 1,
+              "template_id": 10,
+              "A": "राहुल",
+              "B": "कृष्ण",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.595152772083749,
+              "canonical_perplexity": 4.311216116930039,
+              "ppl_delta_swapped_minus_canonical": 0.2839366551537097,
+              "ppl_ratio_swapped_over_canonical": 1.065859991114502,
+              "loss_delta_swapped_minus_canonical": 0.0637819766998291,
+              "swapped_tokens": 77,
+              "canonical_tokens": 77
+            },
+            {
+              "id": 2,
+              "template_id": 11,
+              "A": "तारा",
+              "B": "किशोर",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.076703638308862,
+              "canonical_perplexity": 4.854169554086217,
+              "ppl_delta_swapped_minus_canonical": 0.2225340842226453,
+              "ppl_ratio_swapped_over_canonical": 1.0458439042442012,
+              "loss_delta_swapped_minus_canonical": 0.04482412338256836,
+              "swapped_tokens": 65,
+              "canonical_tokens": 65
+            },
+            {
+              "id": 3,
+              "template_id": 0,
+              "A": "ललित",
+              "B": "कमल",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 8.395245382592975,
+              "canonical_perplexity": 7.607437641022378,
+              "ppl_delta_swapped_minus_canonical": 0.7878077415705969,
+              "ppl_ratio_swapped_over_canonical": 1.1035575680992007,
+              "loss_delta_swapped_minus_canonical": 0.09853911399841309,
+              "swapped_tokens": 52,
+              "canonical_tokens": 52
+            },
+            {
+              "id": 4,
+              "template_id": 8,
+              "A": "लक्ष्मी",
+              "B": "यश",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.30499169801864,
+              "canonical_perplexity": 4.215379645068037,
+              "ppl_delta_swapped_minus_canonical": 0.08961205295060282,
+              "ppl_ratio_swapped_over_canonical": 1.0212583587946695,
+              "loss_delta_swapped_minus_canonical": 0.02103555202484131,
+              "swapped_tokens": 75,
+              "canonical_tokens": 75
+            },
+            {
+              "id": 5,
+              "template_id": 9,
+              "A": "अमित",
+              "B": "शिव",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.985162770397697,
+              "canonical_perplexity": 4.953892899192914,
+              "ppl_delta_swapped_minus_canonical": 0.03126987120478297,
+              "ppl_ratio_swapped_over_canonical": 1.0063121815188774,
+              "loss_delta_swapped_minus_canonical": 0.0062923431396484375,
+              "swapped_tokens": 64,
+              "canonical_tokens": 64
+            },
+            {
+              "id": 6,
+              "template_id": 2,
+              "A": "प्रकाश",
+              "B": "राज",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.067387215861242,
+              "canonical_perplexity": 3.9030999903701837,
+              "ppl_delta_swapped_minus_canonical": 0.16428722549105812,
+              "ppl_ratio_swapped_over_canonical": 1.0420914723928136,
+              "loss_delta_swapped_minus_canonical": 0.0412297248840332,
+              "swapped_tokens": 85,
+              "canonical_tokens": 85
+            },
+            {
+              "id": 7,
+              "template_id": 5,
+              "A": "अनु",
+              "B": "प्रकाश",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 5.669940307014632,
+              "canonical_perplexity": 5.695443458698492,
+              "ppl_delta_swapped_minus_canonical": -0.02550315168385975,
+              "ppl_ratio_swapped_over_canonical": 0.9955221833262325,
+              "loss_delta_swapped_minus_canonical": -0.004487872123718262,
+              "swapped_tokens": 57,
+              "canonical_tokens": 57
+            },
+            {
+              "id": 8,
+              "template_id": 8,
+              "A": "हरि",
+              "B": "कृष्ण",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.316457735505486,
+              "canonical_perplexity": 5.014982723602595,
+              "ppl_delta_swapped_minus_canonical": 0.30147501190289105,
+              "ppl_ratio_swapped_over_canonical": 1.0601148654977461,
+              "loss_delta_swapped_minus_canonical": 0.05837726593017578,
+              "swapped_tokens": 67,
+              "canonical_tokens": 67
+            },
+            {
+              "id": 9,
+              "template_id": 10,
+              "A": "राम",
+              "B": "अनु",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 7.893670677678621,
+              "canonical_perplexity": 7.353203161444087,
+              "ppl_delta_swapped_minus_canonical": 0.5404675162345338,
+              "ppl_ratio_swapped_over_canonical": 1.0735009633717767,
+              "loss_delta_swapped_minus_canonical": 0.07092523574829102,
+              "swapped_tokens": 64,
+              "canonical_tokens": 64
+            },
+            {
+              "id": 10,
+              "template_id": 0,
+              "A": "ललित",
+              "B": "लक्ष्मी",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 4.741992472928591,
+              "canonical_perplexity": 4.600141416176438,
+              "ppl_delta_swapped_minus_canonical": 0.14185105675215315,
+              "ppl_ratio_swapped_over_canonical": 1.0308362382628788,
+              "loss_delta_swapped_minus_canonical": 0.030370354652404785,
+              "swapped_tokens": 66,
+              "canonical_tokens": 66
+            },
+            {
+              "id": 11,
+              "template_id": 13,
+              "A": "हरि",
+              "B": "किशोर",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 6.34194870893903,
+              "canonical_perplexity": 6.404497450192193,
+              "ppl_delta_swapped_minus_canonical": -0.06254874125316334,
+              "ppl_ratio_swapped_over_canonical": 0.990233622272535,
+              "loss_delta_swapped_minus_canonical": -0.00981438159942627,
+              "swapped_tokens": 76,
+              "canonical_tokens": 75
+            },
+            {
+              "id": 12,
+              "template_id": 5,
+              "A": "श्याम",
+              "B": "नवीन",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 6.353487730487932,
+              "canonical_perplexity": 5.949418511615481,
+              "ppl_delta_swapped_minus_canonical": 0.4040692188724506,
+              "ppl_ratio_swapped_over_canonical": 1.0679174305999077,
+              "loss_delta_swapped_minus_canonical": 0.06571042537689209,
+              "swapped_tokens": 53,
+              "canonical_tokens": 53
+            },
+            {
+              "id": 13,
+              "template_id": 11,
+              "A": "करण",
+              "B": "रिया",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 6.809006827559614,
+              "canonical_perplexity": 6.628325291013785,
+              "ppl_delta_swapped_minus_canonical": 0.18068153654582897,
+              "ppl_ratio_swapped_over_canonical": 1.0272590026308432,
+              "loss_delta_swapped_minus_canonical": 0.026894092559814453,
+              "swapped_tokens": 59,
+              "canonical_tokens": 59
+            },
+            {
+              "id": 14,
+              "template_id": 11,
+              "A": "नवीन",
+              "B": "विक्रम",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.26771360530568,
+              "canonical_perplexity": 5.059883069572983,
+              "ppl_delta_swapped_minus_canonical": 0.20783053573269683,
+              "ppl_ratio_swapped_over_canonical": 1.0410741775798065,
+              "loss_delta_swapped_minus_canonical": 0.04025304317474365,
+              "swapped_tokens": 64,
+              "canonical_tokens": 64
+            },
+            {
+              "id": 15,
+              "template_id": 14,
+              "A": "तारा",
+              "B": "तुलसी",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.883153548945863,
+              "canonical_perplexity": 4.971539773336112,
+              "ppl_delta_swapped_minus_canonical": -0.08838622439024935,
+              "ppl_ratio_swapped_over_canonical": 0.9822215594322926,
+              "loss_delta_swapped_minus_canonical": -0.01793837547302246,
+              "swapped_tokens": 70,
+              "canonical_tokens": 69
+            },
+            {
+              "id": 16,
+              "template_id": 12,
+              "A": "विक्रम",
+              "B": "आनंद",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 5.077921427096563,
+              "canonical_perplexity": 5.077921427096563,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 71,
+              "canonical_tokens": 71
+            },
+            {
+              "id": 17,
+              "template_id": 12,
+              "A": "कविता",
+              "B": "वेद",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 6.248762188171829,
+              "canonical_perplexity": 6.248762188171829,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 65,
+              "canonical_tokens": 65
+            },
+            {
+              "id": 18,
+              "template_id": 3,
+              "A": "वेद",
+              "B": "रचना",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.8028715873354795,
+              "canonical_perplexity": 4.6423092273158435,
+              "ppl_delta_swapped_minus_canonical": 0.16056236001963597,
+              "ppl_ratio_swapped_over_canonical": 1.0345867438288836,
+              "loss_delta_swapped_minus_canonical": 0.034002065658569336,
+              "swapped_tokens": 88,
+              "canonical_tokens": 88
+            },
+            {
+              "id": 19,
+              "template_id": 14,
+              "A": "रेखा",
+              "B": "रिया",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.781022661257838,
+              "canonical_perplexity": 4.897719429883396,
+              "ppl_delta_swapped_minus_canonical": -0.116696768625558,
+              "ppl_ratio_swapped_over_canonical": 0.9761732434255965,
+              "loss_delta_swapped_minus_canonical": -0.02411520481109619,
+              "swapped_tokens": 70,
+              "canonical_tokens": 69
+            },
+            {
+              "id": 20,
+              "template_id": 11,
+              "A": "गीता",
+              "B": "तारा",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.074147958258135,
+              "canonical_perplexity": 4.7553934727297476,
+              "ppl_delta_swapped_minus_canonical": 0.3187544855283875,
+              "ppl_ratio_swapped_over_canonical": 1.0670300969533468,
+              "loss_delta_swapped_minus_canonical": 0.06487917900085449,
+              "swapped_tokens": 63,
+              "canonical_tokens": 63
+            },
+            {
+              "id": 21,
+              "template_id": 9,
+              "A": "राम",
+              "B": "हरि",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 7.077635029166552,
+              "canonical_perplexity": 6.6559901924908464,
+              "ppl_delta_swapped_minus_canonical": 0.4216448366757053,
+              "ppl_ratio_swapped_over_canonical": 1.063348175775769,
+              "loss_delta_swapped_minus_canonical": 0.06142258644104004,
+              "swapped_tokens": 55,
+              "canonical_tokens": 55
+            },
+            {
+              "id": 22,
+              "template_id": 1,
+              "A": "गोपाल",
+              "B": "आनंद",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.246608310639615,
+              "canonical_perplexity": 4.036917267243599,
+              "ppl_delta_swapped_minus_canonical": 0.20969104339601596,
+              "ppl_ratio_swapped_over_canonical": 1.0519433591313583,
+              "loss_delta_swapped_minus_canonical": 0.05063927173614502,
+              "swapped_tokens": 82,
+              "canonical_tokens": 82
+            },
+            {
+              "id": 23,
+              "template_id": 10,
+              "A": "अनु",
+              "B": "सीमा",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 6.533983466268019,
+              "canonical_perplexity": 6.546478233901012,
+              "ppl_delta_swapped_minus_canonical": -0.012494767632992954,
+              "ppl_ratio_swapped_over_canonical": 0.998091375670007,
+              "loss_delta_swapped_minus_canonical": -0.0019104480743408203,
+              "swapped_tokens": 69,
+              "canonical_tokens": 69
+            },
+            {
+              "id": 24,
+              "template_id": 7,
+              "A": "विजय",
+              "B": "कृति",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 4.9946219374549745,
+              "canonical_perplexity": 4.732802432748598,
+              "ppl_delta_swapped_minus_canonical": 0.26181950470637627,
+              "ppl_ratio_swapped_over_canonical": 1.0553201846953757,
+              "loss_delta_swapped_minus_canonical": 0.05384421348571777,
+              "swapped_tokens": 82,
+              "canonical_tokens": 82
+            },
+            {
+              "id": 25,
+              "template_id": 1,
+              "A": "शिव",
+              "B": "गीता",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.025134017013651,
+              "canonical_perplexity": 4.860296240954237,
+              "ppl_delta_swapped_minus_canonical": 0.1648377760594144,
+              "ppl_ratio_swapped_over_canonical": 1.0339151705754979,
+              "loss_delta_swapped_minus_canonical": 0.03335273265838623,
+              "swapped_tokens": 72,
+              "canonical_tokens": 72
+            },
+            {
+              "id": 26,
+              "template_id": 2,
+              "A": "अमित",
+              "B": "रेखा",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 4.5410340257774235,
+              "canonical_perplexity": 4.1768657226274275,
+              "ppl_delta_swapped_minus_canonical": 0.36416830314999604,
+              "ppl_ratio_swapped_over_canonical": 1.0871869787858344,
+              "loss_delta_swapped_minus_canonical": 0.08359360694885254,
+              "swapped_tokens": 81,
+              "canonical_tokens": 81
+            },
+            {
+              "id": 27,
+              "template_id": 8,
+              "A": "रिया",
+              "B": "किशोर",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 4.745931349654495,
+              "canonical_perplexity": 4.4904584172697595,
+              "ppl_delta_swapped_minus_canonical": 0.2554729323847358,
+              "ppl_ratio_swapped_over_canonical": 1.0568923946388675,
+              "loss_delta_swapped_minus_canonical": 0.05533289909362793,
+              "swapped_tokens": 70,
+              "canonical_tokens": 70
+            },
+            {
+              "id": 28,
+              "template_id": 3,
+              "A": "श्याम",
+              "B": "जय",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 5.212510774071209,
+              "canonical_perplexity": 4.863325669083392,
+              "ppl_delta_swapped_minus_canonical": 0.34918510498781696,
+              "ppl_ratio_swapped_over_canonical": 1.0717996549578448,
+              "loss_delta_swapped_minus_canonical": 0.06933915615081787,
+              "swapped_tokens": 86,
+              "canonical_tokens": 86
+            },
+            {
+              "id": 29,
+              "template_id": 14,
+              "A": "अमित",
+              "B": "कृति",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.70018585930328,
+              "canonical_perplexity": 5.748514885796933,
+              "ppl_delta_swapped_minus_canonical": -0.04832902649365245,
+              "ppl_ratio_swapped_over_canonical": 0.9915927804913472,
+              "loss_delta_swapped_minus_canonical": -0.00844275951385498,
+              "swapped_tokens": 67,
+              "canonical_tokens": 66
+            },
+            {
+              "id": 30,
+              "template_id": 1,
+              "A": "शेखर",
+              "B": "राम",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.523620862411633,
+              "canonical_perplexity": 4.342136481015322,
+              "ppl_delta_swapped_minus_canonical": 0.18148438139631118,
+              "ppl_ratio_swapped_over_canonical": 1.0417961024923552,
+              "loss_delta_swapped_minus_canonical": 0.040946245193481445,
+              "swapped_tokens": 75,
+              "canonical_tokens": 75
+            },
+            {
+              "id": 31,
+              "template_id": 9,
+              "A": "किशोर",
+              "B": "कमल",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 6.100523842585316,
+              "canonical_perplexity": 5.694628098395763,
+              "ppl_delta_swapped_minus_canonical": 0.40589574418955277,
+              "ppl_ratio_swapped_over_canonical": 1.0712769538547913,
+              "loss_delta_swapped_minus_canonical": 0.06885135173797607,
+              "swapped_tokens": 58,
+              "canonical_tokens": 58
+            },
+            {
+              "id": 32,
+              "template_id": 8,
+              "A": "जय",
+              "B": "गोपाल",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.532425703511862,
+              "canonical_perplexity": 5.238804686215669,
+              "ppl_delta_swapped_minus_canonical": 0.29362101729619283,
+              "ppl_ratio_swapped_over_canonical": 1.0560473304280207,
+              "loss_delta_swapped_minus_canonical": 0.05453300476074219,
+              "swapped_tokens": 61,
+              "canonical_tokens": 61
+            },
+            {
+              "id": 33,
+              "template_id": 8,
+              "A": "सीमा",
+              "B": "लता",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 5.938236737943013,
+              "canonical_perplexity": 5.504268314995687,
+              "ppl_delta_swapped_minus_canonical": 0.4339684229473262,
+              "ppl_ratio_swapped_over_canonical": 1.078842163592395,
+              "loss_delta_swapped_minus_canonical": 0.07588839530944824,
+              "swapped_tokens": 61,
+              "canonical_tokens": 61
+            },
+            {
+              "id": 34,
+              "template_id": 11,
+              "A": "वेद",
+              "B": "यश",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 5.999838484809789,
+              "canonical_perplexity": 5.832966615733798,
+              "ppl_delta_swapped_minus_canonical": 0.16687186907599116,
+              "ppl_ratio_swapped_over_canonical": 1.0286084046196788,
+              "loss_delta_swapped_minus_canonical": 0.028206825256347656,
+              "swapped_tokens": 57,
+              "canonical_tokens": 57
+            },
+            {
+              "id": 35,
+              "template_id": 7,
+              "A": "रमा",
+              "B": "कृति",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 6.238046909400277,
+              "canonical_perplexity": 5.996790921171791,
+              "ppl_delta_swapped_minus_canonical": 0.24125598822848549,
+              "ppl_ratio_swapped_over_canonical": 1.040230848698881,
+              "loss_delta_swapped_minus_canonical": 0.03944265842437744,
+              "swapped_tokens": 73,
+              "canonical_tokens": 73
+            },
+            {
+              "id": 36,
+              "template_id": 5,
+              "A": "लता",
+              "B": "राहुल",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 7.518591403618971,
+              "canonical_perplexity": 6.861961428050579,
+              "ppl_delta_swapped_minus_canonical": 0.656629975568392,
+              "ppl_ratio_swapped_over_canonical": 1.0956912950405397,
+              "loss_delta_swapped_minus_canonical": 0.09138548374176025,
+              "swapped_tokens": 54,
+              "canonical_tokens": 54
+            },
+            {
+              "id": 37,
+              "template_id": 0,
+              "A": "रिया",
+              "B": "करण",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 7.327035128481679,
+              "canonical_perplexity": 6.891730194452536,
+              "ppl_delta_swapped_minus_canonical": 0.4353049340291433,
+              "ppl_ratio_swapped_over_canonical": 1.0631633743264557,
+              "loss_delta_swapped_minus_canonical": 0.061248779296875,
+              "swapped_tokens": 54,
+              "canonical_tokens": 54
+            },
+            {
+              "id": 38,
+              "template_id": 0,
+              "A": "करण",
+              "B": "शंकर",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 7.139994959972846,
+              "canonical_perplexity": 7.1530832160126145,
+              "ppl_delta_swapped_minus_canonical": -0.013088256039768709,
+              "ppl_ratio_swapped_over_canonical": 0.9981702636968531,
+              "loss_delta_swapped_minus_canonical": -0.0018314123153686523,
+              "swapped_tokens": 54,
+              "canonical_tokens": 54
+            },
+            {
+              "id": 39,
+              "template_id": 7,
+              "A": "तारा",
+              "B": "राज",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 4.331050232392649,
+              "canonical_perplexity": 4.114251180117153,
+              "ppl_delta_swapped_minus_canonical": 0.21679905227549678,
+              "ppl_ratio_swapped_over_canonical": 1.0526946563990105,
+              "loss_delta_swapped_minus_canonical": 0.05135321617126465,
+              "swapped_tokens": 88,
+              "canonical_tokens": 88
+            },
+            {
+              "id": 40,
+              "template_id": 3,
+              "A": "कविता",
+              "B": "रूप",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.772938602393097,
+              "canonical_perplexity": 4.582740873591282,
+              "ppl_delta_swapped_minus_canonical": 0.19019772880181485,
+              "ppl_ratio_swapped_over_canonical": 1.0415030511320982,
+              "loss_delta_swapped_minus_canonical": 0.0406649112701416,
+              "swapped_tokens": 87,
+              "canonical_tokens": 87
+            },
+            {
+              "id": 41,
+              "template_id": 6,
+              "A": "रमा",
+              "B": "प्रकाश",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 4.450826436990211,
+              "canonical_perplexity": 4.440761592135132,
+              "ppl_delta_swapped_minus_canonical": 0.01006484485507908,
+              "ppl_ratio_swapped_over_canonical": 1.0022664681825983,
+              "loss_delta_swapped_minus_canonical": 0.0022639036178588867,
+              "swapped_tokens": 79,
+              "canonical_tokens": 78
+            },
+            {
+              "id": 42,
+              "template_id": 0,
+              "A": "लक्ष्मी",
+              "B": "रिया",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.635560918810584,
+              "canonical_perplexity": 4.405007455708006,
+              "ppl_delta_swapped_minus_canonical": 0.23055346310257807,
+              "ppl_ratio_swapped_over_canonical": 1.0523389495751765,
+              "loss_delta_swapped_minus_canonical": 0.051015257835388184,
+              "swapped_tokens": 65,
+              "canonical_tokens": 65
+            },
+            {
+              "id": 43,
+              "template_id": 5,
+              "A": "विजय",
+              "B": "किशोर",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 5.398632405538922,
+              "canonical_perplexity": 5.112257207734648,
+              "ppl_delta_swapped_minus_canonical": 0.2863751978042739,
+              "ppl_ratio_swapped_over_canonical": 1.0560173688778802,
+              "loss_delta_swapped_minus_canonical": 0.0545046329498291,
+              "swapped_tokens": 57,
+              "canonical_tokens": 57
+            },
+            {
+              "id": 44,
+              "template_id": 2,
+              "A": "मोहन",
+              "B": "सीमा",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.609923927333328,
+              "canonical_perplexity": 4.516702629335727,
+              "ppl_delta_swapped_minus_canonical": 0.0932212979976006,
+              "ppl_ratio_swapped_over_canonical": 1.0206392374366497,
+              "loss_delta_swapped_minus_canonical": 0.020429134368896484,
+              "swapped_tokens": 78,
+              "canonical_tokens": 78
+            },
+            {
+              "id": 45,
+              "template_id": 14,
+              "A": "रेखा",
+              "B": "करण",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.66375438010373,
+              "canonical_perplexity": 5.7973614804426274,
+              "ppl_delta_swapped_minus_canonical": -0.13360710033889767,
+              "ppl_ratio_swapped_over_canonical": 0.9769538089371138,
+              "loss_delta_swapped_minus_canonical": -0.023315906524658203,
+              "swapped_tokens": 68,
+              "canonical_tokens": 67
+            },
+            {
+              "id": 46,
+              "template_id": 8,
+              "A": "किशोर",
+              "B": "अमित",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.703648166387183,
+              "canonical_perplexity": 4.636515913292936,
+              "ppl_delta_swapped_minus_canonical": 0.06713225309424775,
+              "ppl_ratio_swapped_over_canonical": 1.0144790300194546,
+              "loss_delta_swapped_minus_canonical": 0.01437520980834961,
+              "swapped_tokens": 68,
+              "canonical_tokens": 68
+            },
+            {
+              "id": 47,
+              "template_id": 7,
+              "A": "कविता",
+              "B": "राज",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 4.835692252299302,
+              "canonical_perplexity": 4.640880551913397,
+              "ppl_delta_swapped_minus_canonical": 0.19481170038590534,
+              "ppl_ratio_swapped_over_canonical": 1.0419773140477804,
+              "loss_delta_swapped_minus_canonical": 0.041120171546936035,
+              "swapped_tokens": 80,
+              "canonical_tokens": 80
+            },
+            {
+              "id": 48,
+              "template_id": 6,
+              "A": "रूप",
+              "B": "विजय",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 4.457353636619001,
+              "canonical_perplexity": 4.554188497929059,
+              "ppl_delta_swapped_minus_canonical": -0.09683486131005736,
+              "ppl_ratio_swapped_over_canonical": 0.9787371863606236,
+              "loss_delta_swapped_minus_canonical": -0.0214921236038208,
+              "swapped_tokens": 80,
+              "canonical_tokens": 79
+            },
+            {
+              "id": 49,
+              "template_id": 11,
+              "A": "वाणी",
+              "B": "तारा",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.406038502950291,
+              "canonical_perplexity": 5.114181535747837,
+              "ppl_delta_swapped_minus_canonical": 0.29185696720245424,
+              "ppl_ratio_swapped_over_canonical": 1.0570681672448252,
+              "loss_delta_swapped_minus_canonical": 0.05549919605255127,
+              "swapped_tokens": 63,
+              "canonical_tokens": 63
+            },
+            {
+              "id": 50,
+              "template_id": 0,
+              "A": "गीता",
+              "B": "रानी",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 5.57423532021411,
+              "canonical_perplexity": 5.277242092324436,
+              "ppl_delta_swapped_minus_canonical": 0.29699322788967386,
+              "ppl_ratio_swapped_over_canonical": 1.0562781132064494,
+              "loss_delta_swapped_minus_canonical": 0.05475151538848877,
+              "swapped_tokens": 60,
+              "canonical_tokens": 60
+            }
+          ]
+        }
+      }
+    }
+  }
+}

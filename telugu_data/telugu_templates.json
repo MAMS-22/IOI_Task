@@ -1,0 +1,92 @@
+[
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] ఒక [OBJECT] [A]కు ఇచ్చాడు.",
+    "canonical": "అప్పుడు, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] [A]కు ఒక [OBJECT] ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] [PLACE]లో చాలా సరదాగా గడిపారు. [B] ఒక [OBJECT] [A]కు ఇచ్చాడు.",
+    "canonical": "అప్పుడు, [B] మరియు [A] [PLACE]లో చాలా సరదాగా గడిపారు. [B] [A]కు ఒక [OBJECT] ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] [PLACE]లో పని చేస్తూ ఉన్నారు. [B] ఒక [OBJECT] [A]కు ఇవ్వాలని నిర్ణయించుకున్నాడు.",
+    "canonical": "అప్పుడు, [B] మరియు [A] [PLACE]లో పని చేస్తూ ఉన్నారు. [B] [A]కు ఒక [OBJECT] ఇవ్వాలని నిర్ణయించుకున్నాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] [PLACE]కి వెళ్లాలని ఆలోచిస్తున్నారు. [B] ఒక [OBJECT] [A]కు ఇవ్వాలనుకున్నాడు.",
+    "canonical": "అప్పుడు, [B] మరియు [A] [PLACE]కి వెళ్లాలని ఆలోచిస్తున్నారు. [B] [A]కు ఒక [OBJECT] ఇవ్వాలనుకున్నాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] చాలా సేపు వాదించుకున్నారు, ఆ తర్వాత [B] [A]తో చెప్పాడు.",
+    "canonical": "అప్పుడు, [B] మరియు [A] చాలా సేపు వాదించుకున్నారు, ఆ తర్వాత [B] [A]తో చెప్పాడు.",
+    "has_place": false,
+    "has_object": false
+  },
+  {
+    "swapped": "[B] మరియు [A] [PLACE]కి వెళ్లిన తర్వాత, [B] ఒక [OBJECT] [A]కు ఇచ్చాడు.",
+    "canonical": "[B] మరియు [A] [PLACE]కి వెళ్లిన తర్వాత, [B] [A]కు ఒక [OBJECT] ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "[B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికినప్పుడు, [B] దానిని [A]కు ఇవ్వాలని నిర్ణయించుకున్నాడు.",
+    "canonical": "[B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికినప్పుడు, [B] [A]కు దానిని ఇవ్వాలని నిర్ణయించుకున్నాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "[B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికినప్పుడు, [B] ఆ [OBJECT]ను [A]కు ఇవ్వాలని నిర్ణయించుకున్నాడు.",
+    "canonical": "[B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికినప్పుడు, [B] [A]కు ఆ [OBJECT]ను ఇవ్వాలని నిర్ణయించుకున్నాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "[B] మరియు [A] [PLACE]లో పని చేస్తున్నప్పుడు, [B] ఒక [OBJECT] [A]కు ఇచ్చాడు.",
+    "canonical": "[B] మరియు [A] [PLACE]లో పని చేస్తున్నప్పుడు, [B] [A]కు ఒక [OBJECT] ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "[B] మరియు [A] [PLACE]కి వెళ్తున్నప్పుడు, [B] ఒక [OBJECT] [A]కు ఇచ్చాడు.",
+    "canonical": "[B] మరియు [A] [PLACE]కి వెళ్తున్నప్పుడు, [B] [A]కు ఒక [OBJECT] ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "భోజనం తర్వాత, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] ఒక [OBJECT] [A]కు ఇచ్చాడు.",
+    "canonical": "భోజనం తర్వాత, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] [A]కు ఒక [OBJECT] ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "ఆ తర్వాత, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] ఒక [OBJECT] [A]కు ఇచ్చాడు.",
+    "canonical": "ఆ తర్వాత, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] [A]కు ఒక [OBJECT] ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] చాలా సేపు వాదించుకున్నారు. ఆ తర్వాత [B] [A]తో చెప్పాడు.",
+    "canonical": "అప్పుడు, [B] మరియు [A] చాలా సేపు వాదించుకున్నారు. ఆ తర్వాత [B] [A]తో చెప్పాడు.",
+    "has_place": false,
+    "has_object": false
+  },
+  {
+    "swapped": "[B] మరియు [A] వెళ్లిన [PLACE]లో ఒక [OBJECT] ఉంది. [B] దానిని [A]కు ఇచ్చాడు.",
+    "canonical": "[B] మరియు [A] వెళ్లిన [PLACE]లో ఒక [OBJECT] ఉంది. [B] [A]కు దానిని ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "స్నేహితులు [B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికింది. [B] దానిని [A]కు ఇచ్చాడు.",
+    "canonical": "స్నేహితులు [B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికింది. [B] [A]కు దానిని ఇచ్చాడు.",
+    "has_place": true,
+    "has_object": true
+  }
+]

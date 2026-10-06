@@ -1,0 +1,92 @@
+[
+  {
+    "swapped": "फिर, [B] और [A] [PLACE] गए। [B] ने एक [OBJECT] [A] को दिया।",
+    "canonical": "फिर, [B] और [A] [PLACE] गए। [B] ने [A] को एक [OBJECT] दिया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "फिर, [B] और [A] ने [PLACE] में खूब मज़ा किया। [B] ने एक [OBJECT] [A] को दिया।",
+    "canonical": "फिर, [B] और [A] ने [PLACE] में खूब मज़ा किया। [B] ने [A] को एक [OBJECT] दिया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "फिर, [B] और [A] [PLACE] में काम कर रहे थे। [B] ने एक [OBJECT] [A] को देने का फैसला किया।",
+    "canonical": "फिर, [B] और [A] [PLACE] में काम कर रहे थे। [B] ने [A] को एक [OBJECT] देने का फैसला किया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "फिर, [B] और [A] [PLACE] जाने के बारे में सोच रहे थे। [B] ने एक [OBJECT] [A] को देने का सोचा।",
+    "canonical": "फिर, [B] और [A] [PLACE] जाने के बारे में सोच रहे थे। [B] ने [A] को एक [OBJECT] देने का सोचा।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "फिर, [B] और [A] के बीच लंबी बहस हुई, और बाद में [B] ने [A] से कहा।",
+    "canonical": "फिर, [B] और [A] के बीच लंबी बहस हुई, और बाद में [B] ने [A] से कहा।",
+    "has_place": false,
+    "has_object": false
+  },
+  {
+    "swapped": "जब [B] और [A] [PLACE] गए, [B] ने एक [OBJECT] [A] को दिया।",
+    "canonical": "जब [B] और [A] [PLACE] गए, [B] ने [A] को एक [OBJECT] दिया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "जब [B] और [A] को [PLACE] में एक [OBJECT] मिला, [B] ने उसे [A] को देने का फैसला किया।",
+    "canonical": "जब [B] और [A] को [PLACE] में एक [OBJECT] मिला, [B] ने [A] को वह देने का फैसला किया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "जब [B] और [A] को [PLACE] में एक [OBJECT] मिला, [B] ने वह [OBJECT] [A] को देने का फैसला किया।",
+    "canonical": "जब [B] और [A] को [PLACE] में एक [OBJECT] मिला, [B] ने [A] को वह [OBJECT] देने का फैसला किया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "जब [B] और [A] [PLACE] में काम कर रहे थे, [B] ने एक [OBJECT] [A] को दिया।",
+    "canonical": "जब [B] और [A] [PLACE] में काम कर रहे थे, [B] ने [A] को एक [OBJECT] दिया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "जब [B] और [A] [PLACE] जा रहे थे, [B] ने एक [OBJECT] [A] को दिया।",
+    "canonical": "जब [B] और [A] [PLACE] जा रहे थे, [B] ने [A] को एक [OBJECT] दिया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "दोपहर के खाने के बाद, [B] और [A] [PLACE] गए। [B] ने एक [OBJECT] [A] को दिया।",
+    "canonical": "दोपहर के खाने के बाद, [B] और [A] [PLACE] गए। [B] ने [A] को एक [OBJECT] दिया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "बाद में, [B] और [A] [PLACE] गए। [B] ने एक [OBJECT] [A] को दिया।",
+    "canonical": "बाद में, [B] और [A] [PLACE] गए। [B] ने [A] को एक [OBJECT] दिया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "फिर, [B] और [A] के बीच लंबी बहस हुई। बाद में [B] ने [A] से कहा।",
+    "canonical": "फिर, [B] और [A] के बीच लंबी बहस हुई। बाद में [B] ने [A] से कहा।",
+    "has_place": false,
+    "has_object": false
+  },
+  {
+    "swapped": "जिस [PLACE] में [B] और [A] गए थे, वहाँ एक [OBJECT] था। [B] ने उसे [A] को दिया।",
+    "canonical": "जिस [PLACE] में [B] और [A] गए थे, वहाँ एक [OBJECT] था। [B] ने [A] को वह दिया।",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "swapped": "दोस्त [B] और [A] को [PLACE] में एक [OBJECT] मिला। [B] ने उसे [A] को दिया।",
+    "canonical": "दोस्त [B] और [A] को [PLACE] में एक [OBJECT] मिला। [B] ने [A] को वह दिया।",
+    "has_place": true,
+    "has_object": true
+  }
+]
