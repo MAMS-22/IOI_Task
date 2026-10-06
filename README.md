@@ -125,6 +125,66 @@ The generated perplexity result files are stored as:
 hindi_perplexity_results_*.json
 ```
 
+
+## Hindi Perplexity Results
+
+The Hindi IOI dataset was evaluated using two language models:
+
+- **BLOOM-560M** (`bigscience/bloom-560m`)
+- **OLMo-1B** (`allenai/OLMo-1B-hf`)
+
+The evaluation was performed on a 50-pair Hindi IOI corpus. Each pair contains a swapped and canonical sentence, allowing the two forms to be compared directly.
+
+### BLOOM-560M
+
+| Metric | Swapped | Canonical |
+|---|---:|---:|
+| Corpus PPL | 124.8810 | 98.6223 |
+| Mean sentence PPL | 151.5451 | 116.0534 |
+| Sentence PPL Std. Dev. | 86.0603 | 58.9335 |
+
+Additional pairwise results:
+
+| Metric | Result |
+|---|---:|
+| PPL difference (Swapped − Canonical) | +26.2588 |
+| PPL ratio (Swapped / Canonical) | 1.2663 |
+| Mean pairwise PPL difference | +35.4917 |
+| Mean pairwise loss difference | +0.244965 |
+| Swapped > Canonical | 44 / 50 |
+| Canonical > Swapped | 4 / 50 |
+| Ties | 2 / 50 |
+
+### OLMo-1B
+
+| Metric | Swapped | Canonical |
+|---|---:|---:|
+| Corpus PPL | 5.2930 | 5.1088 |
+| Mean sentence PPL | 5.4784 | 5.2793 |
+| Sentence PPL Std. Dev. | 1.0134 | 0.9382 |
+
+Additional pairwise results:
+
+| Metric | Result |
+|---|---:|
+| PPL difference (Swapped − Canonical) | +0.1843 |
+| PPL ratio (Swapped / Canonical) | 1.0361 |
+| Mean pairwise PPL difference | +0.1992 |
+| Mean pairwise loss difference | +0.036155 |
+| Swapped > Canonical | 39 / 50 |
+| Canonical > Swapped | 9 / 50 |
+| Ties | 2 / 50 |
+
+### Result Summary
+
+Both models assign higher perplexity to the swapped sentences on average, producing the expected IOI contrast.
+
+The effect is substantially stronger for **BLOOM-560M**, where the swapped corpus has a perplexity of `124.8810` compared with `98.6223` for the canonical corpus. The swapped form also has a higher perplexity in **44 of 50** sentence pairs.
+
+For **OLMo-1B**, the same direction is observed but with a much smaller difference: `5.2930` versus `5.1088`, with swapped sentences having higher perplexity in **39 of 50** pairs.
+
+These results provide an initial indication that the Hindi IOI dataset captures the intended distinction between the canonical and swapped constructions. OLMo is included as a reference model; BLOOM-560M provides the stronger signal in the current Hindi evaluation.
+
 ## Telugu Data
 
 The Telugu portion of the repository is **incomplete**.
