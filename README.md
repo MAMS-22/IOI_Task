@@ -33,74 +33,6 @@ IOI_Task/
     └── telugu_vocab.json
 ```
 
-## Hindi Data
-
-The Hindi pipeline currently contains the complete components required for generating and evaluating IOI data.
-
-### Vocabulary
-
-`hindi_vocab.json` contains the vocabulary used for generation:
-
-- Names
-- Places
-- Objects
-
-The vocabulary was selected with model tokenization in mind, particularly to ensure suitable single-token names for the BLOOM model used in evaluation.
-
-The `candidates/` directory contains the intermediate candidate lists and the script used to identify suitable vocabulary items.
-
-### Templates
-
-`hindi_templates.json` contains the Hindi sentence templates used to construct IOI examples.
-
-The templates provide:
-
-- A canonical sentence
-- A swapped sentence
-- Optional place and object slots
-- Information about whether a template uses a place or object
-
-The generation process preserves the grammatical roles of the names while changing the relevant ordering needed for the IOI contrast.
-
-### Dataset Generation
-
-`generate_hindi_ioi.py` generates Hindi IOI corpora from the templates and vocabulary.
-
-The generator supports three modes:
-
-```text
-canonical
-swapped
-both
-```
-
-For example:
-
-```bash
-python generate_hindi_ioi.py \
-    --templates hindi_templates.json \
-    --vocab hindi_vocab.json \
-    --count 200 \
-    --type both
-```
-
-The generator can also randomly flip the initial ordering of the two names. This allows both initial orders, BABA and ABBA, to occur while preserving the intended grammatical relationship in the subsequent sentence.
-
-Generated files use names of the following form:
-
-```text
-hindi_corpus_<count>_<type>_<timestamp>.json
-```
-
-Examples:
-
-```text
-hindi_corpus_200_both_20261006_1250.json
-hindi_corpus_200_swapped_20261006_1254.json
-```
-
-When `both` is selected, each item contains the matched canonical and swapped sentences. When `canonical` or `swapped` is selected, each item contains only the requested sentence type.
-
 ## Hindi Perplexity Evaluation
 
 `evaluate_hindi_perplexity.py` evaluates generated Hindi IOI data using language models and computes real perplexity values.
@@ -184,6 +116,76 @@ The effect is substantially stronger for **BLOOM-560M**, where the swapped corpu
 For **OLMo-1B**, the same direction is observed but with a much smaller difference: `5.2930` versus `5.1088`, with swapped sentences having higher perplexity in **39 of 50** pairs.
 
 These results provide an initial indication that the Hindi IOI dataset captures the intended distinction between the canonical and swapped constructions. OLMo is included as a reference model; BLOOM-560M provides the stronger signal in the current Hindi evaluation.
+
+
+## Hindi Data
+
+The Hindi pipeline currently contains the complete components required for generating and evaluating IOI data.
+
+### Vocabulary
+
+`hindi_vocab.json` contains the vocabulary used for generation:
+
+- Names
+- Places
+- Objects
+
+The vocabulary was selected with model tokenization in mind, particularly to ensure suitable single-token names for the BLOOM model used in evaluation.
+
+The `candidates/` directory contains the intermediate candidate lists and the script used to identify suitable vocabulary items.
+
+### Templates
+
+`hindi_templates.json` contains the Hindi sentence templates used to construct IOI examples.
+
+The templates provide:
+
+- A canonical sentence
+- A swapped sentence
+- Optional place and object slots
+- Information about whether a template uses a place or object
+
+The generation process preserves the grammatical roles of the names while changing the relevant ordering needed for the IOI contrast.
+
+### Dataset Generation
+
+`generate_hindi_ioi.py` generates Hindi IOI corpora from the templates and vocabulary.
+
+The generator supports three modes:
+
+```text
+canonical
+swapped
+both
+```
+
+For example:
+
+```bash
+python generate_hindi_ioi.py \
+    --templates hindi_templates.json \
+    --vocab hindi_vocab.json \
+    --count 200 \
+    --type both
+```
+
+The generator can also randomly flip the initial ordering of the two names. This allows both initial orders, BABA and ABBA, to occur while preserving the intended grammatical relationship in the subsequent sentence.
+
+Generated files use names of the following form:
+
+```text
+hindi_corpus_<count>_<type>_<timestamp>.json
+```
+
+Examples:
+
+```text
+hindi_corpus_200_both_20261006_1250.json
+hindi_corpus_200_swapped_20261006_1254.json
+```
+
+When `both` is selected, each item contains the matched canonical and swapped sentences. When `canonical` or `swapped` is selected, each item contains only the requested sentence type.
+
 
 ## Telugu Data
 
