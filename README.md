@@ -2,7 +2,7 @@
 
 This repository contains the code, templates, vocabularies, generated corpora, and evaluation results for an **Indirect Object Identification (IOI)** task in Hindi and Telugu.
 
-The Telugu data is currently incomplete and is kept in the repository for ongoing development.
+The Telugu pipeline is under active development. Vocabulary selection, gender-aware templates, corpus generation, and real-model perplexity evaluation are now implemented, but the Telugu corpus still requires linguistic quality review before being treated as final.
 
 ## Repository Structure
 
@@ -189,34 +189,186 @@ When `both` is selected, each item contains the matched canonical and swapped se
 
 ## Telugu Data
 
-The Telugu portion of the repository is **incomplete**.
+The Telugu portion of the repository is under active development. The current pipeline includes vocabulary verification, gender-aware templates, corpus generation, and real-model perplexity evaluation.
 
-The current Telugu directory contains:
+### Vocabulary
 
-- Candidate name generation
-- Candidate name list
-- Telugu templates
-- Telugu vocabulary
+`telugu_vocab_verified.json` contains vocabulary verified against the BLOOM-560M tokenizer.
+
+The current verified name vocabulary contains 19 names with explicit gender labels:
+
+- 8 masculine names
+- 11 feminine names
+
+The vocabulary also contains the single-token places:
+
+- `బడి`
+- `కొండ`
+- `సభ`
+
+and the single-token object:
+
+- `పత్రిక`
+
+Gender labels are used by the generator to select the appropriate Telugu verb form for the grammatical agent.
+
+### Templates
+
+`telugu_templates_gender_aware.json` contains 15 Telugu IOI templates.
+
+The templates provide:
+
+- A canonical sentence
+- A swapped sentence
+- Optional place and object slots
+- Gender-specific verb forms
+- Information about whether a template uses a place or object
+
+For example, masculine and feminine forms are represented separately:
 
 ```text
-telugu_data/
-├── find_single_token_telugu_names.py
-├── telugu_name_candidates.txt
-├── telugu_templates.json
-└── telugu_vocab.json
+ఇచ్చాడు / ఇచ్చింది
+చెప్పాడు / చెప్పింది
+ఇవ్వాలనుకున్నాడు / ఇవ్వాలనుకుంది
+నిర్ణయించుకున్నాడు / నిర్ణయించుకుంది
 ```
 
-The Telugu generation and evaluation pipeline has not yet been completed. No assumptions are made here about its final structure or evaluation results.
+The generator preserves the grammatical role of the agent while changing the relevant ordering for the IOI contrast.
+
+### Dataset Generation
+
+`generate_telugu_ioi_gender_aware.py` generates Telugu IOI corpora using the gender-aware vocabulary and templates.
+
+The generator supports:
+
+```text
+canonical
+swapped
+both
+```
+
+Example:
+
+```bash
+python generate_telugu_ioi_gender_aware.py \
+    --templates telugu_templates_gender_aware.json \
+    --vocab telugu_vocab_verified.json \
+    --count 100 \
+    --type both
+```
+
+The generator can randomly flip the initial ordering of the two names. Thus, both initial orders can occur while preserving the intended grammatical relationship in the subsequent sentence.
+
+Generated files use names of the following form:
+
+```text
+telugu_corpus_<count>_<type>_<timestamp>.json
+```
+
+For example:
+
+```text
+telugu_corpus_50_both_20261007_1026.json
+```
+
+When `both` is selected, each item contains the matched canonical and swapped sentences together with metadata such as the selected names, their genders, and the initial ordering.
+
+### Telugu Perplexity Evaluation
+
+`evaluate_telugu_perplexity.py` performs real language-model perplexity evaluation on the generated Telugu corpus.
+
+The evaluation includes:
+
+- Sentence-level perplexity
+- Corpus-level, token-weighted perplexity
+- Mean and standard deviation of sentence perplexity
+- Pairwise perplexity differences
+- Pairwise loss differences
+- Pairwise comparisons between swapped and canonical sentences
+
+The current evaluation setup includes:
+
+- `bigscience/bloom-560m`
+- `allenai/OLMo-1B-hf`
+
+Example:
+
+```bash
+python evaluate_telugu_perplexity.py \
+    --corpus telugu_corpus_50_both_20261007_1026.json \
+    --output telugu_perplexity_results_20261007_1026.json
+```
+
+### Current Telugu Evaluation
+
+A preliminary 50-pair Telugu corpus has been evaluated with both models.
+
+#### BLOOM-560M
+
+| Metric | Swapped | Canonical |
+|---|---:|---:|
+| Corpus PPL | 905.4222 | 832.7482 |
+| Mean sentence PPL | 1145.7679 | 1043.1251 |
+| Sentence PPL Std. Dev. | 820.1654 | 711.1412 |
+
+Additional pairwise results:
+
+| Metric | Result |
+|---|---:|
+| PPL difference (Swapped − Canonical) | +72.6740 |
+| PPL ratio (Swapped / Canonical) | 1.0873 |
+| Mean pairwise PPL difference | +102.6427 |
+| Mean pairwise loss difference | +0.085564 |
+| Swapped > Canonical | 31 / 50 |
+| Canonical > Swapped | 11 / 50 |
+| Ties | 8 / 50 |
+
+#### OLMo-1B
+
+| Metric | Swapped | Canonical |
+|---|---:|---:|
+| Corpus PPL | 3.1983 | 3.1916 |
+| Mean sentence PPL | 3.2374 | 3.2316 |
+| Sentence PPL Std. Dev. | 0.3133 | 0.3137 |
+
+Additional pairwise results:
+
+| Metric | Result |
+|---|---:|
+| PPL difference (Swapped − Canonical) | +0.0067 |
+| PPL ratio (Swapped / Canonical) | 1.0021 |
+| Mean pairwise PPL difference | +0.0058 |
+| Mean pairwise loss difference | +0.001819 |
+| Swapped > Canonical | 26 / 50 |
+| Canonical > Swapped | 16 / 50 |
+| Ties | 8 / 50 |
+
+### Telugu Result Summary
+
+**BLOOM-560M** shows an encouraging IOI signal in the preliminary Telugu evaluation: the swapped corpus has 8.73% higher perplexity than the canonical corpus, and the swapped sentence has higher perplexity in 31 of 50 pairs.
+
+**OLMo-1B** shows only a negligible difference: the swapped corpus has 0.21% higher perplexity, with swapped sentences winning in 26 of 50 pairs.
+
+Absolute perplexity values should not be compared across models. The relevant comparison is between swapped and canonical sentences **within the same model**.
+
+These results are preliminary. The Telugu corpus should undergo linguistic inspection before the results are treated as a final validation of the IOI effect. In particular, Telugu case suffixes and other name-specific morphology need to be checked for forms such as `లక్ష్మికి` versus `లక్ష్మికు`.
 
 ## Generated Data
 
-Generated Hindi corpora are kept inside `hindi_data/`.
+Generated corpora are kept inside their respective language directories.
 
-Currently, the directory may contain multiple versions of generated corpora and evaluation results, including:
+Hindi files may include:
 
 ```text
 hindi_corpus_*.json
 hindi_perplexity_results_*.json
+```
+
+Telugu files may include:
+
+```text
+telugu_corpus_*.json
+telugu_perplexity_results_*.json
 ```
 
 The timestamped filenames distinguish different generation/evaluation runs.
@@ -232,13 +384,17 @@ The timestamped filenames distinguish different generation/evaluation runs.
 | Hindi perplexity evaluation | Complete |
 | Hindi generated corpora | Available |
 | Hindi perplexity results | Available |
-| Telugu vocabulary | In progress |
-| Telugu templates | In progress |
-| Telugu data generation | Incomplete |
-| Telugu perplexity evaluation | Incomplete |
+| Telugu vocabulary verification | Complete |
+| Telugu gender-aware templates | Complete |
+| Telugu IOI data generation | Complete |
+| Telugu perplexity evaluation | Complete |
+| Telugu generated corpora | Available |
+| Telugu perplexity results | Available |
+| Telugu linguistic quality review | In progress |
 
 ## Notes
 
-- The root-level `evaluate_perplexity.py` is intentionally not documented as part of the current pipeline.
-- Hindi is currently the main completed dataset and evaluation pipeline.
-- Telugu files are retained for continued development and are not considered a completed dataset.
+- The root-level `evaluate_perplexity.py` is intentionally not documented as part of the current language-specific pipeline.
+- Hindi has a complete generation and evaluation pipeline.
+- Telugu now has a complete computational pipeline, but its generated corpus is still undergoing linguistic quality review.
+- Perplexity results are model-relative: swapped and canonical forms should be compared within the same model.

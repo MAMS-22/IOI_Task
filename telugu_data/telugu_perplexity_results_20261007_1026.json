@@ -1,0 +1,2782 @@
+{
+  "corpus": {
+    "path": "telugu_corpus_50_both_20261007_1026.json",
+    "num_pairs": 50
+  },
+  "evaluation": {
+    "device": "cuda",
+    "max_length": 512,
+    "models": {
+      "BLOOM": {
+        "model_id": "bigscience/bloom-560m",
+        "swapped": {
+          "corpus_perplexity": 905.4221706055819,
+          "corpus_mean_loss": 6.808401321785754,
+          "total_predicted_tokens": 947,
+          "mean_sentence_perplexity": 1145.767883051598,
+          "std_sentence_perplexity": 820.1654278885608,
+          "individual": [
+            {
+              "sentence_index": 1,
+              "perplexity": 2322.235609502875,
+              "loss": 7.750285625457764,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 2,
+              "perplexity": 722.3470506488197,
+              "loss": 6.582505702972412,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 3,
+              "perplexity": 519.553475553109,
+              "loss": 6.252969741821289,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 4,
+              "perplexity": 501.6954485680052,
+              "loss": 6.217993259429932,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 5,
+              "perplexity": 654.6665951489962,
+              "loss": 6.484126091003418,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 6,
+              "perplexity": 1250.075852934969,
+              "loss": 7.130959510803223,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 7,
+              "perplexity": 902.0826058633885,
+              "loss": 6.80470609664917,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 8,
+              "perplexity": 609.8774746204704,
+              "loss": 6.413258075714111,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 9,
+              "perplexity": 1229.3520902787775,
+              "loss": 7.1142425537109375,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 10,
+              "perplexity": 599.3023677044981,
+              "loss": 6.395766258239746,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 11,
+              "perplexity": 697.014252298235,
+              "loss": 6.5468058586120605,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 12,
+              "perplexity": 1944.1485249984585,
+              "loss": 7.572579383850098,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 13,
+              "perplexity": 512.6840590895991,
+              "loss": 6.239659786224365,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 14,
+              "perplexity": 1338.343899127416,
+              "loss": 7.199188232421875,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 15,
+              "perplexity": 872.5375556445383,
+              "loss": 6.7714056968688965,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 16,
+              "perplexity": 818.4347267604968,
+              "loss": 6.707393646240234,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 17,
+              "perplexity": 1048.668443432179,
+              "loss": 6.9552764892578125,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 18,
+              "perplexity": 1310.5437204733084,
+              "loss": 7.178197383880615,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 19,
+              "perplexity": 1665.2885595572336,
+              "loss": 7.41775369644165,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 20,
+              "perplexity": 1028.3451499173045,
+              "loss": 6.93570613861084,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 21,
+              "perplexity": 1142.1775518087927,
+              "loss": 7.04069185256958,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 22,
+              "perplexity": 2473.086904659215,
+              "loss": 7.813222408294678,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 23,
+              "perplexity": 1013.5295040691918,
+              "loss": 6.921194076538086,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 24,
+              "perplexity": 502.54614263311794,
+              "loss": 6.219687461853027,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 25,
+              "perplexity": 348.94262578792944,
+              "loss": 5.854907512664795,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 26,
+              "perplexity": 659.4706284978008,
+              "loss": 6.4914374351501465,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 27,
+              "perplexity": 695.7620402544627,
+              "loss": 6.545007705688477,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 28,
+              "perplexity": 2380.1573884347463,
+              "loss": 7.774921894073486,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 29,
+              "perplexity": 1153.3956201101748,
+              "loss": 7.0504655838012695,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 30,
+              "perplexity": 1150.2721101419988,
+              "loss": 7.047753810882568,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 31,
+              "perplexity": 893.2730588252257,
+              "loss": 6.794892311096191,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 32,
+              "perplexity": 660.1993203835062,
+              "loss": 6.492541790008545,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 33,
+              "perplexity": 505.7554428436159,
+              "loss": 6.226053237915039,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 34,
+              "perplexity": 322.2558522703438,
+              "loss": 5.775345802307129,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 35,
+              "perplexity": 1650.5597360659744,
+              "loss": 7.408869743347168,
+              "predicted_tokens": 23
+            },
+            {
+              "sentence_index": 36,
+              "perplexity": 3971.1608479400984,
+              "loss": 8.286813735961914,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 37,
+              "perplexity": 962.7592963154469,
+              "loss": 6.869803428649902,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 38,
+              "perplexity": 634.9580424412402,
+              "loss": 6.453558921813965,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 39,
+              "perplexity": 2338.3118244933494,
+              "loss": 7.7571845054626465,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 40,
+              "perplexity": 256.67239418164655,
+              "loss": 5.547800540924072,
+              "predicted_tokens": 24
+            },
+            {
+              "sentence_index": 41,
+              "perplexity": 393.2270454664409,
+              "loss": 5.974387168884277,
+              "predicted_tokens": 25
+            },
+            {
+              "sentence_index": 42,
+              "perplexity": 935.2368460574576,
+              "loss": 6.840799808502197,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 43,
+              "perplexity": 3423.6713292687305,
+              "loss": 8.138468742370605,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 44,
+              "perplexity": 733.350897780553,
+              "loss": 6.5976243019104,
+              "predicted_tokens": 24
+            },
+            {
+              "sentence_index": 45,
+              "perplexity": 910.3576353912628,
+              "loss": 6.81383752822876,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 46,
+              "perplexity": 1071.4544551846338,
+              "loss": 6.976772308349609,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 47,
+              "perplexity": 3375.9614094644858,
+              "loss": 8.124435424804688,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 48,
+              "perplexity": 713.2131684626917,
+              "loss": 6.569780349731445,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 49,
+              "perplexity": 987.9280346302259,
+              "loss": 6.8956098556518555,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 50,
+              "perplexity": 481.54953659285985,
+              "loss": 6.177009105682373,
+              "predicted_tokens": 19
+            }
+          ]
+        },
+        "canonical": {
+          "corpus_perplexity": 832.7481650682515,
+          "corpus_mean_loss": 6.724731273610841,
+          "total_predicted_tokens": 947,
+          "mean_sentence_perplexity": 1043.1251374127157,
+          "std_sentence_perplexity": 711.1411760098407,
+          "individual": [
+            {
+              "sentence_index": 1,
+              "perplexity": 2203.133903884429,
+              "loss": 7.697636127471924,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 2,
+              "perplexity": 656.7959238544197,
+              "loss": 6.487373352050781,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 3,
+              "perplexity": 558.8081102120703,
+              "loss": 6.325806140899658,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 4,
+              "perplexity": 527.8059689205313,
+              "loss": 6.268728733062744,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 5,
+              "perplexity": 654.6665951489962,
+              "loss": 6.484126091003418,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 6,
+              "perplexity": 746.9204528520801,
+              "loss": 6.6159586906433105,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 7,
+              "perplexity": 870.7565658279548,
+              "loss": 6.769362449645996,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 8,
+              "perplexity": 509.62419041080926,
+              "loss": 6.233673572540283,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 9,
+              "perplexity": 1229.3520902787775,
+              "loss": 7.1142425537109375,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 10,
+              "perplexity": 451.5153573957324,
+              "loss": 6.112609386444092,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 11,
+              "perplexity": 682.7871207632114,
+              "loss": 6.526183128356934,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 12,
+              "perplexity": 1734.8874082033233,
+              "loss": 7.45869779586792,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 13,
+              "perplexity": 512.6840590895991,
+              "loss": 6.239659786224365,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 14,
+              "perplexity": 1003.1507438509511,
+              "loss": 6.910901069641113,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 15,
+              "perplexity": 949.2343100277778,
+              "loss": 6.855655670166016,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 16,
+              "perplexity": 818.4347267604968,
+              "loss": 6.707393646240234,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 17,
+              "perplexity": 1048.668443432179,
+              "loss": 6.9552764892578125,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 18,
+              "perplexity": 1065.1876476818013,
+              "loss": 6.9709062576293945,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 19,
+              "perplexity": 1803.4083161255,
+              "loss": 7.497433662414551,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 20,
+              "perplexity": 1094.262733757463,
+              "loss": 6.997836112976074,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 21,
+              "perplexity": 1240.4677543838695,
+              "loss": 7.123243808746338,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 22,
+              "perplexity": 2058.870588119988,
+              "loss": 7.629912853240967,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 23,
+              "perplexity": 984.1623436732938,
+              "loss": 6.891790866851807,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 24,
+              "perplexity": 485.71601538027176,
+              "loss": 6.185624122619629,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 25,
+              "perplexity": 369.1013621552263,
+              "loss": 5.911071300506592,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 26,
+              "perplexity": 830.3458402211246,
+              "loss": 6.721842288970947,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 27,
+              "perplexity": 695.7620402544627,
+              "loss": 6.545007705688477,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 28,
+              "perplexity": 1722.0284089947033,
+              "loss": 7.451258182525635,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 29,
+              "perplexity": 1153.3956201101748,
+              "loss": 7.0504655838012695,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 30,
+              "perplexity": 1213.4548361591324,
+              "loss": 7.101226806640625,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 31,
+              "perplexity": 779.154102355753,
+              "loss": 6.658208847045898,
+              "predicted_tokens": 21
+            },
+            {
+              "sentence_index": 32,
+              "perplexity": 468.5047059723058,
+              "loss": 6.149546146392822,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 33,
+              "perplexity": 505.7554428436159,
+              "loss": 6.226053237915039,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 34,
+              "perplexity": 314.9214210225478,
+              "loss": 5.752323150634766,
+              "predicted_tokens": 22
+            },
+            {
+              "sentence_index": 35,
+              "perplexity": 1505.9270148107216,
+              "loss": 7.317163944244385,
+              "predicted_tokens": 23
+            },
+            {
+              "sentence_index": 36,
+              "perplexity": 3535.72401396198,
+              "loss": 8.170673370361328,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 37,
+              "perplexity": 796.6710484464253,
+              "loss": 6.680441856384277,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 38,
+              "perplexity": 495.3140912311654,
+              "loss": 6.2051920890808105,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 39,
+              "perplexity": 2753.9016941804884,
+              "loss": 7.920773983001709,
+              "predicted_tokens": 15
+            },
+            {
+              "sentence_index": 40,
+              "perplexity": 211.97001705048515,
+              "loss": 5.356444835662842,
+              "predicted_tokens": 24
+            },
+            {
+              "sentence_index": 41,
+              "perplexity": 300.34955953263994,
+              "loss": 5.704946994781494,
+              "predicted_tokens": 25
+            },
+            {
+              "sentence_index": 42,
+              "perplexity": 662.6303219046639,
+              "loss": 6.496217250823975,
+              "predicted_tokens": 16
+            },
+            {
+              "sentence_index": 43,
+              "perplexity": 2672.8003319236254,
+              "loss": 7.8908820152282715,
+              "predicted_tokens": 18
+            },
+            {
+              "sentence_index": 44,
+              "perplexity": 655.2109325168396,
+              "loss": 6.484957218170166,
+              "predicted_tokens": 24
+            },
+            {
+              "sentence_index": 45,
+              "perplexity": 776.6480869356791,
+              "loss": 6.654987335205078,
+              "predicted_tokens": 20
+            },
+            {
+              "sentence_index": 46,
+              "perplexity": 992.2852196673358,
+              "loss": 6.900010585784912,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 47,
+              "perplexity": 2659.269022705991,
+              "loss": 7.885806560516357,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 48,
+              "perplexity": 694.8963403522298,
+              "loss": 6.543762683868408,
+              "predicted_tokens": 17
+            },
+            {
+              "sentence_index": 49,
+              "perplexity": 1071.8223730325433,
+              "loss": 6.977115631103516,
+              "predicted_tokens": 19
+            },
+            {
+              "sentence_index": 50,
+              "perplexity": 427.1116522583917,
+              "loss": 6.0570454597473145,
+              "predicted_tokens": 19
+            }
+          ]
+        },
+        "corpus_ppl_delta_swapped_minus_canonical": 72.67400553733034,
+        "corpus_ppl_ratio_swapped_over_canonical": 1.0872700878678898,
+        "pairwise_analysis": {
+          "mean_pairwise_ppl_delta": 102.64274563888239,
+          "std_pairwise_ppl_delta": 217.16637272397932,
+          "mean_pairwise_ppl_ratio": 1.1015715591440252,
+          "mean_pairwise_loss_delta": 0.08556400299072266,
+          "swapped_higher_ppl_count": 31,
+          "canonical_higher_ppl_count": 11,
+          "ties": 8,
+          "swapped_higher_ppl_fraction": 0.62,
+          "pair_results": [
+            {
+              "id": 1,
+              "template_id": 10,
+              "A": "కృష్ణ",
+              "B": "ప్రియ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 2322.235609502875,
+              "canonical_perplexity": 2203.133903884429,
+              "ppl_delta_swapped_minus_canonical": 119.10170561844598,
+              "ppl_ratio_swapped_over_canonical": 1.054060130166602,
+              "loss_delta_swapped_minus_canonical": 0.052649497985839844,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 2,
+              "template_id": 2,
+              "A": "సత్య",
+              "B": "ప్రియ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 722.3470506488197,
+              "canonical_perplexity": 656.7959238544197,
+              "ppl_delta_swapped_minus_canonical": 65.55112679440003,
+              "ppl_ratio_swapped_over_canonical": 1.099804405620717,
+              "loss_delta_swapped_minus_canonical": 0.09513235092163086,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 3,
+              "template_id": 1,
+              "A": "ప్రభ",
+              "B": "జ్యోతి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 519.553475553109,
+              "canonical_perplexity": 558.8081102120703,
+              "ppl_delta_swapped_minus_canonical": -39.25463465896132,
+              "ppl_ratio_swapped_over_canonical": 0.9297529260195168,
+              "loss_delta_swapped_minus_canonical": -0.07283639907836914,
+              "swapped_tokens": 22,
+              "canonical_tokens": 22
+            },
+            {
+              "id": 4,
+              "template_id": 11,
+              "A": "నంద",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 501.6954485680052,
+              "canonical_perplexity": 527.8059689205313,
+              "ppl_delta_swapped_minus_canonical": -26.110520352526123,
+              "ppl_ratio_swapped_over_canonical": 0.9505300775473848,
+              "loss_delta_swapped_minus_canonical": -0.0507354736328125,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 5,
+              "template_id": 12,
+              "A": "జ్యోతి",
+              "B": "కృష్ణ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 654.6665951489962,
+              "canonical_perplexity": 654.6665951489962,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 6,
+              "template_id": 5,
+              "A": "రూప",
+              "B": "ప్రభ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 1250.075852934969,
+              "canonical_perplexity": 746.9204528520801,
+              "ppl_delta_swapped_minus_canonical": 503.15540008288883,
+              "ppl_ratio_swapped_over_canonical": 1.673639874449299,
+              "loss_delta_swapped_minus_canonical": 0.5150008201599121,
+              "swapped_tokens": 15,
+              "canonical_tokens": 15
+            },
+            {
+              "id": 7,
+              "template_id": 6,
+              "A": "దేవ",
+              "B": "ప్రియ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 902.0826058633885,
+              "canonical_perplexity": 870.7565658279548,
+              "ppl_delta_swapped_minus_canonical": 31.32604003543372,
+              "ppl_ratio_swapped_over_canonical": 1.0359756575658405,
+              "loss_delta_swapped_minus_canonical": 0.03534364700317383,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 8,
+              "template_id": 11,
+              "A": "సత్య",
+              "B": "నాగ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 609.8774746204704,
+              "canonical_perplexity": 509.62419041080926,
+              "ppl_delta_swapped_minus_canonical": 100.2532842096611,
+              "ppl_ratio_swapped_over_canonical": 1.1967200264352575,
+              "loss_delta_swapped_minus_canonical": 0.17958450317382812,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 9,
+              "template_id": 4,
+              "A": "దీప",
+              "B": "హరి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 1229.3520902787775,
+              "canonical_perplexity": 1229.3520902787775,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 10,
+              "template_id": 11,
+              "A": "రాజు",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 599.3023677044981,
+              "canonical_perplexity": 451.5153573957324,
+              "ppl_delta_swapped_minus_canonical": 147.78701030876573,
+              "ppl_ratio_swapped_over_canonical": 1.3273133635169738,
+              "loss_delta_swapped_minus_canonical": 0.2831568717956543,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 11,
+              "template_id": 1,
+              "A": "ప్రియ",
+              "B": "రమ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 697.014252298235,
+              "canonical_perplexity": 682.7871207632114,
+              "ppl_delta_swapped_minus_canonical": 14.227131535023545,
+              "ppl_ratio_swapped_over_canonical": 1.0208368481220333,
+              "loss_delta_swapped_minus_canonical": 0.020622730255126953,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 12,
+              "template_id": 13,
+              "A": "విద్య",
+              "B": "దీప",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 1944.1485249984585,
+              "canonical_perplexity": 1734.8874082033233,
+              "ppl_delta_swapped_minus_canonical": 209.2611167951352,
+              "ppl_ratio_swapped_over_canonical": 1.120619422220517,
+              "loss_delta_swapped_minus_canonical": 0.11388158798217773,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 13,
+              "template_id": 4,
+              "A": "జ్యోతి",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 512.6840590895991,
+              "canonical_perplexity": 512.6840590895991,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 14,
+              "template_id": 3,
+              "A": "ప్రేమ",
+              "B": "విద్య",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 1338.343899127416,
+              "canonical_perplexity": 1003.1507438509511,
+              "ppl_delta_swapped_minus_canonical": 335.19315527646495,
+              "ppl_ratio_swapped_over_canonical": 1.3341403645774181,
+              "loss_delta_swapped_minus_canonical": 0.2882871627807617,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 15,
+              "template_id": 10,
+              "A": "రమ",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 872.5375556445383,
+              "canonical_perplexity": 949.2343100277778,
+              "ppl_delta_swapped_minus_canonical": -76.69675438323952,
+              "ppl_ratio_swapped_over_canonical": 0.91920145155626,
+              "loss_delta_swapped_minus_canonical": -0.08424997329711914,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 16,
+              "template_id": 12,
+              "A": "ప్రభ",
+              "B": "రాజు",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 818.4347267604968,
+              "canonical_perplexity": 818.4347267604968,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 17,
+              "template_id": 12,
+              "A": "నంద",
+              "B": "తార",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 1048.668443432179,
+              "canonical_perplexity": 1048.668443432179,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 18,
+              "template_id": 3,
+              "A": "తార",
+              "B": "సత్య",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 1310.5437204733084,
+              "canonical_perplexity": 1065.1876476818013,
+              "ppl_delta_swapped_minus_canonical": 245.35607279150713,
+              "ppl_ratio_swapped_over_canonical": 1.2303407041242758,
+              "loss_delta_swapped_minus_canonical": 0.2072911262512207,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 19,
+              "template_id": 14,
+              "A": "రూప",
+              "B": "నాగ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 1665.2885595572336,
+              "canonical_perplexity": 1803.4083161255,
+              "ppl_delta_swapped_minus_canonical": -138.11975656826644,
+              "ppl_ratio_swapped_over_canonical": 0.9234118223071038,
+              "loss_delta_swapped_minus_canonical": -0.07967996597290039,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 20,
+              "template_id": 8,
+              "A": "ప్రభ",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 1028.3451499173045,
+              "canonical_perplexity": 1094.262733757463,
+              "ppl_delta_swapped_minus_canonical": -65.91758384015839,
+              "ppl_ratio_swapped_over_canonical": 0.9397607340480183,
+              "loss_delta_swapped_minus_canonical": -0.062129974365234375,
+              "swapped_tokens": 15,
+              "canonical_tokens": 15
+            },
+            {
+              "id": 21,
+              "template_id": 6,
+              "A": "రమ",
+              "B": "దీప",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 1142.1775518087927,
+              "canonical_perplexity": 1240.4677543838695,
+              "ppl_delta_swapped_minus_canonical": -98.29020257507682,
+              "ppl_ratio_swapped_over_canonical": 0.9207635972577967,
+              "loss_delta_swapped_minus_canonical": -0.08255195617675781,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 22,
+              "template_id": 0,
+              "A": "విద్య",
+              "B": "ప్రియ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2473.086904659215,
+              "canonical_perplexity": 2058.870588119988,
+              "ppl_delta_swapped_minus_canonical": 414.21631653922714,
+              "ppl_ratio_swapped_over_canonical": 1.201186183788977,
+              "loss_delta_swapped_minus_canonical": 0.18330955505371094,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 23,
+              "template_id": 6,
+              "A": "శివ",
+              "B": "హరి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 1013.5295040691918,
+              "canonical_perplexity": 984.1623436732938,
+              "ppl_delta_swapped_minus_canonical": 29.367160395898054,
+              "ppl_ratio_swapped_over_canonical": 1.0298397521350877,
+              "loss_delta_swapped_minus_canonical": 0.029403209686279297,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 24,
+              "template_id": 7,
+              "A": "ప్రభ",
+              "B": "లలిత",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 502.54614263311794,
+              "canonical_perplexity": 485.71601538027176,
+              "ppl_delta_swapped_minus_canonical": 16.830127252846182,
+              "ppl_ratio_swapped_over_canonical": 1.0346501385993412,
+              "loss_delta_swapped_minus_canonical": 0.03406333923339844,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 25,
+              "template_id": 1,
+              "A": "ప్రభ",
+              "B": "లక్ష్మి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 348.94262578792944,
+              "canonical_perplexity": 369.1013621552263,
+              "ppl_delta_swapped_minus_canonical": -20.158736367296854,
+              "ppl_ratio_swapped_over_canonical": 0.9453842807580345,
+              "loss_delta_swapped_minus_canonical": -0.056163787841796875,
+              "swapped_tokens": 22,
+              "canonical_tokens": 22
+            },
+            {
+              "id": 26,
+              "template_id": 6,
+              "A": "ప్రేమ",
+              "B": "విద్య",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 659.4706284978008,
+              "canonical_perplexity": 830.3458402211246,
+              "ppl_delta_swapped_minus_canonical": -170.8752117233238,
+              "ppl_ratio_swapped_over_canonical": 0.7942119976444767,
+              "loss_delta_swapped_minus_canonical": -0.23040485382080078,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 27,
+              "template_id": 12,
+              "A": "లక్ష్మి",
+              "B": "విద్య",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 695.7620402544627,
+              "canonical_perplexity": 695.7620402544627,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 28,
+              "template_id": 13,
+              "A": "లక్ష్మి",
+              "B": "వేద",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 2380.1573884347463,
+              "canonical_perplexity": 1722.0284089947033,
+              "ppl_delta_swapped_minus_canonical": 658.1289794400429,
+              "ppl_ratio_swapped_over_canonical": 1.3821824169696768,
+              "loss_delta_swapped_minus_canonical": 0.32366371154785156,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 29,
+              "template_id": 12,
+              "A": "సత్య",
+              "B": "విద్య",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 1153.3956201101748,
+              "canonical_perplexity": 1153.3956201101748,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 30,
+              "template_id": 14,
+              "A": "కృష్ణ",
+              "B": "లలిత",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 1150.2721101419988,
+              "canonical_perplexity": 1213.4548361591324,
+              "ppl_delta_swapped_minus_canonical": -63.18272601713352,
+              "ppl_ratio_swapped_over_canonical": 0.9479315388307968,
+              "loss_delta_swapped_minus_canonical": -0.05347299575805664,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 31,
+              "template_id": 1,
+              "A": "వేద",
+              "B": "దీప",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 893.2730588252257,
+              "canonical_perplexity": 779.154102355753,
+              "ppl_delta_swapped_minus_canonical": 114.11895646947266,
+              "ppl_ratio_swapped_over_canonical": 1.1464651936304215,
+              "loss_delta_swapped_minus_canonical": 0.13668346405029297,
+              "swapped_tokens": 21,
+              "canonical_tokens": 21
+            },
+            {
+              "id": 32,
+              "template_id": 9,
+              "A": "ప్రియ",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 660.1993203835062,
+              "canonical_perplexity": 468.5047059723058,
+              "ppl_delta_swapped_minus_canonical": 191.6946144112004,
+              "ppl_ratio_swapped_over_canonical": 1.409162623059184,
+              "loss_delta_swapped_minus_canonical": 0.34299564361572266,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 33,
+              "template_id": 12,
+              "A": "రూప",
+              "B": "లక్ష్మి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 505.7554428436159,
+              "canonical_perplexity": 505.7554428436159,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 34,
+              "template_id": 7,
+              "A": "విద్య",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 322.2558522703438,
+              "canonical_perplexity": 314.9214210225478,
+              "ppl_delta_swapped_minus_canonical": 7.334431247795976,
+              "ppl_ratio_swapped_over_canonical": 1.0232897185081318,
+              "loss_delta_swapped_minus_canonical": 0.02302265167236328,
+              "swapped_tokens": 22,
+              "canonical_tokens": 22
+            },
+            {
+              "id": 35,
+              "template_id": 14,
+              "A": "జ్యోతి",
+              "B": "లక్ష్మి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 1650.5597360659744,
+              "canonical_perplexity": 1505.9270148107216,
+              "ppl_delta_swapped_minus_canonical": 144.63272125525282,
+              "ppl_ratio_swapped_over_canonical": 1.0960423180093037,
+              "loss_delta_swapped_minus_canonical": 0.0917057991027832,
+              "swapped_tokens": 23,
+              "canonical_tokens": 23
+            },
+            {
+              "id": 36,
+              "template_id": 10,
+              "A": "ప్రేమ",
+              "B": "దీప",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3971.1608479400984,
+              "canonical_perplexity": 3535.72401396198,
+              "ppl_delta_swapped_minus_canonical": 435.43683397811856,
+              "ppl_ratio_swapped_over_canonical": 1.1231535131867338,
+              "loss_delta_swapped_minus_canonical": 0.11614036560058594,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 37,
+              "template_id": 3,
+              "A": "దీప",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 962.7592963154469,
+              "canonical_perplexity": 796.6710484464253,
+              "ppl_delta_swapped_minus_canonical": 166.08824786902164,
+              "ppl_ratio_swapped_over_canonical": 1.2084778255628938,
+              "loss_delta_swapped_minus_canonical": 0.189361572265625,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 38,
+              "template_id": 0,
+              "A": "రాజు",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 634.9580424412402,
+              "canonical_perplexity": 495.3140912311654,
+              "ppl_delta_swapped_minus_canonical": 139.64395121007482,
+              "ppl_ratio_swapped_over_canonical": 1.2819300998745509,
+              "loss_delta_swapped_minus_canonical": 0.2483668327331543,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 39,
+              "template_id": 13,
+              "A": "శివ",
+              "B": "తార",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 2338.3118244933494,
+              "canonical_perplexity": 2753.9016941804884,
+              "ppl_delta_swapped_minus_canonical": -415.58986968713907,
+              "ppl_ratio_swapped_over_canonical": 0.8490905210722087,
+              "loss_delta_swapped_minus_canonical": -0.1635894775390625,
+              "swapped_tokens": 15,
+              "canonical_tokens": 15
+            },
+            {
+              "id": 40,
+              "template_id": 7,
+              "A": "సత్య",
+              "B": "జ్యోతి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 256.67239418164655,
+              "canonical_perplexity": 211.97001705048515,
+              "ppl_delta_swapped_minus_canonical": 44.7023771311614,
+              "ppl_ratio_swapped_over_canonical": 1.2108900954634285,
+              "loss_delta_swapped_minus_canonical": 0.19135570526123047,
+              "swapped_tokens": 24,
+              "canonical_tokens": 24
+            },
+            {
+              "id": 41,
+              "template_id": 7,
+              "A": "జ్యోతి",
+              "B": "నంద",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 393.2270454664409,
+              "canonical_perplexity": 300.34955953263994,
+              "ppl_delta_swapped_minus_canonical": 92.87748593380098,
+              "ppl_ratio_swapped_over_canonical": 1.3092313039457202,
+              "loss_delta_swapped_minus_canonical": 0.2694401741027832,
+              "swapped_tokens": 25,
+              "canonical_tokens": 25
+            },
+            {
+              "id": 42,
+              "template_id": 5,
+              "A": "నాగ",
+              "B": "నంద",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 935.2368460574576,
+              "canonical_perplexity": 662.6303219046639,
+              "ppl_delta_swapped_minus_canonical": 272.60652415279367,
+              "ppl_ratio_swapped_over_canonical": 1.4114006183254846,
+              "loss_delta_swapped_minus_canonical": 0.34458255767822266,
+              "swapped_tokens": 16,
+              "canonical_tokens": 16
+            },
+            {
+              "id": 43,
+              "template_id": 10,
+              "A": "రాజు",
+              "B": "ప్రియ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3423.6713292687305,
+              "canonical_perplexity": 2672.8003319236254,
+              "ppl_delta_swapped_minus_canonical": 750.870997345105,
+              "ppl_ratio_swapped_over_canonical": 1.2809304490039104,
+              "loss_delta_swapped_minus_canonical": 0.24758672714233398,
+              "swapped_tokens": 18,
+              "canonical_tokens": 18
+            },
+            {
+              "id": 44,
+              "template_id": 1,
+              "A": "జ్యోతి",
+              "B": "రమ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 733.350897780553,
+              "canonical_perplexity": 655.2109325168396,
+              "ppl_delta_swapped_minus_canonical": 78.1399652637134,
+              "ppl_ratio_swapped_over_canonical": 1.119259251312485,
+              "loss_delta_swapped_minus_canonical": 0.11266708374023438,
+              "swapped_tokens": 24,
+              "canonical_tokens": 24
+            },
+            {
+              "id": 45,
+              "template_id": 2,
+              "A": "ప్రేమ",
+              "B": "ప్రభ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 910.3576353912628,
+              "canonical_perplexity": 776.6480869356791,
+              "ppl_delta_swapped_minus_canonical": 133.70954845558367,
+              "ppl_ratio_swapped_over_canonical": 1.1721623354319255,
+              "loss_delta_swapped_minus_canonical": 0.15885019302368164,
+              "swapped_tokens": 20,
+              "canonical_tokens": 20
+            },
+            {
+              "id": 46,
+              "template_id": 13,
+              "A": "ప్రియ",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 1071.4544551846338,
+              "canonical_perplexity": 992.2852196673358,
+              "ppl_delta_swapped_minus_canonical": 79.16923551729803,
+              "ppl_ratio_swapped_over_canonical": 1.0797847573944914,
+              "loss_delta_swapped_minus_canonical": 0.07676172256469727,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 47,
+              "template_id": 14,
+              "A": "విద్య",
+              "B": "రమ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3375.9614094644858,
+              "canonical_perplexity": 2659.269022705991,
+              "ppl_delta_swapped_minus_canonical": 716.6923867584946,
+              "ppl_ratio_swapped_over_canonical": 1.2695072896495483,
+              "loss_delta_swapped_minus_canonical": 0.23862886428833008,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 48,
+              "template_id": 13,
+              "A": "రాజు",
+              "B": "దేవ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 713.2131684626917,
+              "canonical_perplexity": 694.8963403522298,
+              "ppl_delta_swapped_minus_canonical": 18.31682811046187,
+              "ppl_ratio_swapped_over_canonical": 1.02635907983222,
+              "loss_delta_swapped_minus_canonical": 0.02601766586303711,
+              "swapped_tokens": 17,
+              "canonical_tokens": 17
+            },
+            {
+              "id": 49,
+              "template_id": 6,
+              "A": "ప్రేమ",
+              "B": "ప్రభ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 987.9280346302259,
+              "canonical_perplexity": 1071.8223730325433,
+              "ppl_delta_swapped_minus_canonical": -83.89433840231743,
+              "ppl_ratio_swapped_over_canonical": 0.9217273864465505,
+              "loss_delta_swapped_minus_canonical": -0.08150577545166016,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            },
+            {
+              "id": 50,
+              "template_id": 11,
+              "A": "ప్రేమ",
+              "B": "లక్ష్మి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 481.54953659285985,
+              "canonical_perplexity": 427.1116522583917,
+              "ppl_delta_swapped_minus_canonical": 54.43788433446815,
+              "ppl_ratio_swapped_over_canonical": 1.1274558632306633,
+              "loss_delta_swapped_minus_canonical": 0.1199636459350586,
+              "swapped_tokens": 19,
+              "canonical_tokens": 19
+            }
+          ]
+        }
+      },
+      "OLMo": {
+        "model_id": "allenai/OLMo-1B-hf",
+        "swapped": {
+          "corpus_perplexity": 3.1983409296958722,
+          "corpus_mean_loss": 1.1626322158890579,
+          "total_predicted_tokens": 6098,
+          "mean_sentence_perplexity": 3.2374137654262594,
+          "std_sentence_perplexity": 0.31333074533550664,
+          "individual": [
+            {
+              "sentence_index": 1,
+              "perplexity": 3.408071872175426,
+              "loss": 1.2261466979980469,
+              "predicted_tokens": 116
+            },
+            {
+              "sentence_index": 2,
+              "perplexity": 2.951127483000246,
+              "loss": 1.082187294960022,
+              "predicted_tokens": 143
+            },
+            {
+              "sentence_index": 3,
+              "perplexity": 3.455917111741653,
+              "loss": 1.240087866783142,
+              "predicted_tokens": 125
+            },
+            {
+              "sentence_index": 4,
+              "perplexity": 3.183500557897258,
+              "loss": 1.1579813957214355,
+              "predicted_tokens": 109
+            },
+            {
+              "sentence_index": 5,
+              "perplexity": 2.6510790994466276,
+              "loss": 0.9749667644500732,
+              "predicted_tokens": 130
+            },
+            {
+              "sentence_index": 6,
+              "perplexity": 3.5154580957110593,
+              "loss": 1.2571698427200317,
+              "predicted_tokens": 96
+            },
+            {
+              "sentence_index": 7,
+              "perplexity": 3.072824276140705,
+              "loss": 1.122597098350525,
+              "predicted_tokens": 140
+            },
+            {
+              "sentence_index": 8,
+              "perplexity": 3.598638595019539,
+              "loss": 1.2805556058883667,
+              "predicted_tokens": 100
+            },
+            {
+              "sentence_index": 9,
+              "perplexity": 3.0936632527920374,
+              "loss": 1.1293559074401855,
+              "predicted_tokens": 114
+            },
+            {
+              "sentence_index": 10,
+              "perplexity": 3.6063188567663484,
+              "loss": 1.2826875448226929,
+              "predicted_tokens": 97
+            },
+            {
+              "sentence_index": 11,
+              "perplexity": 3.7164071171771242,
+              "loss": 1.3127573728561401,
+              "predicted_tokens": 119
+            },
+            {
+              "sentence_index": 12,
+              "perplexity": 3.3376431892653677,
+              "loss": 1.205264925956726,
+              "predicted_tokens": 108
+            },
+            {
+              "sentence_index": 13,
+              "perplexity": 2.9036733844577207,
+              "loss": 1.065976619720459,
+              "predicted_tokens": 122
+            },
+            {
+              "sentence_index": 14,
+              "perplexity": 2.7850963127166084,
+              "loss": 1.024282455444336,
+              "predicted_tokens": 146
+            },
+            {
+              "sentence_index": 15,
+              "perplexity": 3.621476027935692,
+              "loss": 1.286881685256958,
+              "predicted_tokens": 112
+            },
+            {
+              "sentence_index": 16,
+              "perplexity": 2.9232700934248554,
+              "loss": 1.0727028846740723,
+              "predicted_tokens": 120
+            },
+            {
+              "sentence_index": 17,
+              "perplexity": 2.938397978907501,
+              "loss": 1.0778645277023315,
+              "predicted_tokens": 117
+            },
+            {
+              "sentence_index": 18,
+              "perplexity": 2.971708611100267,
+              "loss": 1.089137077331543,
+              "predicted_tokens": 140
+            },
+            {
+              "sentence_index": 19,
+              "perplexity": 3.4180605037946403,
+              "loss": 1.2290732860565186,
+              "predicted_tokens": 120
+            },
+            {
+              "sentence_index": 20,
+              "perplexity": 3.0406238027540784,
+              "loss": 1.112062692642212,
+              "predicted_tokens": 112
+            },
+            {
+              "sentence_index": 21,
+              "perplexity": 3.366585066361704,
+              "loss": 1.2138988971710205,
+              "predicted_tokens": 129
+            },
+            {
+              "sentence_index": 22,
+              "perplexity": 3.3467853975266184,
+              "loss": 1.2080003023147583,
+              "predicted_tokens": 104
+            },
+            {
+              "sentence_index": 23,
+              "perplexity": 3.0678256614912365,
+              "loss": 1.1209690570831299,
+              "predicted_tokens": 137
+            },
+            {
+              "sentence_index": 24,
+              "perplexity": 3.602098354736844,
+              "loss": 1.2815165519714355,
+              "predicted_tokens": 141
+            },
+            {
+              "sentence_index": 25,
+              "perplexity": 3.3640011034807293,
+              "loss": 1.213131070137024,
+              "predicted_tokens": 127
+            },
+            {
+              "sentence_index": 26,
+              "perplexity": 2.9070072871748023,
+              "loss": 1.0671241283416748,
+              "predicted_tokens": 143
+            },
+            {
+              "sentence_index": 27,
+              "perplexity": 2.6055427569938345,
+              "loss": 0.9576410055160522,
+              "predicted_tokens": 131
+            },
+            {
+              "sentence_index": 28,
+              "perplexity": 3.4177577710304634,
+              "loss": 1.2289847135543823,
+              "predicted_tokens": 109
+            },
+            {
+              "sentence_index": 29,
+              "perplexity": 2.7025596314389615,
+              "loss": 0.9941993355751038,
+              "predicted_tokens": 123
+            },
+            {
+              "sentence_index": 30,
+              "perplexity": 3.527246707974514,
+              "loss": 1.2605175971984863,
+              "predicted_tokens": 125
+            },
+            {
+              "sentence_index": 31,
+              "perplexity": 3.4827473483370723,
+              "loss": 1.2478214502334595,
+              "predicted_tokens": 116
+            },
+            {
+              "sentence_index": 32,
+              "perplexity": 3.737419410982644,
+              "loss": 1.3183953762054443,
+              "predicted_tokens": 95
+            },
+            {
+              "sentence_index": 33,
+              "perplexity": 2.683948607189269,
+              "loss": 0.9872890710830688,
+              "predicted_tokens": 127
+            },
+            {
+              "sentence_index": 34,
+              "perplexity": 2.936722696396453,
+              "loss": 1.0772942304611206,
+              "predicted_tokens": 155
+            },
+            {
+              "sentence_index": 35,
+              "perplexity": 3.324743114032736,
+              "loss": 1.201392412185669,
+              "predicted_tokens": 135
+            },
+            {
+              "sentence_index": 36,
+              "perplexity": 3.4656464450142996,
+              "loss": 1.2428991794586182,
+              "predicted_tokens": 112
+            },
+            {
+              "sentence_index": 37,
+              "perplexity": 3.0519433919819496,
+              "loss": 1.1157785654067993,
+              "predicted_tokens": 136
+            },
+            {
+              "sentence_index": 38,
+              "perplexity": 3.3925215739806953,
+              "loss": 1.2215734720230103,
+              "predicted_tokens": 96
+            },
+            {
+              "sentence_index": 39,
+              "perplexity": 3.7712536497988864,
+              "loss": 1.3274074792861938,
+              "predicted_tokens": 98
+            },
+            {
+              "sentence_index": 40,
+              "perplexity": 3.091737644404902,
+              "loss": 1.1287332773208618,
+              "predicted_tokens": 148
+            },
+            {
+              "sentence_index": 41,
+              "perplexity": 3.1476065143740146,
+              "loss": 1.1466423273086548,
+              "predicted_tokens": 151
+            },
+            {
+              "sentence_index": 42,
+              "perplexity": 3.5895383487857058,
+              "loss": 1.278023600578308,
+              "predicted_tokens": 96
+            },
+            {
+              "sentence_index": 43,
+              "perplexity": 3.2470116799184443,
+              "loss": 1.1777350902557373,
+              "predicted_tokens": 116
+            },
+            {
+              "sentence_index": 44,
+              "perplexity": 3.7318921836690424,
+              "loss": 1.3169153928756714,
+              "predicted_tokens": 120
+            },
+            {
+              "sentence_index": 45,
+              "perplexity": 2.881027362370889,
+              "loss": 1.0581469535827637,
+              "predicted_tokens": 145
+            },
+            {
+              "sentence_index": 46,
+              "perplexity": 3.318167997762049,
+              "loss": 1.1994128227233887,
+              "predicted_tokens": 115
+            },
+            {
+              "sentence_index": 47,
+              "perplexity": 3.595057872554067,
+              "loss": 1.2795600891113281,
+              "predicted_tokens": 121
+            },
+            {
+              "sentence_index": 48,
+              "perplexity": 3.264839524671765,
+              "loss": 1.1832106113433838,
+              "predicted_tokens": 102
+            },
+            {
+              "sentence_index": 49,
+              "perplexity": 2.986318113067499,
+              "loss": 1.0940412282943726,
+              "predicted_tokens": 144
+            },
+            {
+              "sentence_index": 50,
+              "perplexity": 3.07017883158604,
+              "loss": 1.1217358112335205,
+              "predicted_tokens": 115
+            }
+          ]
+        },
+        "canonical": {
+          "corpus_perplexity": 3.191607030313009,
+          "corpus_mean_loss": 1.16052456120461,
+          "total_predicted_tokens": 6098,
+          "mean_sentence_perplexity": 3.231617034738566,
+          "std_sentence_perplexity": 0.31369687479234387,
+          "individual": [
+            {
+              "sentence_index": 1,
+              "perplexity": 3.40994734173358,
+              "loss": 1.2266968488693237,
+              "predicted_tokens": 116
+            },
+            {
+              "sentence_index": 2,
+              "perplexity": 2.926560558663045,
+              "loss": 1.073827862739563,
+              "predicted_tokens": 143
+            },
+            {
+              "sentence_index": 3,
+              "perplexity": 3.472452532290085,
+              "loss": 1.244861125946045,
+              "predicted_tokens": 125
+            },
+            {
+              "sentence_index": 4,
+              "perplexity": 3.2048436781640546,
+              "loss": 1.164663314819336,
+              "predicted_tokens": 109
+            },
+            {
+              "sentence_index": 5,
+              "perplexity": 2.6510790994466276,
+              "loss": 0.9749667644500732,
+              "predicted_tokens": 130
+            },
+            {
+              "sentence_index": 6,
+              "perplexity": 3.5112706771337114,
+              "loss": 1.255977988243103,
+              "predicted_tokens": 96
+            },
+            {
+              "sentence_index": 7,
+              "perplexity": 3.0267435962943976,
+              "loss": 1.1074873208999634,
+              "predicted_tokens": 140
+            },
+            {
+              "sentence_index": 8,
+              "perplexity": 3.616874728148208,
+              "loss": 1.285610318183899,
+              "predicted_tokens": 100
+            },
+            {
+              "sentence_index": 9,
+              "perplexity": 3.0936632527920374,
+              "loss": 1.1293559074401855,
+              "predicted_tokens": 114
+            },
+            {
+              "sentence_index": 10,
+              "perplexity": 3.604266206712077,
+              "loss": 1.2821182012557983,
+              "predicted_tokens": 97
+            },
+            {
+              "sentence_index": 11,
+              "perplexity": 3.701562987025655,
+              "loss": 1.3087551593780518,
+              "predicted_tokens": 119
+            },
+            {
+              "sentence_index": 12,
+              "perplexity": 3.292467480032248,
+              "loss": 1.1916372776031494,
+              "predicted_tokens": 108
+            },
+            {
+              "sentence_index": 13,
+              "perplexity": 2.9036733844577207,
+              "loss": 1.065976619720459,
+              "predicted_tokens": 122
+            },
+            {
+              "sentence_index": 14,
+              "perplexity": 2.7747383373068133,
+              "loss": 1.0205564498901367,
+              "predicted_tokens": 146
+            },
+            {
+              "sentence_index": 15,
+              "perplexity": 3.657510090648447,
+              "loss": 1.2967826128005981,
+              "predicted_tokens": 112
+            },
+            {
+              "sentence_index": 16,
+              "perplexity": 2.9232700934248554,
+              "loss": 1.0727028846740723,
+              "predicted_tokens": 120
+            },
+            {
+              "sentence_index": 17,
+              "perplexity": 2.938397978907501,
+              "loss": 1.0778645277023315,
+              "predicted_tokens": 117
+            },
+            {
+              "sentence_index": 18,
+              "perplexity": 2.991465631011175,
+              "loss": 1.0957634449005127,
+              "predicted_tokens": 140
+            },
+            {
+              "sentence_index": 19,
+              "perplexity": 3.420974709571164,
+              "loss": 1.229925513267517,
+              "predicted_tokens": 120
+            },
+            {
+              "sentence_index": 20,
+              "perplexity": 3.032116579396239,
+              "loss": 1.1092609167099,
+              "predicted_tokens": 112
+            },
+            {
+              "sentence_index": 21,
+              "perplexity": 3.3290358699780915,
+              "loss": 1.2026827335357666,
+              "predicted_tokens": 129
+            },
+            {
+              "sentence_index": 22,
+              "perplexity": 3.3157907643539133,
+              "loss": 1.1986961364746094,
+              "predicted_tokens": 104
+            },
+            {
+              "sentence_index": 23,
+              "perplexity": 3.0927793813026896,
+              "loss": 1.1290701627731323,
+              "predicted_tokens": 137
+            },
+            {
+              "sentence_index": 24,
+              "perplexity": 3.6059809659234046,
+              "loss": 1.282593846321106,
+              "predicted_tokens": 141
+            },
+            {
+              "sentence_index": 25,
+              "perplexity": 3.379707116836536,
+              "loss": 1.2177890539169312,
+              "predicted_tokens": 127
+            },
+            {
+              "sentence_index": 26,
+              "perplexity": 2.895077165675865,
+              "loss": 1.0630117654800415,
+              "predicted_tokens": 143
+            },
+            {
+              "sentence_index": 27,
+              "perplexity": 2.6055427569938345,
+              "loss": 0.9576410055160522,
+              "predicted_tokens": 131
+            },
+            {
+              "sentence_index": 28,
+              "perplexity": 3.417189048201978,
+              "loss": 1.2288182973861694,
+              "predicted_tokens": 109
+            },
+            {
+              "sentence_index": 29,
+              "perplexity": 2.7025596314389615,
+              "loss": 0.9941993355751038,
+              "predicted_tokens": 123
+            },
+            {
+              "sentence_index": 30,
+              "perplexity": 3.5268703979357205,
+              "loss": 1.2604109048843384,
+              "predicted_tokens": 125
+            },
+            {
+              "sentence_index": 31,
+              "perplexity": 3.5055475512381546,
+              "loss": 1.2543467283248901,
+              "predicted_tokens": 116
+            },
+            {
+              "sentence_index": 32,
+              "perplexity": 3.7343999033245643,
+              "loss": 1.31758713722229,
+              "predicted_tokens": 95
+            },
+            {
+              "sentence_index": 33,
+              "perplexity": 2.683948607189269,
+              "loss": 0.9872890710830688,
+              "predicted_tokens": 127
+            },
+            {
+              "sentence_index": 34,
+              "perplexity": 2.9088414207100244,
+              "loss": 1.067754864692688,
+              "predicted_tokens": 155
+            },
+            {
+              "sentence_index": 35,
+              "perplexity": 3.276858268777192,
+              "loss": 1.186885118484497,
+              "predicted_tokens": 135
+            },
+            {
+              "sentence_index": 36,
+              "perplexity": 3.46856235431628,
+              "loss": 1.243740200996399,
+              "predicted_tokens": 112
+            },
+            {
+              "sentence_index": 37,
+              "perplexity": 3.0350193790396545,
+              "loss": 1.110217809677124,
+              "predicted_tokens": 136
+            },
+            {
+              "sentence_index": 38,
+              "perplexity": 3.389341088522516,
+              "loss": 1.2206355333328247,
+              "predicted_tokens": 96
+            },
+            {
+              "sentence_index": 39,
+              "perplexity": 3.712159557132569,
+              "loss": 1.3116137981414795,
+              "predicted_tokens": 98
+            },
+            {
+              "sentence_index": 40,
+              "perplexity": 3.0457628993438823,
+              "loss": 1.1137514114379883,
+              "predicted_tokens": 148
+            },
+            {
+              "sentence_index": 41,
+              "perplexity": 3.105616383062269,
+              "loss": 1.1332122087478638,
+              "predicted_tokens": 151
+            },
+            {
+              "sentence_index": 42,
+              "perplexity": 3.615426734614071,
+              "loss": 1.2852098941802979,
+              "predicted_tokens": 96
+            },
+            {
+              "sentence_index": 43,
+              "perplexity": 3.2308884093269925,
+              "loss": 1.1727571487426758,
+              "predicted_tokens": 116
+            },
+            {
+              "sentence_index": 44,
+              "perplexity": 3.704107729252195,
+              "loss": 1.309442400932312,
+              "predicted_tokens": 120
+            },
+            {
+              "sentence_index": 45,
+              "perplexity": 2.866623335642601,
+              "loss": 1.053134799003601,
+              "predicted_tokens": 145
+            },
+            {
+              "sentence_index": 46,
+              "perplexity": 3.297646172403459,
+              "loss": 1.193208932876587,
+              "predicted_tokens": 115
+            },
+            {
+              "sentence_index": 47,
+              "perplexity": 3.5658981187915533,
+              "loss": 1.2714159488677979,
+              "predicted_tokens": 121
+            },
+            {
+              "sentence_index": 48,
+              "perplexity": 3.3042617657835613,
+              "loss": 1.1952130794525146,
+              "predicted_tokens": 102
+            },
+            {
+              "sentence_index": 49,
+              "perplexity": 2.990486182365792,
+              "loss": 1.0954359769821167,
+              "predicted_tokens": 144
+            },
+            {
+              "sentence_index": 50,
+              "perplexity": 3.1150438342911366,
+              "loss": 1.136243224143982,
+              "predicted_tokens": 115
+            }
+          ]
+        },
+        "corpus_ppl_delta_swapped_minus_canonical": 0.006733899382863395,
+        "corpus_ppl_ratio_swapped_over_canonical": 1.002109877349845,
+        "pairwise_analysis": {
+          "mean_pairwise_ppl_delta": 0.0057967306876902745,
+          "std_pairwise_ppl_delta": 0.023540736941572743,
+          "mean_pairwise_ppl_ratio": 1.00184594903016,
+          "mean_pairwise_loss_delta": 0.0018186211585998536,
+          "swapped_higher_ppl_count": 26,
+          "canonical_higher_ppl_count": 16,
+          "ties": 8,
+          "swapped_higher_ppl_fraction": 0.52,
+          "pair_results": [
+            {
+              "id": 1,
+              "template_id": 10,
+              "A": "కృష్ణ",
+              "B": "ప్రియ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.408071872175426,
+              "canonical_perplexity": 3.40994734173358,
+              "ppl_delta_swapped_minus_canonical": -0.001875469558153764,
+              "ppl_ratio_swapped_over_canonical": 0.9994500004339656,
+              "loss_delta_swapped_minus_canonical": -0.0005501508712768555,
+              "swapped_tokens": 116,
+              "canonical_tokens": 116
+            },
+            {
+              "id": 2,
+              "template_id": 2,
+              "A": "సత్య",
+              "B": "ప్రియ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 2.951127483000246,
+              "canonical_perplexity": 2.926560558663045,
+              "ppl_delta_swapped_minus_canonical": 0.02456692433720109,
+              "ppl_ratio_swapped_over_canonical": 1.0083944698374614,
+              "loss_delta_swapped_minus_canonical": 0.008359432220458984,
+              "swapped_tokens": 143,
+              "canonical_tokens": 143
+            },
+            {
+              "id": 3,
+              "template_id": 1,
+              "A": "ప్రభ",
+              "B": "జ్యోతి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.455917111741653,
+              "canonical_perplexity": 3.472452532290085,
+              "ppl_delta_swapped_minus_canonical": -0.016535420548431823,
+              "ppl_ratio_swapped_over_canonical": 0.9952381147345658,
+              "loss_delta_swapped_minus_canonical": -0.004773259162902832,
+              "swapped_tokens": 125,
+              "canonical_tokens": 125
+            },
+            {
+              "id": 4,
+              "template_id": 11,
+              "A": "నంద",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.183500557897258,
+              "canonical_perplexity": 3.2048436781640546,
+              "ppl_delta_swapped_minus_canonical": -0.02134312026679641,
+              "ppl_ratio_swapped_over_canonical": 0.9933403552840296,
+              "loss_delta_swapped_minus_canonical": -0.006681919097900391,
+              "swapped_tokens": 109,
+              "canonical_tokens": 109
+            },
+            {
+              "id": 5,
+              "template_id": 12,
+              "A": "జ్యోతి",
+              "B": "కృష్ణ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.6510790994466276,
+              "canonical_perplexity": 2.6510790994466276,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 130,
+              "canonical_tokens": 130
+            },
+            {
+              "id": 6,
+              "template_id": 5,
+              "A": "రూప",
+              "B": "ప్రభ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.5154580957110593,
+              "canonical_perplexity": 3.5112706771337114,
+              "ppl_delta_swapped_minus_canonical": 0.0041874185773478345,
+              "ppl_ratio_swapped_over_canonical": 1.001192565017735,
+              "loss_delta_swapped_minus_canonical": 0.001191854476928711,
+              "swapped_tokens": 96,
+              "canonical_tokens": 96
+            },
+            {
+              "id": 7,
+              "template_id": 6,
+              "A": "దేవ",
+              "B": "ప్రియ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.072824276140705,
+              "canonical_perplexity": 3.0267435962943976,
+              "ppl_delta_swapped_minus_canonical": 0.04608067984630759,
+              "ppl_ratio_swapped_over_canonical": 1.0152245072568167,
+              "loss_delta_swapped_minus_canonical": 0.015109777450561523,
+              "swapped_tokens": 140,
+              "canonical_tokens": 140
+            },
+            {
+              "id": 8,
+              "template_id": 11,
+              "A": "సత్య",
+              "B": "నాగ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.598638595019539,
+              "canonical_perplexity": 3.616874728148208,
+              "ppl_delta_swapped_minus_canonical": -0.018236133128668897,
+              "ppl_ratio_swapped_over_canonical": 0.9949580412650881,
+              "loss_delta_swapped_minus_canonical": -0.0050547122955322266,
+              "swapped_tokens": 100,
+              "canonical_tokens": 100
+            },
+            {
+              "id": 9,
+              "template_id": 4,
+              "A": "దీప",
+              "B": "హరి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.0936632527920374,
+              "canonical_perplexity": 3.0936632527920374,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 114,
+              "canonical_tokens": 114
+            },
+            {
+              "id": 10,
+              "template_id": 11,
+              "A": "రాజు",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.6063188567663484,
+              "canonical_perplexity": 3.604266206712077,
+              "ppl_delta_swapped_minus_canonical": 0.0020526500542712434,
+              "ppl_ratio_swapped_over_canonical": 1.0005695056737065,
+              "loss_delta_swapped_minus_canonical": 0.0005693435668945312,
+              "swapped_tokens": 97,
+              "canonical_tokens": 97
+            },
+            {
+              "id": 11,
+              "template_id": 1,
+              "A": "ప్రియ",
+              "B": "రమ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.7164071171771242,
+              "canonical_perplexity": 3.701562987025655,
+              "ppl_delta_swapped_minus_canonical": 0.014844130151469237,
+              "ppl_ratio_swapped_over_canonical": 1.0040102330295335,
+              "loss_delta_swapped_minus_canonical": 0.004002213478088379,
+              "swapped_tokens": 119,
+              "canonical_tokens": 119
+            },
+            {
+              "id": 12,
+              "template_id": 13,
+              "A": "విద్య",
+              "B": "దీప",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.3376431892653677,
+              "canonical_perplexity": 3.292467480032248,
+              "ppl_delta_swapped_minus_canonical": 0.045175709233119754,
+              "ppl_ratio_swapped_over_canonical": 1.0137209279991666,
+              "loss_delta_swapped_minus_canonical": 0.01362764835357666,
+              "swapped_tokens": 108,
+              "canonical_tokens": 108
+            },
+            {
+              "id": 13,
+              "template_id": 4,
+              "A": "జ్యోతి",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.9036733844577207,
+              "canonical_perplexity": 2.9036733844577207,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 122,
+              "canonical_tokens": 122
+            },
+            {
+              "id": 14,
+              "template_id": 3,
+              "A": "ప్రేమ",
+              "B": "విద్య",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.7850963127166084,
+              "canonical_perplexity": 2.7747383373068133,
+              "ppl_delta_swapped_minus_canonical": 0.010357975409795106,
+              "ppl_ratio_swapped_over_canonical": 1.0037329557423598,
+              "loss_delta_swapped_minus_canonical": 0.0037260055541992188,
+              "swapped_tokens": 146,
+              "canonical_tokens": 146
+            },
+            {
+              "id": 15,
+              "template_id": 10,
+              "A": "రమ",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.621476027935692,
+              "canonical_perplexity": 3.657510090648447,
+              "ppl_delta_swapped_minus_canonical": -0.03603406271275489,
+              "ppl_ratio_swapped_over_canonical": 0.9901479252771204,
+              "loss_delta_swapped_minus_canonical": -0.009900927543640137,
+              "swapped_tokens": 112,
+              "canonical_tokens": 112
+            },
+            {
+              "id": 16,
+              "template_id": 12,
+              "A": "ప్రభ",
+              "B": "రాజు",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.9232700934248554,
+              "canonical_perplexity": 2.9232700934248554,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 120,
+              "canonical_tokens": 120
+            },
+            {
+              "id": 17,
+              "template_id": 12,
+              "A": "నంద",
+              "B": "తార",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 2.938397978907501,
+              "canonical_perplexity": 2.938397978907501,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 117,
+              "canonical_tokens": 117
+            },
+            {
+              "id": 18,
+              "template_id": 3,
+              "A": "తార",
+              "B": "సత్య",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 2.971708611100267,
+              "canonical_perplexity": 2.991465631011175,
+              "ppl_delta_swapped_minus_canonical": -0.01975701991090828,
+              "ppl_ratio_swapped_over_canonical": 0.9933955383922529,
+              "loss_delta_swapped_minus_canonical": -0.0066263675689697266,
+              "swapped_tokens": 140,
+              "canonical_tokens": 140
+            },
+            {
+              "id": 19,
+              "template_id": 14,
+              "A": "రూప",
+              "B": "నాగ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.4180605037946403,
+              "canonical_perplexity": 3.420974709571164,
+              "ppl_delta_swapped_minus_canonical": -0.0029142057765234597,
+              "ppl_ratio_swapped_over_canonical": 0.9991481358314722,
+              "loss_delta_swapped_minus_canonical": -0.0008522272109985352,
+              "swapped_tokens": 120,
+              "canonical_tokens": 120
+            },
+            {
+              "id": 20,
+              "template_id": 8,
+              "A": "ప్రభ",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.0406238027540784,
+              "canonical_perplexity": 3.032116579396239,
+              "ppl_delta_swapped_minus_canonical": 0.0085072233578396,
+              "ppl_ratio_swapped_over_canonical": 1.0028057045747012,
+              "loss_delta_swapped_minus_canonical": 0.0028017759323120117,
+              "swapped_tokens": 112,
+              "canonical_tokens": 112
+            },
+            {
+              "id": 21,
+              "template_id": 6,
+              "A": "రమ",
+              "B": "దీప",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.366585066361704,
+              "canonical_perplexity": 3.3290358699780915,
+              "ppl_delta_swapped_minus_canonical": 0.037549196383612315,
+              "ppl_ratio_swapped_over_canonical": 1.011279300629422,
+              "loss_delta_swapped_minus_canonical": 0.011216163635253906,
+              "swapped_tokens": 129,
+              "canonical_tokens": 129
+            },
+            {
+              "id": 22,
+              "template_id": 0,
+              "A": "విద్య",
+              "B": "ప్రియ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.3467853975266184,
+              "canonical_perplexity": 3.3157907643539133,
+              "ppl_delta_swapped_minus_canonical": 0.03099463317270512,
+              "ppl_ratio_swapped_over_canonical": 1.0093475841437012,
+              "loss_delta_swapped_minus_canonical": 0.009304165840148926,
+              "swapped_tokens": 104,
+              "canonical_tokens": 104
+            },
+            {
+              "id": 23,
+              "template_id": 6,
+              "A": "శివ",
+              "B": "హరి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.0678256614912365,
+              "canonical_perplexity": 3.0927793813026896,
+              "ppl_delta_swapped_minus_canonical": -0.024953719811453112,
+              "ppl_ratio_swapped_over_canonical": 0.9919316198360898,
+              "loss_delta_swapped_minus_canonical": -0.008101105690002441,
+              "swapped_tokens": 137,
+              "canonical_tokens": 137
+            },
+            {
+              "id": 24,
+              "template_id": 7,
+              "A": "ప్రభ",
+              "B": "లలిత",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.602098354736844,
+              "canonical_perplexity": 3.6059809659234046,
+              "ppl_delta_swapped_minus_canonical": -0.003882611186560414,
+              "ppl_ratio_swapped_over_canonical": 0.9989232857235656,
+              "loss_delta_swapped_minus_canonical": -0.0010772943496704102,
+              "swapped_tokens": 141,
+              "canonical_tokens": 141
+            },
+            {
+              "id": 25,
+              "template_id": 1,
+              "A": "ప్రభ",
+              "B": "లక్ష్మి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.3640011034807293,
+              "canonical_perplexity": 3.379707116836536,
+              "ppl_delta_swapped_minus_canonical": -0.01570601335580646,
+              "ppl_ratio_swapped_over_canonical": 0.9953528478022358,
+              "loss_delta_swapped_minus_canonical": -0.0046579837799072266,
+              "swapped_tokens": 127,
+              "canonical_tokens": 127
+            },
+            {
+              "id": 26,
+              "template_id": 6,
+              "A": "ప్రేమ",
+              "B": "విద్య",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.9070072871748023,
+              "canonical_perplexity": 2.895077165675865,
+              "ppl_delta_swapped_minus_canonical": 0.01193012149893713,
+              "ppl_ratio_swapped_over_canonical": 1.0041208302287694,
+              "loss_delta_swapped_minus_canonical": 0.004112362861633301,
+              "swapped_tokens": 143,
+              "canonical_tokens": 143
+            },
+            {
+              "id": 27,
+              "template_id": 12,
+              "A": "లక్ష్మి",
+              "B": "విద్య",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.6055427569938345,
+              "canonical_perplexity": 2.6055427569938345,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 131,
+              "canonical_tokens": 131
+            },
+            {
+              "id": 28,
+              "template_id": 13,
+              "A": "లక్ష్మి",
+              "B": "వేద",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.4177577710304634,
+              "canonical_perplexity": 3.417189048201978,
+              "ppl_delta_swapped_minus_canonical": 0.0005687228284854129,
+              "ppl_ratio_swapped_over_canonical": 1.0001664300161517,
+              "loss_delta_swapped_minus_canonical": 0.00016641616821289062,
+              "swapped_tokens": 109,
+              "canonical_tokens": 109
+            },
+            {
+              "id": 29,
+              "template_id": 12,
+              "A": "సత్య",
+              "B": "విద్య",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.7025596314389615,
+              "canonical_perplexity": 2.7025596314389615,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 123,
+              "canonical_tokens": 123
+            },
+            {
+              "id": 30,
+              "template_id": 14,
+              "A": "కృష్ణ",
+              "B": "లలిత",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.527246707974514,
+              "canonical_perplexity": 3.5268703979357205,
+              "ppl_delta_swapped_minus_canonical": 0.00037631003879345926,
+              "ppl_ratio_swapped_over_canonical": 1.0001066980059754,
+              "loss_delta_swapped_minus_canonical": 0.00010669231414794922,
+              "swapped_tokens": 125,
+              "canonical_tokens": 125
+            },
+            {
+              "id": 31,
+              "template_id": 1,
+              "A": "వేద",
+              "B": "దీప",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.4827473483370723,
+              "canonical_perplexity": 3.5055475512381546,
+              "ppl_delta_swapped_minus_canonical": -0.02280020290108231,
+              "ppl_ratio_swapped_over_canonical": 0.9934959653041849,
+              "loss_delta_swapped_minus_canonical": -0.006525278091430664,
+              "swapped_tokens": 116,
+              "canonical_tokens": 116
+            },
+            {
+              "id": 32,
+              "template_id": 9,
+              "A": "ప్రియ",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.737419410982644,
+              "canonical_perplexity": 3.7343999033245643,
+              "ppl_delta_swapped_minus_canonical": 0.0030195076580796787,
+              "ppl_ratio_swapped_over_canonical": 1.0008085656962962,
+              "loss_delta_swapped_minus_canonical": 0.0008082389831542969,
+              "swapped_tokens": 95,
+              "canonical_tokens": 95
+            },
+            {
+              "id": 33,
+              "template_id": 12,
+              "A": "రూప",
+              "B": "లక్ష్మి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 2.683948607189269,
+              "canonical_perplexity": 2.683948607189269,
+              "ppl_delta_swapped_minus_canonical": 0.0,
+              "ppl_ratio_swapped_over_canonical": 1.0,
+              "loss_delta_swapped_minus_canonical": 0.0,
+              "swapped_tokens": 127,
+              "canonical_tokens": 127
+            },
+            {
+              "id": 34,
+              "template_id": 7,
+              "A": "విద్య",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.936722696396453,
+              "canonical_perplexity": 2.9088414207100244,
+              "ppl_delta_swapped_minus_canonical": 0.02788127568642862,
+              "ppl_ratio_swapped_over_canonical": 1.0095850105433466,
+              "loss_delta_swapped_minus_canonical": 0.009539365768432617,
+              "swapped_tokens": 155,
+              "canonical_tokens": 155
+            },
+            {
+              "id": 35,
+              "template_id": 14,
+              "A": "జ్యోతి",
+              "B": "లక్ష్మి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.324743114032736,
+              "canonical_perplexity": 3.276858268777192,
+              "ppl_delta_swapped_minus_canonical": 0.04788484525554404,
+              "ppl_ratio_swapped_over_canonical": 1.0146130352086948,
+              "loss_delta_swapped_minus_canonical": 0.014507293701171875,
+              "swapped_tokens": 135,
+              "canonical_tokens": 135
+            },
+            {
+              "id": 36,
+              "template_id": 10,
+              "A": "ప్రేమ",
+              "B": "దీప",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.4656464450142996,
+              "canonical_perplexity": 3.46856235431628,
+              "ppl_delta_swapped_minus_canonical": -0.0029159093019801574,
+              "ppl_ratio_swapped_over_canonical": 0.9991593320217088,
+              "loss_delta_swapped_minus_canonical": -0.0008410215377807617,
+              "swapped_tokens": 112,
+              "canonical_tokens": 112
+            },
+            {
+              "id": 37,
+              "template_id": 3,
+              "A": "దీప",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.0519433919819496,
+              "canonical_perplexity": 3.0350193790396545,
+              "ppl_delta_swapped_minus_canonical": 0.016924012942295175,
+              "ppl_ratio_swapped_over_canonical": 1.0055762454299881,
+              "loss_delta_swapped_minus_canonical": 0.005560755729675293,
+              "swapped_tokens": 136,
+              "canonical_tokens": 136
+            },
+            {
+              "id": 38,
+              "template_id": 0,
+              "A": "రాజు",
+              "B": "శివ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.3925215739806953,
+              "canonical_perplexity": 3.389341088522516,
+              "ppl_delta_swapped_minus_canonical": 0.003180485458179394,
+              "ppl_ratio_swapped_over_canonical": 1.000938378692233,
+              "loss_delta_swapped_minus_canonical": 0.0009379386901855469,
+              "swapped_tokens": 96,
+              "canonical_tokens": 96
+            },
+            {
+              "id": 39,
+              "template_id": 13,
+              "A": "శివ",
+              "B": "తార",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.7712536497988864,
+              "canonical_perplexity": 3.712159557132569,
+              "ppl_delta_swapped_minus_canonical": 0.059094092666317266,
+              "ppl_ratio_swapped_over_canonical": 1.0159190605244253,
+              "loss_delta_swapped_minus_canonical": 0.015793681144714355,
+              "swapped_tokens": 98,
+              "canonical_tokens": 98
+            },
+            {
+              "id": 40,
+              "template_id": 7,
+              "A": "సత్య",
+              "B": "జ్యోతి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.091737644404902,
+              "canonical_perplexity": 3.0457628993438823,
+              "ppl_delta_swapped_minus_canonical": 0.04597474506101973,
+              "ppl_ratio_swapped_over_canonical": 1.0150946566034158,
+              "loss_delta_swapped_minus_canonical": 0.014981865882873535,
+              "swapped_tokens": 148,
+              "canonical_tokens": 148
+            },
+            {
+              "id": 41,
+              "template_id": 7,
+              "A": "జ్యోతి",
+              "B": "నంద",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.1476065143740146,
+              "canonical_perplexity": 3.105616383062269,
+              "ppl_delta_swapped_minus_canonical": 0.04199013131174567,
+              "ppl_ratio_swapped_over_canonical": 1.0135207076897055,
+              "loss_delta_swapped_minus_canonical": 0.013430118560791016,
+              "swapped_tokens": 151,
+              "canonical_tokens": 151
+            },
+            {
+              "id": 42,
+              "template_id": 5,
+              "A": "నాగ",
+              "B": "నంద",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.5895383487857058,
+              "canonical_perplexity": 3.615426734614071,
+              "ppl_delta_swapped_minus_canonical": -0.02588838582836539,
+              "ppl_ratio_swapped_over_canonical": 0.9928394660634359,
+              "loss_delta_swapped_minus_canonical": -0.007186293601989746,
+              "swapped_tokens": 96,
+              "canonical_tokens": 96
+            },
+            {
+              "id": 43,
+              "template_id": 10,
+              "A": "రాజు",
+              "B": "ప్రియ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.2470116799184443,
+              "canonical_perplexity": 3.2308884093269925,
+              "ppl_delta_swapped_minus_canonical": 0.0161232705914518,
+              "ppl_ratio_swapped_over_canonical": 1.0049903520483427,
+              "loss_delta_swapped_minus_canonical": 0.0049779415130615234,
+              "swapped_tokens": 116,
+              "canonical_tokens": 116
+            },
+            {
+              "id": 44,
+              "template_id": 1,
+              "A": "జ్యోతి",
+              "B": "రమ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.7318921836690424,
+              "canonical_perplexity": 3.704107729252195,
+              "ppl_delta_swapped_minus_canonical": 0.027784454416847293,
+              "ppl_ratio_swapped_over_canonical": 1.0075009844334244,
+              "loss_delta_swapped_minus_canonical": 0.007472991943359375,
+              "swapped_tokens": 120,
+              "canonical_tokens": 120
+            },
+            {
+              "id": 45,
+              "template_id": 2,
+              "A": "ప్రేమ",
+              "B": "ప్రభ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 2.881027362370889,
+              "canonical_perplexity": 2.866623335642601,
+              "ppl_delta_swapped_minus_canonical": 0.014404026728287889,
+              "ppl_ratio_swapped_over_canonical": 1.0050247364378826,
+              "loss_delta_swapped_minus_canonical": 0.005012154579162598,
+              "swapped_tokens": 145,
+              "canonical_tokens": 145
+            },
+            {
+              "id": 46,
+              "template_id": 13,
+              "A": "ప్రియ",
+              "B": "లక్ష్మి",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 3.318167997762049,
+              "canonical_perplexity": 3.297646172403459,
+              "ppl_delta_swapped_minus_canonical": 0.02052182535858993,
+              "ppl_ratio_swapped_over_canonical": 1.0062231738293599,
+              "loss_delta_swapped_minus_canonical": 0.006203889846801758,
+              "swapped_tokens": 115,
+              "canonical_tokens": 115
+            },
+            {
+              "id": 47,
+              "template_id": 14,
+              "A": "విద్య",
+              "B": "రమ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.595057872554067,
+              "canonical_perplexity": 3.5658981187915533,
+              "ppl_delta_swapped_minus_canonical": 0.029159753762513674,
+              "ppl_ratio_swapped_over_canonical": 1.0081773939667114,
+              "loss_delta_swapped_minus_canonical": 0.008144140243530273,
+              "swapped_tokens": 121,
+              "canonical_tokens": 121
+            },
+            {
+              "id": 48,
+              "template_id": 13,
+              "A": "రాజు",
+              "B": "దేవ",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.264839524671765,
+              "canonical_perplexity": 3.3042617657835613,
+              "ppl_delta_swapped_minus_canonical": -0.039422241111796374,
+              "ppl_ratio_swapped_over_canonical": 0.9880692741961236,
+              "loss_delta_swapped_minus_canonical": -0.01200246810913086,
+              "swapped_tokens": 102,
+              "canonical_tokens": 102
+            },
+            {
+              "id": 49,
+              "template_id": 6,
+              "A": "ప్రేమ",
+              "B": "ప్రభ",
+              "initial_order": "B-A",
+              "flipped": false,
+              "swapped_perplexity": 2.986318113067499,
+              "canonical_perplexity": 2.990486182365792,
+              "ppl_delta_swapped_minus_canonical": -0.004168069298292831,
+              "ppl_ratio_swapped_over_canonical": 0.998606223522158,
+              "loss_delta_swapped_minus_canonical": -0.0013947486877441406,
+              "swapped_tokens": 144,
+              "canonical_tokens": 144
+            },
+            {
+              "id": 50,
+              "template_id": 11,
+              "A": "ప్రేమ",
+              "B": "లక్ష్మి",
+              "initial_order": "A-B",
+              "flipped": true,
+              "swapped_perplexity": 3.07017883158604,
+              "canonical_perplexity": 3.1150438342911366,
+              "ppl_delta_swapped_minus_canonical": -0.044865002705096746,
+              "ppl_ratio_swapped_over_canonical": 0.9855973125606734,
+              "loss_delta_swapped_minus_canonical": -0.014507412910461426,
+              "swapped_tokens": 115,
+              "canonical_tokens": 115
+            }
+          ]
+        }
+      }
+    }
+  }
+}
