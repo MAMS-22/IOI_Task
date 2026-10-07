@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate Hindi IOI minimal-pair corpora from templates and vocabulary.
+Generate Telugu IOI minimal-pair corpora from templates and vocabulary.
 
 For each generated pair:
   - The same A, B, PLACE, OBJECT and template are used for both conditions.
@@ -89,8 +89,8 @@ def fill_template(template_text, a, b, place=None, obj=None, flip=False):
         marker = "__INITIAL_AB_MARKER__"
         # Only alter the first occurrence of the exact coordinated phrase.
         # This preserves the grammatical B -> A relationship.
-        text = template_text.replace("[B] और [A]", marker, 1)
-        text = text.replace(marker, "[A] और [B]", 1)
+        text = template_text.replace("[B] మరియు [A]", marker, 1)
+        text = text.replace(marker, "[A] మరియు [B]", 1)
     else:
         text = template_text
 
@@ -150,17 +150,17 @@ def generate_pairs(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Generate Hindi IOI swapped/canonical minimal pairs."
+        description="Generate Telugu IOI swapped/canonical minimal pairs."
     )
     parser.add_argument(
         "--templates",
-        default="./hindi_templates.json",
-        help="Path to Hindi template JSON.",
+        default="./telugu_templates.json",
+        help="Path to Telugu template JSON.",
     )
     parser.add_argument(
         "--vocab",
-        default="./hindi_vocab.json",
-        help="Path to Hindi vocabulary JSON.",
+        default="./telugu_vocab.json",
+        help="Path to Telugu vocabulary JSON.",
     )
     parser.add_argument(
         "--count",
@@ -205,7 +205,7 @@ def main():
     formatted_now = now.strftime("%Y%m%d_%H%M")
 
     if args.output is None:
-        filename = f"hindi_corpus_{args.count}_{args.type}_{formatted_now}.json"
+        filename = f"telugu_corpus_{args.count}_{args.type}_{formatted_now}.json"
 
     args.output = f"./{filename}"
 
@@ -223,7 +223,7 @@ def main():
     )
 
     result = {
-        "language": "Hindi",
+        "language": "Telugu",
         "count": args.count,
         "generation_type": args.type,
         "seed": args.seed,
