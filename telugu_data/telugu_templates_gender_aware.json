@@ -1,0 +1,167 @@
+[
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] ఒక [OBJECT] [A]కు [B_VERB].",
+    "canonical": "అప్పుడు, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] [A]కు ఒక [OBJECT] [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] [PLACE]లో చాలా సరదాగా గడిపారు. [B] ఒక [OBJECT] [A]కు [B_VERB].",
+    "canonical": "అప్పుడు, [B] మరియు [A] [PLACE]లో చాలా సరదాగా గడిపారు. [B] [A]కు ఒక [OBJECT] [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] [PLACE]లో పని చేస్తూ ఉన్నారు. [B] ఒక [OBJECT] [A]కు ఇవ్వాలని [B_VERB].",
+    "canonical": "అప్పుడు, [B] మరియు [A] [PLACE]లో పని చేస్తూ ఉన్నారు. [B] [A]కు ఒక [OBJECT] ఇవ్వాలని [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "నిర్ణయించుకున్నాడు",
+      "F": "నిర్ణయించుకుంది"
+    }
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] [PLACE]కి వెళ్లాలని ఆలోచిస్తున్నారు. [B] ఒక [OBJECT] [A]కు [B_VERB].",
+    "canonical": "అప్పుడు, [B] మరియు [A] [PLACE]కి వెళ్లాలని ఆలోచిస్తున్నారు. [B] [A]కు ఒక [OBJECT] [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇవ్వాలనుకున్నాడు",
+      "F": "ఇవ్వాలనుకుంది"
+    }
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] చాలా సేపు వాదించుకున్నారు, ఆ తర్వాత [B] [A]తో [B_VERB].",
+    "canonical": "అప్పుడు, [B] మరియు [A] చాలా సేపు వాదించుకున్నారు, ఆ తర్వాత [B] [A]తో [B_VERB].",
+    "has_place": false,
+    "has_object": false,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "చెప్పాడు",
+      "F": "చెప్పింది"
+    }
+  },
+  {
+    "swapped": "[B] మరియు [A] [PLACE]కి వెళ్లిన తర్వాత, [B] ఒక [OBJECT] [A]కు [B_VERB].",
+    "canonical": "[B] మరియు [A] [PLACE]కి వెళ్లిన తర్వాత, [B] [A]కు ఒక [OBJECT] [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  },
+  {
+    "swapped": "[B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికినప్పుడు, [B] దానిని [A]కు ఇవ్వాలని [B_VERB].",
+    "canonical": "[B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికినప్పుడు, [B] [A]కు దానిని ఇవ్వాలని [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "నిర్ణయించుకున్నాడు",
+      "F": "నిర్ణయించుకుంది"
+    }
+  },
+  {
+    "swapped": "[B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికినప్పుడు, [B] ఆ [OBJECT]ను [A]కు ఇవ్వాలని [B_VERB].",
+    "canonical": "[B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికినప్పుడు, [B] [A]కు ఆ [OBJECT]ను ఇవ్వాలని [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "నిర్ణయించుకున్నాడు",
+      "F": "నిర్ణయించుకుంది"
+    }
+  },
+  {
+    "swapped": "[B] మరియు [A] [PLACE]లో పని చేస్తున్నప్పుడు, [B] ఒక [OBJECT] [A]కు [B_VERB].",
+    "canonical": "[B] మరియు [A] [PLACE]లో పని చేస్తున్నప్పుడు, [B] [A]కు ఒక [OBJECT] [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  },
+  {
+    "swapped": "[B] మరియు [A] [PLACE]కి వెళ్తున్నప్పుడు, [B] ఒక [OBJECT] [A]కు [B_VERB].",
+    "canonical": "[B] మరియు [A] [PLACE]కి వెళ్తున్నప్పుడు, [B] [A]కు ఒక [OBJECT] [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  },
+  {
+    "swapped": "భోజనం తర్వాత, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] ఒక [OBJECT] [A]కు [B_VERB].",
+    "canonical": "భోజనం తర్వాత, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] [A]కు ఒక [OBJECT] [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  },
+  {
+    "swapped": "ఆ తర్వాత, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] ఒక [OBJECT] [A]కు [B_VERB].",
+    "canonical": "ఆ తర్వాత, [B] మరియు [A] [PLACE]కి వెళ్లారు. [B] [A]కు ఒక [OBJECT] [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  },
+  {
+    "swapped": "అప్పుడు, [B] మరియు [A] చాలా సేపు వాదించుకున్నారు. ఆ తర్వాత [B] [A]తో [B_VERB].",
+    "canonical": "అప్పుడు, [B] మరియు [A] చాలా సేపు వాదించుకున్నారు. ఆ తర్వాత [B] [A]తో [B_VERB].",
+    "has_place": false,
+    "has_object": false,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "చెప్పాడు",
+      "F": "చెప్పింది"
+    }
+  },
+  {
+    "swapped": "[B] మరియు [A] వెళ్లిన [PLACE]లో ఒక [OBJECT] ఉంది. [B] దానిని [A]కు [B_VERB].",
+    "canonical": "[B] మరియు [A] వెళ్లిన [PLACE]లో ఒక [OBJECT] ఉంది. [B] [A]కు దానిని [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  },
+  {
+    "swapped": "స్నేహితులు [B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికింది. [B] దానిని [A]కు [B_VERB].",
+    "canonical": "స్నేహితులు [B] మరియు [A]లకు [PLACE]లో ఒక [OBJECT] దొరికింది. [B] [A]కు దానిని [B_VERB].",
+    "has_place": true,
+    "has_object": true,
+    "gender_sensitive": true,
+    "verb_forms": {
+      "M": "ఇచ్చాడు",
+      "F": "ఇచ్చింది"
+    }
+  }
+]
