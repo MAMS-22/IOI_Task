@@ -1,0 +1,2011 @@
+{
+  "language": "English",
+  "source": "Wang et al. (2023) IOI templates",
+  "count": 200,
+  "generation_type": "both",
+  "seed": 42,
+  "templates_file": "./english_templates.json",
+  "vocab_file": "./english_vocab.json",
+  "items": [
+    {
+      "id": 1,
+      "template_id": 10,
+      "IO": "Andrew",
+      "S": "Matthew",
+      "place": "gym",
+      "object": "note",
+      "canonical": "After the lunch, Matthew and Andrew went to the gym. Matthew gave a note to Andrew",
+      "swapped": "After the lunch, Andrew and Matthew went to the gym. Matthew gave a note to Andrew"
+    },
+    {
+      "id": 2,
+      "template_id": 3,
+      "IO": "Eric",
+      "S": "Jason",
+      "place": "gym",
+      "object": "gift",
+      "canonical": "Then, Jason and Eric were thinking about going to the gym. Jason wanted to give a gift to Eric",
+      "swapped": "Then, Eric and Jason were thinking about going to the gym. Jason wanted to give a gift to Eric"
+    },
+    {
+      "id": 3,
+      "template_id": 10,
+      "IO": "Alicia",
+      "S": "Dustin",
+      "place": "garden",
+      "object": "key",
+      "canonical": "After the lunch, Dustin and Alicia went to the garden. Dustin gave a key to Alicia",
+      "swapped": "After the lunch, Alicia and Dustin went to the garden. Dustin gave a key to Alicia"
+    },
+    {
+      "id": 4,
+      "template_id": 6,
+      "IO": "Ashley",
+      "S": "Matthew",
+      "place": "garden",
+      "object": "book",
+      "canonical": "When Matthew and Ashley got a book at the garden, Matthew decided to give it to Ashley",
+      "swapped": "When Ashley and Matthew got a book at the garden, Matthew decided to give it to Ashley"
+    },
+    {
+      "id": 5,
+      "template_id": 3,
+      "IO": "Jamie",
+      "S": "Mary",
+      "place": "store",
+      "object": "ring",
+      "canonical": "Then, Mary and Jamie were thinking about going to the store. Mary wanted to give a ring to Jamie",
+      "swapped": "Then, Jamie and Mary were thinking about going to the store. Mary wanted to give a ring to Jamie"
+    },
+    {
+      "id": 6,
+      "template_id": 3,
+      "IO": "Vanessa",
+      "S": "Lindsey",
+      "place": "gym",
+      "object": "ring",
+      "canonical": "Then, Lindsey and Vanessa were thinking about going to the gym. Lindsey wanted to give a ring to Vanessa",
+      "swapped": "Then, Vanessa and Lindsey were thinking about going to the gym. Lindsey wanted to give a ring to Vanessa"
+    },
+    {
+      "id": 7,
+      "template_id": 6,
+      "IO": "Eric",
+      "S": "Rebecca",
+      "place": "library",
+      "object": "note",
+      "canonical": "When Rebecca and Eric got a note at the library, Rebecca decided to give it to Eric",
+      "swapped": "When Eric and Rebecca got a note at the library, Rebecca decided to give it to Eric"
+    },
+    {
+      "id": 8,
+      "template_id": 12,
+      "IO": "Michael",
+      "S": "Samuel",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Samuel and Michael had a long argument. Afterwards Samuel said to Michael",
+      "swapped": "Then, Michael and Samuel had a long argument. Afterwards Samuel said to Michael"
+    },
+    {
+      "id": 9,
+      "template_id": 12,
+      "IO": "William",
+      "S": "Shannon",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Shannon and William had a long argument. Afterwards Shannon said to William",
+      "swapped": "Then, William and Shannon had a long argument. Afterwards Shannon said to William"
+    },
+    {
+      "id": 10,
+      "template_id": 6,
+      "IO": "Brittany",
+      "S": "Thomas",
+      "place": "restaurant",
+      "object": "book",
+      "canonical": "When Thomas and Brittany got a book at the restaurant, Thomas decided to give it to Brittany",
+      "swapped": "When Brittany and Thomas got a book at the restaurant, Thomas decided to give it to Brittany"
+    },
+    {
+      "id": 11,
+      "template_id": 12,
+      "IO": "Brittany",
+      "S": "Joseph",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Joseph and Brittany had a long argument. Afterwards Joseph said to Brittany",
+      "swapped": "Then, Brittany and Joseph had a long argument. Afterwards Joseph said to Brittany"
+    },
+    {
+      "id": 12,
+      "template_id": 1,
+      "IO": "Amy",
+      "S": "John",
+      "place": "office",
+      "object": "phone",
+      "canonical": "Then, John and Amy had a lot of fun at the office. John gave a phone to Amy",
+      "swapped": "Then, Amy and John had a lot of fun at the office. John gave a phone to Amy"
+    },
+    {
+      "id": 13,
+      "template_id": 5,
+      "IO": "Erica",
+      "S": "Kevin",
+      "place": "bank",
+      "object": "drink",
+      "canonical": "After Kevin and Erica went to the bank, Kevin gave a drink to Erica",
+      "swapped": "After Erica and Kevin went to the bank, Kevin gave a drink to Erica"
+    },
+    {
+      "id": 14,
+      "template_id": 11,
+      "IO": "Rebecca",
+      "S": "Dustin",
+      "place": "garden",
+      "object": "watch",
+      "canonical": "Afterwards, Dustin and Rebecca went to the garden. Dustin gave a watch to Rebecca",
+      "swapped": "Afterwards, Rebecca and Dustin went to the garden. Dustin gave a watch to Rebecca"
+    },
+    {
+      "id": 15,
+      "template_id": 6,
+      "IO": "James",
+      "S": "Angela",
+      "place": "hospital",
+      "object": "phone",
+      "canonical": "When Angela and James got a phone at the hospital, Angela decided to give it to James",
+      "swapped": "When James and Angela got a phone at the hospital, Angela decided to give it to James"
+    },
+    {
+      "id": 16,
+      "template_id": 10,
+      "IO": "Travis",
+      "S": "Kimberly",
+      "place": "library",
+      "object": "book",
+      "canonical": "After the lunch, Kimberly and Travis went to the library. Kimberly gave a book to Travis",
+      "swapped": "After the lunch, Travis and Kimberly went to the library. Kimberly gave a book to Travis"
+    },
+    {
+      "id": 17,
+      "template_id": 11,
+      "IO": "Daniel",
+      "S": "Jennifer",
+      "place": "park",
+      "object": "book",
+      "canonical": "Afterwards, Jennifer and Daniel went to the park. Jennifer gave a book to Daniel",
+      "swapped": "Afterwards, Daniel and Jennifer went to the park. Jennifer gave a book to Daniel"
+    },
+    {
+      "id": 18,
+      "template_id": 12,
+      "IO": "Christina",
+      "S": "James",
+      "place": null,
+      "object": null,
+      "canonical": "Then, James and Christina had a long argument. Afterwards James said to Christina",
+      "swapped": "Then, Christina and James had a long argument. Afterwards James said to Christina"
+    },
+    {
+      "id": 19,
+      "template_id": 13,
+      "IO": "Elizabeth",
+      "S": "John",
+      "place": "house",
+      "object": "note",
+      "canonical": "The house John and Elizabeth went to had a note. John gave it to Elizabeth",
+      "swapped": "The house Elizabeth and John went to had a note. John gave it to Elizabeth"
+    },
+    {
+      "id": 20,
+      "template_id": 7,
+      "IO": "Kenneth",
+      "S": "Kimberly",
+      "place": "restaurant",
+      "object": "bag",
+      "canonical": "When Kimberly and Kenneth got a bag at the restaurant, Kimberly decided to give the bag to Kenneth",
+      "swapped": "When Kenneth and Kimberly got a bag at the restaurant, Kimberly decided to give the bag to Kenneth"
+    },
+    {
+      "id": 21,
+      "template_id": 5,
+      "IO": "Anthony",
+      "S": "Alexander",
+      "place": "hospital",
+      "object": "map",
+      "canonical": "After Alexander and Anthony went to the hospital, Alexander gave a map to Anthony",
+      "swapped": "After Anthony and Alexander went to the hospital, Alexander gave a map to Anthony"
+    },
+    {
+      "id": 22,
+      "template_id": 14,
+      "IO": "Jesse",
+      "S": "Bryan",
+      "place": "garden",
+      "object": "key",
+      "canonical": "Friends Bryan and Jesse found a key at the garden. Bryan gave it to Jesse",
+      "swapped": "Friends Jesse and Bryan found a key at the garden. Bryan gave it to Jesse"
+    },
+    {
+      "id": 23,
+      "template_id": 10,
+      "IO": "Jonathan",
+      "S": "Dustin",
+      "place": "gym",
+      "object": "book",
+      "canonical": "After the lunch, Dustin and Jonathan went to the gym. Dustin gave a book to Jonathan",
+      "swapped": "After the lunch, Jonathan and Dustin went to the gym. Dustin gave a book to Jonathan"
+    },
+    {
+      "id": 24,
+      "template_id": 2,
+      "IO": "Jacob",
+      "S": "Amy",
+      "place": "hospital",
+      "object": "watch",
+      "canonical": "Then, Amy and Jacob were working at the hospital. Amy decided to give a watch to Jacob",
+      "swapped": "Then, Jacob and Amy were working at the hospital. Amy decided to give a watch to Jacob"
+    },
+    {
+      "id": 25,
+      "template_id": 10,
+      "IO": "Katie",
+      "S": "Angela",
+      "place": "school",
+      "object": "coin",
+      "canonical": "After the lunch, Angela and Katie went to the school. Angela gave a coin to Katie",
+      "swapped": "After the lunch, Katie and Angela went to the school. Angela gave a coin to Katie"
+    },
+    {
+      "id": 26,
+      "template_id": 5,
+      "IO": "Samuel",
+      "S": "Amanda",
+      "place": "school",
+      "object": "phone",
+      "canonical": "After Amanda and Samuel went to the school, Amanda gave a phone to Samuel",
+      "swapped": "After Samuel and Amanda went to the school, Amanda gave a phone to Samuel"
+    },
+    {
+      "id": 27,
+      "template_id": 0,
+      "IO": "Laura",
+      "S": "Jeremy",
+      "place": "hospital",
+      "object": "gift",
+      "canonical": "Then, Jeremy and Laura went to the hospital. Jeremy gave a gift to Laura",
+      "swapped": "Then, Laura and Jeremy went to the hospital. Jeremy gave a gift to Laura"
+    },
+    {
+      "id": 28,
+      "template_id": 3,
+      "IO": "Tyler",
+      "S": "Courtney",
+      "place": "office",
+      "object": "book",
+      "canonical": "Then, Courtney and Tyler were thinking about going to the office. Courtney wanted to give a book to Tyler",
+      "swapped": "Then, Tyler and Courtney were thinking about going to the office. Courtney wanted to give a book to Tyler"
+    },
+    {
+      "id": 29,
+      "template_id": 10,
+      "IO": "Erin",
+      "S": "Michelle",
+      "place": "mall",
+      "object": "watch",
+      "canonical": "After the lunch, Michelle and Erin went to the mall. Michelle gave a watch to Erin",
+      "swapped": "After the lunch, Erin and Michelle went to the mall. Michelle gave a watch to Erin"
+    },
+    {
+      "id": 30,
+      "template_id": 10,
+      "IO": "Rebecca",
+      "S": "Justin",
+      "place": "hospital",
+      "object": "letter",
+      "canonical": "After the lunch, Justin and Rebecca went to the hospital. Justin gave a letter to Rebecca",
+      "swapped": "After the lunch, Rebecca and Justin went to the hospital. Justin gave a letter to Rebecca"
+    },
+    {
+      "id": 31,
+      "template_id": 3,
+      "IO": "Cody",
+      "S": "Angela",
+      "place": "market",
+      "object": "note",
+      "canonical": "Then, Angela and Cody were thinking about going to the market. Angela wanted to give a note to Cody",
+      "swapped": "Then, Cody and Angela were thinking about going to the market. Angela wanted to give a note to Cody"
+    },
+    {
+      "id": 32,
+      "template_id": 11,
+      "IO": "Katherine",
+      "S": "Mark",
+      "place": "mall",
+      "object": "key",
+      "canonical": "Afterwards, Mark and Katherine went to the mall. Mark gave a key to Katherine",
+      "swapped": "Afterwards, Katherine and Mark went to the mall. Mark gave a key to Katherine"
+    },
+    {
+      "id": 33,
+      "template_id": 6,
+      "IO": "Kimberly",
+      "S": "Eric",
+      "place": "restaurant",
+      "object": "ring",
+      "canonical": "When Eric and Kimberly got a ring at the restaurant, Eric decided to give it to Kimberly",
+      "swapped": "When Kimberly and Eric got a ring at the restaurant, Eric decided to give it to Kimberly"
+    },
+    {
+      "id": 34,
+      "template_id": 7,
+      "IO": "Robert",
+      "S": "Bradley",
+      "place": "store",
+      "object": "phone",
+      "canonical": "When Bradley and Robert got a phone at the store, Bradley decided to give the phone to Robert",
+      "swapped": "When Robert and Bradley got a phone at the store, Bradley decided to give the phone to Robert"
+    },
+    {
+      "id": 35,
+      "template_id": 1,
+      "IO": "Sarah",
+      "S": "Kenneth",
+      "place": "restaurant",
+      "object": "ticket",
+      "canonical": "Then, Kenneth and Sarah had a lot of fun at the restaurant. Kenneth gave a ticket to Sarah",
+      "swapped": "Then, Sarah and Kenneth had a lot of fun at the restaurant. Kenneth gave a ticket to Sarah"
+    },
+    {
+      "id": 36,
+      "template_id": 10,
+      "IO": "Mark",
+      "S": "Erica",
+      "place": "garden",
+      "object": "pen",
+      "canonical": "After the lunch, Erica and Mark went to the garden. Erica gave a pen to Mark",
+      "swapped": "After the lunch, Mark and Erica went to the garden. Erica gave a pen to Mark"
+    },
+    {
+      "id": 37,
+      "template_id": 6,
+      "IO": "Gregory",
+      "S": "Jacob",
+      "place": "market",
+      "object": "note",
+      "canonical": "When Jacob and Gregory got a note at the market, Jacob decided to give it to Gregory",
+      "swapped": "When Gregory and Jacob got a note at the market, Jacob decided to give it to Gregory"
+    },
+    {
+      "id": 38,
+      "template_id": 8,
+      "IO": "Christopher",
+      "S": "Katie",
+      "place": "gym",
+      "object": "gift",
+      "canonical": "While Katie and Christopher were working at the gym, Katie gave a gift to Christopher",
+      "swapped": "While Christopher and Katie were working at the gym, Katie gave a gift to Christopher"
+    },
+    {
+      "id": 39,
+      "template_id": 10,
+      "IO": "Sara",
+      "S": "Bradley",
+      "place": "hospital",
+      "object": "ticket",
+      "canonical": "After the lunch, Bradley and Sara went to the hospital. Bradley gave a ticket to Sara",
+      "swapped": "After the lunch, Sara and Bradley went to the hospital. Bradley gave a ticket to Sara"
+    },
+    {
+      "id": 40,
+      "template_id": 10,
+      "IO": "Brittany",
+      "S": "Andrew",
+      "place": "hospital",
+      "object": "pen",
+      "canonical": "After the lunch, Andrew and Brittany went to the hospital. Andrew gave a pen to Brittany",
+      "swapped": "After the lunch, Brittany and Andrew went to the hospital. Andrew gave a pen to Brittany"
+    },
+    {
+      "id": 41,
+      "template_id": 2,
+      "IO": "Rebecca",
+      "S": "Michael",
+      "place": "gym",
+      "object": "watch",
+      "canonical": "Then, Michael and Rebecca were working at the gym. Michael decided to give a watch to Rebecca",
+      "swapped": "Then, Rebecca and Michael were working at the gym. Michael decided to give a watch to Rebecca"
+    },
+    {
+      "id": 42,
+      "template_id": 11,
+      "IO": "Kevin",
+      "S": "Kelly",
+      "place": "bank",
+      "object": "letter",
+      "canonical": "Afterwards, Kelly and Kevin went to the bank. Kelly gave a letter to Kevin",
+      "swapped": "Afterwards, Kevin and Kelly went to the bank. Kelly gave a letter to Kevin"
+    },
+    {
+      "id": 43,
+      "template_id": 8,
+      "IO": "Joseph",
+      "S": "Kenneth",
+      "place": "hospital",
+      "object": "phone",
+      "canonical": "While Kenneth and Joseph were working at the hospital, Kenneth gave a phone to Joseph",
+      "swapped": "While Joseph and Kenneth were working at the hospital, Kenneth gave a phone to Joseph"
+    },
+    {
+      "id": 44,
+      "template_id": 10,
+      "IO": "Jamie",
+      "S": "Mary",
+      "place": "school",
+      "object": "letter",
+      "canonical": "After the lunch, Mary and Jamie went to the school. Mary gave a letter to Jamie",
+      "swapped": "After the lunch, Jamie and Mary went to the school. Mary gave a letter to Jamie"
+    },
+    {
+      "id": 45,
+      "template_id": 5,
+      "IO": "Bradley",
+      "S": "William",
+      "place": "market",
+      "object": "ticket",
+      "canonical": "After William and Bradley went to the market, William gave a ticket to Bradley",
+      "swapped": "After Bradley and William went to the market, William gave a ticket to Bradley"
+    },
+    {
+      "id": 46,
+      "template_id": 14,
+      "IO": "Nathan",
+      "S": "Michael",
+      "place": "library",
+      "object": "bag",
+      "canonical": "Friends Michael and Nathan found a bag at the library. Michael gave it to Nathan",
+      "swapped": "Friends Nathan and Michael found a bag at the library. Michael gave it to Nathan"
+    },
+    {
+      "id": 47,
+      "template_id": 7,
+      "IO": "Jessica",
+      "S": "Ryan",
+      "place": "mall",
+      "object": "bag",
+      "canonical": "When Ryan and Jessica got a bag at the mall, Ryan decided to give the bag to Jessica",
+      "swapped": "When Jessica and Ryan got a bag at the mall, Ryan decided to give the bag to Jessica"
+    },
+    {
+      "id": 48,
+      "template_id": 14,
+      "IO": "Rachel",
+      "S": "Adam",
+      "place": "store",
+      "object": "book",
+      "canonical": "Friends Adam and Rachel found a book at the store. Adam gave it to Rachel",
+      "swapped": "Friends Rachel and Adam found a book at the store. Adam gave it to Rachel"
+    },
+    {
+      "id": 49,
+      "template_id": 14,
+      "IO": "Tyler",
+      "S": "James",
+      "place": "garden",
+      "object": "map",
+      "canonical": "Friends James and Tyler found a map at the garden. James gave it to Tyler",
+      "swapped": "Friends Tyler and James found a map at the garden. James gave it to Tyler"
+    },
+    {
+      "id": 50,
+      "template_id": 7,
+      "IO": "Daniel",
+      "S": "Samuel",
+      "place": "market",
+      "object": "ticket",
+      "canonical": "When Samuel and Daniel got a ticket at the market, Samuel decided to give the ticket to Daniel",
+      "swapped": "When Daniel and Samuel got a ticket at the market, Samuel decided to give the ticket to Daniel"
+    },
+    {
+      "id": 51,
+      "template_id": 2,
+      "IO": "Brandon",
+      "S": "Jose",
+      "place": "station",
+      "object": "ring",
+      "canonical": "Then, Jose and Brandon were working at the station. Jose decided to give a ring to Brandon",
+      "swapped": "Then, Brandon and Jose were working at the station. Jose decided to give a ring to Brandon"
+    },
+    {
+      "id": 52,
+      "template_id": 2,
+      "IO": "Kevin",
+      "S": "Sara",
+      "place": "church",
+      "object": "key",
+      "canonical": "Then, Sara and Kevin were working at the church. Sara decided to give a key to Kevin",
+      "swapped": "Then, Kevin and Sara were working at the church. Sara decided to give a key to Kevin"
+    },
+    {
+      "id": 53,
+      "template_id": 6,
+      "IO": "Heather",
+      "S": "Paul",
+      "place": "bank",
+      "object": "map",
+      "canonical": "When Paul and Heather got a map at the bank, Paul decided to give it to Heather",
+      "swapped": "When Heather and Paul got a map at the bank, Paul decided to give it to Heather"
+    },
+    {
+      "id": 54,
+      "template_id": 11,
+      "IO": "Nicholas",
+      "S": "Courtney",
+      "place": "hospital",
+      "object": "pen",
+      "canonical": "Afterwards, Courtney and Nicholas went to the hospital. Courtney gave a pen to Nicholas",
+      "swapped": "Afterwards, Nicholas and Courtney went to the hospital. Courtney gave a pen to Nicholas"
+    },
+    {
+      "id": 55,
+      "template_id": 10,
+      "IO": "Lindsey",
+      "S": "Jeffrey",
+      "place": "station",
+      "object": "watch",
+      "canonical": "After the lunch, Jeffrey and Lindsey went to the station. Jeffrey gave a watch to Lindsey",
+      "swapped": "After the lunch, Lindsey and Jeffrey went to the station. Jeffrey gave a watch to Lindsey"
+    },
+    {
+      "id": 56,
+      "template_id": 8,
+      "IO": "Charles",
+      "S": "Ryan",
+      "place": "school",
+      "object": "book",
+      "canonical": "While Ryan and Charles were working at the school, Ryan gave a book to Charles",
+      "swapped": "While Charles and Ryan were working at the school, Ryan gave a book to Charles"
+    },
+    {
+      "id": 57,
+      "template_id": 1,
+      "IO": "Brittany",
+      "S": "Jessica",
+      "place": "library",
+      "object": "ring",
+      "canonical": "Then, Jessica and Brittany had a lot of fun at the library. Jessica gave a ring to Brittany",
+      "swapped": "Then, Brittany and Jessica had a lot of fun at the library. Jessica gave a ring to Brittany"
+    },
+    {
+      "id": 58,
+      "template_id": 3,
+      "IO": "Andrea",
+      "S": "Eric",
+      "place": "store",
+      "object": "gift",
+      "canonical": "Then, Eric and Andrea were thinking about going to the store. Eric wanted to give a gift to Andrea",
+      "swapped": "Then, Andrea and Eric were thinking about going to the store. Eric wanted to give a gift to Andrea"
+    },
+    {
+      "id": 59,
+      "template_id": 11,
+      "IO": "Lisa",
+      "S": "Amanda",
+      "place": "school",
+      "object": "gift",
+      "canonical": "Afterwards, Amanda and Lisa went to the school. Amanda gave a gift to Lisa",
+      "swapped": "Afterwards, Lisa and Amanda went to the school. Amanda gave a gift to Lisa"
+    },
+    {
+      "id": 60,
+      "template_id": 14,
+      "IO": "Ashley",
+      "S": "Brittany",
+      "place": "garden",
+      "object": "ring",
+      "canonical": "Friends Brittany and Ashley found a ring at the garden. Brittany gave it to Ashley",
+      "swapped": "Friends Ashley and Brittany found a ring at the garden. Brittany gave it to Ashley"
+    },
+    {
+      "id": 61,
+      "template_id": 3,
+      "IO": "Thomas",
+      "S": "Alexander",
+      "place": "station",
+      "object": "book",
+      "canonical": "Then, Alexander and Thomas were thinking about going to the station. Alexander wanted to give a book to Thomas",
+      "swapped": "Then, Thomas and Alexander were thinking about going to the station. Alexander wanted to give a book to Thomas"
+    },
+    {
+      "id": 62,
+      "template_id": 8,
+      "IO": "Brandon",
+      "S": "Christine",
+      "place": "mall",
+      "object": "watch",
+      "canonical": "While Christine and Brandon were working at the mall, Christine gave a watch to Brandon",
+      "swapped": "While Brandon and Christine were working at the mall, Christine gave a watch to Brandon"
+    },
+    {
+      "id": 63,
+      "template_id": 9,
+      "IO": "Scott",
+      "S": "Stephen",
+      "place": "school",
+      "object": "ticket",
+      "canonical": "While Stephen and Scott were commuting to the school, Stephen gave a ticket to Scott",
+      "swapped": "While Scott and Stephen were commuting to the school, Stephen gave a ticket to Scott"
+    },
+    {
+      "id": 64,
+      "template_id": 7,
+      "IO": "Jeremy",
+      "S": "Nicole",
+      "place": "garden",
+      "object": "gift",
+      "canonical": "When Nicole and Jeremy got a gift at the garden, Nicole decided to give the gift to Jeremy",
+      "swapped": "When Jeremy and Nicole got a gift at the garden, Nicole decided to give the gift to Jeremy"
+    },
+    {
+      "id": 65,
+      "template_id": 10,
+      "IO": "Emily",
+      "S": "Richard",
+      "place": "house",
+      "object": "pen",
+      "canonical": "After the lunch, Richard and Emily went to the house. Richard gave a pen to Emily",
+      "swapped": "After the lunch, Emily and Richard went to the house. Richard gave a pen to Emily"
+    },
+    {
+      "id": 66,
+      "template_id": 7,
+      "IO": "Christine",
+      "S": "Joshua",
+      "place": "park",
+      "object": "coin",
+      "canonical": "When Joshua and Christine got a coin at the park, Joshua decided to give the coin to Christine",
+      "swapped": "When Christine and Joshua got a coin at the park, Joshua decided to give the coin to Christine"
+    },
+    {
+      "id": 67,
+      "template_id": 10,
+      "IO": "John",
+      "S": "Amanda",
+      "place": "house",
+      "object": "map",
+      "canonical": "After the lunch, Amanda and John went to the house. Amanda gave a map to John",
+      "swapped": "After the lunch, John and Amanda went to the house. Amanda gave a map to John"
+    },
+    {
+      "id": 68,
+      "template_id": 5,
+      "IO": "Joseph",
+      "S": "Melissa",
+      "place": "school",
+      "object": "book",
+      "canonical": "After Melissa and Joseph went to the school, Melissa gave a book to Joseph",
+      "swapped": "After Joseph and Melissa went to the school, Melissa gave a book to Joseph"
+    },
+    {
+      "id": 69,
+      "template_id": 8,
+      "IO": "Charles",
+      "S": "Jason",
+      "place": "house",
+      "object": "letter",
+      "canonical": "While Jason and Charles were working at the house, Jason gave a letter to Charles",
+      "swapped": "While Charles and Jason were working at the house, Jason gave a letter to Charles"
+    },
+    {
+      "id": 70,
+      "template_id": 4,
+      "IO": "Jacob",
+      "S": "Megan",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Megan and Jacob had a long argument, and afterwards Megan said to Jacob",
+      "swapped": "Then, Jacob and Megan had a long argument, and afterwards Megan said to Jacob"
+    },
+    {
+      "id": 71,
+      "template_id": 13,
+      "IO": "David",
+      "S": "Charles",
+      "place": "bank",
+      "object": "phone",
+      "canonical": "The bank Charles and David went to had a phone. Charles gave it to David",
+      "swapped": "The bank David and Charles went to had a phone. Charles gave it to David"
+    },
+    {
+      "id": 72,
+      "template_id": 13,
+      "IO": "Paul",
+      "S": "John",
+      "place": "store",
+      "object": "coin",
+      "canonical": "The store John and Paul went to had a coin. John gave it to Paul",
+      "swapped": "The store Paul and John went to had a coin. John gave it to Paul"
+    },
+    {
+      "id": 73,
+      "template_id": 8,
+      "IO": "Christopher",
+      "S": "John",
+      "place": "mall",
+      "object": "ticket",
+      "canonical": "While John and Christopher were working at the mall, John gave a ticket to Christopher",
+      "swapped": "While Christopher and John were working at the mall, John gave a ticket to Christopher"
+    },
+    {
+      "id": 74,
+      "template_id": 13,
+      "IO": "Adam",
+      "S": "Jonathan",
+      "place": "house",
+      "object": "card",
+      "canonical": "The house Jonathan and Adam went to had a card. Jonathan gave it to Adam",
+      "swapped": "The house Adam and Jonathan went to had a card. Jonathan gave it to Adam"
+    },
+    {
+      "id": 75,
+      "template_id": 7,
+      "IO": "Heather",
+      "S": "Jeremy",
+      "place": "mall",
+      "object": "drink",
+      "canonical": "When Jeremy and Heather got a drink at the mall, Jeremy decided to give the drink to Heather",
+      "swapped": "When Heather and Jeremy got a drink at the mall, Jeremy decided to give the drink to Heather"
+    },
+    {
+      "id": 76,
+      "template_id": 2,
+      "IO": "Amy",
+      "S": "Michael",
+      "place": "house",
+      "object": "note",
+      "canonical": "Then, Michael and Amy were working at the house. Michael decided to give a note to Amy",
+      "swapped": "Then, Amy and Michael were working at the house. Michael decided to give a note to Amy"
+    },
+    {
+      "id": 77,
+      "template_id": 14,
+      "IO": "Rebecca",
+      "S": "Timothy",
+      "place": "house",
+      "object": "map",
+      "canonical": "Friends Timothy and Rebecca found a map at the house. Timothy gave it to Rebecca",
+      "swapped": "Friends Rebecca and Timothy found a map at the house. Timothy gave it to Rebecca"
+    },
+    {
+      "id": 78,
+      "template_id": 11,
+      "IO": "Angela",
+      "S": "Jose",
+      "place": "gym",
+      "object": "card",
+      "canonical": "Afterwards, Jose and Angela went to the gym. Jose gave a card to Angela",
+      "swapped": "Afterwards, Angela and Jose went to the gym. Jose gave a card to Angela"
+    },
+    {
+      "id": 79,
+      "template_id": 2,
+      "IO": "Nicole",
+      "S": "Kyle",
+      "place": "school",
+      "object": "drink",
+      "canonical": "Then, Kyle and Nicole were working at the school. Kyle decided to give a drink to Nicole",
+      "swapped": "Then, Nicole and Kyle were working at the school. Kyle decided to give a drink to Nicole"
+    },
+    {
+      "id": 80,
+      "template_id": 9,
+      "IO": "Alicia",
+      "S": "Dustin",
+      "place": "store",
+      "object": "map",
+      "canonical": "While Dustin and Alicia were commuting to the store, Dustin gave a map to Alicia",
+      "swapped": "While Alicia and Dustin were commuting to the store, Dustin gave a map to Alicia"
+    },
+    {
+      "id": 81,
+      "template_id": 5,
+      "IO": "Amanda",
+      "S": "Joshua",
+      "place": "library",
+      "object": "card",
+      "canonical": "After Joshua and Amanda went to the library, Joshua gave a card to Amanda",
+      "swapped": "After Amanda and Joshua went to the library, Joshua gave a card to Amanda"
+    },
+    {
+      "id": 82,
+      "template_id": 8,
+      "IO": "Nathan",
+      "S": "William",
+      "place": "store",
+      "object": "ring",
+      "canonical": "While William and Nathan were working at the store, William gave a ring to Nathan",
+      "swapped": "While Nathan and William were working at the store, William gave a ring to Nathan"
+    },
+    {
+      "id": 83,
+      "template_id": 1,
+      "IO": "Brian",
+      "S": "Daniel",
+      "place": "library",
+      "object": "gift",
+      "canonical": "Then, Daniel and Brian had a lot of fun at the library. Daniel gave a gift to Brian",
+      "swapped": "Then, Brian and Daniel had a lot of fun at the library. Daniel gave a gift to Brian"
+    },
+    {
+      "id": 84,
+      "template_id": 10,
+      "IO": "Adam",
+      "S": "Jeremy",
+      "place": "garden",
+      "object": "watch",
+      "canonical": "After the lunch, Jeremy and Adam went to the garden. Jeremy gave a watch to Adam",
+      "swapped": "After the lunch, Adam and Jeremy went to the garden. Jeremy gave a watch to Adam"
+    },
+    {
+      "id": 85,
+      "template_id": 9,
+      "IO": "Megan",
+      "S": "Andrea",
+      "place": "library",
+      "object": "drink",
+      "canonical": "While Andrea and Megan were commuting to the library, Andrea gave a drink to Megan",
+      "swapped": "While Megan and Andrea were commuting to the library, Andrea gave a drink to Megan"
+    },
+    {
+      "id": 86,
+      "template_id": 9,
+      "IO": "James",
+      "S": "Mark",
+      "place": "park",
+      "object": "key",
+      "canonical": "While Mark and James were commuting to the park, Mark gave a key to James",
+      "swapped": "While James and Mark were commuting to the park, Mark gave a key to James"
+    },
+    {
+      "id": 87,
+      "template_id": 9,
+      "IO": "Samantha",
+      "S": "Laura",
+      "place": "mall",
+      "object": "note",
+      "canonical": "While Laura and Samantha were commuting to the mall, Laura gave a note to Samantha",
+      "swapped": "While Samantha and Laura were commuting to the mall, Laura gave a note to Samantha"
+    },
+    {
+      "id": 88,
+      "template_id": 3,
+      "IO": "Jose",
+      "S": "Courtney",
+      "place": "office",
+      "object": "book",
+      "canonical": "Then, Courtney and Jose were thinking about going to the office. Courtney wanted to give a book to Jose",
+      "swapped": "Then, Jose and Courtney were thinking about going to the office. Courtney wanted to give a book to Jose"
+    },
+    {
+      "id": 89,
+      "template_id": 4,
+      "IO": "Michelle",
+      "S": "Brandon",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Brandon and Michelle had a long argument, and afterwards Brandon said to Michelle",
+      "swapped": "Then, Michelle and Brandon had a long argument, and afterwards Brandon said to Michelle"
+    },
+    {
+      "id": 90,
+      "template_id": 10,
+      "IO": "Bryan",
+      "S": "Kyle",
+      "place": "station",
+      "object": "bag",
+      "canonical": "After the lunch, Kyle and Bryan went to the station. Kyle gave a bag to Bryan",
+      "swapped": "After the lunch, Bryan and Kyle went to the station. Kyle gave a bag to Bryan"
+    },
+    {
+      "id": 91,
+      "template_id": 14,
+      "IO": "Allison",
+      "S": "David",
+      "place": "store",
+      "object": "card",
+      "canonical": "Friends David and Allison found a card at the store. David gave it to Allison",
+      "swapped": "Friends Allison and David found a card at the store. David gave it to Allison"
+    },
+    {
+      "id": 92,
+      "template_id": 9,
+      "IO": "Tyler",
+      "S": "John",
+      "place": "garden",
+      "object": "ring",
+      "canonical": "While John and Tyler were commuting to the garden, John gave a ring to Tyler",
+      "swapped": "While Tyler and John were commuting to the garden, John gave a ring to Tyler"
+    },
+    {
+      "id": 93,
+      "template_id": 3,
+      "IO": "Jamie",
+      "S": "Kevin",
+      "place": "restaurant",
+      "object": "watch",
+      "canonical": "Then, Kevin and Jamie were thinking about going to the restaurant. Kevin wanted to give a watch to Jamie",
+      "swapped": "Then, Jamie and Kevin were thinking about going to the restaurant. Kevin wanted to give a watch to Jamie"
+    },
+    {
+      "id": 94,
+      "template_id": 5,
+      "IO": "Daniel",
+      "S": "Melissa",
+      "place": "office",
+      "object": "note",
+      "canonical": "After Melissa and Daniel went to the office, Melissa gave a note to Daniel",
+      "swapped": "After Daniel and Melissa went to the office, Melissa gave a note to Daniel"
+    },
+    {
+      "id": 95,
+      "template_id": 2,
+      "IO": "Aaron",
+      "S": "Paul",
+      "place": "gym",
+      "object": "note",
+      "canonical": "Then, Paul and Aaron were working at the gym. Paul decided to give a note to Aaron",
+      "swapped": "Then, Aaron and Paul were working at the gym. Paul decided to give a note to Aaron"
+    },
+    {
+      "id": 96,
+      "template_id": 9,
+      "IO": "Lindsey",
+      "S": "Nathan",
+      "place": "store",
+      "object": "coin",
+      "canonical": "While Nathan and Lindsey were commuting to the store, Nathan gave a coin to Lindsey",
+      "swapped": "While Lindsey and Nathan were commuting to the store, Nathan gave a coin to Lindsey"
+    },
+    {
+      "id": 97,
+      "template_id": 13,
+      "IO": "Paul",
+      "S": "Kyle",
+      "place": "mall",
+      "object": "coin",
+      "canonical": "The mall Kyle and Paul went to had a coin. Kyle gave it to Paul",
+      "swapped": "The mall Paul and Kyle went to had a coin. Kyle gave it to Paul"
+    },
+    {
+      "id": 98,
+      "template_id": 1,
+      "IO": "Jason",
+      "S": "Steven",
+      "place": "garden",
+      "object": "watch",
+      "canonical": "Then, Steven and Jason had a lot of fun at the garden. Steven gave a watch to Jason",
+      "swapped": "Then, Jason and Steven had a lot of fun at the garden. Steven gave a watch to Jason"
+    },
+    {
+      "id": 99,
+      "template_id": 1,
+      "IO": "Cody",
+      "S": "Paul",
+      "place": "restaurant",
+      "object": "note",
+      "canonical": "Then, Paul and Cody had a lot of fun at the restaurant. Paul gave a note to Cody",
+      "swapped": "Then, Cody and Paul had a lot of fun at the restaurant. Paul gave a note to Cody"
+    },
+    {
+      "id": 100,
+      "template_id": 4,
+      "IO": "Erica",
+      "S": "Anthony",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Anthony and Erica had a long argument, and afterwards Anthony said to Erica",
+      "swapped": "Then, Erica and Anthony had a long argument, and afterwards Anthony said to Erica"
+    },
+    {
+      "id": 101,
+      "template_id": 11,
+      "IO": "Brittany",
+      "S": "Anthony",
+      "place": "park",
+      "object": "coin",
+      "canonical": "Afterwards, Anthony and Brittany went to the park. Anthony gave a coin to Brittany",
+      "swapped": "Afterwards, Brittany and Anthony went to the park. Anthony gave a coin to Brittany"
+    },
+    {
+      "id": 102,
+      "template_id": 13,
+      "IO": "Kevin",
+      "S": "Kelly",
+      "place": "station",
+      "object": "note",
+      "canonical": "The station Kelly and Kevin went to had a note. Kelly gave it to Kevin",
+      "swapped": "The station Kevin and Kelly went to had a note. Kelly gave it to Kevin"
+    },
+    {
+      "id": 103,
+      "template_id": 14,
+      "IO": "Joshua",
+      "S": "John",
+      "place": "park",
+      "object": "pen",
+      "canonical": "Friends John and Joshua found a pen at the park. John gave it to Joshua",
+      "swapped": "Friends Joshua and John found a pen at the park. John gave it to Joshua"
+    },
+    {
+      "id": 104,
+      "template_id": 13,
+      "IO": "Thomas",
+      "S": "Jennifer",
+      "place": "store",
+      "object": "bag",
+      "canonical": "The store Jennifer and Thomas went to had a bag. Jennifer gave it to Thomas",
+      "swapped": "The store Thomas and Jennifer went to had a bag. Jennifer gave it to Thomas"
+    },
+    {
+      "id": 105,
+      "template_id": 12,
+      "IO": "Brandon",
+      "S": "Bryan",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Bryan and Brandon had a long argument. Afterwards Bryan said to Brandon",
+      "swapped": "Then, Brandon and Bryan had a long argument. Afterwards Bryan said to Brandon"
+    },
+    {
+      "id": 106,
+      "template_id": 4,
+      "IO": "William",
+      "S": "Cody",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Cody and William had a long argument, and afterwards Cody said to William",
+      "swapped": "Then, William and Cody had a long argument, and afterwards Cody said to William"
+    },
+    {
+      "id": 107,
+      "template_id": 7,
+      "IO": "Paul",
+      "S": "Vanessa",
+      "place": "house",
+      "object": "ring",
+      "canonical": "When Vanessa and Paul got a ring at the house, Vanessa decided to give the ring to Paul",
+      "swapped": "When Paul and Vanessa got a ring at the house, Vanessa decided to give the ring to Paul"
+    },
+    {
+      "id": 108,
+      "template_id": 0,
+      "IO": "Andrew",
+      "S": "David",
+      "place": "mall",
+      "object": "map",
+      "canonical": "Then, David and Andrew went to the mall. David gave a map to Andrew",
+      "swapped": "Then, Andrew and David went to the mall. David gave a map to Andrew"
+    },
+    {
+      "id": 109,
+      "template_id": 14,
+      "IO": "Sarah",
+      "S": "Paul",
+      "place": "store",
+      "object": "phone",
+      "canonical": "Friends Paul and Sarah found a phone at the store. Paul gave it to Sarah",
+      "swapped": "Friends Sarah and Paul found a phone at the store. Paul gave it to Sarah"
+    },
+    {
+      "id": 110,
+      "template_id": 5,
+      "IO": "Katherine",
+      "S": "Paul",
+      "place": "restaurant",
+      "object": "pen",
+      "canonical": "After Paul and Katherine went to the restaurant, Paul gave a pen to Katherine",
+      "swapped": "After Katherine and Paul went to the restaurant, Paul gave a pen to Katherine"
+    },
+    {
+      "id": 111,
+      "template_id": 2,
+      "IO": "Jennifer",
+      "S": "Laura",
+      "place": "office",
+      "object": "watch",
+      "canonical": "Then, Laura and Jennifer were working at the office. Laura decided to give a watch to Jennifer",
+      "swapped": "Then, Jennifer and Laura were working at the office. Laura decided to give a watch to Jennifer"
+    },
+    {
+      "id": 112,
+      "template_id": 14,
+      "IO": "Jennifer",
+      "S": "Kimberly",
+      "place": "school",
+      "object": "coin",
+      "canonical": "Friends Kimberly and Jennifer found a coin at the school. Kimberly gave it to Jennifer",
+      "swapped": "Friends Jennifer and Kimberly found a coin at the school. Kimberly gave it to Jennifer"
+    },
+    {
+      "id": 113,
+      "template_id": 3,
+      "IO": "Jose",
+      "S": "Joseph",
+      "place": "office",
+      "object": "ticket",
+      "canonical": "Then, Joseph and Jose were thinking about going to the office. Joseph wanted to give a ticket to Jose",
+      "swapped": "Then, Jose and Joseph were thinking about going to the office. Joseph wanted to give a ticket to Jose"
+    },
+    {
+      "id": 114,
+      "template_id": 8,
+      "IO": "Jeremy",
+      "S": "Lisa",
+      "place": "gym",
+      "object": "letter",
+      "canonical": "While Lisa and Jeremy were working at the gym, Lisa gave a letter to Jeremy",
+      "swapped": "While Jeremy and Lisa were working at the gym, Lisa gave a letter to Jeremy"
+    },
+    {
+      "id": 115,
+      "template_id": 14,
+      "IO": "Adam",
+      "S": "William",
+      "place": "bank",
+      "object": "ticket",
+      "canonical": "Friends William and Adam found a ticket at the bank. William gave it to Adam",
+      "swapped": "Friends Adam and William found a ticket at the bank. William gave it to Adam"
+    },
+    {
+      "id": 116,
+      "template_id": 2,
+      "IO": "Jeremy",
+      "S": "Matthew",
+      "place": "restaurant",
+      "object": "map",
+      "canonical": "Then, Matthew and Jeremy were working at the restaurant. Matthew decided to give a map to Jeremy",
+      "swapped": "Then, Jeremy and Matthew were working at the restaurant. Matthew decided to give a map to Jeremy"
+    },
+    {
+      "id": 117,
+      "template_id": 14,
+      "IO": "Amber",
+      "S": "Benjamin",
+      "place": "bank",
+      "object": "coin",
+      "canonical": "Friends Benjamin and Amber found a coin at the bank. Benjamin gave it to Amber",
+      "swapped": "Friends Amber and Benjamin found a coin at the bank. Benjamin gave it to Amber"
+    },
+    {
+      "id": 118,
+      "template_id": 13,
+      "IO": "Alicia",
+      "S": "Megan",
+      "place": "hospital",
+      "object": "letter",
+      "canonical": "The hospital Megan and Alicia went to had a letter. Megan gave it to Alicia",
+      "swapped": "The hospital Alicia and Megan went to had a letter. Megan gave it to Alicia"
+    },
+    {
+      "id": 119,
+      "template_id": 12,
+      "IO": "Lindsay",
+      "S": "Joseph",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Joseph and Lindsay had a long argument. Afterwards Joseph said to Lindsay",
+      "swapped": "Then, Lindsay and Joseph had a long argument. Afterwards Joseph said to Lindsay"
+    },
+    {
+      "id": 120,
+      "template_id": 6,
+      "IO": "Ashley",
+      "S": "Patrick",
+      "place": "school",
+      "object": "book",
+      "canonical": "When Patrick and Ashley got a book at the school, Patrick decided to give it to Ashley",
+      "swapped": "When Ashley and Patrick got a book at the school, Patrick decided to give it to Ashley"
+    },
+    {
+      "id": 121,
+      "template_id": 13,
+      "IO": "Rebecca",
+      "S": "Danielle",
+      "place": "hospital",
+      "object": "phone",
+      "canonical": "The hospital Danielle and Rebecca went to had a phone. Danielle gave it to Rebecca",
+      "swapped": "The hospital Rebecca and Danielle went to had a phone. Danielle gave it to Rebecca"
+    },
+    {
+      "id": 122,
+      "template_id": 12,
+      "IO": "Elizabeth",
+      "S": "Eric",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Eric and Elizabeth had a long argument. Afterwards Eric said to Elizabeth",
+      "swapped": "Then, Elizabeth and Eric had a long argument. Afterwards Eric said to Elizabeth"
+    },
+    {
+      "id": 123,
+      "template_id": 0,
+      "IO": "Kristen",
+      "S": "Nicole",
+      "place": "house",
+      "object": "bag",
+      "canonical": "Then, Nicole and Kristen went to the house. Nicole gave a bag to Kristen",
+      "swapped": "Then, Kristen and Nicole went to the house. Nicole gave a bag to Kristen"
+    },
+    {
+      "id": 124,
+      "template_id": 4,
+      "IO": "Daniel",
+      "S": "Timothy",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Timothy and Daniel had a long argument, and afterwards Timothy said to Daniel",
+      "swapped": "Then, Daniel and Timothy had a long argument, and afterwards Timothy said to Daniel"
+    },
+    {
+      "id": 125,
+      "template_id": 5,
+      "IO": "Bryan",
+      "S": "Kelly",
+      "place": "house",
+      "object": "coin",
+      "canonical": "After Kelly and Bryan went to the house, Kelly gave a coin to Bryan",
+      "swapped": "After Bryan and Kelly went to the house, Kelly gave a coin to Bryan"
+    },
+    {
+      "id": 126,
+      "template_id": 13,
+      "IO": "Sara",
+      "S": "Amber",
+      "place": "store",
+      "object": "gift",
+      "canonical": "The store Amber and Sara went to had a gift. Amber gave it to Sara",
+      "swapped": "The store Sara and Amber went to had a gift. Amber gave it to Sara"
+    },
+    {
+      "id": 127,
+      "template_id": 14,
+      "IO": "Kevin",
+      "S": "Stephanie",
+      "place": "library",
+      "object": "note",
+      "canonical": "Friends Stephanie and Kevin found a note at the library. Stephanie gave it to Kevin",
+      "swapped": "Friends Kevin and Stephanie found a note at the library. Stephanie gave it to Kevin"
+    },
+    {
+      "id": 128,
+      "template_id": 0,
+      "IO": "Joseph",
+      "S": "Erica",
+      "place": "house",
+      "object": "bag",
+      "canonical": "Then, Erica and Joseph went to the house. Erica gave a bag to Joseph",
+      "swapped": "Then, Joseph and Erica went to the house. Erica gave a bag to Joseph"
+    },
+    {
+      "id": 129,
+      "template_id": 11,
+      "IO": "Laura",
+      "S": "Aaron",
+      "place": "library",
+      "object": "ring",
+      "canonical": "Afterwards, Aaron and Laura went to the library. Aaron gave a ring to Laura",
+      "swapped": "Afterwards, Laura and Aaron went to the library. Aaron gave a ring to Laura"
+    },
+    {
+      "id": 130,
+      "template_id": 1,
+      "IO": "Crystal",
+      "S": "Katherine",
+      "place": "school",
+      "object": "note",
+      "canonical": "Then, Katherine and Crystal had a lot of fun at the school. Katherine gave a note to Crystal",
+      "swapped": "Then, Crystal and Katherine had a lot of fun at the school. Katherine gave a note to Crystal"
+    },
+    {
+      "id": 131,
+      "template_id": 0,
+      "IO": "Shannon",
+      "S": "Emily",
+      "place": "store",
+      "object": "ring",
+      "canonical": "Then, Emily and Shannon went to the store. Emily gave a ring to Shannon",
+      "swapped": "Then, Shannon and Emily went to the store. Emily gave a ring to Shannon"
+    },
+    {
+      "id": 132,
+      "template_id": 14,
+      "IO": "Sara",
+      "S": "Katie",
+      "place": "gym",
+      "object": "map",
+      "canonical": "Friends Katie and Sara found a map at the gym. Katie gave it to Sara",
+      "swapped": "Friends Sara and Katie found a map at the gym. Katie gave it to Sara"
+    },
+    {
+      "id": 133,
+      "template_id": 11,
+      "IO": "Jose",
+      "S": "Nicholas",
+      "place": "office",
+      "object": "pen",
+      "canonical": "Afterwards, Nicholas and Jose went to the office. Nicholas gave a pen to Jose",
+      "swapped": "Afterwards, Jose and Nicholas went to the office. Nicholas gave a pen to Jose"
+    },
+    {
+      "id": 134,
+      "template_id": 1,
+      "IO": "Jose",
+      "S": "Amber",
+      "place": "library",
+      "object": "bag",
+      "canonical": "Then, Amber and Jose had a lot of fun at the library. Amber gave a bag to Jose",
+      "swapped": "Then, Jose and Amber had a lot of fun at the library. Amber gave a bag to Jose"
+    },
+    {
+      "id": 135,
+      "template_id": 10,
+      "IO": "Ryan",
+      "S": "Christine",
+      "place": "mall",
+      "object": "note",
+      "canonical": "After the lunch, Christine and Ryan went to the mall. Christine gave a note to Ryan",
+      "swapped": "After the lunch, Ryan and Christine went to the mall. Christine gave a note to Ryan"
+    },
+    {
+      "id": 136,
+      "template_id": 8,
+      "IO": "Rachel",
+      "S": "Alexander",
+      "place": "house",
+      "object": "bag",
+      "canonical": "While Alexander and Rachel were working at the house, Alexander gave a bag to Rachel",
+      "swapped": "While Rachel and Alexander were working at the house, Alexander gave a bag to Rachel"
+    },
+    {
+      "id": 137,
+      "template_id": 6,
+      "IO": "Lindsay",
+      "S": "Christina",
+      "place": "market",
+      "object": "letter",
+      "canonical": "When Christina and Lindsay got a letter at the market, Christina decided to give it to Lindsay",
+      "swapped": "When Lindsay and Christina got a letter at the market, Christina decided to give it to Lindsay"
+    },
+    {
+      "id": 138,
+      "template_id": 3,
+      "IO": "Benjamin",
+      "S": "Alexander",
+      "place": "house",
+      "object": "coin",
+      "canonical": "Then, Alexander and Benjamin were thinking about going to the house. Alexander wanted to give a coin to Benjamin",
+      "swapped": "Then, Benjamin and Alexander were thinking about going to the house. Alexander wanted to give a coin to Benjamin"
+    },
+    {
+      "id": 139,
+      "template_id": 11,
+      "IO": "Stephanie",
+      "S": "Travis",
+      "place": "library",
+      "object": "note",
+      "canonical": "Afterwards, Travis and Stephanie went to the library. Travis gave a note to Stephanie",
+      "swapped": "Afterwards, Stephanie and Travis went to the library. Travis gave a note to Stephanie"
+    },
+    {
+      "id": 140,
+      "template_id": 6,
+      "IO": "Paul",
+      "S": "Michael",
+      "place": "hospital",
+      "object": "note",
+      "canonical": "When Michael and Paul got a note at the hospital, Michael decided to give it to Paul",
+      "swapped": "When Paul and Michael got a note at the hospital, Michael decided to give it to Paul"
+    },
+    {
+      "id": 141,
+      "template_id": 3,
+      "IO": "Emily",
+      "S": "Andrea",
+      "place": "library",
+      "object": "coin",
+      "canonical": "Then, Andrea and Emily were thinking about going to the library. Andrea wanted to give a coin to Emily",
+      "swapped": "Then, Emily and Andrea were thinking about going to the library. Andrea wanted to give a coin to Emily"
+    },
+    {
+      "id": 142,
+      "template_id": 5,
+      "IO": "Jacob",
+      "S": "Aaron",
+      "place": "station",
+      "object": "coin",
+      "canonical": "After Aaron and Jacob went to the station, Aaron gave a coin to Jacob",
+      "swapped": "After Jacob and Aaron went to the station, Aaron gave a coin to Jacob"
+    },
+    {
+      "id": 143,
+      "template_id": 3,
+      "IO": "Kelly",
+      "S": "Stephen",
+      "place": "bank",
+      "object": "watch",
+      "canonical": "Then, Stephen and Kelly were thinking about going to the bank. Stephen wanted to give a watch to Kelly",
+      "swapped": "Then, Kelly and Stephen were thinking about going to the bank. Stephen wanted to give a watch to Kelly"
+    },
+    {
+      "id": 144,
+      "template_id": 12,
+      "IO": "Alicia",
+      "S": "Jonathan",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Jonathan and Alicia had a long argument. Afterwards Jonathan said to Alicia",
+      "swapped": "Then, Alicia and Jonathan had a long argument. Afterwards Jonathan said to Alicia"
+    },
+    {
+      "id": 145,
+      "template_id": 10,
+      "IO": "James",
+      "S": "Christina",
+      "place": "market",
+      "object": "coin",
+      "canonical": "After the lunch, Christina and James went to the market. Christina gave a coin to James",
+      "swapped": "After the lunch, James and Christina went to the market. Christina gave a coin to James"
+    },
+    {
+      "id": 146,
+      "template_id": 10,
+      "IO": "Travis",
+      "S": "Amber",
+      "place": "garden",
+      "object": "phone",
+      "canonical": "After the lunch, Amber and Travis went to the garden. Amber gave a phone to Travis",
+      "swapped": "After the lunch, Travis and Amber went to the garden. Amber gave a phone to Travis"
+    },
+    {
+      "id": 147,
+      "template_id": 12,
+      "IO": "Adam",
+      "S": "Jesse",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Jesse and Adam had a long argument. Afterwards Jesse said to Adam",
+      "swapped": "Then, Adam and Jesse had a long argument. Afterwards Jesse said to Adam"
+    },
+    {
+      "id": 148,
+      "template_id": 4,
+      "IO": "Eric",
+      "S": "Nicholas",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Nicholas and Eric had a long argument, and afterwards Nicholas said to Eric",
+      "swapped": "Then, Eric and Nicholas had a long argument, and afterwards Nicholas said to Eric"
+    },
+    {
+      "id": 149,
+      "template_id": 2,
+      "IO": "Matthew",
+      "S": "Joshua",
+      "place": "school",
+      "object": "card",
+      "canonical": "Then, Joshua and Matthew were working at the school. Joshua decided to give a card to Matthew",
+      "swapped": "Then, Matthew and Joshua were working at the school. Joshua decided to give a card to Matthew"
+    },
+    {
+      "id": 150,
+      "template_id": 9,
+      "IO": "Samuel",
+      "S": "David",
+      "place": "station",
+      "object": "pen",
+      "canonical": "While David and Samuel were commuting to the station, David gave a pen to Samuel",
+      "swapped": "While Samuel and David were commuting to the station, David gave a pen to Samuel"
+    },
+    {
+      "id": 151,
+      "template_id": 14,
+      "IO": "Lisa",
+      "S": "Scott",
+      "place": "school",
+      "object": "map",
+      "canonical": "Friends Scott and Lisa found a map at the school. Scott gave it to Lisa",
+      "swapped": "Friends Lisa and Scott found a map at the school. Scott gave it to Lisa"
+    },
+    {
+      "id": 152,
+      "template_id": 11,
+      "IO": "Crystal",
+      "S": "Jamie",
+      "place": "house",
+      "object": "book",
+      "canonical": "Afterwards, Jamie and Crystal went to the house. Jamie gave a book to Crystal",
+      "swapped": "Afterwards, Crystal and Jamie went to the house. Jamie gave a book to Crystal"
+    },
+    {
+      "id": 153,
+      "template_id": 2,
+      "IO": "Lindsey",
+      "S": "Lindsay",
+      "place": "store",
+      "object": "watch",
+      "canonical": "Then, Lindsay and Lindsey were working at the store. Lindsay decided to give a watch to Lindsey",
+      "swapped": "Then, Lindsey and Lindsay were working at the store. Lindsay decided to give a watch to Lindsey"
+    },
+    {
+      "id": 154,
+      "template_id": 12,
+      "IO": "Samuel",
+      "S": "Joseph",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Joseph and Samuel had a long argument. Afterwards Joseph said to Samuel",
+      "swapped": "Then, Samuel and Joseph had a long argument. Afterwards Joseph said to Samuel"
+    },
+    {
+      "id": 155,
+      "template_id": 12,
+      "IO": "Mark",
+      "S": "Eric",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Eric and Mark had a long argument. Afterwards Eric said to Mark",
+      "swapped": "Then, Mark and Eric had a long argument. Afterwards Eric said to Mark"
+    },
+    {
+      "id": 156,
+      "template_id": 2,
+      "IO": "Lindsay",
+      "S": "Samantha",
+      "place": "station",
+      "object": "drink",
+      "canonical": "Then, Samantha and Lindsay were working at the station. Samantha decided to give a drink to Lindsay",
+      "swapped": "Then, Lindsay and Samantha were working at the station. Samantha decided to give a drink to Lindsay"
+    },
+    {
+      "id": 157,
+      "template_id": 8,
+      "IO": "Megan",
+      "S": "Ryan",
+      "place": "station",
+      "object": "letter",
+      "canonical": "While Ryan and Megan were working at the station, Ryan gave a letter to Megan",
+      "swapped": "While Megan and Ryan were working at the station, Ryan gave a letter to Megan"
+    },
+    {
+      "id": 158,
+      "template_id": 12,
+      "IO": "Jacob",
+      "S": "Alexander",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Alexander and Jacob had a long argument. Afterwards Alexander said to Jacob",
+      "swapped": "Then, Jacob and Alexander had a long argument. Afterwards Alexander said to Jacob"
+    },
+    {
+      "id": 159,
+      "template_id": 8,
+      "IO": "Angela",
+      "S": "Erica",
+      "place": "office",
+      "object": "ticket",
+      "canonical": "While Erica and Angela were working at the office, Erica gave a ticket to Angela",
+      "swapped": "While Angela and Erica were working at the office, Erica gave a ticket to Angela"
+    },
+    {
+      "id": 160,
+      "template_id": 14,
+      "IO": "Aaron",
+      "S": "Travis",
+      "place": "church",
+      "object": "map",
+      "canonical": "Friends Travis and Aaron found a map at the church. Travis gave it to Aaron",
+      "swapped": "Friends Aaron and Travis found a map at the church. Travis gave it to Aaron"
+    },
+    {
+      "id": 161,
+      "template_id": 14,
+      "IO": "Jamie",
+      "S": "Mark",
+      "place": "church",
+      "object": "watch",
+      "canonical": "Friends Mark and Jamie found a watch at the church. Mark gave it to Jamie",
+      "swapped": "Friends Jamie and Mark found a watch at the church. Mark gave it to Jamie"
+    },
+    {
+      "id": 162,
+      "template_id": 8,
+      "IO": "Charles",
+      "S": "William",
+      "place": "gym",
+      "object": "phone",
+      "canonical": "While William and Charles were working at the gym, William gave a phone to Charles",
+      "swapped": "While Charles and William were working at the gym, William gave a phone to Charles"
+    },
+    {
+      "id": 163,
+      "template_id": 7,
+      "IO": "Charles",
+      "S": "Kevin",
+      "place": "bank",
+      "object": "book",
+      "canonical": "When Kevin and Charles got a book at the bank, Kevin decided to give the book to Charles",
+      "swapped": "When Charles and Kevin got a book at the bank, Kevin decided to give the book to Charles"
+    },
+    {
+      "id": 164,
+      "template_id": 13,
+      "IO": "Kenneth",
+      "S": "Thomas",
+      "place": "bank",
+      "object": "ticket",
+      "canonical": "The bank Thomas and Kenneth went to had a ticket. Thomas gave it to Kenneth",
+      "swapped": "The bank Kenneth and Thomas went to had a ticket. Thomas gave it to Kenneth"
+    },
+    {
+      "id": 165,
+      "template_id": 8,
+      "IO": "Sean",
+      "S": "Kenneth",
+      "place": "school",
+      "object": "note",
+      "canonical": "While Kenneth and Sean were working at the school, Kenneth gave a note to Sean",
+      "swapped": "While Sean and Kenneth were working at the school, Kenneth gave a note to Sean"
+    },
+    {
+      "id": 166,
+      "template_id": 7,
+      "IO": "David",
+      "S": "Courtney",
+      "place": "hospital",
+      "object": "book",
+      "canonical": "When Courtney and David got a book at the hospital, Courtney decided to give the book to David",
+      "swapped": "When David and Courtney got a book at the hospital, Courtney decided to give the book to David"
+    },
+    {
+      "id": 167,
+      "template_id": 4,
+      "IO": "Amber",
+      "S": "Laura",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Laura and Amber had a long argument, and afterwards Laura said to Amber",
+      "swapped": "Then, Amber and Laura had a long argument, and afterwards Laura said to Amber"
+    },
+    {
+      "id": 168,
+      "template_id": 14,
+      "IO": "Dustin",
+      "S": "James",
+      "place": "restaurant",
+      "object": "letter",
+      "canonical": "Friends James and Dustin found a letter at the restaurant. James gave it to Dustin",
+      "swapped": "Friends Dustin and James found a letter at the restaurant. James gave it to Dustin"
+    },
+    {
+      "id": 169,
+      "template_id": 3,
+      "IO": "Crystal",
+      "S": "Lindsay",
+      "place": "restaurant",
+      "object": "map",
+      "canonical": "Then, Lindsay and Crystal were thinking about going to the restaurant. Lindsay wanted to give a map to Crystal",
+      "swapped": "Then, Crystal and Lindsay were thinking about going to the restaurant. Lindsay wanted to give a map to Crystal"
+    },
+    {
+      "id": 170,
+      "template_id": 3,
+      "IO": "Daniel",
+      "S": "Mark",
+      "place": "house",
+      "object": "bag",
+      "canonical": "Then, Mark and Daniel were thinking about going to the house. Mark wanted to give a bag to Daniel",
+      "swapped": "Then, Daniel and Mark were thinking about going to the house. Mark wanted to give a bag to Daniel"
+    },
+    {
+      "id": 171,
+      "template_id": 8,
+      "IO": "Jacob",
+      "S": "Benjamin",
+      "place": "store",
+      "object": "book",
+      "canonical": "While Benjamin and Jacob were working at the store, Benjamin gave a book to Jacob",
+      "swapped": "While Jacob and Benjamin were working at the store, Benjamin gave a book to Jacob"
+    },
+    {
+      "id": 172,
+      "template_id": 13,
+      "IO": "Benjamin",
+      "S": "Crystal",
+      "place": "mall",
+      "object": "ticket",
+      "canonical": "The mall Crystal and Benjamin went to had a ticket. Crystal gave it to Benjamin",
+      "swapped": "The mall Benjamin and Crystal went to had a ticket. Crystal gave it to Benjamin"
+    },
+    {
+      "id": 173,
+      "template_id": 9,
+      "IO": "Lindsay",
+      "S": "Jessica",
+      "place": "church",
+      "object": "watch",
+      "canonical": "While Jessica and Lindsay were commuting to the church, Jessica gave a watch to Lindsay",
+      "swapped": "While Lindsay and Jessica were commuting to the church, Jessica gave a watch to Lindsay"
+    },
+    {
+      "id": 174,
+      "template_id": 12,
+      "IO": "Scott",
+      "S": "Amy",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Amy and Scott had a long argument. Afterwards Amy said to Scott",
+      "swapped": "Then, Scott and Amy had a long argument. Afterwards Amy said to Scott"
+    },
+    {
+      "id": 175,
+      "template_id": 7,
+      "IO": "Michael",
+      "S": "Kimberly",
+      "place": "hospital",
+      "object": "ticket",
+      "canonical": "When Kimberly and Michael got a ticket at the hospital, Kimberly decided to give the ticket to Michael",
+      "swapped": "When Michael and Kimberly got a ticket at the hospital, Kimberly decided to give the ticket to Michael"
+    },
+    {
+      "id": 176,
+      "template_id": 6,
+      "IO": "Benjamin",
+      "S": "Dustin",
+      "place": "gym",
+      "object": "map",
+      "canonical": "When Dustin and Benjamin got a map at the gym, Dustin decided to give it to Benjamin",
+      "swapped": "When Benjamin and Dustin got a map at the gym, Dustin decided to give it to Benjamin"
+    },
+    {
+      "id": 177,
+      "template_id": 8,
+      "IO": "Erica",
+      "S": "Eric",
+      "place": "station",
+      "object": "book",
+      "canonical": "While Eric and Erica were working at the station, Eric gave a book to Erica",
+      "swapped": "While Erica and Eric were working at the station, Eric gave a book to Erica"
+    },
+    {
+      "id": 178,
+      "template_id": 4,
+      "IO": "Emily",
+      "S": "Erin",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Erin and Emily had a long argument, and afterwards Erin said to Emily",
+      "swapped": "Then, Emily and Erin had a long argument, and afterwards Erin said to Emily"
+    },
+    {
+      "id": 179,
+      "template_id": 0,
+      "IO": "Crystal",
+      "S": "Brittany",
+      "place": "park",
+      "object": "coin",
+      "canonical": "Then, Brittany and Crystal went to the park. Brittany gave a coin to Crystal",
+      "swapped": "Then, Crystal and Brittany went to the park. Brittany gave a coin to Crystal"
+    },
+    {
+      "id": 180,
+      "template_id": 12,
+      "IO": "Tiffany",
+      "S": "Christine",
+      "place": null,
+      "object": null,
+      "canonical": "Then, Christine and Tiffany had a long argument. Afterwards Christine said to Tiffany",
+      "swapped": "Then, Tiffany and Christine had a long argument. Afterwards Christine said to Tiffany"
+    },
+    {
+      "id": 181,
+      "template_id": 2,
+      "IO": "Jacob",
+      "S": "Brandon",
+      "place": "library",
+      "object": "ring",
+      "canonical": "Then, Brandon and Jacob were working at the library. Brandon decided to give a ring to Jacob",
+      "swapped": "Then, Jacob and Brandon were working at the library. Brandon decided to give a ring to Jacob"
+    },
+    {
+      "id": 182,
+      "template_id": 0,
+      "IO": "Michelle",
+      "S": "Gregory",
+      "place": "library",
+      "object": "coin",
+      "canonical": "Then, Gregory and Michelle went to the library. Gregory gave a coin to Michelle",
+      "swapped": "Then, Michelle and Gregory went to the library. Gregory gave a coin to Michelle"
+    },
+    {
+      "id": 183,
+      "template_id": 0,
+      "IO": "James",
+      "S": "Lindsey",
+      "place": "house",
+      "object": "letter",
+      "canonical": "Then, Lindsey and James went to the house. Lindsey gave a letter to James",
+      "swapped": "Then, James and Lindsey went to the house. Lindsey gave a letter to James"
+    },
+    {
+      "id": 184,
+      "template_id": 13,
+      "IO": "Jacob",
+      "S": "Brian",
+      "place": "store",
+      "object": "note",
+      "canonical": "The store Brian and Jacob went to had a note. Brian gave it to Jacob",
+      "swapped": "The store Jacob and Brian went to had a note. Brian gave it to Jacob"
+    },
+    {
+      "id": 185,
+      "template_id": 6,
+      "IO": "Lauren",
+      "S": "Heather",
+      "place": "station",
+      "object": "bag",
+      "canonical": "When Heather and Lauren got a bag at the station, Heather decided to give it to Lauren",
+      "swapped": "When Lauren and Heather got a bag at the station, Heather decided to give it to Lauren"
+    },
+    {
+      "id": 186,
+      "template_id": 5,
+      "IO": "Bradley",
+      "S": "Amy",
+      "place": "hospital",
+      "object": "ticket",
+      "canonical": "After Amy and Bradley went to the hospital, Amy gave a ticket to Bradley",
+      "swapped": "After Bradley and Amy went to the hospital, Amy gave a ticket to Bradley"
+    },
+    {
+      "id": 187,
+      "template_id": 13,
+      "IO": "Benjamin",
+      "S": "Melissa",
+      "place": "church",
+      "object": "gift",
+      "canonical": "The church Melissa and Benjamin went to had a gift. Melissa gave it to Benjamin",
+      "swapped": "The church Benjamin and Melissa went to had a gift. Melissa gave it to Benjamin"
+    },
+    {
+      "id": 188,
+      "template_id": 7,
+      "IO": "Jessica",
+      "S": "Allison",
+      "place": "market",
+      "object": "drink",
+      "canonical": "When Allison and Jessica got a drink at the market, Allison decided to give the drink to Jessica",
+      "swapped": "When Jessica and Allison got a drink at the market, Allison decided to give the drink to Jessica"
+    },
+    {
+      "id": 189,
+      "template_id": 5,
+      "IO": "Eric",
+      "S": "Kristen",
+      "place": "garden",
+      "object": "ticket",
+      "canonical": "After Kristen and Eric went to the garden, Kristen gave a ticket to Eric",
+      "swapped": "After Eric and Kristen went to the garden, Kristen gave a ticket to Eric"
+    },
+    {
+      "id": 190,
+      "template_id": 10,
+      "IO": "Jennifer",
+      "S": "Bradley",
+      "place": "store",
+      "object": "book",
+      "canonical": "After the lunch, Bradley and Jennifer went to the store. Bradley gave a book to Jennifer",
+      "swapped": "After the lunch, Jennifer and Bradley went to the store. Bradley gave a book to Jennifer"
+    },
+    {
+      "id": 191,
+      "template_id": 3,
+      "IO": "Jessica",
+      "S": "Lisa",
+      "place": "restaurant",
+      "object": "book",
+      "canonical": "Then, Lisa and Jessica were thinking about going to the restaurant. Lisa wanted to give a book to Jessica",
+      "swapped": "Then, Jessica and Lisa were thinking about going to the restaurant. Lisa wanted to give a book to Jessica"
+    },
+    {
+      "id": 192,
+      "template_id": 2,
+      "IO": "Stephen",
+      "S": "Alexander",
+      "place": "garden",
+      "object": "key",
+      "canonical": "Then, Alexander and Stephen were working at the garden. Alexander decided to give a key to Stephen",
+      "swapped": "Then, Stephen and Alexander were working at the garden. Alexander decided to give a key to Stephen"
+    },
+    {
+      "id": 193,
+      "template_id": 3,
+      "IO": "Jacob",
+      "S": "Shannon",
+      "place": "hospital",
+      "object": "ticket",
+      "canonical": "Then, Shannon and Jacob were thinking about going to the hospital. Shannon wanted to give a ticket to Jacob",
+      "swapped": "Then, Jacob and Shannon were thinking about going to the hospital. Shannon wanted to give a ticket to Jacob"
+    },
+    {
+      "id": 194,
+      "template_id": 5,
+      "IO": "Jonathan",
+      "S": "Mary",
+      "place": "library",
+      "object": "map",
+      "canonical": "After Mary and Jonathan went to the library, Mary gave a map to Jonathan",
+      "swapped": "After Jonathan and Mary went to the library, Mary gave a map to Jonathan"
+    },
+    {
+      "id": 195,
+      "template_id": 11,
+      "IO": "Andrew",
+      "S": "Jonathan",
+      "place": "hospital",
+      "object": "gift",
+      "canonical": "Afterwards, Jonathan and Andrew went to the hospital. Jonathan gave a gift to Andrew",
+      "swapped": "Afterwards, Andrew and Jonathan went to the hospital. Jonathan gave a gift to Andrew"
+    },
+    {
+      "id": 196,
+      "template_id": 9,
+      "IO": "Matthew",
+      "S": "Laura",
+      "place": "library",
+      "object": "coin",
+      "canonical": "While Laura and Matthew were commuting to the library, Laura gave a coin to Matthew",
+      "swapped": "While Matthew and Laura were commuting to the library, Laura gave a coin to Matthew"
+    },
+    {
+      "id": 197,
+      "template_id": 14,
+      "IO": "Amy",
+      "S": "Tiffany",
+      "place": "gym",
+      "object": "book",
+      "canonical": "Friends Tiffany and Amy found a book at the gym. Tiffany gave it to Amy",
+      "swapped": "Friends Amy and Tiffany found a book at the gym. Tiffany gave it to Amy"
+    },
+    {
+      "id": 198,
+      "template_id": 1,
+      "IO": "Andrea",
+      "S": "Lindsay",
+      "place": "church",
+      "object": "coin",
+      "canonical": "Then, Lindsay and Andrea had a lot of fun at the church. Lindsay gave a coin to Andrea",
+      "swapped": "Then, Andrea and Lindsay had a lot of fun at the church. Lindsay gave a coin to Andrea"
+    },
+    {
+      "id": 199,
+      "template_id": 3,
+      "IO": "Joseph",
+      "S": "Shannon",
+      "place": "bank",
+      "object": "note",
+      "canonical": "Then, Shannon and Joseph were thinking about going to the bank. Shannon wanted to give a note to Joseph",
+      "swapped": "Then, Joseph and Shannon were thinking about going to the bank. Shannon wanted to give a note to Joseph"
+    },
+    {
+      "id": 200,
+      "template_id": 13,
+      "IO": "Jesse",
+      "S": "Gregory",
+      "place": "bank",
+      "object": "gift",
+      "canonical": "The bank Gregory and Jesse went to had a gift. Gregory gave it to Jesse",
+      "swapped": "The bank Jesse and Gregory went to had a gift. Gregory gave it to Jesse"
+    }
+  ]
+}

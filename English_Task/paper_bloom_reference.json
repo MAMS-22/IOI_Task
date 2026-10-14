@@ -1,0 +1,14 @@
+{
+  "source": "Zhang et al., The Same but Different, ICLR 2025, supplied PDF Figure 2 (page 5)",
+  "source_url": "https://arxiv.org/abs/2410.09223",
+  "scope": "All head IDs in Figure 2 are black/shared and therefore applicable to English. Functional labels are the paper's labels, not our independently validated assignments.",
+  "position_assumption": "Output retention positions follow Wang/Easy-Transformer conventions: previous-token heads at S1+1; duplicate/induction heads at S2; inhibition/name-mover/negative heads at END. Exact BLOOM circuit extraction masks are not supplied in this paper.",
+  "groups": {
+    "duplicate": {"role": "S2", "heads": [[0,9],[7,8],[11,10]]},
+    "previous": {"role": "S1+1", "heads": [[4,0],[5,0],[6,0],[6,2],[7,0]]},
+    "induction": {"role": "S2", "heads": [[6,12],[7,6],[7,10],[7,12],[8,9],[8,11],[8,13],[9,11],[10,10],[10,11]]},
+    "inhibition": {"role": "END", "heads": [[12,6],[14,6],[16,5],[19,4],[21,2],[22,3]]},
+    "name_mover": {"role": "END", "heads": [[18,7],[18,8],[19,8],[19,11],[20,8],[20,9],[20,10],[20,11],[20,12],[21,9],[21,10]]},
+    "negative": {"role": "END", "heads": [[17,9],[19,15],[21,6]]}
+  }
+}

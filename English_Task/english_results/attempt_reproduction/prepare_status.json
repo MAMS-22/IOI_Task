@@ -1,0 +1,50 @@
+{
+  "phase": "prepare",
+  "status": "complete",
+  "started_utc": "2026-10-13T20:27:32.151345+00:00",
+  "command_config": {
+    "phase": "prepare",
+    "output_dir": "/DATA/cs25mtech11017/IOI_Task/English_Task/english_results/meeting_reproduction",
+    "device": "cuda:0",
+    "model": "bigscience/bloom-560m",
+    "seed": 20261014,
+    "discovery_n": 200,
+    "confirmation_n": 100,
+    "test_n": 500,
+    "batch_size": 16,
+    "reference_per_template": 100,
+    "min_direct_effect": 0.02,
+    "min_path_effect": 0.001,
+    "fdr": 0.05,
+    "target": null,
+    "probe_samples": 64,
+    "probe_length": 32,
+    "no_bos": false
+  },
+  "source_hashes": {
+    "reproduce_bloom_ioi.py": "073007dcdeffb0617fe76fd36d4762e30f948275f5d03d395fe328d6f3ffc476",
+    "bloom_ioi/__init__.py": "801df843edf8957c944acceaae9c9e093e8c8a5c30715cd840ef221ce9443bf3",
+    "bloom_ioi/data.py": "0fe46ab9f46cfbc78789b23584dff10f38d8e5f31779d1fe6dccd5e6bdd34aa2",
+    "bloom_ioi/experiment.py": "7b89d74bc8456ab986f9d68b7f1ece5805b8ce99786d47c36fe0a7d40a211d95",
+    "bloom_ioi/interventions.py": "f41c534ba7b799fe57da8e8ebce7ba29606e06e5022a7b129522de81e5d96f23",
+    "bloom_ioi/reproduction.py": "012118b2392acffe11ea2808235181a5b006d21d3b7c40738a0a56eec64bea90"
+  },
+  "counts": {
+    "discovery": 400,
+    "confirmation": 200,
+    "test": 1000,
+    "reference_examples": 3000
+  },
+  "vocabulary_counts": {
+    "names": 90,
+    "places": 8,
+    "objects": 7
+  },
+  "completed_utc": "2026-10-13T20:27:35.819902+00:00",
+  "elapsed_seconds": 3.6685784000437707,
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.18.0",
+    "transformer_lens": "4.2.0"
+  }
+}

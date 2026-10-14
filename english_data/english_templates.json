@@ -1,0 +1,92 @@
+[
+  {
+    "canonical": "Then, [B] and [A] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+    "swapped": "Then, [A] and [B] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "Then, [B] and [A] had a lot of fun at the [PLACE]. [B] gave a [OBJECT] to [A]",
+    "swapped": "Then, [A] and [B] had a lot of fun at the [PLACE]. [B] gave a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "Then, [B] and [A] were working at the [PLACE]. [B] decided to give a [OBJECT] to [A]",
+    "swapped": "Then, [A] and [B] were working at the [PLACE]. [B] decided to give a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "Then, [B] and [A] were thinking about going to the [PLACE]. [B] wanted to give a [OBJECT] to [A]",
+    "swapped": "Then, [A] and [B] were thinking about going to the [PLACE]. [B] wanted to give a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "Then, [B] and [A] had a long argument, and afterwards [B] said to [A]",
+    "swapped": "Then, [A] and [B] had a long argument, and afterwards [B] said to [A]",
+    "has_place": false,
+    "has_object": false
+  },
+  {
+    "canonical": "After [B] and [A] went to the [PLACE], [B] gave a [OBJECT] to [A]",
+    "swapped": "After [A] and [B] went to the [PLACE], [B] gave a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "When [B] and [A] got a [OBJECT] at the [PLACE], [B] decided to give it to [A]",
+    "swapped": "When [A] and [B] got a [OBJECT] at the [PLACE], [B] decided to give it to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "When [B] and [A] got a [OBJECT] at the [PLACE], [B] decided to give the [OBJECT] to [A]",
+    "swapped": "When [A] and [B] got a [OBJECT] at the [PLACE], [B] decided to give the [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "While [B] and [A] were working at the [PLACE], [B] gave a [OBJECT] to [A]",
+    "swapped": "While [A] and [B] were working at the [PLACE], [B] gave a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "While [B] and [A] were commuting to the [PLACE], [B] gave a [OBJECT] to [A]",
+    "swapped": "While [A] and [B] were commuting to the [PLACE], [B] gave a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "After the lunch, [B] and [A] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+    "swapped": "After the lunch, [A] and [B] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "Afterwards, [B] and [A] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+    "swapped": "Afterwards, [A] and [B] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "Then, [B] and [A] had a long argument. Afterwards [B] said to [A]",
+    "swapped": "Then, [A] and [B] had a long argument. Afterwards [B] said to [A]",
+    "has_place": false,
+    "has_object": false
+  },
+  {
+    "canonical": "The [PLACE] [B] and [A] went to had a [OBJECT]. [B] gave it to [A]",
+    "swapped": "The [PLACE] [A] and [B] went to had a [OBJECT]. [B] gave it to [A]",
+    "has_place": true,
+    "has_object": true
+  },
+  {
+    "canonical": "Friends [B] and [A] found a [OBJECT] at the [PLACE]. [B] gave it to [A]",
+    "swapped": "Friends [A] and [B] found a [OBJECT] at the [PLACE]. [B] gave it to [A]",
+    "has_place": true,
+    "has_object": true
+  }
+]

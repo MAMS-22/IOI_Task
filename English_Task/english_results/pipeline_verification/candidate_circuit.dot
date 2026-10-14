@@ -1,0 +1,4 @@
+digraph IOI {
+rankdir=LR;
+logits [shape=box,label="IO minus S logit"];
+}

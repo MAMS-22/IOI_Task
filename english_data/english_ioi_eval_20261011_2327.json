@@ -1,0 +1,27 @@
+{
+  "corpus": {
+    "path": "english_corpus_200_both_20261011_2031.json",
+    "n_items": 200
+  },
+  "device": "cuda",
+  "models": {
+    "GPT2-small": {
+      "model_id": "gpt2",
+      "n_evaluated": 200,
+      "n_skipped": 0,
+      "accuracy_pct": 64.5,
+      "zero_rank_rate_pct": 0.0,
+      "mean_io_rank": 6011.77,
+      "mean_s_rank": 9750.84
+    },
+    "BLOOM-560M": {
+      "model_id": "bigscience/bloom-560m",
+      "n_evaluated": 161,
+      "n_skipped": 39,
+      "accuracy_pct": 61.49,
+      "zero_rank_rate_pct": 0.0,
+      "mean_io_rank": 33733.51,
+      "mean_s_rank": 34697.03
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "model": "bigscience/bloom-560m",
+  "seed": 42,
+  "n_per_pattern": 100,
+  "ablation": "zero hook_z for one head at all positions",
+  "baseline": {
+    "ABBA": {
+      "n": 100,
+      "mean_logit_diff": 5.627019805908203,
+      "accuracy": 1.0,
+      "zero_rank_rate": 0.93
+    },
+    "BABA": {
+      "n": 100,
+      "mean_logit_diff": 4.493915710449219,
+      "accuracy": 0.99,
+      "zero_rank_rate": 0.91
+    }
+  },
+  "heads": {
+    "layer_17_head_9": {
+      "ABBA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 6.016644287109375,
+          "accuracy": 1.0,
+          "zero_rank_rate": 0.94
+        },
+        "delta_logit_diff": 0.38962448120117177,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.009999999999999898
+      },
+      "BABA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 5.228666687011719,
+          "accuracy": 0.99,
+          "zero_rank_rate": 0.95
+        },
+        "delta_logit_diff": 0.7347509765625002,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.039999999999999925
+      }
+    },
+    "layer_19_head_8": {
+      "ABBA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 5.599361724853516,
+          "accuracy": 1.0,
+          "zero_rank_rate": 0.93
+        },
+        "delta_logit_diff": -0.027658081054687145,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.0
+      },
+      "BABA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 4.517223358154297,
+          "accuracy": 0.99,
+          "zero_rank_rate": 0.92
+        },
+        "delta_logit_diff": 0.023307647705077983,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.010000000000000009
+      }
+    },
+    "layer_19_head_15": {
+      "ABBA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 5.691634979248047,
+          "accuracy": 1.0,
+          "zero_rank_rate": 0.93
+        },
+        "delta_logit_diff": 0.06461517333984368,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.0
+      },
+      "BABA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 4.985064086914062,
+          "accuracy": 0.99,
+          "zero_rank_rate": 0.9
+        },
+        "delta_logit_diff": 0.4911483764648432,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": -0.010000000000000009
+      }
+    },
+    "layer_21_head_6": {
+      "ABBA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 5.7944786071777346,
+          "accuracy": 1.0,
+          "zero_rank_rate": 0.94
+        },
+        "delta_logit_diff": 0.1674588012695315,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.009999999999999898
+      },
+      "BABA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 4.794754333496094,
+          "accuracy": 0.99,
+          "zero_rank_rate": 0.95
+        },
+        "delta_logit_diff": 0.30083862304687514,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.039999999999999925
+      }
+    },
+    "layer_21_head_8": {
+      "ABBA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 5.784487915039063,
+          "accuracy": 1.0,
+          "zero_rank_rate": 0.91
+        },
+        "delta_logit_diff": 0.15746810913085962,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": -0.020000000000000018
+      },
+      "BABA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 4.613105163574219,
+          "accuracy": 0.99,
+          "zero_rank_rate": 0.91
+        },
+        "delta_logit_diff": 0.11918945312500018,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.0
+      }
+    },
+    "layer_22_head_10": {
+      "ABBA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 5.629865112304688,
+          "accuracy": 1.0,
+          "zero_rank_rate": 0.92
+        },
+        "delta_logit_diff": 0.002845306396484837,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": -0.010000000000000009
+      },
+      "BABA": {
+        "ablated": {
+          "n": 100,
+          "mean_logit_diff": 4.601052703857422,
+          "accuracy": 0.99,
+          "zero_rank_rate": 0.91
+        },
+        "delta_logit_diff": 0.10713699340820337,
+        "delta_accuracy": 0.0,
+        "delta_zero_rank_rate": 0.0
+      }
+    }
+  }
+}

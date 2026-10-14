@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "model": "bigscience/bloom-560m",
+  "completed_utc": "2026-10-14T03:16:32.446950+00:00",
+  "device": "cuda:2",
+  "dtype": "float32",
+  "n_prompts": 2,
+  "atol": 0.0005,
+  "rtol": 0.0001,
+  "checks": {
+    "qkv_projection_layout": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "layers": [
+        0,
+        17,
+        23
+      ]
+    },
+    "z_result_equivalence": {
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    "identical_donor_paths": {
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    "exact_frozen_mlp_direct_path": {
+      "passed": true,
+      "max_abs_error": 0.00018310546875
+    },
+    "affine_layernorm_readout": {
+      "passed": true,
+      "max_abs_error": 0.0003514289855957031
+    },
+    "full_attention_retention": {
+      "passed": true,
+      "max_abs_error": 0.0
+    }
+  },
+  "source_sha256": "47e37d99342550eafbfe63c0cb82d02ec958cd04d2e36691e91be4b16da5c42c"
+}

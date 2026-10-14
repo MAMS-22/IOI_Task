@@ -1,5 +1,10 @@
 # IOI Task
 
+English BLOOM IOI circuit discovery is implemented in
+[`English_Task/discover_bloom_ioi.py`](English_Task/discover_bloom_ioi.py).
+See [`English_Task/README.md`](English_Task/README.md) for the paper methodology,
+an audit of the exploratory scripts, commands, and validation limits.
+
 This repository contains the code, templates, vocabularies, generated corpora, and evaluation results for an **Indirect Object Identification (IOI)** task in Hindi and Telugu.
 
 The Telugu pipeline is under active development. Vocabulary selection, gender-aware templates, corpus generation, and real-model perplexity evaluation are now implemented, but the Telugu corpus still requires linguistic quality review before being treated as final.

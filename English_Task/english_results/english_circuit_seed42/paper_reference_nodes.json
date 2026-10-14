@@ -1,0 +1,192 @@
+[
+  {
+    "layer": 0,
+    "head": 9,
+    "role": "S2"
+  },
+  {
+    "layer": 4,
+    "head": 0,
+    "role": "S1+1"
+  },
+  {
+    "layer": 5,
+    "head": 0,
+    "role": "S1+1"
+  },
+  {
+    "layer": 6,
+    "head": 0,
+    "role": "S1+1"
+  },
+  {
+    "layer": 6,
+    "head": 2,
+    "role": "S1+1"
+  },
+  {
+    "layer": 6,
+    "head": 12,
+    "role": "S2"
+  },
+  {
+    "layer": 7,
+    "head": 0,
+    "role": "S1+1"
+  },
+  {
+    "layer": 7,
+    "head": 6,
+    "role": "S2"
+  },
+  {
+    "layer": 7,
+    "head": 8,
+    "role": "S2"
+  },
+  {
+    "layer": 7,
+    "head": 10,
+    "role": "S2"
+  },
+  {
+    "layer": 7,
+    "head": 12,
+    "role": "S2"
+  },
+  {
+    "layer": 8,
+    "head": 9,
+    "role": "S2"
+  },
+  {
+    "layer": 8,
+    "head": 11,
+    "role": "S2"
+  },
+  {
+    "layer": 8,
+    "head": 13,
+    "role": "S2"
+  },
+  {
+    "layer": 9,
+    "head": 11,
+    "role": "S2"
+  },
+  {
+    "layer": 10,
+    "head": 10,
+    "role": "S2"
+  },
+  {
+    "layer": 10,
+    "head": 11,
+    "role": "S2"
+  },
+  {
+    "layer": 11,
+    "head": 10,
+    "role": "S2"
+  },
+  {
+    "layer": 12,
+    "head": 6,
+    "role": "END"
+  },
+  {
+    "layer": 14,
+    "head": 6,
+    "role": "END"
+  },
+  {
+    "layer": 16,
+    "head": 5,
+    "role": "END"
+  },
+  {
+    "layer": 17,
+    "head": 9,
+    "role": "END"
+  },
+  {
+    "layer": 18,
+    "head": 7,
+    "role": "END"
+  },
+  {
+    "layer": 18,
+    "head": 8,
+    "role": "END"
+  },
+  {
+    "layer": 19,
+    "head": 4,
+    "role": "END"
+  },
+  {
+    "layer": 19,
+    "head": 8,
+    "role": "END"
+  },
+  {
+    "layer": 19,
+    "head": 11,
+    "role": "END"
+  },
+  {
+    "layer": 19,
+    "head": 15,
+    "role": "END"
+  },
+  {
+    "layer": 20,
+    "head": 8,
+    "role": "END"
+  },
+  {
+    "layer": 20,
+    "head": 9,
+    "role": "END"
+  },
+  {
+    "layer": 20,
+    "head": 10,
+    "role": "END"
+  },
+  {
+    "layer": 20,
+    "head": 11,
+    "role": "END"
+  },
+  {
+    "layer": 20,
+    "head": 12,
+    "role": "END"
+  },
+  {
+    "layer": 21,
+    "head": 2,
+    "role": "END"
+  },
+  {
+    "layer": 21,
+    "head": 6,
+    "role": "END"
+  },
+  {
+    "layer": 21,
+    "head": 9,
+    "role": "END"
+  },
+  {
+    "layer": 21,
+    "head": 10,
+    "role": "END"
+  },
+  {
+    "layer": 22,
+    "head": 3,
+    "role": "END"
+  }
+]

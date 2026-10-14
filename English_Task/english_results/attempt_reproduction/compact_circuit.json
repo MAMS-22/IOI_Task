@@ -1,0 +1,6968 @@
+{
+  "nodes": [
+    {
+      "layer": 6,
+      "head": 0,
+      "role": "S1+1",
+      "published_position_match": true
+    },
+    {
+      "layer": 6,
+      "head": 2,
+      "role": "S1+1",
+      "published_position_match": true
+    },
+    {
+      "layer": 7,
+      "head": 6,
+      "role": "S2",
+      "published_position_match": true
+    },
+    {
+      "layer": 7,
+      "head": 10,
+      "role": "S2",
+      "published_position_match": true
+    },
+    {
+      "layer": 7,
+      "head": 12,
+      "role": "S2",
+      "published_position_match": true
+    },
+    {
+      "layer": 8,
+      "head": 9,
+      "role": "S2",
+      "published_position_match": true
+    },
+    {
+      "layer": 8,
+      "head": 11,
+      "role": "S2",
+      "published_position_match": true
+    },
+    {
+      "layer": 9,
+      "head": 11,
+      "role": "S2",
+      "published_position_match": true
+    },
+    {
+      "layer": 10,
+      "head": 14,
+      "role": "S2",
+      "published_position_match": false
+    },
+    {
+      "layer": 11,
+      "head": 10,
+      "role": "S2",
+      "published_position_match": true
+    },
+    {
+      "layer": 12,
+      "head": 4,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 12,
+      "head": 6,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 13,
+      "head": 13,
+      "role": "S2",
+      "published_position_match": false
+    },
+    {
+      "layer": 14,
+      "head": 6,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 14,
+      "head": 12,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 15,
+      "head": 0,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 15,
+      "head": 7,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 15,
+      "head": 13,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 16,
+      "head": 5,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 16,
+      "head": 10,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 16,
+      "head": 14,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 18,
+      "head": 7,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 18,
+      "head": 8,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 19,
+      "head": 0,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 19,
+      "head": 4,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 20,
+      "head": 8,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 20,
+      "head": 9,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 20,
+      "head": 10,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 20,
+      "head": 11,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 20,
+      "head": 12,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 21,
+      "head": 2,
+      "role": "END",
+      "published_position_match": true
+    },
+    {
+      "layer": 21,
+      "head": 5,
+      "role": "END",
+      "published_position_match": false
+    },
+    {
+      "layer": 22,
+      "head": 3,
+      "role": "END",
+      "published_position_match": true
+    }
+  ],
+  "edges": [
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.0219140625,
+      "standard_error": 0.0008323087182119208,
+      "approximate_p": 1.774514668438368e-152,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.024005126953125,
+      "standard_error": 0.000943155609212157,
+      "approximate_p": 1.3442502150300263e-142,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.0908905029296875,
+      "standard_error": 0.003676603092099265,
+      "approximate_p": 1.2617345237124025e-134,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.1915875244140625,
+      "standard_error": 0.008439589185630226,
+      "approximate_p": 8.748742669797353e-114,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.08303192138671875,
+      "standard_error": 0.003934969383034757,
+      "approximate_p": 1.556327376324267e-98,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.0927044677734375,
+      "standard_error": 0.004527331384390968,
+      "approximate_p": 6.958927775201652e-93,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.12245269775390626,
+      "standard_error": 0.005996138353398077,
+      "approximate_p": 2.1353855478912314e-92,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.00937103271484375,
+      "standard_error": 0.0004665744462840447,
+      "approximate_p": 2.0064038293190486e-89,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.02660858154296875,
+      "standard_error": 0.0013273010893521257,
+      "approximate_p": 4.276342599780613e-89,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.2094049072265625,
+      "standard_error": 0.010854880031613116,
+      "approximate_p": 1.2707368227838882e-82,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0319427490234375,
+      "standard_error": 0.00168688309181685,
+      "approximate_p": 1.1531238310311137e-79,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0294415283203125,
+      "standard_error": 0.0016476481609733408,
+      "approximate_p": 4.1262511521476455e-71,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.0218768310546875,
+      "standard_error": 0.0012303454358877659,
+      "approximate_p": 1.9822048163146505e-70,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.14615386962890625,
+      "standard_error": 0.008239748526193564,
+      "approximate_p": 4.2937142996930966e-70,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.01601654052734375,
+      "standard_error": 0.0009112876111901789,
+      "approximate_p": 7.560527672437759e-69,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.01383331298828125,
+      "standard_error": 0.0007996510538207478,
+      "approximate_p": 9.54150069147802e-67,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0198223876953125,
+      "standard_error": 0.0011490606687251507,
+      "approximate_p": 2.2015046286340255e-66,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.00639556884765625,
+      "standard_error": 0.000371748863397933,
+      "approximate_p": 4.95603685934453e-66,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.0748309326171875,
+      "standard_error": 0.0043791389372745135,
+      "approximate_p": 3.6434616088715916e-65,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.25086151123046874,
+      "standard_error": 0.014776501112647656,
+      "approximate_p": 2.428456147438069e-64,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.0058172607421875,
+      "standard_error": 0.000349285816830383,
+      "approximate_p": 5.592125336024078e-62,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.0069244384765625,
+      "standard_error": 0.0004168078921946945,
+      "approximate_p": 1.1219035942162758e-61,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.01960723876953125,
+      "standard_error": 0.0011932297357774787,
+      "approximate_p": 2.2547430201847244e-60,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.0458160400390625,
+      "standard_error": 0.0027958731953273727,
+      "approximate_p": 4.73513625236539e-60,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.040655517578125,
+      "standard_error": 0.0024877379686785144,
+      "approximate_p": 9.860849986761056e-60,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.03435455322265625,
+      "standard_error": 0.0021083654966006686,
+      "approximate_p": 2.1631562794157703e-59,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_input": [
+        15,
+        13,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.29773284912109377,
+      "standard_error": 0.018284410733384777,
+      "approximate_p": 2.5883247668631605e-59,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.1450482177734375,
+      "standard_error": 0.00891543189331297,
+      "approximate_p": 3.2579335079031783e-59,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.0181256103515625,
+      "standard_error": 0.00113629958229325,
+      "approximate_p": 5.568389084820834e-57,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.015518798828125,
+      "standard_error": 0.0009779862400267623,
+      "approximate_p": 2.107132958386971e-56,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.07679290771484375,
+      "standard_error": 0.004862423847380754,
+      "approximate_p": 6.938232848089359e-56,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0465673828125,
+      "standard_error": 0.0029781165578127477,
+      "approximate_p": 8.21103878743062e-55,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.00448822021484375,
+      "standard_error": 0.00028892001065860927,
+      "approximate_p": 4.054615213399916e-54,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        14,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.1559808349609375,
+      "standard_error": 0.010063610090320817,
+      "approximate_p": 6.993012483281293e-54,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.0076220703125,
+      "standard_error": 0.0004924406507954997,
+      "approximate_p": 9.745685720644744e-54,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.01752716064453125,
+      "standard_error": 0.0011332326047441606,
+      "approximate_p": 1.1676419237360365e-53,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.0249127197265625,
+      "standard_error": 0.0016216079318466063,
+      "approximate_p": 5.799285578593159e-53,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.013939208984375,
+      "standard_error": 0.0009169205486091705,
+      "approximate_p": 6.838897794061203e-52,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.00630615234375,
+      "standard_error": 0.00041730120776880864,
+      "approximate_p": 2.7097793410020606e-51,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_input": [
+        15,
+        13,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.03258544921875,
+      "standard_error": 0.002199509932079795,
+      "approximate_p": 2.348395531009398e-49,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.037039794921875,
+      "standard_error": 0.0025037179875312962,
+      "approximate_p": 3.206910807279656e-49,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.005115966796875,
+      "standard_error": 0.00034728346751708076,
+      "approximate_p": 8.10614856835468e-49,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        6,
+        0,
+        "S1+1"
+      ],
+      "receiver_output": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_input": [
+        7,
+        6,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.0440679931640625,
+      "standard_error": 0.0030278532961059645,
+      "approximate_p": 1.098437335299336e-47,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0321533203125,
+      "standard_error": 0.0022326894121269146,
+      "approximate_p": 1.0176267318517031e-46,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.01023529052734375,
+      "standard_error": 0.0007132922473394239,
+      "approximate_p": 2.1503553926160563e-46,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.03134124755859375,
+      "standard_error": 0.002186021581091618,
+      "approximate_p": 2.565482900581628e-46,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.03935791015625,
+      "standard_error": 0.0027826090179770904,
+      "approximate_p": 4.0534700126024645e-45,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.01367523193359375,
+      "standard_error": 0.0009717412767118279,
+      "approximate_p": 1.1144924743066388e-44,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        6,
+        2,
+        "S1+1"
+      ],
+      "receiver_output": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_input": [
+        7,
+        6,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.04287078857421875,
+      "standard_error": 0.0030511152202042174,
+      "approximate_p": 1.522113665717487e-44,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.067540283203125,
+      "standard_error": 0.004833944474837831,
+      "approximate_p": 4.615407214378467e-44,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.2327972412109375,
+      "standard_error": 0.016808074114265454,
+      "approximate_p": 2.532856810557977e-43,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.13862457275390624,
+      "standard_error": 0.010064843144006803,
+      "approximate_p": 7.394890327706898e-43,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.007318115234375,
+      "standard_error": 0.0005356182069685907,
+      "approximate_p": 3.380752938509012e-42,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.01787506103515625,
+      "standard_error": 0.0013135508987203485,
+      "approximate_p": 7.159202105307281e-42,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.03599090576171875,
+      "standard_error": 0.0026540575515704022,
+      "approximate_p": 1.3693951892797822e-41,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.02336334228515625,
+      "standard_error": 0.0017234321586273506,
+      "approximate_p": 1.4544906845508962e-41,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0058709716796875,
+      "standard_error": 0.00043438208260093806,
+      "approximate_p": 2.5274558109905267e-41,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.11782928466796876,
+      "standard_error": 0.008748247479924042,
+      "approximate_p": 4.767716131126368e-41,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.10323638916015625,
+      "standard_error": 0.007686598248268346,
+      "approximate_p": 7.992405355148453e-41,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.01852996826171875,
+      "standard_error": 0.0013812769437821799,
+      "approximate_p": 9.865352445865757e-41,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        13,
+        13,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.02443817138671875,
+      "standard_error": 0.0018341415687344255,
+      "approximate_p": 3.3556449792770853e-40,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.0228729248046875,
+      "standard_error": 0.0017304867766273972,
+      "approximate_p": 1.3884352542698938e-39,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.01919158935546875,
+      "standard_error": 0.0014544392780164142,
+      "approximate_p": 1.8706020647421966e-39,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.09307647705078125,
+      "standard_error": 0.007060782258301701,
+      "approximate_p": 2.2227555368636406e-39,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0521435546875,
+      "standard_error": 0.00396113733761804,
+      "approximate_p": 2.8360606398578372e-39,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.0109375,
+      "standard_error": 0.0008372365912922364,
+      "approximate_p": 1.0601366148068462e-38,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.02142578125,
+      "standard_error": 0.0016425396924112483,
+      "approximate_p": 1.3696535913755496e-38,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.00457275390625,
+      "standard_error": 0.0003505778089160414,
+      "approximate_p": 1.3845142092719402e-38,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.21132720947265626,
+      "standard_error": 0.016222555233625056,
+      "approximate_p": 1.7239831439236628e-38,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0118731689453125,
+      "standard_error": 0.0009210855114674827,
+      "approximate_p": 1.0194555388413814e-37,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.01627685546875,
+      "standard_error": 0.0012668313792776104,
+      "approximate_p": 1.7543761319326625e-37,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.10609100341796875,
+      "standard_error": 0.008329825944417175,
+      "approximate_p": 7.433902661962732e-37,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0345343017578125,
+      "standard_error": 0.0027268187931643964,
+      "approximate_p": 1.8558357620206303e-36,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.05143768310546875,
+      "standard_error": 0.004090825286331976,
+      "approximate_p": 5.876240242030914e-36,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0088482666015625,
+      "standard_error": 0.0007042759996282065,
+      "approximate_p": 6.691997389890633e-36,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0064642333984375,
+      "standard_error": 0.0005153990915637266,
+      "approximate_p": 8.774022584350161e-36,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.0045867919921875,
+      "standard_error": 0.0003658749101574856,
+      "approximate_p": 9.426768226668484e-36,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00291839599609375,
+      "standard_error": 0.000234327140812092,
+      "approximate_p": 2.6479857666922844e-35,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0298101806640625,
+      "standard_error": 0.002396567232103443,
+      "approximate_p": 3.222094252472108e-35,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.00649871826171875,
+      "standard_error": 0.0005235667775360813,
+      "approximate_p": 4.477033117333628e-35,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00485565185546875,
+      "standard_error": 0.000391706956294769,
+      "approximate_p": 5.484781782811844e-35,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        13,
+        13,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.03374176025390625,
+      "standard_error": 0.0027232490903680955,
+      "approximate_p": 5.901811427673328e-35,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.01437530517578125,
+      "standard_error": 0.0011621422965756212,
+      "approximate_p": 7.628643237215911e-35,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.0041473388671875,
+      "standard_error": 0.00033560885792408696,
+      "approximate_p": 8.857646694334137e-35,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.0051812744140625,
+      "standard_error": 0.0004192778604522753,
+      "approximate_p": 8.862171645440497e-35,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.09856475830078125,
+      "standard_error": 0.007983505300332715,
+      "approximate_p": 1.0232430059023708e-34,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.00565765380859375,
+      "standard_error": 0.0004590429844134935,
+      "approximate_p": 1.3307014759478968e-34,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_input": [
+        15,
+        13,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.02138427734375,
+      "standard_error": 0.0017388699670790012,
+      "approximate_p": 1.8614649545714808e-34,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.07210662841796875,
+      "standard_error": 0.005886747667621,
+      "approximate_p": 3.402627351503325e-34,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00308074951171875,
+      "standard_error": 0.00025182381887962554,
+      "approximate_p": 4.104828252952708e-34,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0016595458984375,
+      "standard_error": 0.0001364496536062258,
+      "approximate_p": 9.866092759764994e-34,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0087640380859375,
+      "standard_error": 0.0007213141188497395,
+      "approximate_p": 1.1459209313320945e-33,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0619586181640625,
+      "standard_error": 0.005105733304811259,
+      "approximate_p": 1.3764056906798306e-33,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.132310791015625,
+      "standard_error": 0.010917776010996853,
+      "approximate_p": 1.678755641120309e-33,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        13,
+        13,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.0098291015625,
+      "standard_error": 0.0008121532359338919,
+      "approximate_p": 2.048338130072428e-33,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.04543121337890625,
+      "standard_error": 0.0037732123618198117,
+      "approximate_p": 4.3547500137930626e-33,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0182611083984375,
+      "standard_error": 0.001517965912630214,
+      "approximate_p": 4.9440646387386e-33,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.01776153564453125,
+      "standard_error": 0.0014962851569824335,
+      "approximate_p": 3.37231499356687e-32,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0161962890625,
+      "standard_error": 0.00137250816423343,
+      "approximate_p": 7.759548055407335e-32,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.03654541015625,
+      "standard_error": 0.0030998572419631077,
+      "approximate_p": 8.855257725104222e-32,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.0513702392578125,
+      "standard_error": 0.004366279332418157,
+      "approximate_p": 1.1794409158772094e-31,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.01230621337890625,
+      "standard_error": 0.001051289673282137,
+      "approximate_p": 2.379911876519981e-31,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        14,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.016593017578125,
+      "standard_error": 0.0014219591203937405,
+      "approximate_p": 3.6660100840095146e-31,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.254647216796875,
+      "standard_error": 0.021845052619542477,
+      "approximate_p": 4.22845125746033e-31,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.02940673828125,
+      "standard_error": 0.0025260844818414665,
+      "approximate_p": 5.086238926491437e-31,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.06403045654296875,
+      "standard_error": 0.005503968978288398,
+      "approximate_p": 5.5684425789206315e-31,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        14,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.02302001953125,
+      "standard_error": 0.002007616920482682,
+      "approximate_p": 3.894410229905673e-30,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0440484619140625,
+      "standard_error": 0.003850585621091499,
+      "approximate_p": 5.313177856125379e-30,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.00385009765625,
+      "standard_error": 0.00033681905862001225,
+      "approximate_p": 5.870601598862884e-30,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00572479248046875,
+      "standard_error": 0.0005021834806896913,
+      "approximate_p": 8.381377168338467e-30,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.1488458251953125,
+      "standard_error": 0.013087601628332907,
+      "approximate_p": 1.1393568714980683e-29,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0635784912109375,
+      "standard_error": 0.005610418641493508,
+      "approximate_p": 1.817463859450257e-29,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0093658447265625,
+      "standard_error": 0.0008309654235262087,
+      "approximate_p": 3.6480409710035826e-29,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.01026641845703125,
+      "standard_error": 0.000910894530727336,
+      "approximate_p": 3.6621904334359985e-29,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.00543609619140625,
+      "standard_error": 0.00048353735468303514,
+      "approximate_p": 5.051358955201971e-29,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0040216064453125,
+      "standard_error": 0.00036012951652981295,
+      "approximate_p": 1.1814142372395698e-28,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.05732513427734375,
+      "standard_error": 0.005180617070590749,
+      "approximate_p": 3.696450718990869e-28,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.1162835693359375,
+      "standard_error": 0.01059173022236713,
+      "approximate_p": 9.675300943515546e-28,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.0100750732421875,
+      "standard_error": 0.0009205450911598551,
+      "approximate_p": 1.4092919652589434e-27,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0621588134765625,
+      "standard_error": 0.005685716556877394,
+      "approximate_p": 1.6128209248667406e-27,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.02570770263671875,
+      "standard_error": 0.0023535107730834814,
+      "approximate_p": 1.7872548420808535e-27,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        13,
+        13,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.03118988037109375,
+      "standard_error": 0.002855588135229735,
+      "approximate_p": 1.801637144750422e-27,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.1298333740234375,
+      "standard_error": 0.012001485513628828,
+      "approximate_p": 5.650959007988579e-27,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00642242431640625,
+      "standard_error": 0.0005942423013548128,
+      "approximate_p": 6.326432254892477e-27,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.12258636474609375,
+      "standard_error": 0.011381135004822768,
+      "approximate_p": 9.435525265624078e-27,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.00685577392578125,
+      "standard_error": 0.0006480224094558076,
+      "approximate_p": 7.416101036999416e-26,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.03920074462890625,
+      "standard_error": 0.0037056589649536427,
+      "approximate_p": 7.488935800685929e-26,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.00279052734375,
+      "standard_error": 0.0002640475826326056,
+      "approximate_p": 8.362328983147944e-26,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        6,
+        2,
+        "S1+1"
+      ],
+      "receiver_output": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_input": [
+        8,
+        11,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.01887054443359375,
+      "standard_error": 0.0017977048806540126,
+      "approximate_p": 1.7829994977582047e-25,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        15,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0042095947265625,
+      "standard_error": 0.0004029293590769514,
+      "approximate_p": 3.009538379779944e-25,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        6,
+        0,
+        "S1+1"
+      ],
+      "receiver_output": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_input": [
+        8,
+        11,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.0200482177734375,
+      "standard_error": 0.0019273857916981218,
+      "approximate_p": 4.867555738395708e-25,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0084893798828125,
+      "standard_error": 0.0008170480876156883,
+      "approximate_p": 5.489405485265037e-25,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.0193072509765625,
+      "standard_error": 0.0018638583522429253,
+      "approximate_p": 7.638053762816066e-25,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.03496337890625,
+      "standard_error": 0.003388398500099657,
+      "approximate_p": 1.1618069199148155e-24,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.006563720703125,
+      "standard_error": 0.0006371402089071941,
+      "approximate_p": 1.3824299504190768e-24,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        6,
+        0,
+        "S1+1"
+      ],
+      "receiver_output": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_input": [
+        7,
+        12,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.01138671875,
+      "standard_error": 0.001109393329417382,
+      "approximate_p": 2.0493280530521624e-24,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.02556610107421875,
+      "standard_error": 0.0025174391476616292,
+      "approximate_p": 6.2576937620130406e-24,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.01464691162109375,
+      "standard_error": 0.0014447002050540845,
+      "approximate_p": 7.465179151775174e-24,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.00777587890625,
+      "standard_error": 0.0007710397744213921,
+      "approximate_p": 1.2882767708626311e-23,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        6,
+        0,
+        "S1+1"
+      ],
+      "receiver_output": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_input": [
+        9,
+        11,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.0062939453125,
+      "standard_error": 0.0006247217288571443,
+      "approximate_p": 1.428145380592714e-23,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0081292724609375,
+      "standard_error": 0.000807018184764062,
+      "approximate_p": 1.4512412616045752e-23,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0197802734375,
+      "standard_error": 0.0019692651733793794,
+      "approximate_p": 1.9428869315533233e-23,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.05114959716796875,
+      "standard_error": 0.005157197061937609,
+      "approximate_p": 6.946071888079484e-23,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        0,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0050787353515625,
+      "standard_error": 0.0005227118593331044,
+      "approximate_p": 5.147662257860046e-22,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.003441162109375,
+      "standard_error": 0.0003541976095815866,
+      "approximate_p": 5.185926808471337e-22,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        6,
+        0,
+        "S1+1"
+      ],
+      "receiver_output": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_input": [
+        7,
+        10,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.01077911376953125,
+      "standard_error": 0.0011118419339158458,
+      "approximate_p": 6.343574840466124e-22,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.01825714111328125,
+      "standard_error": 0.0018866140818440662,
+      "approximate_p": 7.537960864502247e-22,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        6,
+        2,
+        "S1+1"
+      ],
+      "receiver_output": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_input": [
+        7,
+        12,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.01122955322265625,
+      "standard_error": 0.0011685774108737893,
+      "approximate_p": 1.4567273440920712e-21,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.06108306884765625,
+      "standard_error": 0.006395734175672593,
+      "approximate_p": 2.5790626291794993e-21,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.0069769287109375,
+      "standard_error": 0.0007332792023173852,
+      "approximate_p": 3.6448984105884645e-21,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.04025054931640625,
+      "standard_error": 0.004253218288030566,
+      "approximate_p": 5.9531691116265785e-21,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0199346923828125,
+      "standard_error": 0.0021215544110852434,
+      "approximate_p": 1.1306618460061905e-20,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.028575439453125,
+      "standard_error": 0.0030414399021530584,
+      "approximate_p": 1.1403904028986925e-20,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.0162579345703125,
+      "standard_error": 0.0017387530280091293,
+      "approximate_p": 1.7473039253945657e-20,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.011053466796875,
+      "standard_error": 0.0011831929918050012,
+      "approximate_p": 1.8894511241381008e-20,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00590576171875,
+      "standard_error": 0.0006330391762935372,
+      "approximate_p": 2.133058267995046e-20,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00559814453125,
+      "standard_error": 0.0006001837888430556,
+      "approximate_p": 2.1703269883079562e-20,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00285858154296875,
+      "standard_error": 0.00030912310352207705,
+      "approximate_p": 4.6008717776096916e-20,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        6,
+        2,
+        "S1+1"
+      ],
+      "receiver_output": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_input": [
+        7,
+        10,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.0105841064453125,
+      "standard_error": 0.001160863425856269,
+      "approximate_p": 1.5383485349891124e-19,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.02282867431640625,
+      "standard_error": 0.0025334311095541453,
+      "approximate_p": 4.0847997690435564e-19,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.0131024169921875,
+      "standard_error": 0.0014659771384605464,
+      "approximate_p": 7.949381285418723e-19,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00442352294921875,
+      "standard_error": 0.0004981925765966345,
+      "approximate_p": 1.3475532526065967e-18,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        6,
+        2,
+        "S1+1"
+      ],
+      "receiver_output": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_input": [
+        9,
+        11,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.005787353515625,
+      "standard_error": 0.0006550467036477533,
+      "approximate_p": 2.0015308432465442e-18,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.02724029541015625,
+      "standard_error": 0.0030842158581623614,
+      "approximate_p": 2.0534241668767275e-18,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.0025531005859375,
+      "standard_error": 0.00028998243940807404,
+      "approximate_p": 2.6327718995644037e-18,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.0246209716796875,
+      "standard_error": 0.0028148310025412834,
+      "approximate_p": 4.386893707676479e-18,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.003040771484375,
+      "standard_error": 0.0003478505032734903,
+      "approximate_p": 4.596460899146557e-18,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.01635009765625,
+      "standard_error": 0.0018816366210350696,
+      "approximate_p": 7.293843318381867e-18,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00220977783203125,
+      "standard_error": 0.0002551924219727105,
+      "approximate_p": 9.496635074857865e-18,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.004417724609375,
+      "standard_error": 0.00051151212870678,
+      "approximate_p": 1.1582348268374016e-17,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00384124755859375,
+      "standard_error": 0.00044544317337487225,
+      "approximate_p": 1.2995699023256901e-17,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.2416314697265625,
+      "standard_error": 0.028199614649715453,
+      "approximate_p": 2.094851787116551e-17,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.015123291015625,
+      "standard_error": 0.0017718757253278425,
+      "approximate_p": 2.798573549988469e-17,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.016474609375,
+      "standard_error": 0.001950388239428852,
+      "approximate_p": 5.986080090524761e-17,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.003182373046875,
+      "standard_error": 0.000378292675785985,
+      "approximate_p": 8.029806463426837e-17,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.0011822509765625,
+      "standard_error": 0.00014071259569359583,
+      "approximate_p": 8.787397698383414e-17,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.00294097900390625,
+      "standard_error": 0.0003505477364435849,
+      "approximate_p": 9.750368120912269e-17,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.00269439697265625,
+      "standard_error": 0.00032169588698394196,
+      "approximate_p": 1.0988383822242004e-16,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0374359130859375,
+      "standard_error": 0.004484560268730826,
+      "approximate_p": 1.3917097072837453e-16,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.00148468017578125,
+      "standard_error": 0.00017886054642030346,
+      "approximate_p": 2.0687834792809529e-16,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00277435302734375,
+      "standard_error": 0.00033446989288234824,
+      "approximate_p": 2.17578992385352e-16,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.0190625,
+      "standard_error": 0.0023043837132384433,
+      "approximate_p": 2.6284942153570913e-16,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.008125,
+      "standard_error": 0.000983447084640086,
+      "approximate_p": 2.870894378798623e-16,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00590850830078125,
+      "standard_error": 0.0007195870677966607,
+      "approximate_p": 4.388149970841913e-16,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.00561279296875,
+      "standard_error": 0.0006861057997256049,
+      "approximate_p": 5.646229827474471e-16,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.0078436279296875,
+      "standard_error": 0.0009602661777229793,
+      "approximate_p": 6.261480293222779e-16,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        15,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.010186767578125,
+      "standard_error": 0.0012493958361780217,
+      "approximate_p": 7.079301779012704e-16,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.00115814208984375,
+      "standard_error": 0.00014210746145065054,
+      "approximate_p": 7.292781329375023e-16,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.005294189453125,
+      "standard_error": 0.0006505572048168291,
+      "approximate_p": 8.041817000640282e-16,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.00679229736328125,
+      "standard_error": 0.0008395433656000912,
+      "approximate_p": 1.1887342185177638e-15,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.0255572509765625,
+      "standard_error": 0.0031791865094230086,
+      "approximate_p": 1.81255837626179e-15,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00126953125,
+      "standard_error": 0.00015834126528655555,
+      "approximate_p": 2.1550388025976087e-15,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00781707763671875,
+      "standard_error": 0.0009756271019866378,
+      "approximate_p": 2.250519185819212e-15,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0024688720703125,
+      "standard_error": 0.00030834929233001043,
+      "approximate_p": 2.355816762973238e-15,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.0228533935546875,
+      "standard_error": 0.002865220261139569,
+      "approximate_p": 3.0196509664762935e-15,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0069830322265625,
+      "standard_error": 0.0008855913728500609,
+      "approximate_p": 6.282509946993925e-15,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        6,
+        0,
+        "S1+1"
+      ],
+      "receiver_output": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_input": [
+        8,
+        9,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.0109869384765625,
+      "standard_error": 0.0014059628716365557,
+      "approximate_p": 1.103373385679332e-14,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.00564544677734375,
+      "standard_error": 0.0007227694447234366,
+      "approximate_p": 1.1360335510159835e-14,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.028436279296875,
+      "standard_error": 0.003647974781823965,
+      "approximate_p": 1.287286541639966e-14,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.03563720703125,
+      "standard_error": 0.004633670264569896,
+      "approximate_p": 2.9215179632740597e-14,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.01157989501953125,
+      "standard_error": 0.0015092551224939702,
+      "approximate_p": 3.3711650804729355e-14,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        15,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.00849151611328125,
+      "standard_error": 0.001108017079976887,
+      "approximate_p": 3.61288921918791e-14,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.0051605224609375,
+      "standard_error": 0.0006826108138206256,
+      "approximate_p": 8.062775686776693e-14,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        6,
+        2,
+        "S1+1"
+      ],
+      "receiver_output": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_input": [
+        8,
+        9,
+        "S1+1"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.01140777587890625,
+      "standard_error": 0.0015185597409835762,
+      "approximate_p": 1.1625367389232649e-13,
+      "route": "induction_k"
+    },
+    {
+      "sender": [
+        13,
+        13,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.00432098388671875,
+      "standard_error": 0.0005752504146742072,
+      "approximate_p": 1.1692225475384846e-13,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        13,
+        13,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.00185333251953125,
+      "standard_error": 0.0002476666286417203,
+      "approximate_p": 1.450972540450591e-13,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        15,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        11,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.0028192138671875,
+      "standard_error": 0.00038559711783195426,
+      "approximate_p": 5.291640997757304e-13,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00278076171875,
+      "standard_error": 0.00038513293511393626,
+      "approximate_p": 1.0377298791922824e-12,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.009229736328125,
+      "standard_error": 0.0012829135513909838,
+      "approximate_p": 1.2551286096544673e-12,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.005257568359375,
+      "standard_error": 0.0007421811877747316,
+      "approximate_p": 2.802214852925376e-12,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        15,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        9,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0012371826171875,
+      "standard_error": 0.0001765322563605321,
+      "approximate_p": 4.826262451505855e-12,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00178497314453125,
+      "standard_error": 0.0002556919502689517,
+      "approximate_p": 5.863743820425155e-12,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.0038177490234375,
+      "standard_error": 0.0005570800881165805,
+      "approximate_p": 1.4449047905478752e-11,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0021649169921875,
+      "standard_error": 0.0003162365765402689,
+      "approximate_p": 1.520165714757092e-11,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        0,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.00235748291015625,
+      "standard_error": 0.0003448796959455804,
+      "approximate_p": 1.632481908642062e-11,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        14,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00669189453125,
+      "standard_error": 0.0009809730689930025,
+      "approximate_p": 1.7995087407575876e-11,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.03962127685546875,
+      "standard_error": 0.005850398442850876,
+      "approximate_p": 2.5331519768343494e-11,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.0049005126953125,
+      "standard_error": 0.0007261909235128128,
+      "approximate_p": 2.992926925572329e-11,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.004093017578125,
+      "standard_error": 0.0006067933341230276,
+      "approximate_p": 3.053720467218302e-11,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0112506103515625,
+      "standard_error": 0.0016762427929683712,
+      "approximate_p": 3.844698910693336e-11,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        9,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.00596466064453125,
+      "standard_error": 0.000891028123446911,
+      "approximate_p": 4.3390846855776436e-11,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.00435638427734375,
+      "standard_error": 0.0006554331740478447,
+      "approximate_p": 5.999923908124693e-11,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.01880859375,
+      "standard_error": 0.0028560626934536937,
+      "approximate_p": 9.06729397945087e-11,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00962066650390625,
+      "standard_error": 0.001463411984906937,
+      "approximate_p": 9.787428303547476e-11,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.00109466552734375,
+      "standard_error": 0.00016716215810290864,
+      "approximate_p": 1.1621646639972918e-10,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.0128515625,
+      "standard_error": 0.0019679306104804827,
+      "approximate_p": 1.3110469084359536e-10,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.00615203857421875,
+      "standard_error": 0.0009751207223123485,
+      "approximate_p": 5.616810284467929e-10,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.0044403076171875,
+      "standard_error": 0.0007051271106545912,
+      "approximate_p": 6.062446474964242e-10,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00565155029296875,
+      "standard_error": 0.0008983338730372285,
+      "approximate_p": 6.302581821034928e-10,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.00360992431640625,
+      "standard_error": 0.0005815523788039842,
+      "approximate_p": 1.0774134786371582e-09,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.002515869140625,
+      "standard_error": 0.00040553060308444596,
+      "approximate_p": 1.1016533001509847e-09,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00188232421875,
+      "standard_error": 0.00030624568313358764,
+      "approximate_p": 1.5847113481577261e-09,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.0022344970703125,
+      "standard_error": 0.0003665187017697032,
+      "approximate_p": 2.1677344308293466e-09,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": -0.002908935546875,
+      "standard_error": 0.0004777601101247452,
+      "approximate_p": 2.27669628883947e-09,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.01419403076171875,
+      "standard_error": 0.0023459687670286207,
+      "approximate_p": 2.8898753117074538e-09,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.01010894775390625,
+      "standard_error": 0.001684903521078267,
+      "approximate_p": 3.953184399869991e-09,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00236541748046875,
+      "standard_error": 0.0003947172470903599,
+      "approximate_p": 4.128001228597167e-09,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.00352081298828125,
+      "standard_error": 0.0005910008668331882,
+      "approximate_p": 5.1264750251676665e-09,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.008587646484375,
+      "standard_error": 0.0014435641774013053,
+      "approximate_p": 5.398380488627931e-09,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00728607177734375,
+      "standard_error": 0.001231759096084577,
+      "approximate_p": 6.6304200297282595e-09,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.00393310546875,
+      "standard_error": 0.000679338274910806,
+      "approximate_p": 1.4109785884232045e-08,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.0076495361328125,
+      "standard_error": 0.0013249727129216661,
+      "approximate_p": 1.554181469591565e-08,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        15,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        14,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00163909912109375,
+      "standard_error": 0.0002861238972635488,
+      "approximate_p": 2.0248497975685992e-08,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00974945068359375,
+      "standard_error": 0.0017093062245000026,
+      "approximate_p": 2.344036480355641e-08,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        0,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00324554443359375,
+      "standard_error": 0.0005694902460002875,
+      "approximate_p": 2.4097599856183523e-08,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        14,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.02998565673828125,
+      "standard_error": 0.005297918563079594,
+      "approximate_p": 3.02933292493352e-08,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        13,
+        13,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.00749603271484375,
+      "standard_error": 0.0013265463041163606,
+      "approximate_p": 3.194268511076213e-08,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        15,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        14,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.004964599609375,
+      "standard_error": 0.0008947504730773406,
+      "approximate_p": 5.759796818394561e-08,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00585174560546875,
+      "standard_error": 0.0010550959395089464,
+      "approximate_p": 5.839767173357117e-08,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.0027294921875,
+      "standard_error": 0.0005062794162696707,
+      "approximate_p": 1.3991806727709217e-07,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00392578125,
+      "standard_error": 0.0007380562966027602,
+      "approximate_p": 2.0858535945160106e-07,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        20,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.00263763427734375,
+      "standard_error": 0.0004996344394322477,
+      "approximate_p": 2.595998865655735e-07,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00911529541015625,
+      "standard_error": 0.0017444567580530968,
+      "approximate_p": 3.477615472601111e-07,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        0,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00291778564453125,
+      "standard_error": 0.0005659997835891644,
+      "approximate_p": 5.069904591254285e-07,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_input": [
+        15,
+        13,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0042254638671875,
+      "standard_error": 0.0008219653313694243,
+      "approximate_p": 5.474807743933633e-07,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        7,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.0010577392578125,
+      "standard_error": 0.00020628200090963577,
+      "approximate_p": 5.868023584584121e-07,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00254974365234375,
+      "standard_error": 0.0005020497632033823,
+      "approximate_p": 7.601837879546574e-07,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        13,
+        13,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": -0.00449249267578125,
+      "standard_error": 0.0008928744509471726,
+      "approximate_p": 9.733433614481398e-07,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.00285247802734375,
+      "standard_error": 0.0005678969389890444,
+      "approximate_p": 1.0180484146170047e-06,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        8,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.01525421142578125,
+      "standard_error": 0.003056571397038354,
+      "approximate_p": 1.2036647932781719e-06,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        15,
+        13,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.00226043701171875,
+      "standard_error": 0.0004582995746382705,
+      "approximate_p": 1.6259567060748168e-06,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.002242431640625,
+      "standard_error": 0.0004603248090685521,
+      "approximate_p": 2.216074108020486e-06,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_output": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_input": [
+        18,
+        7,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.01213653564453125,
+      "standard_error": 0.002507842755614581,
+      "approximate_p": 2.604208591912214e-06,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00559722900390625,
+      "standard_error": 0.0011615588168128704,
+      "approximate_p": 2.8896143138650493e-06,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.00443878173828125,
+      "standard_error": 0.0009258229659402353,
+      "approximate_p": 3.2629653445716926e-06,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.0025714111328125,
+      "standard_error": 0.0005444107676380824,
+      "approximate_p": 4.641141132555346e-06,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.0017333984375,
+      "standard_error": 0.0003708174009637969,
+      "approximate_p": 5.892445114300636e-06,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.0045452880859375,
+      "standard_error": 0.0009925190657473063,
+      "approximate_p": 9.319664551426312e-06,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.001591796875,
+      "standard_error": 0.0003530029687533134,
+      "approximate_p": 1.3008273648935119e-05,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.00587066650390625,
+      "standard_error": 0.0013377767765589338,
+      "approximate_p": 2.284012135375803e-05,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        20,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00226806640625,
+      "standard_error": 0.0005221177433043652,
+      "approximate_p": 2.798549358169623e-05,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        20,
+        9,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0022332763671875,
+      "standard_error": 0.0005246702706772284,
+      "approximate_p": 4.152426441598337e-05,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0061138916015625,
+      "standard_error": 0.0014402143620812062,
+      "approximate_p": 4.369410169185968e-05,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        0,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.00216339111328125,
+      "standard_error": 0.0005266209194530912,
+      "approximate_p": 7.97987816462359e-05,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.00148193359375,
+      "standard_error": 0.00036678239310380717,
+      "approximate_p": 0.00010673758342216273,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        12,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.00516937255859375,
+      "standard_error": 0.0013518630492674552,
+      "approximate_p": 0.0002627274741116433,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        16,
+        5,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.00321258544921875,
+      "standard_error": 0.0008438763053651358,
+      "approximate_p": 0.0002813950897466686,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        18,
+        8,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.01118438720703125,
+      "standard_error": 0.0029840736025329136,
+      "approximate_p": 0.00035646272714155274,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": 0.0018817138671875,
+      "standard_error": 0.0005092568335159375,
+      "approximate_p": 0.0004397400394000266,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        11,
+        10,
+        "S2"
+      ],
+      "receiver_output": [
+        21,
+        2,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        2,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "BABA",
+      "delta": 0.001534423828125,
+      "standard_error": 0.00042945523635824404,
+      "approximate_p": 0.0007059534224069568,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        16,
+        14,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0030145263671875,
+      "standard_error": 0.0008536881995249267,
+      "approximate_p": 0.0008274214262891548,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00136932373046875,
+      "standard_error": 0.00040631724121056596,
+      "approximate_p": 0.001502898788960277,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        8,
+        9,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.001510009765625,
+      "standard_error": 0.0004625730252107848,
+      "approximate_p": 0.0021941515631931723,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        12,
+        4,
+        "END"
+      ],
+      "receiver_output": [
+        20,
+        10,
+        "END"
+      ],
+      "receiver_input": [
+        20,
+        10,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": -0.001629638671875,
+      "standard_error": 0.0005176248487521477,
+      "approximate_p": 0.0032844533382623622,
+      "route": "positive_output_q"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.0019354248046875,
+      "standard_error": 0.0006166714588858942,
+      "approximate_p": 0.003396271810821079,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        8,
+        11,
+        "S2"
+      ],
+      "receiver_output": [
+        19,
+        4,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        4,
+        "S2"
+      ],
+      "component": "v",
+      "pattern": "ABBA",
+      "delta": 0.001746826171875,
+      "standard_error": 0.000561873154933072,
+      "approximate_p": 0.003755281797064116,
+      "route": "subject_end_v"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        12,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        12,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "ABBA",
+      "delta": -0.0019085693359375,
+      "standard_error": 0.0006165936902956512,
+      "approximate_p": 0.0039317003088642916,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        20,
+        11,
+        "END"
+      ],
+      "receiver_output": [
+        21,
+        5,
+        "END"
+      ],
+      "receiver_input": [
+        21,
+        5,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": 0.0036383056640625,
+      "standard_error": 0.0012580364215732365,
+      "approximate_p": 0.007654712901032492,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        0,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "BABA",
+      "delta": -0.00136383056640625,
+      "standard_error": 0.0004919820651208977,
+      "approximate_p": 0.011138692014508211,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        7,
+        6,
+        "S2"
+      ],
+      "receiver_output": [
+        12,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        12,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": -0.00488739013671875,
+      "standard_error": 0.0017708247727150634,
+      "approximate_p": 0.011561995646255853,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        16,
+        5,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00175872802734375,
+      "standard_error": 0.0006447141612277213,
+      "approximate_p": 0.012747050221612847,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        19,
+        0,
+        "END"
+      ],
+      "receiver_input": [
+        19,
+        0,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00182952880859375,
+      "standard_error": 0.0006805372749887737,
+      "approximate_p": 0.014360811653558259,
+      "route": "subject_end_q"
+    },
+    {
+      "sender": [
+        10,
+        14,
+        "S2"
+      ],
+      "receiver_output": [
+        14,
+        6,
+        "END"
+      ],
+      "receiver_input": [
+        14,
+        6,
+        "S2"
+      ],
+      "component": "k",
+      "pattern": "BABA",
+      "delta": 0.0077801513671875,
+      "standard_error": 0.0028957030191066172,
+      "approximate_p": 0.01442837730200238,
+      "route": "subject_end_k"
+    },
+    {
+      "sender": [
+        18,
+        7,
+        "END"
+      ],
+      "receiver_output": [
+        22,
+        3,
+        "END"
+      ],
+      "receiver_input": [
+        22,
+        3,
+        "END"
+      ],
+      "component": "q",
+      "pattern": "ABBA",
+      "delta": 0.00198760986328125,
+      "standard_error": 0.0007954080013479635,
+      "approximate_p": 0.02491900268844963,
+      "route": "subject_end_q"
+    }
+  ],
+  "edge_policy": "Descriptive edge screen on independent confirmation data: two patterns Bonferroni, global BH .05, effect >=.001. Only frozen-mask endpoints shown. Receiver input position can differ from its retained output position. This subset is not a complete computation graph.",
+  "pruning_mask_sha256": "37c9834ce4116c37f1008a198fa037bf303621f76bb03d22534cfdd040652ed6"
+}

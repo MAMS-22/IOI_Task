@@ -1,0 +1,6 @@
+# Versions validated on the existing ioi-ppl environment. CUDA wheel selection
+# depends on your system; install PyTorch using its official instructions.
+torch==2.6.0
+transformers==5.18.0
+transformer_lens==4.2.0
+# Optional static figure export: matplotlib (includes NumPy as a dependency)

@@ -1,0 +1,1278 @@
+========================================================================
+BLOOM-560M INTERPRETABILITY DIAGNOSTIC
+========================================================================
+Device: cuda
+PyTorch: 2.6.0+cu124
+Loading weights:   0%|          | 0/293 [00:00<?, ?it/s]Loading weights:  99%|█████████▉| 291/293 [00:00<00:00, 2706.21it/s]Loading weights: 100%|██████████| 293/293 [00:00<00:00, 2696.95it/s]
+
+Model wrapper: <class 'transformer_lens.model_bridge.transformer_bridge.TransformerBridge'>
+Model config: TransformerLensConfig:
+{'NTK_by_parts_factor': 8.0,
+ 'NTK_by_parts_high_freq_factor': 4.0,
+ 'NTK_by_parts_low_freq_factor': 1.0,
+ 'act_fn': 'relu',
+ 'architecture': 'BloomForCausalLM',
+ 'attention_dir': 'causal',
+ 'attn_implementation': None,
+ 'attn_only': False,
+ 'attn_scale': -1.0,
+ 'attn_scores_soft_cap': -1.0,
+ 'attn_types': None,
+ 'bos_token_id': 1,
+ 'checkpoint_index': None,
+ 'checkpoint_label_type': None,
+ 'checkpoint_value': None,
+ 'd_head': 64,
+ 'd_mlp': 4096,
+ 'd_model': 1024,
+ 'd_vocab': 250880,
+ 'd_vocab_out': 250880,
+ 'decoder_start_token_id': None,
+ 'default_padding_side': None,
+ 'default_prepend_bos': False,
+ 'device': 'cuda',
+ 'dtype': torch.float32,
+ 'eos_token_id': 2,
+ 'eps': 1e-05,
+ 'experts_per_token': None,
+ 'final_rms': False,
+ 'from_checkpoint': False,
+ 'gated_mlp': False,
+ 'init_mode': 'gpt2',
+ 'init_weights': True,
+ 'initializer_range': 0.02,
+ 'is_audio_model': False,
+ 'is_multimodal': False,
+ 'is_stateful': False,
+ 'is_visual_model': False,
+ 'layer_norm_folding': False,
+ 'load_in_4bit': False,
+ 'mm_tokens_per_image': None,
+ 'model_name': 'bigscience/bloom-560m',
+ 'n_ctx': 2048,
+ 'n_devices': 1,
+ 'n_heads': 16,
+ 'n_key_value_heads': None,
+ 'n_layers': 24,
+ 'n_params': None,
+ 'normalization_type': 'LN',
+ 'num_experts': None,
+ 'original_architecture': None,
+ 'output_logits_soft_cap': -1.0,
+ 'pad_token_id': 3,
+ 'parallel_attn_mlp': False,
+ 'per_layer_head_dim': None,
+ 'per_layer_num_key_value_heads': None,
+ 'positional_embedding_type': 'alibi',
+ 'post_embedding_ln': False,
+ 'qk_norm_after_rope': False,
+ 'relative_attention_max_distance': None,
+ 'relative_attention_num_buckets': None,
+ 'rmsnorm_uses_offset': False,
+ 'rotary_adjacent_pairs': False,
+ 'rotary_base': 10000,
+ 'rotary_dim': None,
+ 'rotary_interleaved_cos_sin': False,
+ 'scale_attn_by_inverse_layer_idx': False,
+ 'scale_embedding': None,
+ 'seed': None,
+ 'split_attention_weights': False,
+ 'tie_word_embeddings': True,
+ 'tokenizer_appends_eos': False,
+ 'tokenizer_name': None,
+ 'tokenizer_prepends_bos': True,
+ 'trust_remote_code': False,
+ 'use_NTK_by_parts_rope': False,
+ 'use_attn_in': False,
+ 'use_attn_result': False,
+ 'use_attn_scale': True,
+ 'use_hook_mlp_in': False,
+ 'use_hook_tokens': False,
+ 'use_local_attn': False,
+ 'use_normalization_before_and_after': False,
+ 'use_qk_norm': False,
+ 'use_split_qkv_input': False,
+ 'uses_rms_norm': False,
+ 'vision_hidden_size': None,
+ 'vision_num_heads': None,
+ 'vision_num_layers': None,
+ 'window_size': None}
+cfg.n_layers: 24
+cfg.n_heads: 16
+cfg.d_model: 1024
+cfg.d_head: 64
+
+--- Relevant methods and attributes ---
+run_with_cache: callable (input: 'Union[str, List[str], torch.Tensor]', return_cache_object: 'bool' = True, remove_batch_dim: 'bool' = False, names_filter: 'Optional[Union[str, List[str], Callable[[str], bool]]]' = None, stop_at_layer: 'Optional[int]' = None, start_at_layer: 'Optional[int]' = None, pos_slice: 'Optional[Union[Slice, SliceInput]]' = None, incl_bwd: 'bool' = False, reset_hooks_end: 'bool' = True, clear_contexts: 'bool' = False, **kwargs) -> 'Tuple[Any, Union[ActivationCache, Dict[str, torch.Tensor]]]'
+run_with_hooks: callable (input: 'Any', fwd_hooks: 'List[Tuple[Union[str, Callable], Callable]]' = [], bwd_hooks: 'List[Tuple[Union[str, Callable], Callable]]' = [], reset_hooks_end: 'bool' = True, clear_contexts: 'bool' = False, return_type: 'Optional[str]' = 'logits', stop_at_layer: 'Optional[int]' = None, start_at_layer: 'Optional[int]' = None, remove_batch_dim: 'bool' = False, **kwargs: 'Any') -> 'Any'
+add_hook: callable (name: 'Union[str, Callable[[str], bool]]', hook_fn: 'Any', dir: "Literal['fwd', 'bwd']" = 'fwd', is_permanent: 'bool' = False) -> 'None'
+reset_hooks: callable (clear_contexts: 'bool' = True, direction: "Literal['fwd', 'bwd', 'both']" = 'both', including_permanent: 'bool' = False, level: 'Optional[int]' = None) -> 'None'
+hook_dict: dict with 1262 entries
+hook_points: callable () -> 'Iterable[HookPoint]'
+blocks: callable (*args, **kwargs)
+W_O: Tensor
+W_V: Tensor
+W_Q: Tensor
+W_K: Tensor
+parameters: callable (recurse: bool = True) -> Iterator[torch.nn.parameter.Parameter]
+
+--- Hook points ---
+Total discovered: 1262
+hook_embed
+hook_unembed
+embed.hook_in
+embed.hook_out
+embed_ln.hook_in
+embed_ln.hook_out
+embed_ln.hook_normalized
+embed_ln.hook_scale
+blocks.0.hook_in
+blocks.0.hook_out
+blocks.0.hook_mlp_in
+blocks.0.hook_resid_pre
+blocks.0.hook_resid_mid
+blocks.0.hook_resid_post
+blocks.0.hook_attn_in
+blocks.0.hook_attn_out
+blocks.0.hook_q_input
+blocks.0.hook_k_input
+blocks.0.hook_v_input
+blocks.0.hook_mlp_out
+blocks.0.ln1.hook_in
+blocks.0.ln1.hook_out
+blocks.0.ln1.hook_normalized
+blocks.0.ln1.hook_scale
+blocks.0.ln2.hook_in
+blocks.0.ln2.hook_out
+blocks.0.ln2.hook_normalized
+blocks.0.ln2.hook_scale
+blocks.0.attn.hook_in
+blocks.0.attn.hook_out
+blocks.0.attn.hook_attn_scores
+blocks.0.attn.hook_pattern
+blocks.0.attn.hook_hidden_states
+blocks.0.attn.hook_result
+blocks.0.attn.hook_attn_in
+blocks.0.attn.hook_q_input
+blocks.0.attn.hook_k_input
+blocks.0.attn.hook_v_input
+blocks.0.attn.hook_q
+blocks.0.attn.hook_k
+blocks.0.attn.hook_v
+blocks.0.attn.hook_z
+blocks.0.attn.q.hook_in
+blocks.0.attn.q.hook_out
+blocks.0.attn.k.hook_in
+blocks.0.attn.k.hook_out
+blocks.0.attn.v.hook_in
+blocks.0.attn.v.hook_out
+blocks.0.attn.qkv.hook_in
+blocks.0.attn.qkv.hook_out
+blocks.0.attn.o.hook_in
+blocks.0.attn.o.hook_out
+blocks.0.mlp.hook_in
+blocks.0.mlp.hook_out
+blocks.0.mlp.hook_pre
+blocks.0.mlp.hook_post
+blocks.0.mlp.in.hook_in
+blocks.0.mlp.in.hook_out
+blocks.0.mlp.out.hook_in
+blocks.0.mlp.out.hook_out
+blocks.1.hook_in
+blocks.1.hook_out
+blocks.1.hook_mlp_in
+blocks.1.hook_resid_pre
+blocks.1.hook_resid_mid
+blocks.1.hook_resid_post
+blocks.1.hook_attn_in
+blocks.1.hook_attn_out
+blocks.1.hook_q_input
+blocks.1.hook_k_input
+blocks.1.hook_v_input
+blocks.1.hook_mlp_out
+blocks.1.ln1.hook_in
+blocks.1.ln1.hook_out
+blocks.1.ln1.hook_normalized
+blocks.1.ln1.hook_scale
+blocks.1.ln2.hook_in
+blocks.1.ln2.hook_out
+blocks.1.ln2.hook_normalized
+blocks.1.ln2.hook_scale
+blocks.1.attn.hook_in
+blocks.1.attn.hook_out
+blocks.1.attn.hook_attn_scores
+blocks.1.attn.hook_pattern
+blocks.1.attn.hook_hidden_states
+blocks.1.attn.hook_result
+blocks.1.attn.hook_attn_in
+blocks.1.attn.hook_q_input
+blocks.1.attn.hook_k_input
+blocks.1.attn.hook_v_input
+blocks.1.attn.hook_q
+blocks.1.attn.hook_k
+blocks.1.attn.hook_v
+blocks.1.attn.hook_z
+blocks.1.attn.q.hook_in
+blocks.1.attn.q.hook_out
+blocks.1.attn.k.hook_in
+blocks.1.attn.k.hook_out
+blocks.1.attn.v.hook_in
+blocks.1.attn.v.hook_out
+blocks.1.attn.qkv.hook_in
+blocks.1.attn.qkv.hook_out
+blocks.1.attn.o.hook_in
+blocks.1.attn.o.hook_out
+blocks.1.mlp.hook_in
+blocks.1.mlp.hook_out
+blocks.1.mlp.hook_pre
+blocks.1.mlp.hook_post
+blocks.1.mlp.in.hook_in
+blocks.1.mlp.in.hook_out
+blocks.1.mlp.out.hook_in
+blocks.1.mlp.out.hook_out
+blocks.2.hook_in
+blocks.2.hook_out
+blocks.2.hook_mlp_in
+blocks.2.hook_resid_pre
+blocks.2.hook_resid_mid
+blocks.2.hook_resid_post
+blocks.2.hook_attn_in
+blocks.2.hook_attn_out
+blocks.2.hook_q_input
+blocks.2.hook_k_input
+blocks.2.hook_v_input
+blocks.2.hook_mlp_out
+blocks.2.ln1.hook_in
+blocks.2.ln1.hook_out
+blocks.2.ln1.hook_normalized
+blocks.2.ln1.hook_scale
+blocks.2.ln2.hook_in
+blocks.2.ln2.hook_out
+blocks.2.ln2.hook_normalized
+blocks.2.ln2.hook_scale
+blocks.2.attn.hook_in
+blocks.2.attn.hook_out
+blocks.2.attn.hook_attn_scores
+blocks.2.attn.hook_pattern
+blocks.2.attn.hook_hidden_states
+blocks.2.attn.hook_result
+blocks.2.attn.hook_attn_in
+blocks.2.attn.hook_q_input
+blocks.2.attn.hook_k_input
+blocks.2.attn.hook_v_input
+blocks.2.attn.hook_q
+blocks.2.attn.hook_k
+blocks.2.attn.hook_v
+blocks.2.attn.hook_z
+blocks.2.attn.q.hook_in
+blocks.2.attn.q.hook_out
+blocks.2.attn.k.hook_in
+blocks.2.attn.k.hook_out
+... and 1112 more relevant hook names
+
+--- Forward-pass test ---
+Test text: John and Mary went to the store. John gave a drink to
+Input shape: (1, 13)
+Logits shape: (1, 13, 250880)
+Logits dtype: torch.float32
+All logits finite: True
+
+--- Activation-cache test ---
+run_with_cache succeeded.
+Cache type: <class 'transformer_lens.ActivationCache.ActivationCache'>
+Cached output shape: (1, 13, 250880)
+Cached activation count: 974
+  embed.hook_in
+  embed.hook_out
+  embed_ln.hook_in
+  embed_ln.hook_scale
+  embed_ln.hook_normalized
+  hook_embed
+  embed_ln.hook_out
+  blocks.0.hook_in
+  blocks.0.hook_resid_pre
+  blocks.0.ln1.hook_in
+  blocks.0.ln1.hook_scale
+  blocks.0.ln1.hook_normalized
+  blocks.0.ln1.hook_out
+  blocks.0.attn.hook_in
+  blocks.0.attn.q.hook_in
+  blocks.0.attn.hook_q
+  blocks.0.attn.q.hook_out
+  blocks.0.attn.k.hook_in
+  blocks.0.attn.hook_k
+  blocks.0.attn.k.hook_out
+  blocks.0.attn.v.hook_in
+  blocks.0.attn.hook_v
+  blocks.0.attn.v.hook_out
+  blocks.0.attn.hook_attn_scores
+  blocks.0.attn.hook_pattern
+  blocks.0.attn.hook_z
+  blocks.0.attn.o.hook_in
+  blocks.0.hook_attn_out
+  blocks.0.attn.o.hook_out
+  blocks.0.attn.hook_hidden_states
+  blocks.0.attn.hook_out
+  blocks.0.hook_resid_mid
+  blocks.0.ln2.hook_in
+  blocks.0.ln2.hook_scale
+  blocks.0.ln2.hook_normalized
+  blocks.0.ln2.hook_out
+  blocks.0.mlp.hook_in
+  blocks.0.mlp.in.hook_in
+  blocks.0.mlp.hook_pre
+  blocks.0.mlp.in.hook_out
+
+--- Underlying module inspection ---
+blocks.0._original_component.self_attention: BloomAttentionBridge
+blocks.0._original_component.self_attention.hook_in: HookPoint
+blocks.0._original_component.self_attention.hook_out: HookPoint
+blocks.0._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.0._original_component.self_attention.hook_pattern: HookPoint
+blocks.0._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.0._original_component.self_attention.hook_result: HookPoint
+blocks.0._original_component.self_attention.hook_attn_in: HookPoint
+blocks.0._original_component.self_attention.hook_q_input: HookPoint
+blocks.0._original_component.self_attention.hook_k_input: HookPoint
+blocks.0._original_component.self_attention.hook_v_input: HookPoint
+blocks.0._original_component.self_attention.q: LinearBridge
+blocks.0._original_component.self_attention.q.hook_in: HookPoint
+blocks.0._original_component.self_attention.q.hook_out: HookPoint
+blocks.0._original_component.self_attention.q._original_component: Linear
+blocks.0._original_component.self_attention.k: LinearBridge
+blocks.0._original_component.self_attention.k.hook_in: HookPoint
+blocks.0._original_component.self_attention.k.hook_out: HookPoint
+blocks.0._original_component.self_attention.k._original_component: Linear
+blocks.0._original_component.self_attention.v: LinearBridge
+blocks.0._original_component.self_attention.v.hook_in: HookPoint
+blocks.0._original_component.self_attention.v.hook_out: HookPoint
+blocks.0._original_component.self_attention.v._original_component: Linear
+blocks.0._original_component.self_attention.qkv: LinearBridge
+blocks.0._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.0._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.0._original_component.self_attention.qkv._original_component: Linear
+blocks.0._original_component.self_attention.o: LinearBridge
+blocks.0._original_component.self_attention.o.hook_in: HookPoint
+blocks.0._original_component.self_attention.o.hook_out: HookPoint
+blocks.0._original_component.self_attention.o._original_component: Linear
+blocks.0._original_component.self_attention._original_component: BloomAttention
+blocks.0._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.0._original_component.post_attention_layernorm: NormalizationBridge
+blocks.0._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.0._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.0._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.0._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.0._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.1._original_component.self_attention: BloomAttentionBridge
+blocks.1._original_component.self_attention.hook_in: HookPoint
+blocks.1._original_component.self_attention.hook_out: HookPoint
+blocks.1._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.1._original_component.self_attention.hook_pattern: HookPoint
+blocks.1._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.1._original_component.self_attention.hook_result: HookPoint
+blocks.1._original_component.self_attention.hook_attn_in: HookPoint
+blocks.1._original_component.self_attention.hook_q_input: HookPoint
+blocks.1._original_component.self_attention.hook_k_input: HookPoint
+blocks.1._original_component.self_attention.hook_v_input: HookPoint
+blocks.1._original_component.self_attention.q: LinearBridge
+blocks.1._original_component.self_attention.q.hook_in: HookPoint
+blocks.1._original_component.self_attention.q.hook_out: HookPoint
+blocks.1._original_component.self_attention.q._original_component: Linear
+blocks.1._original_component.self_attention.k: LinearBridge
+blocks.1._original_component.self_attention.k.hook_in: HookPoint
+blocks.1._original_component.self_attention.k.hook_out: HookPoint
+blocks.1._original_component.self_attention.k._original_component: Linear
+blocks.1._original_component.self_attention.v: LinearBridge
+blocks.1._original_component.self_attention.v.hook_in: HookPoint
+blocks.1._original_component.self_attention.v.hook_out: HookPoint
+blocks.1._original_component.self_attention.v._original_component: Linear
+blocks.1._original_component.self_attention.qkv: LinearBridge
+blocks.1._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.1._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.1._original_component.self_attention.qkv._original_component: Linear
+blocks.1._original_component.self_attention.o: LinearBridge
+blocks.1._original_component.self_attention.o.hook_in: HookPoint
+blocks.1._original_component.self_attention.o.hook_out: HookPoint
+blocks.1._original_component.self_attention.o._original_component: Linear
+blocks.1._original_component.self_attention._original_component: BloomAttention
+blocks.1._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.1._original_component.post_attention_layernorm: NormalizationBridge
+blocks.1._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.1._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.1._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.1._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.1._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.2._original_component.self_attention: BloomAttentionBridge
+blocks.2._original_component.self_attention.hook_in: HookPoint
+blocks.2._original_component.self_attention.hook_out: HookPoint
+blocks.2._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.2._original_component.self_attention.hook_pattern: HookPoint
+blocks.2._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.2._original_component.self_attention.hook_result: HookPoint
+blocks.2._original_component.self_attention.hook_attn_in: HookPoint
+blocks.2._original_component.self_attention.hook_q_input: HookPoint
+blocks.2._original_component.self_attention.hook_k_input: HookPoint
+blocks.2._original_component.self_attention.hook_v_input: HookPoint
+blocks.2._original_component.self_attention.q: LinearBridge
+blocks.2._original_component.self_attention.q.hook_in: HookPoint
+blocks.2._original_component.self_attention.q.hook_out: HookPoint
+blocks.2._original_component.self_attention.q._original_component: Linear
+blocks.2._original_component.self_attention.k: LinearBridge
+blocks.2._original_component.self_attention.k.hook_in: HookPoint
+blocks.2._original_component.self_attention.k.hook_out: HookPoint
+blocks.2._original_component.self_attention.k._original_component: Linear
+blocks.2._original_component.self_attention.v: LinearBridge
+blocks.2._original_component.self_attention.v.hook_in: HookPoint
+blocks.2._original_component.self_attention.v.hook_out: HookPoint
+blocks.2._original_component.self_attention.v._original_component: Linear
+blocks.2._original_component.self_attention.qkv: LinearBridge
+blocks.2._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.2._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.2._original_component.self_attention.qkv._original_component: Linear
+blocks.2._original_component.self_attention.o: LinearBridge
+blocks.2._original_component.self_attention.o.hook_in: HookPoint
+blocks.2._original_component.self_attention.o.hook_out: HookPoint
+blocks.2._original_component.self_attention.o._original_component: Linear
+blocks.2._original_component.self_attention._original_component: BloomAttention
+blocks.2._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.2._original_component.post_attention_layernorm: NormalizationBridge
+blocks.2._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.2._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.2._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.2._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.2._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.3._original_component.self_attention: BloomAttentionBridge
+blocks.3._original_component.self_attention.hook_in: HookPoint
+blocks.3._original_component.self_attention.hook_out: HookPoint
+blocks.3._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.3._original_component.self_attention.hook_pattern: HookPoint
+blocks.3._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.3._original_component.self_attention.hook_result: HookPoint
+blocks.3._original_component.self_attention.hook_attn_in: HookPoint
+blocks.3._original_component.self_attention.hook_q_input: HookPoint
+blocks.3._original_component.self_attention.hook_k_input: HookPoint
+blocks.3._original_component.self_attention.hook_v_input: HookPoint
+blocks.3._original_component.self_attention.q: LinearBridge
+blocks.3._original_component.self_attention.q.hook_in: HookPoint
+blocks.3._original_component.self_attention.q.hook_out: HookPoint
+blocks.3._original_component.self_attention.q._original_component: Linear
+blocks.3._original_component.self_attention.k: LinearBridge
+blocks.3._original_component.self_attention.k.hook_in: HookPoint
+blocks.3._original_component.self_attention.k.hook_out: HookPoint
+blocks.3._original_component.self_attention.k._original_component: Linear
+blocks.3._original_component.self_attention.v: LinearBridge
+blocks.3._original_component.self_attention.v.hook_in: HookPoint
+blocks.3._original_component.self_attention.v.hook_out: HookPoint
+blocks.3._original_component.self_attention.v._original_component: Linear
+blocks.3._original_component.self_attention.qkv: LinearBridge
+blocks.3._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.3._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.3._original_component.self_attention.qkv._original_component: Linear
+blocks.3._original_component.self_attention.o: LinearBridge
+blocks.3._original_component.self_attention.o.hook_in: HookPoint
+blocks.3._original_component.self_attention.o.hook_out: HookPoint
+blocks.3._original_component.self_attention.o._original_component: Linear
+blocks.3._original_component.self_attention._original_component: BloomAttention
+blocks.3._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.3._original_component.post_attention_layernorm: NormalizationBridge
+blocks.3._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.3._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.3._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.3._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.3._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.4._original_component.self_attention: BloomAttentionBridge
+blocks.4._original_component.self_attention.hook_in: HookPoint
+blocks.4._original_component.self_attention.hook_out: HookPoint
+blocks.4._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.4._original_component.self_attention.hook_pattern: HookPoint
+blocks.4._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.4._original_component.self_attention.hook_result: HookPoint
+blocks.4._original_component.self_attention.hook_attn_in: HookPoint
+blocks.4._original_component.self_attention.hook_q_input: HookPoint
+blocks.4._original_component.self_attention.hook_k_input: HookPoint
+blocks.4._original_component.self_attention.hook_v_input: HookPoint
+blocks.4._original_component.self_attention.q: LinearBridge
+blocks.4._original_component.self_attention.q.hook_in: HookPoint
+blocks.4._original_component.self_attention.q.hook_out: HookPoint
+blocks.4._original_component.self_attention.q._original_component: Linear
+blocks.4._original_component.self_attention.k: LinearBridge
+blocks.4._original_component.self_attention.k.hook_in: HookPoint
+blocks.4._original_component.self_attention.k.hook_out: HookPoint
+blocks.4._original_component.self_attention.k._original_component: Linear
+blocks.4._original_component.self_attention.v: LinearBridge
+blocks.4._original_component.self_attention.v.hook_in: HookPoint
+blocks.4._original_component.self_attention.v.hook_out: HookPoint
+blocks.4._original_component.self_attention.v._original_component: Linear
+blocks.4._original_component.self_attention.qkv: LinearBridge
+blocks.4._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.4._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.4._original_component.self_attention.qkv._original_component: Linear
+blocks.4._original_component.self_attention.o: LinearBridge
+blocks.4._original_component.self_attention.o.hook_in: HookPoint
+blocks.4._original_component.self_attention.o.hook_out: HookPoint
+blocks.4._original_component.self_attention.o._original_component: Linear
+blocks.4._original_component.self_attention._original_component: BloomAttention
+blocks.4._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.4._original_component.post_attention_layernorm: NormalizationBridge
+blocks.4._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.4._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.4._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.4._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.4._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.5._original_component.self_attention: BloomAttentionBridge
+blocks.5._original_component.self_attention.hook_in: HookPoint
+blocks.5._original_component.self_attention.hook_out: HookPoint
+blocks.5._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.5._original_component.self_attention.hook_pattern: HookPoint
+blocks.5._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.5._original_component.self_attention.hook_result: HookPoint
+blocks.5._original_component.self_attention.hook_attn_in: HookPoint
+blocks.5._original_component.self_attention.hook_q_input: HookPoint
+blocks.5._original_component.self_attention.hook_k_input: HookPoint
+blocks.5._original_component.self_attention.hook_v_input: HookPoint
+blocks.5._original_component.self_attention.q: LinearBridge
+blocks.5._original_component.self_attention.q.hook_in: HookPoint
+blocks.5._original_component.self_attention.q.hook_out: HookPoint
+blocks.5._original_component.self_attention.q._original_component: Linear
+blocks.5._original_component.self_attention.k: LinearBridge
+blocks.5._original_component.self_attention.k.hook_in: HookPoint
+blocks.5._original_component.self_attention.k.hook_out: HookPoint
+blocks.5._original_component.self_attention.k._original_component: Linear
+blocks.5._original_component.self_attention.v: LinearBridge
+blocks.5._original_component.self_attention.v.hook_in: HookPoint
+blocks.5._original_component.self_attention.v.hook_out: HookPoint
+blocks.5._original_component.self_attention.v._original_component: Linear
+blocks.5._original_component.self_attention.qkv: LinearBridge
+blocks.5._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.5._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.5._original_component.self_attention.qkv._original_component: Linear
+blocks.5._original_component.self_attention.o: LinearBridge
+blocks.5._original_component.self_attention.o.hook_in: HookPoint
+blocks.5._original_component.self_attention.o.hook_out: HookPoint
+blocks.5._original_component.self_attention.o._original_component: Linear
+blocks.5._original_component.self_attention._original_component: BloomAttention
+blocks.5._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.5._original_component.post_attention_layernorm: NormalizationBridge
+blocks.5._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.5._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.5._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.5._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.5._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.6._original_component.self_attention: BloomAttentionBridge
+blocks.6._original_component.self_attention.hook_in: HookPoint
+blocks.6._original_component.self_attention.hook_out: HookPoint
+blocks.6._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.6._original_component.self_attention.hook_pattern: HookPoint
+blocks.6._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.6._original_component.self_attention.hook_result: HookPoint
+blocks.6._original_component.self_attention.hook_attn_in: HookPoint
+blocks.6._original_component.self_attention.hook_q_input: HookPoint
+blocks.6._original_component.self_attention.hook_k_input: HookPoint
+blocks.6._original_component.self_attention.hook_v_input: HookPoint
+blocks.6._original_component.self_attention.q: LinearBridge
+blocks.6._original_component.self_attention.q.hook_in: HookPoint
+blocks.6._original_component.self_attention.q.hook_out: HookPoint
+blocks.6._original_component.self_attention.q._original_component: Linear
+blocks.6._original_component.self_attention.k: LinearBridge
+blocks.6._original_component.self_attention.k.hook_in: HookPoint
+blocks.6._original_component.self_attention.k.hook_out: HookPoint
+blocks.6._original_component.self_attention.k._original_component: Linear
+blocks.6._original_component.self_attention.v: LinearBridge
+blocks.6._original_component.self_attention.v.hook_in: HookPoint
+blocks.6._original_component.self_attention.v.hook_out: HookPoint
+blocks.6._original_component.self_attention.v._original_component: Linear
+blocks.6._original_component.self_attention.qkv: LinearBridge
+blocks.6._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.6._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.6._original_component.self_attention.qkv._original_component: Linear
+blocks.6._original_component.self_attention.o: LinearBridge
+blocks.6._original_component.self_attention.o.hook_in: HookPoint
+blocks.6._original_component.self_attention.o.hook_out: HookPoint
+blocks.6._original_component.self_attention.o._original_component: Linear
+blocks.6._original_component.self_attention._original_component: BloomAttention
+blocks.6._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.6._original_component.post_attention_layernorm: NormalizationBridge
+blocks.6._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.6._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.6._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.6._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.6._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.7._original_component.self_attention: BloomAttentionBridge
+blocks.7._original_component.self_attention.hook_in: HookPoint
+blocks.7._original_component.self_attention.hook_out: HookPoint
+blocks.7._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.7._original_component.self_attention.hook_pattern: HookPoint
+blocks.7._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.7._original_component.self_attention.hook_result: HookPoint
+blocks.7._original_component.self_attention.hook_attn_in: HookPoint
+blocks.7._original_component.self_attention.hook_q_input: HookPoint
+blocks.7._original_component.self_attention.hook_k_input: HookPoint
+blocks.7._original_component.self_attention.hook_v_input: HookPoint
+blocks.7._original_component.self_attention.q: LinearBridge
+blocks.7._original_component.self_attention.q.hook_in: HookPoint
+blocks.7._original_component.self_attention.q.hook_out: HookPoint
+blocks.7._original_component.self_attention.q._original_component: Linear
+blocks.7._original_component.self_attention.k: LinearBridge
+blocks.7._original_component.self_attention.k.hook_in: HookPoint
+blocks.7._original_component.self_attention.k.hook_out: HookPoint
+blocks.7._original_component.self_attention.k._original_component: Linear
+blocks.7._original_component.self_attention.v: LinearBridge
+blocks.7._original_component.self_attention.v.hook_in: HookPoint
+blocks.7._original_component.self_attention.v.hook_out: HookPoint
+blocks.7._original_component.self_attention.v._original_component: Linear
+blocks.7._original_component.self_attention.qkv: LinearBridge
+blocks.7._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.7._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.7._original_component.self_attention.qkv._original_component: Linear
+blocks.7._original_component.self_attention.o: LinearBridge
+blocks.7._original_component.self_attention.o.hook_in: HookPoint
+blocks.7._original_component.self_attention.o.hook_out: HookPoint
+blocks.7._original_component.self_attention.o._original_component: Linear
+blocks.7._original_component.self_attention._original_component: BloomAttention
+blocks.7._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.7._original_component.post_attention_layernorm: NormalizationBridge
+blocks.7._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.7._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.7._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.7._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.7._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.8._original_component.self_attention: BloomAttentionBridge
+blocks.8._original_component.self_attention.hook_in: HookPoint
+blocks.8._original_component.self_attention.hook_out: HookPoint
+blocks.8._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.8._original_component.self_attention.hook_pattern: HookPoint
+blocks.8._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.8._original_component.self_attention.hook_result: HookPoint
+blocks.8._original_component.self_attention.hook_attn_in: HookPoint
+blocks.8._original_component.self_attention.hook_q_input: HookPoint
+blocks.8._original_component.self_attention.hook_k_input: HookPoint
+blocks.8._original_component.self_attention.hook_v_input: HookPoint
+blocks.8._original_component.self_attention.q: LinearBridge
+blocks.8._original_component.self_attention.q.hook_in: HookPoint
+blocks.8._original_component.self_attention.q.hook_out: HookPoint
+blocks.8._original_component.self_attention.q._original_component: Linear
+blocks.8._original_component.self_attention.k: LinearBridge
+blocks.8._original_component.self_attention.k.hook_in: HookPoint
+blocks.8._original_component.self_attention.k.hook_out: HookPoint
+blocks.8._original_component.self_attention.k._original_component: Linear
+blocks.8._original_component.self_attention.v: LinearBridge
+blocks.8._original_component.self_attention.v.hook_in: HookPoint
+blocks.8._original_component.self_attention.v.hook_out: HookPoint
+blocks.8._original_component.self_attention.v._original_component: Linear
+blocks.8._original_component.self_attention.qkv: LinearBridge
+blocks.8._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.8._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.8._original_component.self_attention.qkv._original_component: Linear
+blocks.8._original_component.self_attention.o: LinearBridge
+blocks.8._original_component.self_attention.o.hook_in: HookPoint
+blocks.8._original_component.self_attention.o.hook_out: HookPoint
+blocks.8._original_component.self_attention.o._original_component: Linear
+blocks.8._original_component.self_attention._original_component: BloomAttention
+blocks.8._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.8._original_component.post_attention_layernorm: NormalizationBridge
+blocks.8._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.8._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.8._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.8._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.8._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.9._original_component.self_attention: BloomAttentionBridge
+blocks.9._original_component.self_attention.hook_in: HookPoint
+blocks.9._original_component.self_attention.hook_out: HookPoint
+blocks.9._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.9._original_component.self_attention.hook_pattern: HookPoint
+blocks.9._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.9._original_component.self_attention.hook_result: HookPoint
+blocks.9._original_component.self_attention.hook_attn_in: HookPoint
+blocks.9._original_component.self_attention.hook_q_input: HookPoint
+blocks.9._original_component.self_attention.hook_k_input: HookPoint
+blocks.9._original_component.self_attention.hook_v_input: HookPoint
+blocks.9._original_component.self_attention.q: LinearBridge
+blocks.9._original_component.self_attention.q.hook_in: HookPoint
+blocks.9._original_component.self_attention.q.hook_out: HookPoint
+blocks.9._original_component.self_attention.q._original_component: Linear
+blocks.9._original_component.self_attention.k: LinearBridge
+blocks.9._original_component.self_attention.k.hook_in: HookPoint
+blocks.9._original_component.self_attention.k.hook_out: HookPoint
+blocks.9._original_component.self_attention.k._original_component: Linear
+blocks.9._original_component.self_attention.v: LinearBridge
+blocks.9._original_component.self_attention.v.hook_in: HookPoint
+blocks.9._original_component.self_attention.v.hook_out: HookPoint
+blocks.9._original_component.self_attention.v._original_component: Linear
+blocks.9._original_component.self_attention.qkv: LinearBridge
+blocks.9._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.9._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.9._original_component.self_attention.qkv._original_component: Linear
+blocks.9._original_component.self_attention.o: LinearBridge
+blocks.9._original_component.self_attention.o.hook_in: HookPoint
+blocks.9._original_component.self_attention.o.hook_out: HookPoint
+blocks.9._original_component.self_attention.o._original_component: Linear
+blocks.9._original_component.self_attention._original_component: BloomAttention
+blocks.9._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.9._original_component.post_attention_layernorm: NormalizationBridge
+blocks.9._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.9._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.9._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.9._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.9._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.10._original_component.self_attention: BloomAttentionBridge
+blocks.10._original_component.self_attention.hook_in: HookPoint
+blocks.10._original_component.self_attention.hook_out: HookPoint
+blocks.10._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.10._original_component.self_attention.hook_pattern: HookPoint
+blocks.10._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.10._original_component.self_attention.hook_result: HookPoint
+blocks.10._original_component.self_attention.hook_attn_in: HookPoint
+blocks.10._original_component.self_attention.hook_q_input: HookPoint
+blocks.10._original_component.self_attention.hook_k_input: HookPoint
+blocks.10._original_component.self_attention.hook_v_input: HookPoint
+blocks.10._original_component.self_attention.q: LinearBridge
+blocks.10._original_component.self_attention.q.hook_in: HookPoint
+blocks.10._original_component.self_attention.q.hook_out: HookPoint
+blocks.10._original_component.self_attention.q._original_component: Linear
+blocks.10._original_component.self_attention.k: LinearBridge
+blocks.10._original_component.self_attention.k.hook_in: HookPoint
+blocks.10._original_component.self_attention.k.hook_out: HookPoint
+blocks.10._original_component.self_attention.k._original_component: Linear
+blocks.10._original_component.self_attention.v: LinearBridge
+blocks.10._original_component.self_attention.v.hook_in: HookPoint
+blocks.10._original_component.self_attention.v.hook_out: HookPoint
+blocks.10._original_component.self_attention.v._original_component: Linear
+blocks.10._original_component.self_attention.qkv: LinearBridge
+blocks.10._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.10._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.10._original_component.self_attention.qkv._original_component: Linear
+blocks.10._original_component.self_attention.o: LinearBridge
+blocks.10._original_component.self_attention.o.hook_in: HookPoint
+blocks.10._original_component.self_attention.o.hook_out: HookPoint
+blocks.10._original_component.self_attention.o._original_component: Linear
+blocks.10._original_component.self_attention._original_component: BloomAttention
+blocks.10._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.10._original_component.post_attention_layernorm: NormalizationBridge
+blocks.10._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.10._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.10._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.10._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.10._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.11._original_component.self_attention: BloomAttentionBridge
+blocks.11._original_component.self_attention.hook_in: HookPoint
+blocks.11._original_component.self_attention.hook_out: HookPoint
+blocks.11._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.11._original_component.self_attention.hook_pattern: HookPoint
+blocks.11._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.11._original_component.self_attention.hook_result: HookPoint
+blocks.11._original_component.self_attention.hook_attn_in: HookPoint
+blocks.11._original_component.self_attention.hook_q_input: HookPoint
+blocks.11._original_component.self_attention.hook_k_input: HookPoint
+blocks.11._original_component.self_attention.hook_v_input: HookPoint
+blocks.11._original_component.self_attention.q: LinearBridge
+blocks.11._original_component.self_attention.q.hook_in: HookPoint
+blocks.11._original_component.self_attention.q.hook_out: HookPoint
+blocks.11._original_component.self_attention.q._original_component: Linear
+blocks.11._original_component.self_attention.k: LinearBridge
+blocks.11._original_component.self_attention.k.hook_in: HookPoint
+blocks.11._original_component.self_attention.k.hook_out: HookPoint
+blocks.11._original_component.self_attention.k._original_component: Linear
+blocks.11._original_component.self_attention.v: LinearBridge
+blocks.11._original_component.self_attention.v.hook_in: HookPoint
+blocks.11._original_component.self_attention.v.hook_out: HookPoint
+blocks.11._original_component.self_attention.v._original_component: Linear
+blocks.11._original_component.self_attention.qkv: LinearBridge
+blocks.11._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.11._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.11._original_component.self_attention.qkv._original_component: Linear
+blocks.11._original_component.self_attention.o: LinearBridge
+blocks.11._original_component.self_attention.o.hook_in: HookPoint
+blocks.11._original_component.self_attention.o.hook_out: HookPoint
+blocks.11._original_component.self_attention.o._original_component: Linear
+blocks.11._original_component.self_attention._original_component: BloomAttention
+blocks.11._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.11._original_component.post_attention_layernorm: NormalizationBridge
+blocks.11._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.11._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.11._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.11._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.11._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.12._original_component.self_attention: BloomAttentionBridge
+blocks.12._original_component.self_attention.hook_in: HookPoint
+blocks.12._original_component.self_attention.hook_out: HookPoint
+blocks.12._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.12._original_component.self_attention.hook_pattern: HookPoint
+blocks.12._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.12._original_component.self_attention.hook_result: HookPoint
+blocks.12._original_component.self_attention.hook_attn_in: HookPoint
+blocks.12._original_component.self_attention.hook_q_input: HookPoint
+blocks.12._original_component.self_attention.hook_k_input: HookPoint
+blocks.12._original_component.self_attention.hook_v_input: HookPoint
+blocks.12._original_component.self_attention.q: LinearBridge
+blocks.12._original_component.self_attention.q.hook_in: HookPoint
+blocks.12._original_component.self_attention.q.hook_out: HookPoint
+blocks.12._original_component.self_attention.q._original_component: Linear
+blocks.12._original_component.self_attention.k: LinearBridge
+blocks.12._original_component.self_attention.k.hook_in: HookPoint
+blocks.12._original_component.self_attention.k.hook_out: HookPoint
+blocks.12._original_component.self_attention.k._original_component: Linear
+blocks.12._original_component.self_attention.v: LinearBridge
+blocks.12._original_component.self_attention.v.hook_in: HookPoint
+blocks.12._original_component.self_attention.v.hook_out: HookPoint
+blocks.12._original_component.self_attention.v._original_component: Linear
+blocks.12._original_component.self_attention.qkv: LinearBridge
+blocks.12._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.12._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.12._original_component.self_attention.qkv._original_component: Linear
+blocks.12._original_component.self_attention.o: LinearBridge
+blocks.12._original_component.self_attention.o.hook_in: HookPoint
+blocks.12._original_component.self_attention.o.hook_out: HookPoint
+blocks.12._original_component.self_attention.o._original_component: Linear
+blocks.12._original_component.self_attention._original_component: BloomAttention
+blocks.12._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.12._original_component.post_attention_layernorm: NormalizationBridge
+blocks.12._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.12._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.12._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.12._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.12._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.13._original_component.self_attention: BloomAttentionBridge
+blocks.13._original_component.self_attention.hook_in: HookPoint
+blocks.13._original_component.self_attention.hook_out: HookPoint
+blocks.13._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.13._original_component.self_attention.hook_pattern: HookPoint
+blocks.13._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.13._original_component.self_attention.hook_result: HookPoint
+blocks.13._original_component.self_attention.hook_attn_in: HookPoint
+blocks.13._original_component.self_attention.hook_q_input: HookPoint
+blocks.13._original_component.self_attention.hook_k_input: HookPoint
+blocks.13._original_component.self_attention.hook_v_input: HookPoint
+blocks.13._original_component.self_attention.q: LinearBridge
+blocks.13._original_component.self_attention.q.hook_in: HookPoint
+blocks.13._original_component.self_attention.q.hook_out: HookPoint
+blocks.13._original_component.self_attention.q._original_component: Linear
+blocks.13._original_component.self_attention.k: LinearBridge
+blocks.13._original_component.self_attention.k.hook_in: HookPoint
+blocks.13._original_component.self_attention.k.hook_out: HookPoint
+blocks.13._original_component.self_attention.k._original_component: Linear
+blocks.13._original_component.self_attention.v: LinearBridge
+blocks.13._original_component.self_attention.v.hook_in: HookPoint
+blocks.13._original_component.self_attention.v.hook_out: HookPoint
+blocks.13._original_component.self_attention.v._original_component: Linear
+blocks.13._original_component.self_attention.qkv: LinearBridge
+blocks.13._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.13._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.13._original_component.self_attention.qkv._original_component: Linear
+blocks.13._original_component.self_attention.o: LinearBridge
+blocks.13._original_component.self_attention.o.hook_in: HookPoint
+blocks.13._original_component.self_attention.o.hook_out: HookPoint
+blocks.13._original_component.self_attention.o._original_component: Linear
+blocks.13._original_component.self_attention._original_component: BloomAttention
+blocks.13._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.13._original_component.post_attention_layernorm: NormalizationBridge
+blocks.13._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.13._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.13._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.13._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.13._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.14._original_component.self_attention: BloomAttentionBridge
+blocks.14._original_component.self_attention.hook_in: HookPoint
+blocks.14._original_component.self_attention.hook_out: HookPoint
+blocks.14._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.14._original_component.self_attention.hook_pattern: HookPoint
+blocks.14._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.14._original_component.self_attention.hook_result: HookPoint
+blocks.14._original_component.self_attention.hook_attn_in: HookPoint
+blocks.14._original_component.self_attention.hook_q_input: HookPoint
+blocks.14._original_component.self_attention.hook_k_input: HookPoint
+blocks.14._original_component.self_attention.hook_v_input: HookPoint
+blocks.14._original_component.self_attention.q: LinearBridge
+blocks.14._original_component.self_attention.q.hook_in: HookPoint
+blocks.14._original_component.self_attention.q.hook_out: HookPoint
+blocks.14._original_component.self_attention.q._original_component: Linear
+blocks.14._original_component.self_attention.k: LinearBridge
+blocks.14._original_component.self_attention.k.hook_in: HookPoint
+blocks.14._original_component.self_attention.k.hook_out: HookPoint
+blocks.14._original_component.self_attention.k._original_component: Linear
+blocks.14._original_component.self_attention.v: LinearBridge
+blocks.14._original_component.self_attention.v.hook_in: HookPoint
+blocks.14._original_component.self_attention.v.hook_out: HookPoint
+blocks.14._original_component.self_attention.v._original_component: Linear
+blocks.14._original_component.self_attention.qkv: LinearBridge
+blocks.14._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.14._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.14._original_component.self_attention.qkv._original_component: Linear
+blocks.14._original_component.self_attention.o: LinearBridge
+blocks.14._original_component.self_attention.o.hook_in: HookPoint
+blocks.14._original_component.self_attention.o.hook_out: HookPoint
+blocks.14._original_component.self_attention.o._original_component: Linear
+blocks.14._original_component.self_attention._original_component: BloomAttention
+blocks.14._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.14._original_component.post_attention_layernorm: NormalizationBridge
+blocks.14._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.14._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.14._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.14._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.14._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.15._original_component.self_attention: BloomAttentionBridge
+blocks.15._original_component.self_attention.hook_in: HookPoint
+blocks.15._original_component.self_attention.hook_out: HookPoint
+blocks.15._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.15._original_component.self_attention.hook_pattern: HookPoint
+blocks.15._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.15._original_component.self_attention.hook_result: HookPoint
+blocks.15._original_component.self_attention.hook_attn_in: HookPoint
+blocks.15._original_component.self_attention.hook_q_input: HookPoint
+blocks.15._original_component.self_attention.hook_k_input: HookPoint
+blocks.15._original_component.self_attention.hook_v_input: HookPoint
+blocks.15._original_component.self_attention.q: LinearBridge
+blocks.15._original_component.self_attention.q.hook_in: HookPoint
+blocks.15._original_component.self_attention.q.hook_out: HookPoint
+blocks.15._original_component.self_attention.q._original_component: Linear
+blocks.15._original_component.self_attention.k: LinearBridge
+blocks.15._original_component.self_attention.k.hook_in: HookPoint
+blocks.15._original_component.self_attention.k.hook_out: HookPoint
+blocks.15._original_component.self_attention.k._original_component: Linear
+blocks.15._original_component.self_attention.v: LinearBridge
+blocks.15._original_component.self_attention.v.hook_in: HookPoint
+blocks.15._original_component.self_attention.v.hook_out: HookPoint
+blocks.15._original_component.self_attention.v._original_component: Linear
+blocks.15._original_component.self_attention.qkv: LinearBridge
+blocks.15._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.15._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.15._original_component.self_attention.qkv._original_component: Linear
+blocks.15._original_component.self_attention.o: LinearBridge
+blocks.15._original_component.self_attention.o.hook_in: HookPoint
+blocks.15._original_component.self_attention.o.hook_out: HookPoint
+blocks.15._original_component.self_attention.o._original_component: Linear
+blocks.15._original_component.self_attention._original_component: BloomAttention
+blocks.15._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.15._original_component.post_attention_layernorm: NormalizationBridge
+blocks.15._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.15._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.15._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.15._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.15._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.16._original_component.self_attention: BloomAttentionBridge
+blocks.16._original_component.self_attention.hook_in: HookPoint
+blocks.16._original_component.self_attention.hook_out: HookPoint
+blocks.16._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.16._original_component.self_attention.hook_pattern: HookPoint
+blocks.16._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.16._original_component.self_attention.hook_result: HookPoint
+blocks.16._original_component.self_attention.hook_attn_in: HookPoint
+blocks.16._original_component.self_attention.hook_q_input: HookPoint
+blocks.16._original_component.self_attention.hook_k_input: HookPoint
+blocks.16._original_component.self_attention.hook_v_input: HookPoint
+blocks.16._original_component.self_attention.q: LinearBridge
+blocks.16._original_component.self_attention.q.hook_in: HookPoint
+blocks.16._original_component.self_attention.q.hook_out: HookPoint
+blocks.16._original_component.self_attention.q._original_component: Linear
+blocks.16._original_component.self_attention.k: LinearBridge
+blocks.16._original_component.self_attention.k.hook_in: HookPoint
+blocks.16._original_component.self_attention.k.hook_out: HookPoint
+blocks.16._original_component.self_attention.k._original_component: Linear
+blocks.16._original_component.self_attention.v: LinearBridge
+blocks.16._original_component.self_attention.v.hook_in: HookPoint
+blocks.16._original_component.self_attention.v.hook_out: HookPoint
+blocks.16._original_component.self_attention.v._original_component: Linear
+blocks.16._original_component.self_attention.qkv: LinearBridge
+blocks.16._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.16._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.16._original_component.self_attention.qkv._original_component: Linear
+blocks.16._original_component.self_attention.o: LinearBridge
+blocks.16._original_component.self_attention.o.hook_in: HookPoint
+blocks.16._original_component.self_attention.o.hook_out: HookPoint
+blocks.16._original_component.self_attention.o._original_component: Linear
+blocks.16._original_component.self_attention._original_component: BloomAttention
+blocks.16._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.16._original_component.post_attention_layernorm: NormalizationBridge
+blocks.16._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.16._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.16._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.16._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.16._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.17._original_component.self_attention: BloomAttentionBridge
+blocks.17._original_component.self_attention.hook_in: HookPoint
+blocks.17._original_component.self_attention.hook_out: HookPoint
+blocks.17._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.17._original_component.self_attention.hook_pattern: HookPoint
+blocks.17._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.17._original_component.self_attention.hook_result: HookPoint
+blocks.17._original_component.self_attention.hook_attn_in: HookPoint
+blocks.17._original_component.self_attention.hook_q_input: HookPoint
+blocks.17._original_component.self_attention.hook_k_input: HookPoint
+blocks.17._original_component.self_attention.hook_v_input: HookPoint
+blocks.17._original_component.self_attention.q: LinearBridge
+blocks.17._original_component.self_attention.q.hook_in: HookPoint
+blocks.17._original_component.self_attention.q.hook_out: HookPoint
+blocks.17._original_component.self_attention.q._original_component: Linear
+blocks.17._original_component.self_attention.k: LinearBridge
+blocks.17._original_component.self_attention.k.hook_in: HookPoint
+blocks.17._original_component.self_attention.k.hook_out: HookPoint
+blocks.17._original_component.self_attention.k._original_component: Linear
+blocks.17._original_component.self_attention.v: LinearBridge
+blocks.17._original_component.self_attention.v.hook_in: HookPoint
+blocks.17._original_component.self_attention.v.hook_out: HookPoint
+blocks.17._original_component.self_attention.v._original_component: Linear
+blocks.17._original_component.self_attention.qkv: LinearBridge
+blocks.17._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.17._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.17._original_component.self_attention.qkv._original_component: Linear
+blocks.17._original_component.self_attention.o: LinearBridge
+blocks.17._original_component.self_attention.o.hook_in: HookPoint
+blocks.17._original_component.self_attention.o.hook_out: HookPoint
+blocks.17._original_component.self_attention.o._original_component: Linear
+blocks.17._original_component.self_attention._original_component: BloomAttention
+blocks.17._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.17._original_component.post_attention_layernorm: NormalizationBridge
+blocks.17._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.17._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.17._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.17._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.17._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.18._original_component.self_attention: BloomAttentionBridge
+blocks.18._original_component.self_attention.hook_in: HookPoint
+blocks.18._original_component.self_attention.hook_out: HookPoint
+blocks.18._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.18._original_component.self_attention.hook_pattern: HookPoint
+blocks.18._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.18._original_component.self_attention.hook_result: HookPoint
+blocks.18._original_component.self_attention.hook_attn_in: HookPoint
+blocks.18._original_component.self_attention.hook_q_input: HookPoint
+blocks.18._original_component.self_attention.hook_k_input: HookPoint
+blocks.18._original_component.self_attention.hook_v_input: HookPoint
+blocks.18._original_component.self_attention.q: LinearBridge
+blocks.18._original_component.self_attention.q.hook_in: HookPoint
+blocks.18._original_component.self_attention.q.hook_out: HookPoint
+blocks.18._original_component.self_attention.q._original_component: Linear
+blocks.18._original_component.self_attention.k: LinearBridge
+blocks.18._original_component.self_attention.k.hook_in: HookPoint
+blocks.18._original_component.self_attention.k.hook_out: HookPoint
+blocks.18._original_component.self_attention.k._original_component: Linear
+blocks.18._original_component.self_attention.v: LinearBridge
+blocks.18._original_component.self_attention.v.hook_in: HookPoint
+blocks.18._original_component.self_attention.v.hook_out: HookPoint
+blocks.18._original_component.self_attention.v._original_component: Linear
+blocks.18._original_component.self_attention.qkv: LinearBridge
+blocks.18._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.18._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.18._original_component.self_attention.qkv._original_component: Linear
+blocks.18._original_component.self_attention.o: LinearBridge
+blocks.18._original_component.self_attention.o.hook_in: HookPoint
+blocks.18._original_component.self_attention.o.hook_out: HookPoint
+blocks.18._original_component.self_attention.o._original_component: Linear
+blocks.18._original_component.self_attention._original_component: BloomAttention
+blocks.18._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.18._original_component.post_attention_layernorm: NormalizationBridge
+blocks.18._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.18._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.18._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.18._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.18._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.19._original_component.self_attention: BloomAttentionBridge
+blocks.19._original_component.self_attention.hook_in: HookPoint
+blocks.19._original_component.self_attention.hook_out: HookPoint
+blocks.19._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.19._original_component.self_attention.hook_pattern: HookPoint
+blocks.19._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.19._original_component.self_attention.hook_result: HookPoint
+blocks.19._original_component.self_attention.hook_attn_in: HookPoint
+blocks.19._original_component.self_attention.hook_q_input: HookPoint
+blocks.19._original_component.self_attention.hook_k_input: HookPoint
+blocks.19._original_component.self_attention.hook_v_input: HookPoint
+blocks.19._original_component.self_attention.q: LinearBridge
+blocks.19._original_component.self_attention.q.hook_in: HookPoint
+blocks.19._original_component.self_attention.q.hook_out: HookPoint
+blocks.19._original_component.self_attention.q._original_component: Linear
+blocks.19._original_component.self_attention.k: LinearBridge
+blocks.19._original_component.self_attention.k.hook_in: HookPoint
+blocks.19._original_component.self_attention.k.hook_out: HookPoint
+blocks.19._original_component.self_attention.k._original_component: Linear
+blocks.19._original_component.self_attention.v: LinearBridge
+blocks.19._original_component.self_attention.v.hook_in: HookPoint
+blocks.19._original_component.self_attention.v.hook_out: HookPoint
+blocks.19._original_component.self_attention.v._original_component: Linear
+blocks.19._original_component.self_attention.qkv: LinearBridge
+blocks.19._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.19._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.19._original_component.self_attention.qkv._original_component: Linear
+blocks.19._original_component.self_attention.o: LinearBridge
+blocks.19._original_component.self_attention.o.hook_in: HookPoint
+blocks.19._original_component.self_attention.o.hook_out: HookPoint
+blocks.19._original_component.self_attention.o._original_component: Linear
+blocks.19._original_component.self_attention._original_component: BloomAttention
+blocks.19._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.19._original_component.post_attention_layernorm: NormalizationBridge
+blocks.19._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.19._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.19._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.19._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.19._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.20._original_component.self_attention: BloomAttentionBridge
+blocks.20._original_component.self_attention.hook_in: HookPoint
+blocks.20._original_component.self_attention.hook_out: HookPoint
+blocks.20._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.20._original_component.self_attention.hook_pattern: HookPoint
+blocks.20._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.20._original_component.self_attention.hook_result: HookPoint
+blocks.20._original_component.self_attention.hook_attn_in: HookPoint
+blocks.20._original_component.self_attention.hook_q_input: HookPoint
+blocks.20._original_component.self_attention.hook_k_input: HookPoint
+blocks.20._original_component.self_attention.hook_v_input: HookPoint
+blocks.20._original_component.self_attention.q: LinearBridge
+blocks.20._original_component.self_attention.q.hook_in: HookPoint
+blocks.20._original_component.self_attention.q.hook_out: HookPoint
+blocks.20._original_component.self_attention.q._original_component: Linear
+blocks.20._original_component.self_attention.k: LinearBridge
+blocks.20._original_component.self_attention.k.hook_in: HookPoint
+blocks.20._original_component.self_attention.k.hook_out: HookPoint
+blocks.20._original_component.self_attention.k._original_component: Linear
+blocks.20._original_component.self_attention.v: LinearBridge
+blocks.20._original_component.self_attention.v.hook_in: HookPoint
+blocks.20._original_component.self_attention.v.hook_out: HookPoint
+blocks.20._original_component.self_attention.v._original_component: Linear
+blocks.20._original_component.self_attention.qkv: LinearBridge
+blocks.20._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.20._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.20._original_component.self_attention.qkv._original_component: Linear
+blocks.20._original_component.self_attention.o: LinearBridge
+blocks.20._original_component.self_attention.o.hook_in: HookPoint
+blocks.20._original_component.self_attention.o.hook_out: HookPoint
+blocks.20._original_component.self_attention.o._original_component: Linear
+blocks.20._original_component.self_attention._original_component: BloomAttention
+blocks.20._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.20._original_component.post_attention_layernorm: NormalizationBridge
+blocks.20._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.20._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.20._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.20._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.20._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.21._original_component.self_attention: BloomAttentionBridge
+blocks.21._original_component.self_attention.hook_in: HookPoint
+blocks.21._original_component.self_attention.hook_out: HookPoint
+blocks.21._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.21._original_component.self_attention.hook_pattern: HookPoint
+blocks.21._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.21._original_component.self_attention.hook_result: HookPoint
+blocks.21._original_component.self_attention.hook_attn_in: HookPoint
+blocks.21._original_component.self_attention.hook_q_input: HookPoint
+blocks.21._original_component.self_attention.hook_k_input: HookPoint
+blocks.21._original_component.self_attention.hook_v_input: HookPoint
+blocks.21._original_component.self_attention.q: LinearBridge
+blocks.21._original_component.self_attention.q.hook_in: HookPoint
+blocks.21._original_component.self_attention.q.hook_out: HookPoint
+blocks.21._original_component.self_attention.q._original_component: Linear
+blocks.21._original_component.self_attention.k: LinearBridge
+blocks.21._original_component.self_attention.k.hook_in: HookPoint
+blocks.21._original_component.self_attention.k.hook_out: HookPoint
+blocks.21._original_component.self_attention.k._original_component: Linear
+blocks.21._original_component.self_attention.v: LinearBridge
+blocks.21._original_component.self_attention.v.hook_in: HookPoint
+blocks.21._original_component.self_attention.v.hook_out: HookPoint
+blocks.21._original_component.self_attention.v._original_component: Linear
+blocks.21._original_component.self_attention.qkv: LinearBridge
+blocks.21._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.21._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.21._original_component.self_attention.qkv._original_component: Linear
+blocks.21._original_component.self_attention.o: LinearBridge
+blocks.21._original_component.self_attention.o.hook_in: HookPoint
+blocks.21._original_component.self_attention.o.hook_out: HookPoint
+blocks.21._original_component.self_attention.o._original_component: Linear
+blocks.21._original_component.self_attention._original_component: BloomAttention
+blocks.21._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.21._original_component.post_attention_layernorm: NormalizationBridge
+blocks.21._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.21._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.21._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.21._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.21._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.22._original_component.self_attention: BloomAttentionBridge
+blocks.22._original_component.self_attention.hook_in: HookPoint
+blocks.22._original_component.self_attention.hook_out: HookPoint
+blocks.22._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.22._original_component.self_attention.hook_pattern: HookPoint
+blocks.22._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.22._original_component.self_attention.hook_result: HookPoint
+blocks.22._original_component.self_attention.hook_attn_in: HookPoint
+blocks.22._original_component.self_attention.hook_q_input: HookPoint
+blocks.22._original_component.self_attention.hook_k_input: HookPoint
+blocks.22._original_component.self_attention.hook_v_input: HookPoint
+blocks.22._original_component.self_attention.q: LinearBridge
+blocks.22._original_component.self_attention.q.hook_in: HookPoint
+blocks.22._original_component.self_attention.q.hook_out: HookPoint
+blocks.22._original_component.self_attention.q._original_component: Linear
+blocks.22._original_component.self_attention.k: LinearBridge
+blocks.22._original_component.self_attention.k.hook_in: HookPoint
+blocks.22._original_component.self_attention.k.hook_out: HookPoint
+blocks.22._original_component.self_attention.k._original_component: Linear
+blocks.22._original_component.self_attention.v: LinearBridge
+blocks.22._original_component.self_attention.v.hook_in: HookPoint
+blocks.22._original_component.self_attention.v.hook_out: HookPoint
+blocks.22._original_component.self_attention.v._original_component: Linear
+blocks.22._original_component.self_attention.qkv: LinearBridge
+blocks.22._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.22._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.22._original_component.self_attention.qkv._original_component: Linear
+blocks.22._original_component.self_attention.o: LinearBridge
+blocks.22._original_component.self_attention.o.hook_in: HookPoint
+blocks.22._original_component.self_attention.o.hook_out: HookPoint
+blocks.22._original_component.self_attention.o._original_component: Linear
+blocks.22._original_component.self_attention._original_component: BloomAttention
+blocks.22._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.22._original_component.post_attention_layernorm: NormalizationBridge
+blocks.22._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.22._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.22._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.22._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.22._original_component.post_attention_layernorm._original_component: LayerNorm
+blocks.23._original_component.self_attention: BloomAttentionBridge
+blocks.23._original_component.self_attention.hook_in: HookPoint
+blocks.23._original_component.self_attention.hook_out: HookPoint
+blocks.23._original_component.self_attention.hook_attn_scores: HookPoint
+blocks.23._original_component.self_attention.hook_pattern: HookPoint
+blocks.23._original_component.self_attention.hook_hidden_states: HookPoint
+blocks.23._original_component.self_attention.hook_result: HookPoint
+blocks.23._original_component.self_attention.hook_attn_in: HookPoint
+blocks.23._original_component.self_attention.hook_q_input: HookPoint
+blocks.23._original_component.self_attention.hook_k_input: HookPoint
+blocks.23._original_component.self_attention.hook_v_input: HookPoint
+blocks.23._original_component.self_attention.q: LinearBridge
+blocks.23._original_component.self_attention.q.hook_in: HookPoint
+blocks.23._original_component.self_attention.q.hook_out: HookPoint
+blocks.23._original_component.self_attention.q._original_component: Linear
+blocks.23._original_component.self_attention.k: LinearBridge
+blocks.23._original_component.self_attention.k.hook_in: HookPoint
+blocks.23._original_component.self_attention.k.hook_out: HookPoint
+blocks.23._original_component.self_attention.k._original_component: Linear
+blocks.23._original_component.self_attention.v: LinearBridge
+blocks.23._original_component.self_attention.v.hook_in: HookPoint
+blocks.23._original_component.self_attention.v.hook_out: HookPoint
+blocks.23._original_component.self_attention.v._original_component: Linear
+blocks.23._original_component.self_attention.qkv: LinearBridge
+blocks.23._original_component.self_attention.qkv.hook_in: HookPoint
+blocks.23._original_component.self_attention.qkv.hook_out: HookPoint
+blocks.23._original_component.self_attention.qkv._original_component: Linear
+blocks.23._original_component.self_attention.o: LinearBridge
+blocks.23._original_component.self_attention.o.hook_in: HookPoint
+blocks.23._original_component.self_attention.o.hook_out: HookPoint
+blocks.23._original_component.self_attention.o._original_component: Linear
+blocks.23._original_component.self_attention._original_component: BloomAttention
+blocks.23._original_component.self_attention._original_component.attention_dropout: Dropout
+blocks.23._original_component.post_attention_layernorm: NormalizationBridge
+blocks.23._original_component.post_attention_layernorm.hook_in: HookPoint
+blocks.23._original_component.post_attention_layernorm.hook_out: HookPoint
+blocks.23._original_component.post_attention_layernorm.hook_normalized: HookPoint
+blocks.23._original_component.post_attention_layernorm.hook_scale: HookPoint
+blocks.23._original_component.post_attention_layernorm._original_component: LayerNorm
+
+--- Summary ---
+{
+  "model": "bigscience/bloom-560m",
+  "device": "cuda",
+  "wrapper_type": "<class 'transformer_lens.model_bridge.transformer_bridge.TransformerBridge'>",
+  "hook_count": 1262,
+  "relevant_hook_count": 1262,
+  "logits_shape": [
+    1,
+    13,
+    250880
+  ],
+  "logits_finite": true,
+  "has_run_with_cache": true
+}

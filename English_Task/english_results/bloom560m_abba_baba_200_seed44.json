@@ -1,0 +1,139 @@
+{
+  "model": "bigscience/bloom-560m",
+  "seed": 44,
+  "device": "cuda",
+  "num_samples_per_pattern": 200,
+  "batch_size": 16,
+  "templates": {
+    "ABBA": "[A] and [B] went to the [LOCATION]. [B] gave the [OBJECT] to [A]",
+    "BABA": "[B] and [A] went to the [LOCATION]. [B] gave the [OBJECT] to [A]"
+  },
+  "metrics": {
+    "ABBA": {
+      "num_samples": 200,
+      "accuracy_percent": 100.0,
+      "zero_rank_percent": 94.5,
+      "mean_logit_difference": 6.880795822143555,
+      "examples": [
+        {
+          "prompt": "<s>Daniel and Lisa went to the store. Lisa gave the milk to Daniel",
+          "correct_name": " Daniel",
+          "incorrect_name": " Lisa",
+          "correct_logit": 154.18453979492188,
+          "incorrect_logit": 143.98165893554688,
+          "logit_difference": 10.202880859375,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " Daniel"
+        },
+        {
+          "prompt": "<s>Jessica and Ryan went to the store. Ryan gave the milk to Jessica",
+          "correct_name": " Jessica",
+          "incorrect_name": " Ryan",
+          "correct_logit": 153.6060333251953,
+          "incorrect_logit": 145.57821655273438,
+          "logit_difference": 8.027816772460938,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " Jessica"
+        },
+        {
+          "prompt": "<s>Thomas and Andrew went to the store. Andrew gave the milk to Thomas",
+          "correct_name": " Thomas",
+          "incorrect_name": " Andrew",
+          "correct_logit": 153.63165283203125,
+          "incorrect_logit": 145.3046112060547,
+          "logit_difference": 8.327041625976562,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " Thomas"
+        },
+        {
+          "prompt": "<s>Daniel and Thomas went to the market. Thomas gave the bread to Daniel",
+          "correct_name": " Daniel",
+          "incorrect_name": " Thomas",
+          "correct_logit": 153.5321807861328,
+          "incorrect_logit": 146.26539611816406,
+          "logit_difference": 7.26678466796875,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " Daniel"
+        },
+        {
+          "prompt": "<s>James and Steven went to the market. Steven gave the milk to James",
+          "correct_name": " James",
+          "incorrect_name": " Steven",
+          "correct_logit": 152.72320556640625,
+          "incorrect_logit": 146.34059143066406,
+          "logit_difference": 6.3826141357421875,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " James"
+        }
+      ]
+    },
+    "BABA": {
+      "num_samples": 200,
+      "accuracy_percent": 98.5,
+      "zero_rank_percent": 94.0,
+      "mean_logit_difference": 4.170692062377929,
+      "examples": [
+        {
+          "prompt": "<s>Lisa and Daniel went to the store. Lisa gave the milk to Daniel",
+          "correct_name": " Daniel",
+          "incorrect_name": " Lisa",
+          "correct_logit": 152.97607421875,
+          "incorrect_logit": 146.70291137695312,
+          "logit_difference": 6.273162841796875,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " Daniel"
+        },
+        {
+          "prompt": "<s>Ryan and Jessica went to the store. Ryan gave the milk to Jessica",
+          "correct_name": " Jessica",
+          "incorrect_name": " Ryan",
+          "correct_logit": 152.7840118408203,
+          "incorrect_logit": 148.9886474609375,
+          "logit_difference": 3.7953643798828125,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " Jessica"
+        },
+        {
+          "prompt": "<s>Andrew and Thomas went to the store. Andrew gave the milk to Thomas",
+          "correct_name": " Thomas",
+          "incorrect_name": " Andrew",
+          "correct_logit": 153.05979919433594,
+          "incorrect_logit": 147.94802856445312,
+          "logit_difference": 5.1117706298828125,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " Thomas"
+        },
+        {
+          "prompt": "<s>Thomas and Daniel went to the market. Thomas gave the bread to Daniel",
+          "correct_name": " Daniel",
+          "incorrect_name": " Thomas",
+          "correct_logit": 152.6573944091797,
+          "incorrect_logit": 150.03749084472656,
+          "logit_difference": 2.619903564453125,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " Daniel"
+        },
+        {
+          "prompt": "<s>Steven and James went to the market. Steven gave the milk to James",
+          "correct_name": " James",
+          "incorrect_name": " Steven",
+          "correct_logit": 152.97874450683594,
+          "incorrect_logit": 147.82107543945312,
+          "logit_difference": 5.1576690673828125,
+          "correct_name_wins": true,
+          "correct_name_is_top_prediction": true,
+          "top_prediction": " James"
+        }
+      ]
+    }
+  }
+}

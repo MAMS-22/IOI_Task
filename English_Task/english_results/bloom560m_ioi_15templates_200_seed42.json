@@ -1,0 +1,2489 @@
+{
+  "model": "bigscience/bloom-560m",
+  "seed": 42,
+  "n_total": 200,
+  "n_per_pattern": 100,
+  "templates": [
+    {
+      "id": 1,
+      "BABA": "Then, [B] and [A] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+      "ABBA": "Then, [A] and [B] went to the [PLACE]. [B] gave a [OBJECT] to [A]"
+    },
+    {
+      "id": 2,
+      "BABA": "Then, [B] and [A] had a lot of fun at the [PLACE]. [B] gave a [OBJECT] to [A]",
+      "ABBA": "Then, [A] and [B] had a lot of fun at the [PLACE]. [B] gave a [OBJECT] to [A]"
+    },
+    {
+      "id": 3,
+      "BABA": "Then, [B] and [A] were working at the [PLACE]. [B] decided to give a [OBJECT] to [A]",
+      "ABBA": "Then, [A] and [B] were working at the [PLACE]. [B] decided to give a [OBJECT] to [A]"
+    },
+    {
+      "id": 4,
+      "BABA": "Then, [B] and [A] were thinking about going to the [PLACE]. [B] wanted to give a [OBJECT] to [A]",
+      "ABBA": "Then, [A] and [B] were thinking about going to the [PLACE]. [B] wanted to give a [OBJECT] to [A]"
+    },
+    {
+      "id": 5,
+      "BABA": "Then, [B] and [A] had a long argument, and afterwards [B] said to [A]",
+      "ABBA": "Then, [A] and [B] had a long argument, and afterwards [B] said to [A]"
+    },
+    {
+      "id": 6,
+      "BABA": "After [B] and [A] went to the [PLACE], [B] gave a [OBJECT] to [A]",
+      "ABBA": "After [A] and [B] went to the [PLACE], [B] gave a [OBJECT] to [A]"
+    },
+    {
+      "id": 7,
+      "BABA": "When [B] and [A] got a [OBJECT] at the [PLACE], [B] decided to give it to [A]",
+      "ABBA": "When [A] and [B] got a [OBJECT] at the [PLACE], [B] decided to give it to [A]"
+    },
+    {
+      "id": 8,
+      "BABA": "When [B] and [A] got a [OBJECT] at the [PLACE], [B] decided to give the [OBJECT] to [A]",
+      "ABBA": "When [A] and [B] got a [OBJECT] at the [PLACE], [B] decided to give the [OBJECT] to [A]"
+    },
+    {
+      "id": 9,
+      "BABA": "While [B] and [A] were working at the [PLACE], [B] gave a [OBJECT] to [A]",
+      "ABBA": "While [A] and [B] were working at the [PLACE], [B] gave a [OBJECT] to [A]"
+    },
+    {
+      "id": 10,
+      "BABA": "While [B] and [A] were commuting to the [PLACE], [B] gave a [OBJECT] to [A]",
+      "ABBA": "While [A] and [B] were commuting to the [PLACE], [B] gave a [OBJECT] to [A]"
+    },
+    {
+      "id": 11,
+      "BABA": "After the lunch, [B] and [A] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+      "ABBA": "After the lunch, [A] and [B] went to the [PLACE]. [B] gave a [OBJECT] to [A]"
+    },
+    {
+      "id": 12,
+      "BABA": "Afterwards, [B] and [A] went to the [PLACE]. [B] gave a [OBJECT] to [A]",
+      "ABBA": "Afterwards, [A] and [B] went to the [PLACE]. [B] gave a [OBJECT] to [A]"
+    },
+    {
+      "id": 13,
+      "BABA": "Then, [B] and [A] had a long argument. Afterwards [B] said to [A]",
+      "ABBA": "Then, [A] and [B] had a long argument. Afterwards [B] said to [A]"
+    },
+    {
+      "id": 14,
+      "BABA": "The [PLACE] [B] and [A] went to had a [OBJECT]. [B] gave it to [A]",
+      "ABBA": "The [PLACE] [A] and [B] went to had a [OBJECT]. [B] gave it to [A]"
+    },
+    {
+      "id": 15,
+      "BABA": "Friends [B] and [A] found a [OBJECT] at the [PLACE]. [B] gave it to [A]",
+      "ABBA": "Friends [A] and [B] found a [OBJECT] at the [PLACE]. [B] gave it to [A]"
+    }
+  ],
+  "metrics": {
+    "ABBA": {
+      "overall": {
+        "n": 100,
+        "accuracy_percent": 100.0,
+        "zero_rank_percent": 93.0,
+        "mean_logit_difference": 5.623737335205078
+      },
+      "per_template": {
+        "1": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.225535801478794
+        },
+        "2": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.1170196533203125
+        },
+        "3": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 4.253696986607143
+        },
+        "4": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 71.42857142857143,
+          "mean_logit_difference": 4.465179443359375
+        },
+        "5": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.778444562639509
+        },
+        "6": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.903267996651786
+        },
+        "7": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 57.142857142857146,
+          "mean_logit_difference": 5.8025970458984375
+        },
+        "8": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 85.71428571428571,
+          "mean_logit_difference": 5.518748692103794
+        },
+        "9": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.923806326729911
+        },
+        "10": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.928547450474331
+        },
+        "11": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.196207682291667
+        },
+        "12": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 83.33333333333333,
+          "mean_logit_difference": 4.082712809244792
+        },
+        "13": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.447802225748698
+        },
+        "14": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 7.365308125813802
+        },
+        "15": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 8.733940124511719
+        }
+      },
+      "examples": [
+        {
+          "pattern": "ABBA",
+          "template_id": 1,
+          "prompt": "Then, Brian and Jessica went to the store. Jessica gave a gift to Brian",
+          "correct_name": "Brian",
+          "incorrect_name": "Jessica",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.6572418212890625,
+          "top_prediction": " Brian"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 1,
+          "prompt": "Then, Lisa and David went to the market. David gave a toy to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "David",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.0079193115234375,
+          "top_prediction": " Lisa"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 1,
+          "prompt": "Then, Michael and Ryan went to the library. Ryan gave a apple to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Ryan",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.7212066650390625,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 1,
+          "prompt": "Then, John and Michael went to the garden. Michael gave a flower to John",
+          "correct_name": "John",
+          "incorrect_name": "Michael",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.8714447021484375,
+          "top_prediction": " John"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 1,
+          "prompt": "Then, Andrew and Rebecca went to the store. Rebecca gave a toy to Andrew",
+          "correct_name": "Andrew",
+          "incorrect_name": "Rebecca",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.104156494140625,
+          "top_prediction": " Andrew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 1,
+          "prompt": "Then, Robert and Kevin went to the park. Kevin gave a meal to Robert",
+          "correct_name": "Robert",
+          "incorrect_name": "Kevin",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.0211639404296875,
+          "top_prediction": " Robert"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 1,
+          "prompt": "Then, Lisa and Matthew went to the beach. Matthew gave a gift to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "Matthew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.19561767578125,
+          "top_prediction": " Lisa"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 2,
+          "prompt": "Then, Nicole and Anna had a lot of fun at the store. Anna gave a drink to Nicole",
+          "correct_name": "Nicole",
+          "incorrect_name": "Anna",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.8235321044921875,
+          "top_prediction": " Nicole"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 2,
+          "prompt": "Then, Kevin and Ashley had a lot of fun at the restaurant. Ashley gave a gift to Kevin",
+          "correct_name": "Kevin",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.3435516357421875,
+          "top_prediction": " Kevin"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 2,
+          "prompt": "Then, David and Robert had a lot of fun at the restaurant. Robert gave a book to David",
+          "correct_name": "David",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.19818115234375,
+          "top_prediction": " David"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 2,
+          "prompt": "Then, Michael and Daniel had a lot of fun at the market. Daniel gave a letter to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Daniel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.8571624755859375,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 2,
+          "prompt": "Then, Anna and Emily had a lot of fun at the beach. Emily gave a gift to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Emily",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.784149169921875,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 2,
+          "prompt": "Then, Nicole and Mary had a lot of fun at the station. Mary gave a toy to Nicole",
+          "correct_name": "Nicole",
+          "incorrect_name": "Mary",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.470947265625,
+          "top_prediction": " Nicole"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 2,
+          "prompt": "Then, Jessica and Emma had a lot of fun at the library. Emma gave a book to Jessica",
+          "correct_name": "Jessica",
+          "incorrect_name": "Emma",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.34161376953125,
+          "top_prediction": " Jessica"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 3,
+          "prompt": "Then, Laura and Jennifer were working at the beach. Jennifer decided to give a letter to Laura",
+          "correct_name": "Laura",
+          "incorrect_name": "Jennifer",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.241607666015625,
+          "top_prediction": " Laura"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 3,
+          "prompt": "Then, Ryan and Robert were working at the market. Robert decided to give a apple to Ryan",
+          "correct_name": "Ryan",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.2161407470703125,
+          "top_prediction": " Ryan"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 3,
+          "prompt": "Then, Michelle and Lisa were working at the school. Lisa decided to give a book to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.3304290771484375,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 3,
+          "prompt": "Then, Anna and Lisa were working at the market. Lisa decided to give a meal to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.73138427734375,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 3,
+          "prompt": "Then, William and Matthew were working at the restaurant. Matthew decided to give a drink to William",
+          "correct_name": "William",
+          "incorrect_name": "Matthew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.3697967529296875,
+          "top_prediction": " William"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 3,
+          "prompt": "Then, Emily and Robert were working at the school. Robert decided to give a book to Emily",
+          "correct_name": "Emily",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.1126251220703125,
+          "top_prediction": " Emily"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 3,
+          "prompt": "Then, Rebecca and Brian were working at the office. Brian decided to give a toy to Rebecca",
+          "correct_name": "Rebecca",
+          "incorrect_name": "Brian",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.773895263671875,
+          "top_prediction": " Rebecca"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 4,
+          "prompt": "Then, Rachel and Lisa were thinking about going to the office. Lisa wanted to give a snack to Rachel",
+          "correct_name": "Rachel",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.1783905029296875,
+          "top_prediction": " Rachel"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 4,
+          "prompt": "Then, Daniel and William were thinking about going to the park. William wanted to give a flower to Daniel",
+          "correct_name": "Daniel",
+          "incorrect_name": "William",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.2303314208984375,
+          "top_prediction": " Daniel"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 4,
+          "prompt": "Then, Michelle and James were thinking about going to the store. James wanted to give a flower to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "James",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.0097808837890625,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 4,
+          "prompt": "Then, Steven and Mary were thinking about going to the restaurant. Mary wanted to give a meal to Steven",
+          "correct_name": "Steven",
+          "incorrect_name": "Mary",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 3.7369537353515625,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 4,
+          "prompt": "Then, William and Michael were thinking about going to the garden. Michael wanted to give a ticket to William",
+          "correct_name": "William",
+          "incorrect_name": "Michael",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 0.533782958984375,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 4,
+          "prompt": "Then, Joseph and Kevin were thinking about going to the restaurant. Kevin wanted to give a flower to Joseph",
+          "correct_name": "Joseph",
+          "incorrect_name": "Kevin",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.864288330078125,
+          "top_prediction": " Joseph"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 4,
+          "prompt": "Then, Brian and Amanda were thinking about going to the library. Amanda wanted to give a snack to Brian",
+          "correct_name": "Brian",
+          "incorrect_name": "Amanda",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.702728271484375,
+          "top_prediction": " Brian"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 5,
+          "prompt": "Then, David and William had a long argument, and afterwards William said to David",
+          "correct_name": "David",
+          "incorrect_name": "William",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.5399322509765625,
+          "top_prediction": " David"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 5,
+          "prompt": "Then, Rachel and Laura had a long argument, and afterwards Laura said to Rachel",
+          "correct_name": "Rachel",
+          "incorrect_name": "Laura",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.5669403076171875,
+          "top_prediction": " Rachel"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 5,
+          "prompt": "Then, Rachel and Ryan had a long argument, and afterwards Ryan said to Rachel",
+          "correct_name": "Rachel",
+          "incorrect_name": "Ryan",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.20538330078125,
+          "top_prediction": " Rachel"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 5,
+          "prompt": "Then, Daniel and Emily had a long argument, and afterwards Emily said to Daniel",
+          "correct_name": "Daniel",
+          "incorrect_name": "Emily",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.4538421630859375,
+          "top_prediction": " Daniel"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 5,
+          "prompt": "Then, Andrew and Amanda had a long argument, and afterwards Amanda said to Andrew",
+          "correct_name": "Andrew",
+          "incorrect_name": "Amanda",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.31341552734375,
+          "top_prediction": " Andrew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 5,
+          "prompt": "Then, Anna and Jessica had a long argument, and afterwards Jessica said to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Jessica",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.1337738037109375,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 5,
+          "prompt": "Then, Nicole and Michelle had a long argument, and afterwards Michelle said to Nicole",
+          "correct_name": "Nicole",
+          "incorrect_name": "Michelle",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.2358245849609375,
+          "top_prediction": " Nicole"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 6,
+          "prompt": "After Michael and Daniel went to the library, Daniel gave a ticket to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Daniel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.00091552734375,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 6,
+          "prompt": "After Matthew and Andrew went to the school, Andrew gave a toy to Matthew",
+          "correct_name": "Matthew",
+          "incorrect_name": "Andrew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.0771331787109375,
+          "top_prediction": " Matthew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 6,
+          "prompt": "After Anna and John went to the market, John gave a toy to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.19659423828125,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 6,
+          "prompt": "After Thomas and William went to the restaurant, William gave a book to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "William",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.432159423828125,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 6,
+          "prompt": "After Jennifer and Ashley went to the office, Ashley gave a snack to Jennifer",
+          "correct_name": "Jennifer",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.4113311767578125,
+          "top_prediction": " Jennifer"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 6,
+          "prompt": "After John and Rachel went to the school, Rachel gave a toy to John",
+          "correct_name": "John",
+          "incorrect_name": "Rachel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.3411712646484375,
+          "top_prediction": " John"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 6,
+          "prompt": "After Thomas and Sarah went to the park, Sarah gave a book to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "Sarah",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.8635711669921875,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 7,
+          "prompt": "When Anna and Brian got a toy at the school, Brian decided to give it to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Brian",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 7.59210205078125,
+          "top_prediction": " her"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 7,
+          "prompt": "When Rebecca and Robert got a letter at the office, Robert decided to give it to Rebecca",
+          "correct_name": "Rebecca",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.664642333984375,
+          "top_prediction": " Rebecca"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 7,
+          "prompt": "When Thomas and Sarah got a toy at the park, Sarah decided to give it to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "Sarah",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.3654632568359375,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 7,
+          "prompt": "When Emma and John got a letter at the beach, John decided to give it to Emma",
+          "correct_name": "Emma",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 3.8138275146484375,
+          "top_prediction": " her"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 7,
+          "prompt": "When Amanda and John got a letter at the market, John decided to give it to Amanda",
+          "correct_name": "Amanda",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 4.36572265625,
+          "top_prediction": " her"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 7,
+          "prompt": "When Joseph and Steven got a flower at the school, Steven decided to give it to Joseph",
+          "correct_name": "Joseph",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.3846435546875,
+          "top_prediction": " Joseph"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 7,
+          "prompt": "When Mary and Lisa got a book at the beach, Lisa decided to give it to Mary",
+          "correct_name": "Mary",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.4317779541015625,
+          "top_prediction": " Mary"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 8,
+          "prompt": "When Michael and Rachel got a book at the station, Rachel decided to give the book to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Rachel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.31353759765625,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 8,
+          "prompt": "When Thomas and Laura got a drink at the office, Laura decided to give the drink to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "Laura",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.3437347412109375,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 8,
+          "prompt": "When Michelle and Amanda got a drink at the park, Amanda decided to give the drink to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Amanda",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.3111724853515625,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 8,
+          "prompt": "When William and Andrew got a meal at the beach, Andrew decided to give the meal to William",
+          "correct_name": "William",
+          "incorrect_name": "Andrew",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 2.9515228271484375,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 8,
+          "prompt": "When Robert and Emma got a flower at the park, Emma decided to give the flower to Robert",
+          "correct_name": "Robert",
+          "incorrect_name": "Emma",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.11895751953125,
+          "top_prediction": " Robert"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 8,
+          "prompt": "When Kevin and Jennifer got a letter at the library, Jennifer decided to give the letter to Kevin",
+          "correct_name": "Kevin",
+          "incorrect_name": "Jennifer",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.898345947265625,
+          "top_prediction": " Kevin"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 8,
+          "prompt": "When Matthew and Joseph got a snack at the park, Joseph decided to give the snack to Matthew",
+          "correct_name": "Matthew",
+          "incorrect_name": "Joseph",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.6939697265625,
+          "top_prediction": " Matthew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 9,
+          "prompt": "While Jessica and Lisa were working at the garden, Lisa gave a book to Jessica",
+          "correct_name": "Jessica",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.089080810546875,
+          "top_prediction": " Jessica"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 9,
+          "prompt": "While James and John were working at the beach, John gave a toy to James",
+          "correct_name": "James",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.2698822021484375,
+          "top_prediction": " James"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 9,
+          "prompt": "While Lisa and Ryan were working at the garden, Ryan gave a apple to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "Ryan",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.364227294921875,
+          "top_prediction": " Lisa"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 9,
+          "prompt": "While Michael and Kevin were working at the store, Kevin gave a flower to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Kevin",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.062835693359375,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 9,
+          "prompt": "While Michael and Joseph were working at the store, Joseph gave a letter to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Joseph",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.779296875,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 9,
+          "prompt": "While Michael and Andrew were working at the garden, Andrew gave a gift to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Andrew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.8301239013671875,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 9,
+          "prompt": "While Michelle and Amanda were working at the garden, Amanda gave a toy to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Amanda",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.071197509765625,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 10,
+          "prompt": "While David and Rachel were commuting to the beach, Rachel gave a ticket to David",
+          "correct_name": "David",
+          "incorrect_name": "Rachel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.20745849609375,
+          "top_prediction": " David"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 10,
+          "prompt": "While Amanda and Lisa were commuting to the station, Lisa gave a meal to Amanda",
+          "correct_name": "Amanda",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.6941680908203125,
+          "top_prediction": " Amanda"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 10,
+          "prompt": "While Robert and Jessica were commuting to the market, Jessica gave a meal to Robert",
+          "correct_name": "Robert",
+          "incorrect_name": "Jessica",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.69622802734375,
+          "top_prediction": " Robert"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 10,
+          "prompt": "While Emily and Ashley were commuting to the library, Ashley gave a snack to Emily",
+          "correct_name": "Emily",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.75421142578125,
+          "top_prediction": " Emily"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 10,
+          "prompt": "While Anna and Rachel were commuting to the store, Rachel gave a book to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Rachel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.276519775390625,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 10,
+          "prompt": "While Mary and Daniel were commuting to the restaurant, Daniel gave a book to Mary",
+          "correct_name": "Mary",
+          "incorrect_name": "Daniel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.511199951171875,
+          "top_prediction": " Mary"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 10,
+          "prompt": "While Lisa and Robert were commuting to the garden, Robert gave a toy to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.36004638671875,
+          "top_prediction": " Lisa"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 11,
+          "prompt": "After the lunch, Matthew and David went to the library. David gave a drink to Matthew",
+          "correct_name": "Matthew",
+          "incorrect_name": "David",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.5990142822265625,
+          "top_prediction": " Matthew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 11,
+          "prompt": "After the lunch, William and Matthew went to the garden. Matthew gave a book to William",
+          "correct_name": "William",
+          "incorrect_name": "Matthew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 1.945831298828125,
+          "top_prediction": " William"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 11,
+          "prompt": "After the lunch, Matthew and Nicole went to the park. Nicole gave a book to Matthew",
+          "correct_name": "Matthew",
+          "incorrect_name": "Nicole",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.1841278076171875,
+          "top_prediction": " Matthew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 11,
+          "prompt": "After the lunch, Mary and Brian went to the park. Brian gave a apple to Mary",
+          "correct_name": "Mary",
+          "incorrect_name": "Brian",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.1848602294921875,
+          "top_prediction": " Mary"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 11,
+          "prompt": "After the lunch, Michael and Emma went to the garden. Emma gave a drink to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Emma",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.9764862060546875,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 11,
+          "prompt": "After the lunch, Ashley and Amanda went to the station. Amanda gave a flower to Ashley",
+          "correct_name": "Ashley",
+          "incorrect_name": "Amanda",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.28692626953125,
+          "top_prediction": " Ashley"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 12,
+          "prompt": "Afterwards, Anna and Daniel went to the store. Daniel gave a drink to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Daniel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.6353302001953125,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 12,
+          "prompt": "Afterwards, Daniel and John went to the library. John gave a gift to Daniel",
+          "correct_name": "Daniel",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.1111602783203125,
+          "top_prediction": " Daniel"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 12,
+          "prompt": "Afterwards, Emma and Nicole went to the station. Nicole gave a gift to Emma",
+          "correct_name": "Emma",
+          "incorrect_name": "Nicole",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 2.0919036865234375,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 12,
+          "prompt": "Afterwards, Ashley and Kevin went to the park. Kevin gave a snack to Ashley",
+          "correct_name": "Ashley",
+          "incorrect_name": "Kevin",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.3350982666015625,
+          "top_prediction": " Ashley"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 12,
+          "prompt": "Afterwards, David and Robert went to the school. Robert gave a flower to David",
+          "correct_name": "David",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.3920745849609375,
+          "top_prediction": " David"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 12,
+          "prompt": "Afterwards, Mary and Ryan went to the park. Ryan gave a apple to Mary",
+          "correct_name": "Mary",
+          "incorrect_name": "Ryan",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.9307098388671875,
+          "top_prediction": " Mary"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 13,
+          "prompt": "Then, Rachel and James had a long argument. Afterwards James said to Rachel",
+          "correct_name": "Rachel",
+          "incorrect_name": "James",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.757904052734375,
+          "top_prediction": " Rachel"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 13,
+          "prompt": "Then, Ryan and Amanda had a long argument. Afterwards Amanda said to Ryan",
+          "correct_name": "Ryan",
+          "incorrect_name": "Amanda",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.28436279296875,
+          "top_prediction": " Ryan"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 13,
+          "prompt": "Then, Sarah and Mary had a long argument. Afterwards Mary said to Sarah",
+          "correct_name": "Sarah",
+          "incorrect_name": "Mary",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.8116607666015625,
+          "top_prediction": " Sarah"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 13,
+          "prompt": "Then, Anna and Sarah had a long argument. Afterwards Sarah said to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Sarah",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.572174072265625,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 13,
+          "prompt": "Then, Michael and Michelle had a long argument. Afterwards Michelle said to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Michelle",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.65289306640625,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 13,
+          "prompt": "Then, Jessica and Joseph had a long argument. Afterwards Joseph said to Jessica",
+          "correct_name": "Jessica",
+          "incorrect_name": "Joseph",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.607818603515625,
+          "top_prediction": " Jessica"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 14,
+          "prompt": "The store Ryan and Rebecca went to had a ticket. Rebecca gave it to Ryan",
+          "correct_name": "Ryan",
+          "incorrect_name": "Rebecca",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.5278167724609375,
+          "top_prediction": " Ryan"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 14,
+          "prompt": "The beach Michael and Ashley went to had a ticket. Ashley gave it to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 8.569259643554688,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 14,
+          "prompt": "The school Andrew and James went to had a flower. James gave it to Andrew",
+          "correct_name": "Andrew",
+          "incorrect_name": "James",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.847564697265625,
+          "top_prediction": " Andrew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 14,
+          "prompt": "The restaurant Michelle and Kevin went to had a flower. Kevin gave it to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Kevin",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 8.040679931640625,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 14,
+          "prompt": "The office William and Daniel went to had a gift. Daniel gave it to William",
+          "correct_name": "William",
+          "incorrect_name": "Daniel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.195587158203125,
+          "top_prediction": " William"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 14,
+          "prompt": "The market Matthew and James went to had a apple. James gave it to Matthew",
+          "correct_name": "Matthew",
+          "incorrect_name": "James",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 8.010940551757812,
+          "top_prediction": " Matthew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 15,
+          "prompt": "Friends Matthew and Rebecca found a book at the beach. Rebecca gave it to Matthew",
+          "correct_name": "Matthew",
+          "incorrect_name": "Rebecca",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 9.2410888671875,
+          "top_prediction": " Matthew"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 15,
+          "prompt": "Friends Michael and Laura found a toy at the garden. Laura gave it to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Laura",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 9.916015625,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 15,
+          "prompt": "Friends William and David found a book at the restaurant. David gave it to William",
+          "correct_name": "William",
+          "incorrect_name": "David",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.6388702392578125,
+          "top_prediction": " William"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 15,
+          "prompt": "Friends Joseph and Lisa found a gift at the restaurant. Lisa gave it to Joseph",
+          "correct_name": "Joseph",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 9.035797119140625,
+          "top_prediction": " Joseph"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 15,
+          "prompt": "Friends Sarah and Matthew found a gift at the park. Matthew gave it to Sarah",
+          "correct_name": "Sarah",
+          "incorrect_name": "Matthew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 9.60723876953125,
+          "top_prediction": " Sarah"
+        },
+        {
+          "pattern": "ABBA",
+          "template_id": 15,
+          "prompt": "Friends Rebecca and Nicole found a apple at the park. Nicole gave it to Rebecca",
+          "correct_name": "Rebecca",
+          "incorrect_name": "Nicole",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 8.964630126953125,
+          "top_prediction": " Rebecca"
+        }
+      ]
+    },
+    "BABA": {
+      "overall": {
+        "n": 100,
+        "accuracy_percent": 100.0,
+        "zero_rank_percent": 91.0,
+        "mean_logit_difference": 4.322962799072266
+      },
+      "per_template": {
+        "1": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 85.71428571428571,
+          "mean_logit_difference": 4.779532296316964
+        },
+        "2": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 85.71428571428571,
+          "mean_logit_difference": 4.493750435965402
+        },
+        "3": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 4.114390781947544
+        },
+        "4": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 4.448056902204241
+        },
+        "5": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 4.491673060825893
+        },
+        "6": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 85.71428571428571,
+          "mean_logit_difference": 3.1949986049107144
+        },
+        "7": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 85.71428571428571,
+          "mean_logit_difference": 4.221668788364956
+        },
+        "8": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 85.71428571428571,
+          "mean_logit_difference": 4.504368373325893
+        },
+        "9": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 4.417809622628348
+        },
+        "10": {
+          "n": 7,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 71.42857142857143,
+          "mean_logit_difference": 3.823754446847098
+        },
+        "11": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 83.33333333333333,
+          "mean_logit_difference": 4.3947092692057295
+        },
+        "12": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 83.33333333333333,
+          "mean_logit_difference": 4.341682434082031
+        },
+        "13": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 3.9738082885742188
+        },
+        "14": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 5.4722137451171875
+        },
+        "15": {
+          "n": 6,
+          "accuracy_percent": 100.0,
+          "zero_rank_percent": 100.0,
+          "mean_logit_difference": 4.295295715332031
+        }
+      },
+      "examples": [
+        {
+          "pattern": "BABA",
+          "template_id": 1,
+          "prompt": "Then, Steven and Michelle went to the park. Steven gave a gift to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.61285400390625,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 1,
+          "prompt": "Then, Michelle and Emma went to the market. Michelle gave a drink to Emma",
+          "correct_name": "Emma",
+          "incorrect_name": "Michelle",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 1.83026123046875,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 1,
+          "prompt": "Then, Jessica and William went to the market. Jessica gave a toy to William",
+          "correct_name": "William",
+          "incorrect_name": "Jessica",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.68927001953125,
+          "top_prediction": " William"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 1,
+          "prompt": "Then, William and David went to the school. William gave a ticket to David",
+          "correct_name": "David",
+          "incorrect_name": "William",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.9835357666015625,
+          "top_prediction": " David"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 1,
+          "prompt": "Then, Kevin and Robert went to the restaurant. Kevin gave a flower to Robert",
+          "correct_name": "Robert",
+          "incorrect_name": "Kevin",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.191741943359375,
+          "top_prediction": " Robert"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 1,
+          "prompt": "Then, Brian and Michelle went to the school. Brian gave a toy to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Brian",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.2039337158203125,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 1,
+          "prompt": "Then, William and Amanda went to the store. William gave a book to Amanda",
+          "correct_name": "Amanda",
+          "incorrect_name": "William",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.94512939453125,
+          "top_prediction": " Amanda"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 2,
+          "prompt": "Then, Ashley and Brian had a lot of fun at the school. Ashley gave a apple to Brian",
+          "correct_name": "Brian",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.166015625,
+          "top_prediction": " Brian"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 2,
+          "prompt": "Then, James and John had a lot of fun at the office. James gave a gift to John",
+          "correct_name": "John",
+          "incorrect_name": "James",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.0843048095703125,
+          "top_prediction": " John"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 2,
+          "prompt": "Then, Rachel and Sarah had a lot of fun at the station. Rachel gave a toy to Sarah",
+          "correct_name": "Sarah",
+          "incorrect_name": "Rachel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.15948486328125,
+          "top_prediction": " Sarah"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 2,
+          "prompt": "Then, Ashley and Kevin had a lot of fun at the park. Ashley gave a apple to Kevin",
+          "correct_name": "Kevin",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.3529510498046875,
+          "top_prediction": " Kevin"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 2,
+          "prompt": "Then, Michael and Jessica had a lot of fun at the office. Michael gave a toy to Jessica",
+          "correct_name": "Jessica",
+          "incorrect_name": "Michael",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.10540771484375,
+          "top_prediction": " Jessica"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 2,
+          "prompt": "Then, Steven and Mary had a lot of fun at the restaurant. Steven gave a ticket to Mary",
+          "correct_name": "Mary",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 5.108551025390625,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 2,
+          "prompt": "Then, David and Laura had a lot of fun at the library. David gave a drink to Laura",
+          "correct_name": "Laura",
+          "incorrect_name": "David",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.4795379638671875,
+          "top_prediction": " Laura"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 3,
+          "prompt": "Then, Jennifer and Mary were working at the restaurant. Jennifer decided to give a apple to Mary",
+          "correct_name": "Mary",
+          "incorrect_name": "Jennifer",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.3379364013671875,
+          "top_prediction": " Mary"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 3,
+          "prompt": "Then, Emily and Joseph were working at the garden. Emily decided to give a flower to Joseph",
+          "correct_name": "Joseph",
+          "incorrect_name": "Emily",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.965789794921875,
+          "top_prediction": " Joseph"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 3,
+          "prompt": "Then, Jessica and Michelle were working at the restaurant. Jessica decided to give a toy to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Jessica",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.5785675048828125,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 3,
+          "prompt": "Then, Anna and Joseph were working at the library. Anna decided to give a ticket to Joseph",
+          "correct_name": "Joseph",
+          "incorrect_name": "Anna",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.4213104248046875,
+          "top_prediction": " Joseph"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 3,
+          "prompt": "Then, David and Rachel were working at the garden. David decided to give a drink to Rachel",
+          "correct_name": "Rachel",
+          "incorrect_name": "David",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.3590240478515625,
+          "top_prediction": " Rachel"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 3,
+          "prompt": "Then, Sarah and Nicole were working at the library. Sarah decided to give a apple to Nicole",
+          "correct_name": "Nicole",
+          "incorrect_name": "Sarah",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.1523590087890625,
+          "top_prediction": " Nicole"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 3,
+          "prompt": "Then, Rachel and Sarah were working at the restaurant. Rachel decided to give a meal to Sarah",
+          "correct_name": "Sarah",
+          "incorrect_name": "Rachel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.985748291015625,
+          "top_prediction": " Sarah"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 4,
+          "prompt": "Then, Michelle and Nicole were thinking about going to the garden. Michelle wanted to give a gift to Nicole",
+          "correct_name": "Nicole",
+          "incorrect_name": "Michelle",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.9012298583984375,
+          "top_prediction": " Nicole"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 4,
+          "prompt": "Then, Nicole and Sarah were thinking about going to the market. Nicole wanted to give a meal to Sarah",
+          "correct_name": "Sarah",
+          "incorrect_name": "Nicole",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.9454193115234375,
+          "top_prediction": " Sarah"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 4,
+          "prompt": "Then, Mary and Anna were thinking about going to the station. Mary wanted to give a flower to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Mary",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.161651611328125,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 4,
+          "prompt": "Then, Steven and Robert were thinking about going to the station. Steven wanted to give a letter to Robert",
+          "correct_name": "Robert",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.205780029296875,
+          "top_prediction": " Robert"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 4,
+          "prompt": "Then, Steven and Jennifer were thinking about going to the garden. Steven wanted to give a flower to Jennifer",
+          "correct_name": "Jennifer",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.7883453369140625,
+          "top_prediction": " Jennifer"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 4,
+          "prompt": "Then, Michelle and John were thinking about going to the garden. Michelle wanted to give a meal to John",
+          "correct_name": "John",
+          "incorrect_name": "Michelle",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.9230499267578125,
+          "top_prediction": " John"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 4,
+          "prompt": "Then, William and James were thinking about going to the market. William wanted to give a gift to James",
+          "correct_name": "James",
+          "incorrect_name": "William",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.2109222412109375,
+          "top_prediction": " James"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 5,
+          "prompt": "Then, Brian and Emily had a long argument, and afterwards Brian said to Emily",
+          "correct_name": "Emily",
+          "incorrect_name": "Brian",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.6524200439453125,
+          "top_prediction": " Emily"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 5,
+          "prompt": "Then, Steven and Michelle had a long argument, and afterwards Steven said to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.7073516845703125,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 5,
+          "prompt": "Then, Jessica and John had a long argument, and afterwards Jessica said to John",
+          "correct_name": "John",
+          "incorrect_name": "Jessica",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.6775970458984375,
+          "top_prediction": " John"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 5,
+          "prompt": "Then, William and Ryan had a long argument, and afterwards William said to Ryan",
+          "correct_name": "Ryan",
+          "incorrect_name": "William",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.8569488525390625,
+          "top_prediction": " Ryan"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 5,
+          "prompt": "Then, Ashley and Rebecca had a long argument, and afterwards Ashley said to Rebecca",
+          "correct_name": "Rebecca",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.924896240234375,
+          "top_prediction": " Rebecca"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 5,
+          "prompt": "Then, Rebecca and Ashley had a long argument, and afterwards Rebecca said to Ashley",
+          "correct_name": "Ashley",
+          "incorrect_name": "Rebecca",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.0890350341796875,
+          "top_prediction": " Ashley"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 5,
+          "prompt": "Then, Joseph and Daniel had a long argument, and afterwards Joseph said to Daniel",
+          "correct_name": "Daniel",
+          "incorrect_name": "Joseph",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.5334625244140625,
+          "top_prediction": " Daniel"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 6,
+          "prompt": "After Mary and William went to the library, Mary gave a apple to William",
+          "correct_name": "William",
+          "incorrect_name": "Mary",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.0814208984375,
+          "top_prediction": " William"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 6,
+          "prompt": "After Emma and Andrew went to the park, Emma gave a flower to Andrew",
+          "correct_name": "Andrew",
+          "incorrect_name": "Emma",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.9270172119140625,
+          "top_prediction": " Andrew"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 6,
+          "prompt": "After Ashley and Emily went to the market, Ashley gave a letter to Emily",
+          "correct_name": "Emily",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.364410400390625,
+          "top_prediction": " Emily"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 6,
+          "prompt": "After James and Rebecca went to the market, James gave a gift to Rebecca",
+          "correct_name": "Rebecca",
+          "incorrect_name": "James",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.37164306640625,
+          "top_prediction": " Rebecca"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 6,
+          "prompt": "After Jennifer and Andrew went to the library, Jennifer gave a letter to Andrew",
+          "correct_name": "Andrew",
+          "incorrect_name": "Jennifer",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.336212158203125,
+          "top_prediction": " Andrew"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 6,
+          "prompt": "After Kevin and Daniel went to the school, Kevin gave a toy to Daniel",
+          "correct_name": "Daniel",
+          "incorrect_name": "Kevin",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.3408660888671875,
+          "top_prediction": " Daniel"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 6,
+          "prompt": "After Robert and David went to the library, Robert gave a meal to David",
+          "correct_name": "David",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 1.94342041015625,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 7,
+          "prompt": "When Rachel and Michelle got a ticket at the office, Rachel decided to give it to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Rachel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.5564422607421875,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 7,
+          "prompt": "When Jennifer and Ryan got a toy at the library, Jennifer decided to give it to Ryan",
+          "correct_name": "Ryan",
+          "incorrect_name": "Jennifer",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.2103729248046875,
+          "top_prediction": " Ryan"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 7,
+          "prompt": "When John and Steven got a gift at the school, John decided to give it to Steven",
+          "correct_name": "Steven",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.6900482177734375,
+          "top_prediction": " Steven"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 7,
+          "prompt": "When Ashley and Robert got a ticket at the beach, Ashley decided to give it to Robert",
+          "correct_name": "Robert",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.225616455078125,
+          "top_prediction": " Robert"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 7,
+          "prompt": "When James and Brian got a snack at the station, James decided to give it to Brian",
+          "correct_name": "Brian",
+          "incorrect_name": "James",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.6980438232421875,
+          "top_prediction": " Brian"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 7,
+          "prompt": "When Michelle and Matthew got a toy at the garden, Michelle decided to give it to Matthew",
+          "correct_name": "Matthew",
+          "incorrect_name": "Michelle",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.5943603515625,
+          "top_prediction": " Matthew"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 7,
+          "prompt": "When Nicole and Amanda got a book at the office, Nicole decided to give it to Amanda",
+          "correct_name": "Amanda",
+          "incorrect_name": "Nicole",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 4.5767974853515625,
+          "top_prediction": " her"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 8,
+          "prompt": "When Andrew and Jennifer got a letter at the beach, Andrew decided to give the letter to Jennifer",
+          "correct_name": "Jennifer",
+          "incorrect_name": "Andrew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.100128173828125,
+          "top_prediction": " Jennifer"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 8,
+          "prompt": "When Steven and Michael got a gift at the garden, Steven decided to give the gift to Michael",
+          "correct_name": "Michael",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.361602783203125,
+          "top_prediction": " Michael"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 8,
+          "prompt": "When Nicole and Lisa got a drink at the garden, Nicole decided to give the drink to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "Nicole",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 3.605377197265625,
+          "top_prediction": " her"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 8,
+          "prompt": "When Mary and John got a snack at the garden, Mary decided to give the snack to John",
+          "correct_name": "John",
+          "incorrect_name": "Mary",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.2597198486328125,
+          "top_prediction": " John"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 8,
+          "prompt": "When Anna and Rebecca got a snack at the market, Anna decided to give the snack to Rebecca",
+          "correct_name": "Rebecca",
+          "incorrect_name": "Anna",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.347808837890625,
+          "top_prediction": " Rebecca"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 8,
+          "prompt": "When Joseph and Ashley got a flower at the beach, Joseph decided to give the flower to Ashley",
+          "correct_name": "Ashley",
+          "incorrect_name": "Joseph",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.8890228271484375,
+          "top_prediction": " Ashley"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 8,
+          "prompt": "When Daniel and Kevin got a meal at the station, Daniel decided to give the meal to Kevin",
+          "correct_name": "Kevin",
+          "incorrect_name": "Daniel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.9669189453125,
+          "top_prediction": " Kevin"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 9,
+          "prompt": "While David and Lisa were working at the store, David gave a book to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "David",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.9225616455078125,
+          "top_prediction": " Lisa"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 9,
+          "prompt": "While Ashley and Thomas were working at the garden, Ashley gave a drink to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.65606689453125,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 9,
+          "prompt": "While Kevin and Nicole were working at the park, Kevin gave a snack to Nicole",
+          "correct_name": "Nicole",
+          "incorrect_name": "Kevin",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.92877197265625,
+          "top_prediction": " Nicole"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 9,
+          "prompt": "While Laura and Mary were working at the garden, Laura gave a book to Mary",
+          "correct_name": "Mary",
+          "incorrect_name": "Laura",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.0554046630859375,
+          "top_prediction": " Mary"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 9,
+          "prompt": "While David and Matthew were working at the station, David gave a toy to Matthew",
+          "correct_name": "Matthew",
+          "incorrect_name": "David",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.5548095703125,
+          "top_prediction": " Matthew"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 9,
+          "prompt": "While Rebecca and Laura were working at the restaurant, Rebecca gave a snack to Laura",
+          "correct_name": "Laura",
+          "incorrect_name": "Rebecca",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.4155120849609375,
+          "top_prediction": " Laura"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 9,
+          "prompt": "While Steven and Rebecca were working at the park, Steven gave a meal to Rebecca",
+          "correct_name": "Rebecca",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.39154052734375,
+          "top_prediction": " Rebecca"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 10,
+          "prompt": "While Emma and Steven were commuting to the park, Emma gave a snack to Steven",
+          "correct_name": "Steven",
+          "incorrect_name": "Emma",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.58428955078125,
+          "top_prediction": " Steven"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 10,
+          "prompt": "While Sarah and Joseph were commuting to the station, Sarah gave a snack to Joseph",
+          "correct_name": "Joseph",
+          "incorrect_name": "Sarah",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.78955078125,
+          "top_prediction": " Joseph"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 10,
+          "prompt": "While Thomas and William were commuting to the garden, Thomas gave a gift to William",
+          "correct_name": "William",
+          "incorrect_name": "Thomas",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 1.307281494140625,
+          "top_prediction": " William"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 10,
+          "prompt": "While Andrew and Thomas were commuting to the station, Andrew gave a flower to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "Andrew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.39544677734375,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 10,
+          "prompt": "While Matthew and William were commuting to the market, Matthew gave a gift to William",
+          "correct_name": "William",
+          "incorrect_name": "Matthew",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 1.67913818359375,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 10,
+          "prompt": "While William and Lisa were commuting to the restaurant, William gave a letter to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "William",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 5.301483154296875,
+          "top_prediction": " his"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 10,
+          "prompt": "While Laura and Joseph were commuting to the market, Laura gave a drink to Joseph",
+          "correct_name": "Joseph",
+          "incorrect_name": "Laura",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.7090911865234375,
+          "top_prediction": " Joseph"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 11,
+          "prompt": "After the lunch, Lisa and David went to the library. Lisa gave a drink to David",
+          "correct_name": "David",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.418060302734375,
+          "top_prediction": " David"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 11,
+          "prompt": "After the lunch, Robert and Kevin went to the market. Robert gave a meal to Kevin",
+          "correct_name": "Kevin",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.897674560546875,
+          "top_prediction": " Kevin"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 11,
+          "prompt": "After the lunch, James and Ashley went to the park. James gave a snack to Ashley",
+          "correct_name": "Ashley",
+          "incorrect_name": "James",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.89154052734375,
+          "top_prediction": " Ashley"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 11,
+          "prompt": "After the lunch, Mary and Ashley went to the garden. Mary gave a meal to Ashley",
+          "correct_name": "Ashley",
+          "incorrect_name": "Mary",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 2.4314422607421875,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 11,
+          "prompt": "After the lunch, Joseph and Daniel went to the beach. Joseph gave a apple to Daniel",
+          "correct_name": "Daniel",
+          "incorrect_name": "Joseph",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.6455078125,
+          "top_prediction": " Daniel"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 11,
+          "prompt": "After the lunch, Joseph and Anna went to the beach. Joseph gave a meal to Anna",
+          "correct_name": "Anna",
+          "incorrect_name": "Joseph",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.0840301513671875,
+          "top_prediction": " Anna"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 12,
+          "prompt": "Afterwards, John and Amanda went to the restaurant. John gave a gift to Amanda",
+          "correct_name": "Amanda",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.787017822265625,
+          "top_prediction": " Amanda"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 12,
+          "prompt": "Afterwards, Daniel and Thomas went to the library. Daniel gave a toy to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "Daniel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.9498443603515625,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 12,
+          "prompt": "Afterwards, Laura and Rachel went to the beach. Laura gave a flower to Rachel",
+          "correct_name": "Rachel",
+          "incorrect_name": "Laura",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.4260711669921875,
+          "top_prediction": " Rachel"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 12,
+          "prompt": "Afterwards, Lisa and Amanda went to the school. Lisa gave a meal to Amanda",
+          "correct_name": "Amanda",
+          "incorrect_name": "Lisa",
+          "accuracy": true,
+          "zero_rank": false,
+          "logit_difference": 3.884368896484375,
+          "top_prediction": " the"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 12,
+          "prompt": "Afterwards, John and Amanda went to the library. John gave a letter to Amanda",
+          "correct_name": "Amanda",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.9070587158203125,
+          "top_prediction": " Amanda"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 12,
+          "prompt": "Afterwards, Nicole and Michelle went to the library. Nicole gave a drink to Michelle",
+          "correct_name": "Michelle",
+          "incorrect_name": "Nicole",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.095733642578125,
+          "top_prediction": " Michelle"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 13,
+          "prompt": "Then, Matthew and Steven had a long argument. Afterwards Matthew said to Steven",
+          "correct_name": "Steven",
+          "incorrect_name": "Matthew",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.6651458740234375,
+          "top_prediction": " Steven"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 13,
+          "prompt": "Then, John and Laura had a long argument. Afterwards John said to Laura",
+          "correct_name": "Laura",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.0122833251953125,
+          "top_prediction": " Laura"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 13,
+          "prompt": "Then, Michelle and Ryan had a long argument. Afterwards Michelle said to Ryan",
+          "correct_name": "Ryan",
+          "incorrect_name": "Michelle",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.19110107421875,
+          "top_prediction": " Ryan"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 13,
+          "prompt": "Then, Ashley and Brian had a long argument. Afterwards Ashley said to Brian",
+          "correct_name": "Brian",
+          "incorrect_name": "Ashley",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.3504638671875,
+          "top_prediction": " Brian"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 13,
+          "prompt": "Then, Mary and Sarah had a long argument. Afterwards Mary said to Sarah",
+          "correct_name": "Sarah",
+          "incorrect_name": "Mary",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.7291259765625,
+          "top_prediction": " Sarah"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 13,
+          "prompt": "Then, Robert and James had a long argument. Afterwards Robert said to James",
+          "correct_name": "James",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.8947296142578125,
+          "top_prediction": " James"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 14,
+          "prompt": "The library Thomas and James went to had a gift. Thomas gave it to James",
+          "correct_name": "James",
+          "incorrect_name": "Thomas",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.2311553955078125,
+          "top_prediction": " James"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 14,
+          "prompt": "The library Steven and Thomas went to had a gift. Steven gave it to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "Steven",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.613128662109375,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 14,
+          "prompt": "The station Michael and Steven went to had a apple. Michael gave it to Steven",
+          "correct_name": "Steven",
+          "incorrect_name": "Michael",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.341888427734375,
+          "top_prediction": " Steven"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 14,
+          "prompt": "The store Laura and Rachel went to had a letter. Laura gave it to Rachel",
+          "correct_name": "Rachel",
+          "incorrect_name": "Laura",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 5.363861083984375,
+          "top_prediction": " Rachel"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 14,
+          "prompt": "The market Brian and Lisa went to had a apple. Brian gave it to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "Brian",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 7.1348419189453125,
+          "top_prediction": " Lisa"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 14,
+          "prompt": "The garden John and Thomas went to had a flower. John gave it to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 4.148406982421875,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 15,
+          "prompt": "Friends John and Steven found a drink at the beach. John gave it to Steven",
+          "correct_name": "Steven",
+          "incorrect_name": "John",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.6669769287109375,
+          "top_prediction": " Steven"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 15,
+          "prompt": "Friends David and Lisa found a book at the station. David gave it to Lisa",
+          "correct_name": "Lisa",
+          "incorrect_name": "David",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.33355712890625,
+          "top_prediction": " Lisa"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 15,
+          "prompt": "Friends Robert and Ryan found a gift at the station. Robert gave it to Ryan",
+          "correct_name": "Ryan",
+          "incorrect_name": "Robert",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.6947784423828125,
+          "top_prediction": " Ryan"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 15,
+          "prompt": "Friends Emily and Thomas found a ticket at the office. Emily gave it to Thomas",
+          "correct_name": "Thomas",
+          "incorrect_name": "Emily",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 6.0245208740234375,
+          "top_prediction": " Thomas"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 15,
+          "prompt": "Friends Rachel and Rebecca found a drink at the market. Rachel gave it to Rebecca",
+          "correct_name": "Rebecca",
+          "incorrect_name": "Rachel",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 2.6309814453125,
+          "top_prediction": " Rebecca"
+        },
+        {
+          "pattern": "BABA",
+          "template_id": 15,
+          "prompt": "Friends Jessica and Jennifer found a apple at the beach. Jessica gave it to Jennifer",
+          "correct_name": "Jennifer",
+          "incorrect_name": "Jessica",
+          "accuracy": true,
+          "zero_rank": true,
+          "logit_difference": 3.42095947265625,
+          "top_prediction": " Jennifer"
+        }
+      ]
+    }
+  }
+}
